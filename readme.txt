@@ -34,7 +34,7 @@ http://hpc.sourceforge.net
 
 3. For installation instructions see chapter 4 in saga.pdf (http://noiselab.ucsd.edu/saga/saga.pdf)
 
-4. noiselab.ucsd.edu/saga/saga.html has more information.
+4. http://noiselab.ucsd.edu/saga/saga.html has more information.
 
 
 
