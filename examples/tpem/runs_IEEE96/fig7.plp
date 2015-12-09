@@ -1,0 +1,347 @@
+       1024          MODU
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ TPEM optimizing for the tri-linear profiles                                     
+        2                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq: 1000.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.000000E+00                                      XLEFT
+    0.400000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     100.000                                          YDOWN
+    0.000000E+00                                        YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV STLRAN,DSD,UNI,               
+ REL. PHASE                                                                      
+ TPEM optimizing for the tri-linear profiles                                     
+        2                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq: 1000.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -400.000                                          XLEFT
+    0.000000E+00                                     XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Phase (degrees) $                                                               
+ LIN
+     100.000                                          YDOWN
+    0.000000E+00                                        YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV STLRAN,DSD,UNI,               
+ POWER                                                                           
+ TPEM optimizing for the tri-linear profiles                                     
+        2                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq: 1000.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.000000E+00                                      XLEFT
+    0.600000E-01                                     XRIGHT
+    0.200000E-01                                       XINC
+     1.00000                                           XDIV
+  power$                                                                         
+ LIN
+     100.000                                          YDOWN
+    0.000000E+00                                        YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+       50                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     50.0000                                          XLEFT
+     120.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Source-receiver distance (km)$                                                  
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+     1024                                                 N
+     50.0000                                           XOFF
+    0.684262E-01                                         DX
+     1.00000                                           YOFF
+    0.000000E+00                                         DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     4.80000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     50000.0                                          XLEFT
+     120000.                                         XRIGHT
+     20000.0                                           XINC
+     1.00000                                           XDIV
+ Source-receiver distance (km)$                                                  
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Antenna height (m)$                                                             
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+     1024                                                 N
+     1.00000                                           XOFF
+    0.967742E-01                                         DX
+     1.00000                                           YOFF
+    0.000000E+00                                         DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     4.80000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Antenna height (m)$                                                             
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+     1024                                                 N
+     1.00000                                           XOFF
+    0.967742E-01                                         DX
+     1.00000                                           YOFF
+    0.000000E+00                                         DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     4.80000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     400.000                                         XRIGHT
+     50.0000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+     1024                                                 N
+     1.00000                                           XOFF
+    0.390029                                             DX
+     1.00000                                           YOFF
+    0.000000E+00                                         DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     4.80000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     400.000                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+     1024                                                 N
+     1.00000                                           XOFF
+    0.967742E-01                                         DX
+     1.00000                                           YOFF
+    0.000000E+00                                         DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles                                     
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     4.80000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+                                                                                 
+ LIN
+     1.00000                                          YDOWN
+    0.000000E+00                                        YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+    0.000000E+00                                       XOFF
+    0.000000E+00                                         DX
+    0.000000E+00                                       YOFF
+    0.000000E+00                                         DY

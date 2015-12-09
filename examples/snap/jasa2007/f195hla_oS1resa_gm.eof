@@ -1,0 +1,10 @@
+3 3 1 ! no of shape functions, number of points, number of blocks
+3 1   ! upper sediment speed
+3 2   ! lower sediment speed
+12 1  ! bottom speed
+! Block 1: coupling of sed points
+3 3
+1 0 0
+1 1 0
+1 1 1
+1550 50 10 ! starting values

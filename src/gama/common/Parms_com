@@ -1,0 +1,20 @@
+c: NDAW = direct access record length parm: 1 for SGI, 4 for SUN, Alliant
+c: NFFTH1M = NFFTM/2 + 1, where NFFTM = maximum FFT size (power of 2)
+c: NRNFMAX = max value of nrtot*nfr2
+c: NRANGXM = max value of nrangx
+c: NRTOTM = max value of nrec*nrangx
+c: NLAYM = max # of layers in bottom
+c: MBPMAXX = max # of bottom path combinations
+c: MRAY = # of rays stored before being written out to temp file
+c: NASLM = max # of angles for botttom/surface loss
+c: NFSLM = max # of frequencies for botttom/surface loss
+c: NAFSLM = max value for nasl*nfsl
+c: NFR2MAX = max # of frequencies for TL calcs
+c: KAXMAX = max # of sample points in Snell invariant axis
+c: NRTHMAX = max # of sample points for R-th matlab array
+c
+      integer*4 NDAW,NFFTH1M,NRNFMAX,NRANGXM,NRTOTM,NLAYM,
+     .   MBPMAXX,NASLM,NFSLM,NAFSLM,NFR2MAX,KAXMAX,NRTHMAX
+      parameter(NDAW=4,NFFTH1M=16386/2,NRNFMAX=100000,NRANGXM=200,
+     .   NRTOTM=2*512,NLAYM=50,MBPMAXX=50000,NASLM=91,
+     .   NFSLM=21,NAFSLM=201,NFR2MAX=51,KAXMAX=501,NRTHMAX=101)

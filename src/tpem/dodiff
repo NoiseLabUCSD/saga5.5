@@ -1,0 +1,9 @@
+#!/bin/csh  
+#
+#foreach i (`ls *.f *.h */*.f */*.h`)
+foreach i (`ls *.inc *.f *.h Makefile`)
+echo '*******'
+echo $i
+  diff $i $HOME/tpembb/src/$i
+#  diff $i $HOME/saga/src/tpem/copy14aug/$i
+end 

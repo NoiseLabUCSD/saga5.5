@@ -1,0 +1,1 @@
+      common /pic/ vdim,hdim,h2dim,rlo,zlo,zfac,rfac

@@ -1,0 +1,67 @@
+c: gen1_com
+      common /geo_com/ rhorat(NLMAX),zduct(NLMAX),
+     .   rholay(2),cpfake(2),f_hz,w,wsq,kw,kw0,cref,phtot,
+     .   cfmin,csmin,crmax,kcrmin,cphlo,cphhi,rho_duct
+      real*8 rhorat,zduct,rholay,cpfake,f_hz,w,wsq,kw,kw0,cref,
+     .   phtot,cfmin,csmin,crmax,kcrmin,cphlo,cphhi,rho_duct
+c hp      common /geo_com1/ gami(3,2,NLMAX),beti(3,2,NLMAX),xk(2,NLMAX),
+      common /geo_com1/ xk(2,NLMAX),
+     .   xksq(2,NLMAX),eta(NLMAX),etasq(NLMAX), xkh,xkhsq
+c      complex*16 eta,etasq
+      real*8 xkh,xkhsq,xk,xksq,eta,etasq
+      common /geo_com2/ isp(NLMAX),iss(NLMAX),iisol(NLMAX),
+     .   mm(NLMAX),jflu(2,5),jsol(2,2),jduct(5,25),
+     .   jhsp(2),jlfake(2),allf(2),nhigh,nduct,
+     .   nsvmin,nsvmin0,isvmin,kduct,kduct0,jsurf,jobot
+      integer*4 isp,iss,iisol,mm,jflu,jsol,jduct,jhsp,jlfake,
+     .   allf,nhigh,nduct,nsvmin,
+     .   nsvmin0,isvmin,kduct,kduct0,jsurf,jobot
+ccc
+      common /zsr_com/ nzmx(NVRMAX*NSRMAX),
+     .   jzmx(NVRMAX*NSRMAX),mx_m(NVRMAX*NSRMAX),ncalc(NM_MAX),
+     .   jsr2j(NVRMAX*NSRMAX),jsrmx(NVRMAX*NSRMAX),nctot,nzmxtot,nrecg
+      integer*4 nzmx,nzmxtot,jzmx,mx_m,nctot,ncalc,jsr2j,
+     .          jsrmx,nrecg
+c       common /zsr_com2/ 
+c      .   xi(NVRMAX),ai(NVRMAX),aip(NVRMAX),bi(NVRMAX),bip(NVRMAX),
+c      .   zzexp(NVRMAX),zmx(NVRMAX),kim_min,kim_max,
+      common /zsr_com2/ 
+     .   zmx(NVRMAX),kim_min,kim_max,
+     .   kim_fac,dkim
+      real*8 zmx,kim_min,kim_max,kim_fac,dkim
+c      complex*16 xi,ai,aip,bi,bip,zzexp
+c      real*8 xi,ai,aip,bi,bip,zzexp
+      common /phz_com/
+     .   zetalay(2,2,NLMAX),philay(2,NLMAX),dphilay(2,NLMAX),
+     .   ailay(2,2,2,NLMAX),bilay(2,2,2,NLMAX)
+      complex*16 zetalay,philay,dphilay
+      real*8 ailay,bilay
+      common /phz_com1a/ Aplay(2,NLMAX)
+      real*8 Aplay
+ccc
+      common /rx_com1a/ g11(6,2,NLMAX),g12(6,2,NLMAX),
+     .   g21(6,2,NLMAX),g22(6,2,NLMAX),g_exp(6,NLMAX),
+     .   h11(6,2,NLMAX),h12(6,2,NLMAX),h21(6,2,NLMAX),h22(6,2,NLMAX),
+     .   h_exp(6,NLMAX),u11(6,NLMAX),u12(6,NLMAX),u21(6,NLMAX),
+     .   u22(6,NLMAX),u_exp(6,NLMAX)
+      real*8 g11,g12,g21,g22,g_exp,h11,h12,h21,h22,
+     .   h_exp,u11,u12,u21,u22,u_exp
+      common /rx_com1b/ ekn(6,0:NM_MAX),rho_prod(2,NLMAX),
+     .   xilay(2,NLMAX),rhofac(NLMAX),am(NLMAX),bm(NLMAX),
+     .   betm(NLMAX),gm(NLMAX),rhom(NLMAX),cspan(0:25),
+     .   cduct(25),migam2(6),ccr_lo,ccr_hi,dk_max,dk_max0,
+     .   jlayx(25),indx_duct(25),dz_duct(25)
+      integer*4 indx_duct
+      real*8 ekn,rho_prod,xilay,rhofac,dz_duct,
+     .   am,bm,betm,gm,rhom,cspan,cduct,migam2,ccr_lo,ccr_hi,
+     .   dk_max,dk_max0
+cc fbv      common /rx_com1c/ iia1b1(NLMAX),jl2jd(NLMAX),
+      common /rx_com1c/ jl2jd(NLMAX),
+     .   jmlink(NM_MAX),jlwz(NLMAX*NVRMAX),jval(2,25),
+     .   nlwz(NLMAX*NVRMAX),ndrx,nm_miss,nzoff
+      integer*4 jl2jd,jmlink,jlwz,jval,
+cc fbv      integer*4 iia1b1,jl2jd,jmlink,jlwz,jval,
+     .   ndrx,nlwz,nm_miss,nzoff,jlayx
+ccc
+      common /rx_com2/ rx_r1r2(6),R1(6),R2(6),TC1(6),TC2(6),Wr(6)
+      complex*16 rx_r1r2,R1,R2,TC1,TC2,Wr

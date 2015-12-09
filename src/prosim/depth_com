@@ -1,0 +1,6 @@
+c: depth_com
+c: OUTPUT VARIABLES:
+      common /deptsec/ secz(RGMAX), secleng(RGMAX),
+     .                 zsx2old(NVRMAX), nrecold
+      real*8 secz,secleng, zsx2old
+      integer*4 nrecold

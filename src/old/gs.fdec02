@@ -1,0 +1,329 @@
+c vfsa.f sa using very fast simulated annealing
+c     Peter Gerstoft 02
+      subroutine gibs
+      include 'comopt.h'
+      real ppd1(mpar,mdig), ppd2(mpar,mdig), f1(mpar), f2(mpar)
+      real eps,nye,tot
+      integer iloop,i , jp,ii
+
+      nppd=50
+      nye=9.5E-8*20  ! this is the noise (sspmisa) 
+c      nye=1.34E-06*20  ! this is the noise
+      nye=1.0/(100+ 20 +1)  !  sdc case (normalization with b)
+      iforwt=0
+
+      do ii=1,1
+c      nye=nye/2**(ii-1)
+      do i=1,nparm
+         do jp=1,nppd
+            ppd1(i,jp)=0
+            ppd2(i,jp)=0
+         enddo
+      enddo
+
+      call getmodelreal(f1)
+      
+      call getmodelreal(f2)
+      write(*,*)' first call', f1(1)
+
+      do Iloop=1,10000
+         write(*,*)'calling first sampling', iloop
+         call gs(f1,ppd1,nye)
+         write(*,*)'calling 2nd sampling', iloop
+         call gs(f2,ppd2,nye)
+         call gsconv(ppd1,ppd2,eps)
+         if (eps.le. 0.05) then 
+            goto 1000
+         endif
+      enddo
+ 1000 continue
+
+      do i=1,nparm
+         tot=0 
+         do jp=1,nppd
+            ppd1(i,jp)=ppd1(i,jp)+ppd2(i,jp)
+            tot= tot +ppd1(i,jp)
+         enddo
+         do jp=1,nppd
+            ppd1(i,jp)=ppd1(i,jp)/tot
+         enddo
+      enddo
+         do jp=1,nppd
+            write(90,'(10e14.4)') (ppd1(i,jp),i=1,nparm)
+         enddo
+      enddo
+
+      write(*,*)'number of forward modelling calls',iforwt
+      write(*,*)' End of Gibs'
+
+      end
+c**********************************
+
+      subroutine gsconv(ppd1,ppd2,epsmax)
+      include 'comopt.h'
+      real ppd1(mpar,mdig), ppd2(mpar,mdig),eps,epsmax
+      real diff1,tot
+      integer i, jp, imax
+      epsmax=0
+      do i=1,nparm
+         diff1=0
+         tot=0
+         do jp=1,nppd
+            diff1=diff1+abs(ppd1(i,jp)-ppd2(i,jp))
+            tot=tot+ppd1(i,jp)+ppd2(i,jp)
+            write(91,*)jp,ppd1(i,jp), ppd2(i,jp)
+         enddo
+         if (tot.eq.0) then
+            stop ' gs: gaconv all pdp is zero'
+         endif
+         eps=(diff1/tot)*2
+         if (eps.ge.epsmax) then
+            epsmax=eps 
+            imax=i
+         endif
+         write(91,*)i,eps
+      enddo
+
+       write(*,*) ' eps ', eps,imax
+
+      end
+c*************************
+      subroutine gs(fopt,ppd,nye)
+      include 'comopt.h'
+      real ppd(mpar,mdig),fopt(mpar),nye
+c	parameter (mpar=2)
+c	common /amod/nparam,xmin(mpar),xmax(mpar),dx(mpar),t0(mpar),
+c     .               nx(mpar)
+
+    
+      integer i,jmov,jtemp,jj,jruns,maxtemps,nmov
+      real temp,tmp(mpar)
+      real e,ebest,arg, etry
+      real eold,fold(mpar),fbest(mpar)  !,ftemp(mpar)
+c functions
+      real gswalk,ran2,boxwalk
+
+      real pde,decay
+      integer ibest,id
+
+c simple plotting of sampling & histogram of result
+c function is func in subroutine error.f
+
+
+c      Write(*,*)' --- Using very fast simulated annealing --- '  
+
+c-----------------------------------------------------------------
+
+c VFSA
+
+c plot the function, the temperature for the probability is templt
+c        nruns=1
+	do jruns=1,1   !,npop
+c initial random guess at xmod, ymod
+c & get emod, the initial error
+
+c	   do i=1,nparm
+c	      f(i)=
+c     &      sample((fmin(i)+fmax(i))/2,df(i),ndigit(i),fmin(i),fmax(i))
+c	   enddo
+
+	   call setmodelreal(fopt)
+	   call forw2
+           iforwt=iforwt+1
+	   call cost(e)
+           EBEST=E
+           DO JJ=1,Nparm
+              FBEST(JJ)=Fopt(JJ)
+           ENDDO
+c           write(*,*)' starting parameters',(fopt(i),i=1,nparm),
+c     !      '  and energy',e
+c           write(97,*)e,f(1),f(2),f(1),f(2),fbest(1),fbest(2)
+ 
+      decay = 1.0
+      nmov=nparm 
+      temp0=nye
+      maxtemps=niter
+c      WRITE(prtfil,*)' decay    ',decay
+c      WRITE(prtfil,*)' temp     ', temp0
+c      WRITE(prtfil,*)' nmov     ', nmov
+c      WRITE(prtfil,*)' maxtemps ', maxtemps
+c      WRITE(prtfil,*)' Niter    ',Niter
+        if (temp0.le.0) then
+          write(*,*)'temperature less than zero',temp0
+          stop
+        endif
+
+    
+	do jtemp=1,maxtemps
+
+c initialize tempratures
+	   temp   = temp0   !*exp(-decay*(jtemp-1)**(1./nparm))
+	   do i=1,nparm 
+	      tmp(i) = 1 ! temp0 !*exp(-decay*(jtemp-1)**(1./nparm))
+           enddo
+
+	   do jmov=1,nmov   ! metropolis
+
+c try a discrete random walk for xmod & ymod
+c & get etrial, the new error
+        
+              eold=e
+              do i=1,nparm
+                 fold(i)=fopt(i)
+              enddo
+              if (isubopt(4).eq.0) then
+		 fopt(jmov)=boxwalk(fold(jmov),df(jmov)
+     1                         ,fmin(jmov),fmax(jmov),tmp(jmov))
+              else
+	        do i=1,nparm
+		  fopt(i)=boxwalk(fold(i),df(i),fmin(i),fmax(i),tmp(i))
+	        enddo
+              endif
+c            write(*,*)'parameters',(fopt(i),i=1,nparm)
+c            write(*,*)fopt(1),fold(1),df(1),fmin(1),fmax(1),tmp(1)
+c              pause
+	      call setmodelreal(fopt)
+	      call forw2
+	      call cost(e)
+              iforwt=iforwt+1
+c              write(*,*)'new energy',e
+c              ftemp(1)=fopt(1)
+c              ftemp(2)=fopt(2)
+	
+c if e < eold, accept the new model
+c but,if e > eold compute Boltzann 
+              if(e.gt.eold) then
+
+c ? accept even though etrial > emod
+                 arg=(e-eold)/temp
+                 if(arg .gt. 1.e6) then
+                    pde = 0.001
+                 else
+                    pde = exp(-arg)
+                 endif
+		   
+                 if(pde.lt.ran2(1)) then
+c move rejected;    revert to old solution
+c		      write(*,*)' move rejected'
+                      etry=e
+		      E=EOLD 
+                      do i=1,nparm
+                         Fopt(i)=fOLD(i)
+                      enddo
+                   endif
+                end if
+c 1000		continue
+
+          id=1+(fopt(jmov)-fmin(jmov))/(fmax(jmov)-fmin(jmov))*nppd
+c       write(80,*)jmov,iforwt,fopt(jmov),id,etry,e,nye,exp(-e/nye)
+          ppd(jmov,id)= ppd(jmov,id)+exp(-e/nye)
+
+          IF(E.LT.EBEST)THEN
+             WRITE(60,'(1x,I7,I7,G12.5,100f12.2)')
+     &            jruns,iforwt,e,(fopt(jj),jj=1,nparm)
+c             WRITE(*,*)'   **** NEW BEST ENERGY ****'
+             EBEST=E
+             IBEST=jtemp
+             DO JJ=1,Nparm
+                FBEST(JJ)=Fopt(JJ)
+             ENDDO
+             WRITE(prtfil,*)jtemp,Ebest
+             WRITE(prtfil,*)jtemp,(f(jj),jj=1,nparm)
+c             WRITE(*,*)jtemp,temp,iforwt,ebest
+c             WRITE(*,*)(f(jj),jj=1,nparm)
+          END IF
+c      write(97,*)e,ftemp(1),ftemp(2),f(1),f(2),fbest(1),fbest(2)
+
+c         if ((jtemp.eq.1).and.(jruns.eq.1).and.(jmov.eq.nmov)) then
+c          CALL rdtime(t1)
+c          WRITE(prtfil,320) t1*(maxtemps*nmov*npop)/nmov
+c          WRITE(*,320) t1*(maxtemps*nmov*npop)/nmov
+c 320      FORMAT(/1H ,' >>> Estimated serial Inversion time: ',
+c     1                F12.1,' secs.')
+c        endif
+
+	  enddo ! metropolis step
+	enddo ! temperature loop
+
+
+c      write(*,*)' Best energy & parameters'
+c      WRITE(*,*)EBEST,IBEST
+      DO 12 Jj=1,Nparm
+c        WRITE(*,*)Jj,FBEST(Jj)
+        WRITE(prtfil,*)Jj,FBEST(jJ)
+   12 CONTINUE
+        write(92,'(10e14.4)') ebest,(FBEST(jJ),jj=1,Nparm)
+
+	enddo ! 
+
+	end	
+
+	real function gswalk(xmod,dx,xmin,xmax,tmp)
+        real xmod,dx,xmin,xmax,tmp
+c--- local variables
+        real ran2
+        real arand,ayy,dif,xmod1,yy,pwr
+        integer ntry
+
+c	generate a new state following Ingber ----
+
+	ntry = 1
+123	continue
+
+	arand = ran2(1)
+	ayy = 0.0
+	dif = arand - 0.5
+	if (dif.lt.0.0) ayy = -1.0
+	if (dif.ge.0.0) ayy = +1.0
+
+	pwr = abs(2*arand-1.)
+	yy = ayy*tmp*( (1+1/tmp)**pwr - 1.)
+	xmod1 = xmod + yy*(xmax-xmin)
+
+	if (xmod1.lt.xmin.or.xmod1.gt.xmax) then
+           ntry = ntry + 1
+           if( ntry.lt.100) then
+              go to 123
+           else
+              write(*,*)'ntry=',ntry
+           end if
+	end if
+
+	gswalk = xmod1
+	return
+	end
+
+	real function boxwalk(xmod,dx,xmin,xmax,tmp)
+        real xmod,dx,xmin,xmax,tmp
+c--- local variables
+        real ran2
+        real arand,ayy,dif,xmod1,yy,pwr
+        integer ntry
+
+	ntry = 1
+123	continue
+
+c	arand = ran2(1)
+	xmod1 = xmin + ran2(1)*(xmax-xmin)
+
+	if (xmod1.lt.xmin.or.xmod1.gt.xmax) then
+           ntry = ntry + 1
+           if( ntry.lt.100) then
+              go to 123
+           else
+              write(*,*)'ntry=',ntry
+           end if
+	end if
+
+	boxwalk = xmod1
+	return
+	end
+
+
+
+
+	
+
+	
+	
+

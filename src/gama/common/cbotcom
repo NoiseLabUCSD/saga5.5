@@ -1,0 +1,7 @@
+      common /cbotcom/ nx_p2(44),nx_s1(44),nx_s2(44),ny_p1(44),
+     .   ny_s2(44),ny_s1(44),mratx(44),mraty(44),aturn(44),
+     .   cp1x(44),cp2x(44),cs1x(44),cs2x(44)
+      complex nx_p2,nx_s1,nx_s2,ny_p1,ny_s2,ny_s1
+      real mratx,mraty
+cxx      common /cbotcom/ ccp1(-2:43),ccp2(-2:42),ccs1(-2:43), 
+cxx     .   ccs2(-2:42)

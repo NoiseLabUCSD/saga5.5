@@ -1,0 +1,5125 @@
+ Running SAGA version 5.4, February 2007
+  Reading input line for Metropolis-Hastings sampling
+ numh,epsstop,epscov,kgrow,rankCd
+   1.000000      7.0000000E-02  0.1000000       1.000000       30.00000    
+  out of plane array
+  The x array coordinate is read from file
+ reading nfrq...
+ nfrq=  3 maxmode= 100
+ frequencies:   195.000   295.000   395.000
+  hw=   105.354000000000     
+  Water speed profile:
+           1  0.000000000000000E+000   1527.68750000000     
+           2   2.15300000000000        1527.60810000000     
+           3   4.30600000000000        1527.49420000000     
+           4   6.45900000000000        1527.36480000000     
+           5   8.61200000000000        1527.22650000000     
+           6   10.7650000000000        1526.90870000000     
+           7   12.9180000000000        1526.74480000000     
+           8   15.0710000000000        1526.70030000000     
+           9   17.2240000000000        1526.37720000000     
+          10   19.3780000000000        1525.73900000000     
+          11   21.5310000000000        1524.92830000000     
+          12   23.6840000000000        1523.78700000000     
+          13   25.8370000000000        1523.24410000000     
+          14   27.9900000000000        1523.01570000000     
+          15   30.1430000000000        1522.37300000000     
+          16   32.2960000000000        1521.95380000000     
+          17   34.4490000000000        1522.00940000000     
+          18   36.6020000000000        1522.11100000000     
+          19   38.7550000000000        1522.25520000000     
+          20   40.9080000000000        1521.18770000000     
+          21   43.0610000000000        1520.89370000000     
+          22   45.2140000000000        1520.49960000000     
+          23   47.3670000000000        1520.67120000000     
+          24   49.5200000000000        1521.00520000000     
+          25   51.6730000000000        1520.95570000000     
+          26   53.8270000000000        1521.04780000000     
+          27   55.9800000000000        1521.05820000000     
+          28   58.1330000000000        1521.06410000000     
+          29   60.2860000000000        1520.90590000000     
+          30   62.4390000000000        1520.69810000000     
+          31   64.5920000000000        1520.33290000000     
+          32   66.7450000000000        1520.07520000000     
+          33   68.8980000000000        1519.75150000000     
+          34   71.0510000000000        1519.26770000000     
+          35   73.2040000000000        1519.08040000000     
+          36   75.3570000000000        1519.10730000000     
+          37   77.5100000000000        1519.11980000000     
+          38   79.6630000000000        1519.15020000000     
+          39   81.8160000000000        1519.17960000000     
+          40   83.9690000000000        1519.20020000000     
+          41   86.1220000000000        1519.24250000000     
+          42   88.2760000000000        1519.27360000000     
+          43   90.4290000000000        1519.31260000000     
+          44   92.5820000000000        1519.34450000000     
+          45   94.7350000000000        1519.39710000000     
+          46   96.8880000000000        1519.44650000000     
+          47   99.0410000000000        1519.49720000000     
+          48   101.194000000000        1519.54950000000     
+          49   103.347000000000        1519.60390000000     
+          50   105.354000000000        1519.66060000000     
+  h_sed =   9.52800000000000     
+  Sediment speed profile:
+           1  0.000000000000000E+000   1600.00000000000     
+           2   9.52800000000000        1800.00000000000     
+  Points in sediment:           2
+  Bottom parameters:
+  Dens:   2.40 P-att:  0.0100 P-vel:   1800.00
+  S-att:  0.0000 S-vel:     0.00
+ 
+ MSOURCE F
+ source depths:   48.32300    
+  Reading array coordinates
+  initial array param:  0.0000000E+00   1.315000      0.0000000E+00
+  -6.024000      0.0000000E+00
+  Elements in cov-matrix:         675
+ Read EOF point       1       3       1
+ Read EOF point       2       3       2
+ Read EOF point       3      12       1
+ Read EOF point       4       2       1
+ Read EOF point       5       2       2
+ Read EOF point       6       2       3
+ Read EOF point       7       2       4
+ Read EOF point       8       2       5
+ Read EOF point       9       2       6
+ Read EOF point      10       2       7
+ Read EOF point      11       2       8
+ Read EOF point      12       2       9
+ Read EOF point      13       2      10
+ Read EOF point      14       2      11
+ Read EOF point      15       2      12
+ Read EOF point      16       2      13
+ Read EOF point      17       2      14
+ Read EOF point      18       2      15
+ Read EOF point      19       2      16
+ Read EOF point      20       2      17
+ Read EOF point      21       2      18
+ Read EOF point      22       2      19
+ Read EOF point      23       2      20
+ Read EOF point      24       2      21
+ Read EOF point      25       2      22
+ Read EOF point      26       2      23
+ Read EOF point      27       2      24
+ Read EOF point      28       2      25
+ Read EOF point      29       2      26
+ Read EOF point      30       2      27
+ Read EOF point      31       2      28
+ Read EOF point      32       2      29
+ Read EOF point      33       2      30
+ Read EOF point      34       2      31
+ Read EOF point      35       2      32
+ Read EOF point      36       2      33
+ Read EOF point      37       2      34
+ Read EOF point      38       2      35
+ Read EOF point      39       2      36
+ Read EOF point      40       2      37
+ Read EOF point      41       2      38
+ Read EOF point      42       2      39
+ Read EOF point      43       2      40
+ Read EOF point      44       2      41
+ Read EOF point      45       2      42
+ Read EOF point      46       2      43
+ Read EOF point      47       2      44
+ Read EOF point      48       2      45
+ Read EOF point      49       2      46
+ Read EOF point      50       2      47
+ Read EOF point      51       2      48
+ Read EOF point      52       2      49
+ Read EOF point      53       2      50
+          53  eof points read in
+  Block           1 is read in. Total blocks:           2
+  Block           2 is read in. Total blocks:           2
+  Reading starting coefficints....
+  
+   Reading search intervals...
+ 
+  Should modes be calculated (1=Yes,0=NO)?            1
+ 
+ Size of the search space: 10** 27.39
+ allocating cov matrix
+  Reading covariance matrix
+  skipping cov mat for freq:   95.00000    
+  using    cov mat for freq   195.0000    
+  Largest SVD: (329.3045,0.0000000E+00)
+  Second SVD: (12.45291,0.0000000E+00)
+  Noise SVD:   1.59753330573381     
+ estimated SNR from cov matrix:     23.12
+  The covariance matrix is renormalized
+ ...renormalized with xnorm    351.669872760773     
+  using    cov mat for freq   295.0000    
+  Largest SVD: (460.2436,0.0000000E+00)
+  Second SVD: (18.99361,0.0000000E+00)
+  Noise SVD:   1.65313003573178     
+ estimated SNR from cov matrix:     24.43
+  The covariance matrix is renormalized
+ ...renormalized with xnorm    483.387362957001     
+  using    cov mat for freq   395.0000    
+  Largest SVD: (195.8874,0.0000000E+00)
+  Second SVD: (21.20485,0.0000000E+00)
+  Noise SVD:   1.72693851880464     
+ estimated SNR from cov matrix:     20.51
+  The covariance matrix is renormalized
+ ...renormalized with xnorm    220.064473867416     
+  readcov, cov (4.1282326E-02,0.0000000E+00) (0.2369537,0.0000000E+00)
+  ... in-file read
+  uses snap as forward model
+ maxnomode,moden         100         112
+ maxnomode,moden         100         112
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ 
+  initial fitness  0.1517907    
+ calling Metropolis-Hastings module...
+  .... SAGA Metropolis-Hastings sampling module ....
+  Stop criteria, eps  7.0000000E-02
+  Rotation is done for eps  0.1000000    
+ 
+  first call  0.2508580    
+  Loop number           1
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ freq,number of modes           1          12
+ freq,number of modes           2          17
+ freq,number of modes           3          23
+ accept/reject         744        1752
+ accept/reject         770        1726
+ iforwt        2497
+  correlation eps   0.7426043    
+  conv eps      1.556891               8
+  Loop number           2
+ accept/reject         757        1739
+ accept/reject         749        1747
+ iforwt        4994
+  correlation eps   0.7072558    
+  conv eps      1.300080               6
+ ESTIMATED additional number of runs           5           5
+  Loop number           3
+ accept/reject         772        1724
+ accept/reject         897        1599
+ iforwt        7491
+  correlation eps   0.6384791    
+  conv eps      1.533387               6
+ ESTIMATED additional number of runs         125         125
+  Loop number           4
+ accept/reject         794        1702
+ accept/reject         729        1767
+ iforwt        9988
+  correlation eps   0.5579913    
+  conv eps      1.483373               6
+ ESTIMATED additional number of runs       -1107       -1107
+  Loop number           5
+ accept/reject         814        1682
+ accept/reject         847        1649
+ iforwt       12485
+  correlation eps   0.2926224    
+  conv eps      1.370833               6
+ ESTIMATED additional number of runs          69          69
+  Loop number           6
+ accept/reject         875        1621
+ accept/reject         840        1656
+ iforwt       14982
+  correlation eps   0.3884206    
+  conv eps      1.177083               6
+ ESTIMATED additional number of runs          23          23
+  Loop number           7
+ accept/reject         828        1668
+ accept/reject         853        1643
+ iforwt       17479
+  correlation eps   0.4177355    
+  conv eps      1.006525               6
+ ESTIMATED additional number of runs          13          13
+  Loop number           8
+ accept/reject         788        1708
+ accept/reject         805        1691
+ iforwt       19976
+  correlation eps   0.4289412    
+  conv eps     0.9539263               6
+ ESTIMATED additional number of runs          11          11
+  Loop number           9
+ accept/reject         834        1662
+ accept/reject         765        1731
+ iforwt       22473
+  correlation eps   0.3418431    
+  conv eps     0.9717771               6
+ ESTIMATED additional number of runs          12          12
+  Loop number          10
+ accept/reject         768        1728
+ accept/reject         794        1702
+ iforwt       24970
+  correlation eps   0.2997270    
+  conv eps     0.8514423               6
+ ESTIMATED additional number of runs          10          10
+  Loop number          11
+ accept/reject         806        1690
+ accept/reject         839        1657
+ iforwt       27467
+  correlation eps   0.3187119    
+  conv eps     0.7282197               6
+ ESTIMATED additional number of runs           9          10
+  Loop number          12
+ accept/reject         737        1759
+ accept/reject         851        1645
+ iforwt       29964
+  correlation eps   0.2356711    
+  conv eps     0.6680689               6
+ ESTIMATED additional number of runs           8           9
+  Loop number          13
+ accept/reject         827        1669
+ accept/reject         855        1641
+ iforwt       32461
+  correlation eps   0.2050123    
+  conv eps     0.7304611               6
+ ESTIMATED additional number of runs           9          11
+  Loop number          14
+ accept/reject         796        1700
+ accept/reject         920        1576
+ iforwt       34958
+  correlation eps   0.1592651    
+  conv eps     0.7251602               6
+ ESTIMATED additional number of runs           9          14
+  Loop number          15
+ accept/reject         808        1688
+ accept/reject         844        1652
+ iforwt       37455
+  correlation eps   0.1809188    
+  conv eps     0.7872329               6
+ ESTIMATED additional number of runs          11          25
+  Loop number          16
+ accept/reject         736        1760
+ accept/reject         859        1637
+ iforwt       39952
+  correlation eps   0.1760667    
+  conv eps     0.7873598               6
+ ESTIMATED additional number of runs          12          39
+  Loop number          17
+ accept/reject         746        1750
+ accept/reject         728        1768
+ iforwt       42449
+  correlation eps   0.1475172    
+  conv eps     0.7328432               6
+ ESTIMATED additional number of runs          12         306
+  Loop number          18
+ accept/reject         794        1702
+ accept/reject         853        1643
+ iforwt       44946
+  correlation eps   0.1445973    
+  conv eps     0.6412037               6
+ ESTIMATED additional number of runs          11          65
+  Loop number          19
+ accept/reject         781        1715
+ accept/reject         837        1659
+ iforwt       47443
+  correlation eps   0.1388744    
+  conv eps     0.5809295               6
+ ESTIMATED additional number of runs          10          51
+  Loop number          20
+ accept/reject         792        1704
+ accept/reject         813        1683
+ iforwt       49940
+  correlation eps   0.1455225    
+  conv eps     0.6143029               8
+ ESTIMATED additional number of runs          11          44
+  Loop number          21
+ accept/reject         742        1754
+ accept/reject         861        1635
+ iforwt       52437
+  correlation eps   0.1306744    
+  conv eps     0.6423611               8
+ ESTIMATED additional number of runs          12          42
+  Loop number          22
+ accept/reject         829        1667
+ accept/reject         801        1695
+ iforwt       54934
+  correlation eps   0.1399816    
+  conv eps     0.6545746               8
+ ESTIMATED additional number of runs          13          50
+  Loop number          23
+ accept/reject         697        1799
+ accept/reject         777        1719
+ iforwt       57431
+  correlation eps   0.1387347    
+  conv eps     0.6852355               8
+ ESTIMATED additional number of runs          15          47
+  Loop number          24
+ accept/reject         768        1728
+ accept/reject         793        1703
+ iforwt       59928
+  correlation eps   0.1251945    
+  conv eps     0.6668670               8
+ ESTIMATED additional number of runs          16          55
+  Loop number          25
+ accept/reject         802        1694
+ accept/reject         756        1740
+ iforwt       62425
+  correlation eps   0.1425660    
+  conv eps     0.6948397               6
+ ESTIMATED additional number of runs          17          72
+  Loop number          26
+ accept/reject         860        1636
+ accept/reject         748        1748
+ iforwt       64922
+  correlation eps   0.1548501    
+  conv eps     0.7386280               6
+ ESTIMATED additional number of runs          20         133
+  Loop number          27
+ accept/reject         693        1803
+ accept/reject         825        1671
+ iforwt       67419
+  correlation eps   0.1694121    
+  conv eps     0.7853454               6
+ ESTIMATED additional number of runs          23        1605
+  Loop number          28
+ accept/reject         720        1776
+ accept/reject         807        1689
+ iforwt       69916
+  correlation eps   0.1665723    
+  conv eps     0.7548363               6
+ ESTIMATED additional number of runs          24        -486
+  Loop number          29
+ accept/reject         839        1657
+ accept/reject         718        1778
+ iforwt       72413
+  correlation eps   0.1680741    
+  conv eps     0.6994916               6
+ ESTIMATED additional number of runs          23        -141
+  Loop number          30
+ accept/reject         711        1785
+ accept/reject         756        1740
+ iforwt       74910
+  correlation eps   0.1691771    
+  conv eps     0.7086806               6
+ ESTIMATED additional number of runs          25        -157
+  Loop number          31
+ accept/reject         746        1750
+ accept/reject         771        1725
+ iforwt       77407
+  correlation eps   0.1731736    
+  conv eps     0.7239971               6
+ ESTIMATED additional number of runs          27         -86
+  Loop number          32
+ accept/reject         820        1676
+ accept/reject         751        1745
+ iforwt       79904
+  correlation eps   0.1751263    
+  conv eps     0.7115886               6
+ ESTIMATED additional number of runs          28         -94
+  Loop number          33
+ accept/reject         891        1605
+ accept/reject         845        1651
+ iforwt       82401
+  correlation eps   0.1819381    
+  conv eps     0.7035985               6
+ ESTIMATED additional number of runs          29         -77
+  Loop number          34
+ accept/reject         773        1723
+ accept/reject         884        1612
+ iforwt       84898
+  correlation eps   0.1874307    
+  conv eps     0.6685049               6
+ ESTIMATED additional number of runs          29         -93
+  Loop number          35
+ accept/reject         871        1625
+ accept/reject         762        1734
+ iforwt       87395
+  correlation eps   0.1858634    
+  conv eps     0.6494048               6
+ ESTIMATED additional number of runs          29        -124
+  Loop number          36
+ accept/reject         851        1645
+ accept/reject         709        1787
+ iforwt       89892
+  correlation eps   0.1919953    
+  conv eps     0.6572961               6
+ ESTIMATED additional number of runs          31        -173
+  Loop number          37
+ accept/reject         786        1710
+ accept/reject         799        1697
+ iforwt       92389
+  correlation eps   0.1927594    
+  conv eps     0.6845764               6
+ ESTIMATED additional number of runs          33        -472
+  Loop number          38
+ accept/reject         781        1715
+ accept/reject         769        1727
+ iforwt       94886
+  correlation eps   0.1913197    
+  conv eps     0.6726974               6
+ ESTIMATED additional number of runs          34        -744
+  Loop number          39
+ accept/reject         765        1731
+ accept/reject         731        1765
+ iforwt       97383
+  correlation eps   0.1895688    
+  conv eps     0.6521409               6
+ ESTIMATED additional number of runs          34         516
+  Loop number          40
+ accept/reject         808        1688
+ accept/reject         796        1700
+ iforwt       99880
+  correlation eps   0.1845551    
+  conv eps     0.6385416               6
+ ESTIMATED additional number of runs          35         328
+  Loop number          41
+ accept/reject         807        1689
+ accept/reject         908        1588
+ iforwt      102377
+  correlation eps   0.1774176    
+  conv eps     0.6232215               6
+ ESTIMATED additional number of runs          35         162
+  Loop number          42
+ accept/reject         731        1765
+ accept/reject         790        1706
+ iforwt      104874
+  correlation eps   0.1774866    
+  conv eps     0.6453373               6
+ ESTIMATED additional number of runs          37         164
+  Loop number          43
+ accept/reject         765        1731
+ accept/reject         855        1641
+ iforwt      107371
+  correlation eps   0.1817796    
+  conv eps     0.6542189               6
+ ESTIMATED additional number of runs          39         133
+  Loop number          44
+ accept/reject         771        1725
+ accept/reject         808        1688
+ iforwt      109868
+  correlation eps   0.1904235    
+  conv eps     0.6604203               6
+ ESTIMATED additional number of runs          41         143
+  Loop number          45
+ accept/reject         754        1742
+ accept/reject         821        1675
+ iforwt      112365
+  correlation eps   0.1969925    
+  conv eps     0.6901888               6
+ ESTIMATED additional number of runs          45         152
+  Loop number          46
+ accept/reject         720        1776
+ accept/reject         869        1627
+ iforwt      114862
+  correlation eps   0.1952152    
+  conv eps     0.7086991               6
+ ESTIMATED additional number of runs          48         192
+  Loop number          47
+ accept/reject         714        1782
+ accept/reject         814        1682
+ iforwt      117359
+  correlation eps   0.2072226    
+  conv eps     0.7361736               6
+ ESTIMATED additional number of runs          53         221
+  Loop number          48
+ accept/reject         878        1618
+ accept/reject         790        1706
+ iforwt      119856
+  correlation eps   0.2131708    
+  conv eps     0.7525207               6
+ ESTIMATED additional number of runs          57         336
+  Loop number          49
+ accept/reject         786        1710
+ accept/reject         790        1706
+ iforwt      122353
+  correlation eps   0.2212045    
+  conv eps     0.7779794               6
+ ESTIMATED additional number of runs          63         617
+  Loop number          50
+ accept/reject         791        1705
+ accept/reject         794        1702
+ iforwt      124850
+  correlation eps   0.2270908    
+  conv eps     0.8024199               6
+ ESTIMATED additional number of runs          69       23709
+  Loop number          51
+ accept/reject         766        1730
+ accept/reject         777        1719
+ iforwt      127347
+  correlation eps   0.2251471    
+  conv eps     0.8057598               6
+ ESTIMATED additional number of runs          74        -551
+  Loop number          52
+ accept/reject         855        1641
+ accept/reject         788        1708
+ iforwt      129844
+  correlation eps   0.2220811    
+  conv eps     0.8114984               6
+ ESTIMATED additional number of runs          79        -349
+  Loop number          53
+ accept/reject         806        1690
+ accept/reject         833        1663
+ iforwt      132341
+  correlation eps   0.2219018    
+  conv eps     0.8084936               6
+ ESTIMATED additional number of runs          83        -198
+  Loop number          54
+ accept/reject         745        1751
+ accept/reject         848        1648
+ iforwt      134838
+  correlation eps   0.2192526    
+  conv eps     0.8271605               6
+ ESTIMATED additional number of runs          91        -176
+  Loop number          55
+ accept/reject         828        1668
+ accept/reject         815        1681
+ iforwt      137335
+  correlation eps   0.2099102    
+  conv eps     0.8157926               6
+ ESTIMATED additional number of runs          95        -136
+  Loop number          56
+ accept/reject         843        1653
+ accept/reject         741        1755
+ iforwt      139832
+  correlation eps   0.2091966    
+  conv eps     0.8202410               6
+ ESTIMATED additional number of runs         101        -131
+  Loop number          57
+ accept/reject         793        1703
+ accept/reject         828        1668
+ iforwt      142329
+  correlation eps   0.2106784    
+  conv eps     0.8274151               6
+ ESTIMATED additional number of runs         108        -118
+  Loop number          58
+ accept/reject         826        1670
+ accept/reject         900        1596
+ iforwt      144826
+  correlation eps   0.2069536    
+  conv eps     0.8189655               6
+ ESTIMATED additional number of runs         113        -116
+  Loop number          59
+ accept/reject         732        1764
+ accept/reject         796        1700
+ iforwt      147323
+  correlation eps   0.2085903    
+  conv eps     0.8034958               6
+ ESTIMATED additional number of runs         117        -107
+  Loop number          60
+ accept/reject         783        1713
+ accept/reject         819        1677
+ iforwt      149820
+  correlation eps   0.2083793    
+  conv eps     0.8108307               6
+ ESTIMATED additional number of runs         124        -110
+  Loop number          61
+ accept/reject         736        1760
+ accept/reject         873        1623
+ iforwt      152317
+  correlation eps   0.2108182    
+  conv eps     0.7955943               6
+ ESTIMATED additional number of runs         128        -102
+  Loop number          62
+ accept/reject         751        1745
+ accept/reject         763        1733
+ iforwt      154814
+  correlation eps   0.2113973    
+  conv eps     0.7827621               6
+ ESTIMATED additional number of runs         131        -106
+  Loop number          63
+ accept/reject         814        1682
+ accept/reject         815        1681
+ iforwt      157311
+  correlation eps   0.2127500    
+  conv eps     0.7730846               6
+ ESTIMATED additional number of runs         134        -104
+  Loop number          64
+ accept/reject         805        1691
+ accept/reject         686        1810
+ iforwt      159808
+  correlation eps   0.2147557    
+  conv eps     0.7922551               6
+ ESTIMATED additional number of runs         144        -112
+  Loop number          65
+ accept/reject         807        1689
+ accept/reject         744        1752
+ iforwt      162305
+  correlation eps   0.2134104    
+  conv eps     0.7994576               6
+ ESTIMATED additional number of runs         152        -111
+  Loop number          66
+ accept/reject         768        1728
+ accept/reject         793        1703
+ iforwt      164802
+  correlation eps   0.2128723    
+  conv eps     0.8176476               6
+ ESTIMATED additional number of runs         164        -117
+  Loop number          67
+ accept/reject         754        1742
+ accept/reject         866        1630
+ iforwt      167299
+  correlation eps   0.2148000    
+  conv eps     0.8348283               6
+ ESTIMATED additional number of runs         178        -118
+  Loop number          68
+ accept/reject         790        1706
+ accept/reject         820        1676
+ iforwt      169796
+  correlation eps   0.2144890    
+  conv eps     0.8422182               6
+ ESTIMATED additional number of runs         190        -121
+  Loop number          69
+ accept/reject         738        1758
+ accept/reject         832        1664
+ iforwt      172293
+  correlation eps   0.2194632    
+  conv eps     0.8365036               6
+ ESTIMATED additional number of runs         199        -123
+  Loop number          70
+ accept/reject         758        1738
+ accept/reject         789        1707
+ iforwt      174790
+  correlation eps   0.2192851    
+  conv eps     0.8245535               6
+ ESTIMATED additional number of runs         206        -125
+  Loop number          71
+ accept/reject         842        1654
+ accept/reject         792        1704
+ iforwt      177287
+  correlation eps   0.2173064    
+  conv eps     0.8206595               6
+ ESTIMATED additional number of runs         215        -129
+  Loop number          72
+ accept/reject         795        1701
+ accept/reject         866        1630
+ iforwt      179784
+  correlation eps   0.2118684    
+  conv eps     0.8317419               6
+ ESTIMATED additional number of runs         229        -135
+  Loop number          73
+ accept/reject         845        1651
+ accept/reject         712        1784
+ iforwt      182281
+  correlation eps   0.2126650    
+  conv eps     0.8153539               6
+ ESTIMATED additional number of runs         235        -136
+  Loop number          74
+ accept/reject         842        1654
+ accept/reject         754        1742
+ iforwt      184778
+  correlation eps   0.2120023    
+  conv eps     0.8043356               6
+ ESTIMATED additional number of runs         241        -142
+  Loop number          75
+ accept/reject         808        1688
+ accept/reject         775        1721
+ iforwt      187275
+  correlation eps   0.2108064    
+  conv eps     0.7936111               6
+ ESTIMATED additional number of runs         246        -150
+  Loop number          76
+ accept/reject         752        1744
+ accept/reject         794        1702
+ iforwt      189772
+  correlation eps   0.2083698    
+  conv eps     0.7749452               6
+ ESTIMATED additional number of runs         247        -158
+  Loop number          77
+ accept/reject         830        1666
+ accept/reject         831        1665
+ iforwt      192269
+  correlation eps   0.2141785    
+  conv eps     0.7648810               6
+ ESTIMATED additional number of runs         249        -179
+  Loop number          78
+ accept/reject         804        1692
+ accept/reject         803        1693
+ iforwt      194766
+  correlation eps   0.2167697    
+  conv eps     0.7550748               6
+ ESTIMATED additional number of runs         251        -196
+  Loop number          79
+ accept/reject         796        1700
+ accept/reject         850        1646
+ iforwt      197263
+  correlation eps   0.2226214    
+  conv eps     0.7443302               6
+ ESTIMATED additional number of runs         251        -241
+  Loop number          80
+ accept/reject         791        1705
+ accept/reject         774        1722
+ iforwt      199760
+  correlation eps   0.2223183    
+  conv eps     0.7350261               6
+ ESTIMATED additional number of runs         251        -273
+  Loop number          81
+ accept/reject         872        1624
+ accept/reject         770        1726
+ iforwt      202257
+  correlation eps   0.2088798    
+  conv eps     0.7028530               6
+ ESTIMATED additional number of runs         240        -408
+  Loop number          82
+ accept/reject         801        1695
+ accept/reject         786        1710
+ iforwt      204754
+  correlation eps   0.1950612    
+  conv eps     0.6911351               6
+ ESTIMATED additional number of runs         235        -551
+  Loop number          83
+ accept/reject         796        1700
+ accept/reject         860        1636
+ iforwt      207251
+  correlation eps   0.2005471    
+  conv eps     0.7067791               6
+ ESTIMATED additional number of runs         243       -1640
+  Loop number          84
+ accept/reject         767        1729
+ accept/reject         857        1639
+ iforwt      209748
+  correlation eps   0.2033402    
+  conv eps     0.7221745               6
+ ESTIMATED additional number of runs         251       -3848
+  Loop number          85
+ accept/reject         774        1722
+ accept/reject         863        1633
+ iforwt      212245
+  correlation eps   0.2097575    
+  conv eps     0.7372078               6
+ ESTIMATED additional number of runs         261        1667
+  Loop number          86
+ accept/reject         807        1689
+ accept/reject         839        1657
+ iforwt      214742
+  correlation eps   0.2095474    
+  conv eps     0.7304990               6
+ ESTIMATED additional number of runs         262        1244
+  Loop number          87
+ accept/reject         851        1645
+ accept/reject         889        1607
+ iforwt      217239
+  correlation eps   0.2115813    
+  conv eps     0.7221025               6
+ ESTIMATED additional number of runs         262         589
+  Loop number          88
+ accept/reject         833        1663
+ accept/reject         819        1677
+ iforwt      219736
+  correlation eps   0.2167359    
+  conv eps     0.7134233               6
+ ESTIMATED additional number of runs         261         521
+  Loop number          89
+ accept/reject         872        1624
+ accept/reject         875        1621
+ iforwt      222233
+  correlation eps   0.2167299    
+  conv eps     0.7052903               6
+ ESTIMATED additional number of runs         259         365
+  Loop number          90
+ accept/reject         776        1720
+ accept/reject         850        1646
+ iforwt      224730
+  correlation eps   0.2144252    
+  conv eps     0.7012731               6
+ ESTIMATED additional number of runs         259         341
+  Loop number          91
+ accept/reject         839        1657
+ accept/reject         786        1710
+ iforwt      227227
+  correlation eps   0.2090110    
+  conv eps     0.6873151               6
+ ESTIMATED additional number of runs         254         266
+  Loop number          92
+ accept/reject         756        1740
+ accept/reject         791        1705
+ iforwt      229724
+  correlation eps   0.1982940    
+  conv eps     0.6641757               6
+ ESTIMATED additional number of runs         243         239
+  Loop number          93
+ accept/reject         825        1671
+ accept/reject         747        1749
+ iforwt      232221
+  correlation eps   0.1904741    
+  conv eps     0.6602134               6
+ ESTIMATED additional number of runs         241         202
+  Loop number          94
+ accept/reject         793        1703
+ accept/reject         776        1720
+ iforwt      234718
+  correlation eps   0.1874113    
+  conv eps     0.6483821               6
+ ESTIMATED additional number of runs         234         189
+  Loop number          95
+ accept/reject         829        1667
+ accept/reject         762        1734
+ iforwt      237215
+  correlation eps   0.1850842    
+  conv eps     0.6418859               6
+ ESTIMATED additional number of runs         230         166
+  Loop number          96
+ accept/reject         775        1721
+ accept/reject         886        1610
+ iforwt      239712
+  correlation eps   0.1896085    
+  conv eps     0.6351997               6
+ ESTIMATED additional number of runs         225         158
+  Loop number          97
+ accept/reject         796        1700
+ accept/reject         857        1639
+ iforwt      242209
+  correlation eps   0.1810060    
+  conv eps     0.6281143               6
+ ESTIMATED additional number of runs         221         143
+  Loop number          98
+ accept/reject         765        1731
+ accept/reject         919        1577
+ iforwt      244706
+  correlation eps   0.1812338    
+  conv eps     0.6215987               6
+ ESTIMATED additional number of runs         216         138
+  Loop number          99
+ accept/reject         792        1704
+ accept/reject         772        1724
+ iforwt      247203
+  correlation eps   0.1804304    
+  conv eps     0.6153198               6
+ ESTIMATED additional number of runs         212         128
+  Loop number         100
+ accept/reject         855        1641
+ accept/reject         805        1691
+ iforwt      249700
+  correlation eps   0.1797901    
+  conv eps     0.6091667               6
+ ESTIMATED additional number of runs         208         124
+  Loop number         101
+ accept/reject         802        1694
+ accept/reject         902        1594
+ iforwt      252197
+  correlation eps   0.1824232    
+  conv eps     0.6031353               6
+ ESTIMATED additional number of runs         203         117
+  Loop number         102
+ accept/reject         843        1653
+ accept/reject         821        1675
+ iforwt      254694
+  correlation eps   0.1838913    
+  conv eps     0.5972222               6
+ ESTIMATED additional number of runs         199         114
+  Loop number         103
+ accept/reject         834        1662
+ accept/reject         784        1712
+ iforwt      257191
+  correlation eps   0.1846507    
+  conv eps     0.5914239               6
+ ESTIMATED additional number of runs         195         108
+  Loop number         104
+ accept/reject         783        1713
+ accept/reject         822        1674
+ iforwt      259688
+  correlation eps   0.1843553    
+  conv eps     0.5993590               6
+ ESTIMATED additional number of runs         197         109
+  Loop number         105
+ accept/reject         788        1708
+ accept/reject         820        1676
+ iforwt      262185
+  correlation eps   0.1742764    
+  conv eps     0.5872024               6
+ ESTIMATED additional number of runs         191         103
+  Loop number         106
+ accept/reject         736        1760
+ accept/reject         808        1688
+ iforwt      264682
+  correlation eps   0.1663405    
+  conv eps     0.5714426               6
+ ESTIMATED additional number of runs         183          99
+  Loop number         107
+ accept/reject         723        1773
+ accept/reject         766        1730
+ iforwt      267179
+  correlation eps   0.1667210    
+  conv eps     0.5710295               6
+ ESTIMATED additional number of runs         181          96
+  Loop number         108
+ accept/reject         782        1714
+ accept/reject         678        1818
+ iforwt      269676
+  correlation eps   0.1681110    
+  conv eps     0.5702161               6
+ ESTIMATED additional number of runs         180          95
+  Loop number         109
+ accept/reject         814        1682
+ accept/reject         873        1623
+ iforwt      272173
+  correlation eps   0.1666140    
+  conv eps     0.5617355               6
+ ESTIMATED additional number of runs         175          91
+  Loop number         110
+ accept/reject         783        1713
+ accept/reject         849        1647
+ iforwt      274670
+  correlation eps   0.1669084    
+  conv eps     0.5566288               6
+ ESTIMATED additional number of runs         172          90
+  Loop number         111
+ accept/reject         788        1708
+ accept/reject         893        1603
+ iforwt      277167
+  correlation eps   0.1694664    
+  conv eps     0.5448934               6
+ ESTIMATED additional number of runs         166          86
+  Loop number         112
+ accept/reject         762        1734
+ accept/reject         876        1620
+ iforwt      279664
+  correlation eps   0.1680198    
+  conv eps     0.5234733               6
+ ESTIMATED additional number of runs         157          81
+  Loop number         113
+ accept/reject         762        1734
+ accept/reject         930        1566
+ iforwt      282161
+  correlation eps   0.1640255    
+  conv eps     0.5038149               6
+ ESTIMATED additional number of runs         148          76
+  Loop number         114
+ accept/reject         748        1748
+ accept/reject         904        1592
+ iforwt      284658
+  correlation eps   0.1444255    
+  conv eps     0.4851411               6
+ ESTIMATED additional number of runs         139          71
+  Loop number         115
+ accept/reject         742        1754
+ accept/reject         808        1688
+ iforwt      287155
+  correlation eps   0.1244423    
+  conv eps     0.4635312               6
+ ESTIMATED additional number of runs         130          65
+  Loop number         116
+ accept/reject         702        1794
+ accept/reject         767        1729
+ iforwt      289652
+  correlation eps   0.1155602    
+  conv eps     0.4435165               6
+ ESTIMATED additional number of runs         121          61
+  Loop number         117
+ accept/reject         770        1726
+ accept/reject         738        1758
+ iforwt      292149
+  correlation eps   0.1156256    
+  conv eps     0.4397258               6
+ ESTIMATED additional number of runs         118          58
+  Loop number         118
+ accept/reject         745        1751
+ accept/reject         754        1742
+ iforwt      294646
+  correlation eps   0.1149229    
+  conv eps     0.4359993               6
+ ESTIMATED additional number of runs         115          57
+  Loop number         119
+ accept/reject         769        1727
+ accept/reject         783        1713
+ iforwt      297143
+  correlation eps   0.1145270    
+  conv eps     0.4358368               6
+ ESTIMATED additional number of runs         113          55
+  Loop number         120
+ accept/reject         758        1738
+ accept/reject         829        1667
+ iforwt      299640
+  correlation eps   0.1123381    
+  conv eps     0.4307292               6
+ ESTIMATED additional number of runs         110          54
+  Loop number         121
+ accept/reject         807        1689
+ accept/reject         842        1654
+ iforwt      302137
+  correlation eps   0.1099071    
+  conv eps     0.4251894               6
+ ESTIMATED additional number of runs         107          52
+  Loop number         122
+ accept/reject         806        1690
+ accept/reject         877        1619
+ iforwt      304634
+  correlation eps   0.1119030    
+  conv eps     0.4269980               6
+ ESTIMATED additional number of runs         106          52
+  Loop number         123
+ accept/reject         813        1683
+ accept/reject         858        1638
+ iforwt      307131
+  correlation eps   0.1136370    
+  conv eps     0.4233570               6
+ ESTIMATED additional number of runs         104          50
+  Loop number         124
+ accept/reject         812        1684
+ accept/reject         756        1740
+ iforwt      309628
+  correlation eps   0.1107185    
+  conv eps     0.4171190               6
+ ESTIMATED additional number of runs         101          49
+  Loop number         125
+ accept/reject         823        1673
+ accept/reject         799        1697
+ iforwt      312125
+  correlation eps   0.1043314    
+  conv eps     0.4078333               6
+ ESTIMATED additional number of runs          97          47
+  Loop number         126
+ accept/reject         801        1695
+ accept/reject         851        1645
+ iforwt      314622
+  correlation eps   0.1041083    
+  conv eps     0.3997507               6
+ ESTIMATED additional number of runs          94          46
+  Loop number         127
+ accept/reject         781        1715
+ accept/reject         805        1691
+ iforwt      317119
+  correlation eps   0.1033822    
+  conv eps     0.3911266               6
+ ESTIMATED additional number of runs          90          44
+  Loop number         128
+ accept/reject         756        1740
+ accept/reject         859        1637
+ iforwt      319616
+  correlation eps   0.1039527    
+  conv eps     0.3886406               6
+ ESTIMATED additional number of runs          89          43
+  Loop number         129
+ accept/reject         756        1740
+ accept/reject         841        1655
+ iforwt      322113
+  correlation eps   0.1033149    
+  conv eps     0.3913114               6
+ ESTIMATED additional number of runs          89          43
+  Loop number         130
+ accept/reject         797        1699
+ accept/reject         796        1700
+ iforwt      324610
+  correlation eps   0.1037433    
+  conv eps     0.3913462               6
+ ESTIMATED additional number of runs          88          43
+  Loop number         131
+ accept/reject         839        1657
+ accept/reject         788        1708
+ iforwt      327107
+  correlation eps   0.1031992    
+  conv eps     0.3903956               6
+ ESTIMATED additional number of runs          87          43
+  Loop number         132
+ accept/reject         815        1681
+ accept/reject         725        1771
+ iforwt      329604
+  correlation eps   0.1037670    
+  conv eps     0.3862058               6
+ ESTIMATED additional number of runs          85          43
+  Loop number         133
+ accept/reject         820        1676
+ accept/reject         770        1726
+ iforwt      332101
+  correlation eps   0.1034103    
+  conv eps     0.3876097               6
+ ESTIMATED additional number of runs          85          43
+  Loop number         134
+ accept/reject         862        1634
+ accept/reject         792        1704
+ iforwt      334598
+  correlation eps   0.1042250    
+  conv eps     0.3824627               6
+ ESTIMATED additional number of runs          83          42
+  Loop number         135
+ accept/reject         777        1719
+ accept/reject         801        1695
+ iforwt      337095
+  correlation eps   0.1049287    
+  conv eps     0.3831019               6
+ ESTIMATED additional number of runs          83          43
+  Loop number         136
+ accept/reject         768        1728
+ accept/reject         789        1707
+ iforwt      339592
+  correlation eps   0.1040764    
+  conv eps     0.3773744               6
+ ESTIMATED additional number of runs          81          42
+  Loop number         137
+ accept/reject         774        1722
+ accept/reject         853        1643
+ iforwt      342089
+  correlation eps   0.1041849    
+  conv eps     0.3734033               6
+ ESTIMATED additional number of runs          80          42
+  Loop number         138
+ accept/reject         826        1670
+ accept/reject         831        1665
+ iforwt      344586
+  correlation eps   0.1041576    
+  conv eps     0.3761032               6
+ ESTIMATED additional number of runs          80          43
+  Loop number         139
+ accept/reject         807        1689
+ accept/reject         838        1658
+ iforwt      347083
+  correlation eps   0.1041995    
+  conv eps     0.3725558               6
+ ESTIMATED additional number of runs          79          43
+  Loop number         140
+ accept/reject         784        1712
+ accept/reject         764        1732
+ iforwt      349580
+  correlation eps   0.1045092    
+  conv eps     0.3610577               6
+ ESTIMATED additional number of runs          75          41
+  Loop number         141
+ accept/reject         781        1715
+ accept/reject         832        1664
+ iforwt      352077
+  correlation eps   0.1042558    
+  conv eps     0.3619976               6
+ ESTIMATED additional number of runs          75          42
+  Loop number         142
+ accept/reject         808        1688
+ accept/reject         936        1560
+ iforwt      354574
+  correlation eps   0.1058186    
+  conv eps     0.3595217               6
+ ESTIMATED additional number of runs          75          42
+  Loop number         143
+ accept/reject         845        1651
+ accept/reject         825        1671
+ iforwt      357071
+  correlation eps   0.1045896    
+  conv eps     0.3568619               6
+ ESTIMATED additional number of runs          74          42
+  Loop number         144
+ accept/reject         757        1739
+ accept/reject         899        1597
+ iforwt      359568
+  correlation eps   0.1071200    
+  conv eps     0.3489861               6
+ ESTIMATED additional number of runs          71          41
+  Loop number         145
+ accept/reject         752        1744
+ accept/reject         865        1631
+ iforwt      362065
+  correlation eps   0.1000009    
+  conv eps     0.3359472               6
+ ESTIMATED additional number of runs          68          40
+  Loop number         146
+ accept/reject         755        1741
+ accept/reject         692        1804
+ iforwt      364562
+  correlation eps   9.5222712E-02
+ Rotating is OK
+  conv eps     0.3199475               6
+ ESTIMATED additional number of runs          63          37
+  Loop number         147
+ accept/reject         926        1570
+ accept/reject         817        1679
+ iforwt      367059
+  correlation eps   9.4274282E-02
+  conv eps     0.3148548               6
+ ESTIMATED additional number of runs          62          37
+  Loop number         148
+ accept/reject         860        1636
+ accept/reject         931        1565
+ iforwt      369556
+  correlation eps   9.3923092E-02
+  conv eps     0.3121102               6
+ ESTIMATED additional number of runs          61          37
+  Loop number         149
+ accept/reject         941        1555
+ accept/reject         988        1508
+ iforwt      372053
+  correlation eps   9.4456792E-02
+  conv eps     0.3115965               6
+ ESTIMATED additional number of runs          61          37
+  Loop number         150
+ accept/reject         905        1591
+ accept/reject         915        1581
+ iforwt      374550
+  correlation eps   9.3797326E-02
+  conv eps     0.3117521               6
+ ESTIMATED additional number of runs          60          37
+  Loop number         151
+ accept/reject         842        1654
+ accept/reject         920        1576
+ iforwt      377047
+  correlation eps   9.4299793E-02
+  conv eps     0.3093745               6
+ ESTIMATED additional number of runs          60          37
+  Loop number         152
+ accept/reject         883        1613
+ accept/reject         974        1522
+ iforwt      379544
+  correlation eps   9.3852222E-02
+  conv eps     0.3086254               6
+ ESTIMATED additional number of runs          59          37
+  Loop number         153
+ accept/reject        1014        1482
+ accept/reject         810        1686
+ iforwt      382041
+  correlation eps   9.3509555E-02
+  conv eps     0.3064302               6
+ ESTIMATED additional number of runs          59          37
+  Loop number         154
+ accept/reject         832        1664
+ accept/reject         926        1570
+ iforwt      384538
+  correlation eps   9.3156397E-02
+  conv eps     0.3071200               6
+ ESTIMATED additional number of runs          59          38
+  Loop number         155
+ accept/reject         963        1533
+ accept/reject         864        1632
+ iforwt      387035
+  correlation eps   9.2212379E-02
+  conv eps     0.3062913               6
+ ESTIMATED additional number of runs          58          38
+  Loop number         156
+ accept/reject         862        1634
+ accept/reject         803        1693
+ iforwt      389532
+  correlation eps   9.2000604E-02
+  conv eps     0.3051087               6
+ ESTIMATED additional number of runs          58          38
+  Loop number         157
+ accept/reject         856        1640
+ accept/reject         814        1682
+ iforwt      392029
+  correlation eps   9.2557669E-02
+  conv eps     0.3038237               6
+ ESTIMATED additional number of runs          58          38
+  Loop number         158
+ accept/reject        1036        1460
+ accept/reject         995        1501
+ iforwt      394526
+  correlation eps   9.1478705E-02
+  conv eps     0.3020985               6
+ ESTIMATED additional number of runs          57          38
+  Loop number         159
+ accept/reject         910        1586
+ accept/reject         892        1604
+ iforwt      397023
+  correlation eps   9.1670454E-02
+  conv eps     0.3008688               6
+ ESTIMATED additional number of runs          57          38
+  Loop number         160
+ accept/reject         892        1604
+ accept/reject         875        1621
+ iforwt      399520
+  correlation eps   9.1500580E-02
+  conv eps     0.2985827               6
+ ESTIMATED additional number of runs          56          38
+  Loop number         161
+ accept/reject         924        1572
+ accept/reject         839        1657
+ iforwt      402017
+  correlation eps   9.1041982E-02
+  conv eps     0.2962554               6
+ ESTIMATED additional number of runs          55          38
+  Loop number         162
+ accept/reject         926        1570
+ accept/reject         909        1587
+ iforwt      404514
+  correlation eps   9.1260493E-02
+  conv eps     0.2963408               6
+ ESTIMATED additional number of runs          55          39
+  Loop number         163
+ accept/reject         885        1611
+ accept/reject         946        1550
+ iforwt      407011
+  correlation eps   8.8508666E-02
+  conv eps     0.2898282               6
+ ESTIMATED additional number of runs          54          38
+  Loop number         164
+ accept/reject         889        1607
+ iforwt      409508
+  correlation eps   8.8506281E-02
+  conv eps     0.2878899               6
+ ESTIMATED additional number of runs          53          38
+  Loop number         165
+ accept/reject         925        1571
+ accept/reject         954        1542
+ iforwt      412005
+  correlation eps   8.6828530E-02
+  conv eps     0.2843046               6
+ ESTIMATED additional number of runs          52          38
+  Loop number         166
+ accept/reject         873        1623
+ accept/reject         730        1766
+ iforwt      414502
+  correlation eps   8.7468445E-02
+  conv eps     0.2848123               6
+ ESTIMATED additional number of runs          53          38
+  Loop number         167
+ accept/reject         975        1521
+ accept/reject         984        1512
+ iforwt      416999
+  correlation eps   8.6232066E-02
+  conv eps     0.2822432               6
+ ESTIMATED additional number of runs          52          38
+  Loop number         168
+ accept/reject         935        1561
+ accept/reject         935        1561
+ iforwt      419496
+  correlation eps   8.4565759E-02
+  conv eps     0.2789702               6
+ ESTIMATED additional number of runs          51          38
+  Loop number         169
+ accept/reject         796        1700
+ accept/reject         967        1529
+ iforwt      421993
+  correlation eps   8.2342207E-02
+  conv eps     0.2774380               6
+ ESTIMATED additional number of runs          51          38
+  Loop number         170
+ accept/reject         799        1697
+ accept/reject         959        1537
+ iforwt      424490
+  correlation eps   8.1747651E-02
+  conv eps     0.2763150               6
+ ESTIMATED additional number of runs          51          39
+  Loop number         171
+ accept/reject         937        1559
+ accept/reject         780        1716
+ iforwt      426987
+  correlation eps   8.1562400E-02
+  conv eps     0.2759362               6
+ ESTIMATED additional number of runs          50          39
+  Loop number         172
+ accept/reject         898        1598
+ accept/reject         918        1578
+ iforwt      429484
+  correlation eps   8.1623614E-02
+  conv eps     0.2746301               6
+ ESTIMATED additional number of runs          50          39
+  Loop number         173
+ accept/reject         902        1594
+ accept/reject         862        1634
+ iforwt      431981
+  correlation eps   8.1963718E-02
+  conv eps     0.2720654               6
+ ESTIMATED additional number of runs          50          40
+  Loop number         174
+ accept/reject         952        1544
+ accept/reject         880        1616
+ iforwt      434478
+  correlation eps   8.1758261E-02
+  conv eps     0.2711557               6
+ ESTIMATED additional number of runs          49          40
+  Loop number         175
+ accept/reject         933        1563
+ accept/reject         968        1528
+ iforwt      436975
+  correlation eps   8.1910133E-02
+  conv eps     0.2709112               6
+ ESTIMATED additional number of runs          49          41
+  Loop number         176
+ accept/reject         988        1508
+ accept/reject         784        1712
+ iforwt      439472
+  correlation eps   8.0529541E-02
+  conv eps     0.2704782               6
+ ESTIMATED additional number of runs          49          41
+  Loop number         177
+ accept/reject         883        1613
+ accept/reject         895        1601
+ iforwt      441969
+  correlation eps   8.1051767E-02
+  conv eps     0.2684657               6
+ ESTIMATED additional number of runs          49          42
+  Loop number         178
+ accept/reject         812        1684
+ accept/reject         954        1542
+ iforwt      444466
+  correlation eps   8.0519736E-02
+  conv eps     0.2663227               6
+ ESTIMATED additional number of runs          48          42
+  Loop number         179
+ accept/reject         963        1533
+ accept/reject         888        1608
+ iforwt      446963
+  correlation eps   8.0051720E-02
+  conv eps     0.2647275               6
+ ESTIMATED additional number of runs          48          42
+  Loop number         180
+ accept/reject         933        1563
+ accept/reject         965        1531
+ iforwt      449460
+  correlation eps   7.8660399E-02
+  conv eps     0.2629407               6
+ ESTIMATED additional number of runs          48          42
+  Loop number         181
+ accept/reject         907        1589
+ accept/reject         841        1655
+ iforwt      451957
+  correlation eps   7.8790247E-02
+  conv eps     0.2596729               6
+ ESTIMATED additional number of runs          47          42
+  Loop number         182
+ accept/reject         872        1624
+ accept/reject         896        1600
+ iforwt      454454
+  correlation eps   7.7136248E-02
+  conv eps     0.2600600               6
+ ESTIMATED additional number of runs          47          43
+  Loop number         183
+ accept/reject         991        1505
+ accept/reject         815        1681
+ iforwt      456951
+  correlation eps   7.7701211E-02
+  conv eps     0.2581748               6
+ ESTIMATED additional number of runs          47          43
+  Loop number         184
+ accept/reject         938        1558
+ accept/reject         900        1596
+ iforwt      459448
+  correlation eps   8.0089718E-02
+  conv eps     0.2617754               6
+ ESTIMATED additional number of runs          48          45
+  Loop number         185
+ accept/reject         849        1647
+ accept/reject         857        1639
+ iforwt      461945
+  correlation eps   8.1178308E-02
+  conv eps     0.2594118               6
+ ESTIMATED additional number of runs          47          45
+  Loop number         186
+ accept/reject         888        1608
+ accept/reject         959        1537
+ iforwt      464442
+  correlation eps   8.0427587E-02
+  conv eps     0.2569789               6
+ ESTIMATED additional number of runs          47          45
+  Loop number         187
+ accept/reject         924        1572
+ accept/reject         904        1592
+ iforwt      466939
+  correlation eps   8.1152886E-02
+  conv eps     0.2571387               6
+ ESTIMATED additional number of runs          47          46
+  Loop number         188
+ accept/reject         906        1590
+ accept/reject        1022        1474
+ iforwt      469436
+  correlation eps   7.9730332E-02
+  conv eps     0.2541854               6
+ ESTIMATED additional number of runs          46          46
+  Loop number         189
+ accept/reject         900        1596
+ accept/reject         867        1629
+ iforwt      471933
+  correlation eps   7.9490274E-02
+  conv eps     0.2522470               6
+ ESTIMATED additional number of runs          46          46
+  Loop number         190
+ accept/reject         856        1640
+ accept/reject         884        1612
+ iforwt      474430
+  correlation eps   7.8418314E-02
+  conv eps     0.2508477               6
+ ESTIMATED additional number of runs          46          46
+  Loop number         191
+ accept/reject         862        1634
+ accept/reject         876        1620
+ iforwt      476927
+  correlation eps   7.8256488E-02
+  conv eps     0.2528863               6
+ ESTIMATED additional number of runs          46          48
+  Loop number         192
+ accept/reject         877        1619
+ accept/reject         936        1560
+ iforwt      479424
+  correlation eps   7.8587174E-02
+  conv eps     0.2535265               6
+ ESTIMATED additional number of runs          46          49
+  Loop number         193
+ accept/reject         878        1618
+ accept/reject         974        1522
+ iforwt      481921
+  correlation eps   7.8833669E-02
+  conv eps     0.2509300               6
+ ESTIMATED additional number of runs          46          49
+  Loop number         194
+ accept/reject         872        1624
+ accept/reject         886        1610
+ iforwt      484418
+  correlation eps   7.9046100E-02
+  conv eps     0.2500620               6
+ ESTIMATED additional number of runs          46          49
+  Loop number         195
+ accept/reject         960        1536
+ accept/reject         950        1546
+ iforwt      486915
+  correlation eps   7.6573193E-02
+  conv eps     0.2473044               6
+ ESTIMATED additional number of runs          45          50
+  Loop number         196
+ accept/reject         853        1643
+ accept/reject         819        1677
+ iforwt      489412
+  correlation eps   7.7232093E-02
+  conv eps     0.2452618               6
+ ESTIMATED additional number of runs          45          50
+  Loop number         197
+ accept/reject         871        1625
+ accept/reject        1020        1476
+ iforwt      491909
+  correlation eps   7.5964183E-02
+  conv eps     0.2450459               6
+ ESTIMATED additional number of runs          45          51
+  Loop number         198
+ accept/reject         851        1645
+ accept/reject         972        1524
+ iforwt      494406
+  correlation eps   7.5629503E-02
+  conv eps     0.2422988               6
+ ESTIMATED additional number of runs          44          50
+  Loop number         199
+ accept/reject         878        1618
+ accept/reject         997        1499
+ iforwt      496903
+  correlation eps   7.6236933E-02
+  conv eps     0.2422408               6
+ ESTIMATED additional number of runs          44          52
+  Loop number         200
+ accept/reject         803        1693
+ accept/reject         926        1570
+ iforwt      499400
+  correlation eps   7.8299522E-02
+  conv eps     0.2434856               6
+ ESTIMATED additional number of runs          45          53
+  Loop number         201
+ accept/reject         802        1694
+ accept/reject         903        1593
+ iforwt      501897
+  correlation eps   7.7892601E-02
+  conv eps     0.2432150               6
+ ESTIMATED additional number of runs          45          54
+  Loop number         202
+ accept/reject         916        1580
+ accept/reject         948        1548
+ iforwt      504394
+  correlation eps   7.8252256E-02
+  conv eps     0.2431931               6
+ ESTIMATED additional number of runs          45          54
+  Loop number         203
+ accept/reject         908        1588
+ accept/reject         934        1562
+ iforwt      506891
+  correlation eps   7.5987309E-02
+  conv eps     0.2420938               6
+ ESTIMATED additional number of runs          45          55
+  Loop number         204
+ accept/reject         971        1525
+ accept/reject         877        1619
+ iforwt      509388
+  correlation eps   7.5595140E-02
+  conv eps     0.2390256               6
+ ESTIMATED additional number of runs          44          55
+  Loop number         205
+ accept/reject         886        1610
+ accept/reject         933        1563
+ iforwt      511885
+  correlation eps   7.2771609E-02
+  conv eps     0.2378909               6
+ ESTIMATED additional number of runs          44          56
+  Loop number         206
+ accept/reject         876        1620
+ accept/reject         897        1599
+ iforwt      514382
+  correlation eps   7.1718276E-02
+  conv eps     0.2344995               6
+ ESTIMATED additional number of runs          43          56
+  Loop number         207
+ accept/reject         967        1529
+ accept/reject        1009        1487
+ iforwt      516879
+  correlation eps   7.2158575E-02
+  conv eps     0.2336376               6
+ ESTIMATED additional number of runs          43          57
+  Loop number         208
+ accept/reject         892        1604
+ accept/reject         826        1670
+ iforwt      519376
+  correlation eps   7.2806418E-02
+  conv eps     0.2332270               6
+ ESTIMATED additional number of runs          43          57
+  Loop number         209
+ accept/reject         911        1585
+ accept/reject         943        1553
+ iforwt      521873
+  correlation eps   7.2371483E-02
+  conv eps     0.2335296               6
+ ESTIMATED additional number of runs          43          59
+  Loop number         210
+ accept/reject         866        1630
+ accept/reject         919        1577
+ iforwt      524370
+  correlation eps   7.3054850E-02
+  conv eps     0.2317308               6
+ ESTIMATED additional number of runs          43          59
+  Loop number         211
+ accept/reject        1030        1466
+ accept/reject         845        1651
+ iforwt      526867
+  correlation eps   7.2445661E-02
+  conv eps     0.2305793               6
+ ESTIMATED additional number of runs          43          60
+  Loop number         212
+ accept/reject         925        1571
+ accept/reject         883        1613
+ iforwt      529364
+  correlation eps   7.0595592E-02
+  conv eps     0.2278438               6
+ ESTIMATED additional number of runs          42          60
+  Loop number         213
+ accept/reject         935        1561
+ accept/reject         878        1618
+ iforwt      531861
+  correlation eps   7.0651859E-02
+  conv eps     0.2270412               6
+ ESTIMATED additional number of runs          42          61
+  Loop number         214
+ accept/reject         944        1552
+ accept/reject         980        1516
+ iforwt      534358
+  correlation eps   7.1306139E-02
+  conv eps     0.2252501               6
+ ESTIMATED additional number of runs          42          61
+  Loop number         215
+ accept/reject         854        1642
+ accept/reject         881        1615
+ iforwt      536855
+  correlation eps   7.0414662E-02
+  conv eps     0.2218694               6
+ ESTIMATED additional number of runs          41          62
+  Loop number         216
+ accept/reject         877        1619
+ accept/reject         938        1558
+ iforwt      539352
+  correlation eps   7.1665138E-02
+  conv eps     0.2214135               6
+ ESTIMATED additional number of runs          41          62
+  Loop number         217
+ accept/reject         975        1521
+ accept/reject         917        1579
+ iforwt      541849
+  correlation eps   6.9736660E-02
+  conv eps     0.2202086               6
+ ESTIMATED additional number of runs          41          63
+  Loop number         218
+ accept/reject         976        1520
+ accept/reject         941        1555
+ iforwt      544346
+  correlation eps   6.9606245E-02
+  conv eps     0.2186030               6
+ ESTIMATED additional number of runs          40          63
+  Loop number         219
+ accept/reject         809        1687
+ accept/reject         932        1564
+ iforwt      546843
+  correlation eps   6.9313526E-02
+  conv eps     0.2176085               6
+ ESTIMATED additional number of runs          40          65
+  Loop number         220
+ accept/reject         866        1630
+ accept/reject         902        1594
+ iforwt      549340
+  correlation eps   6.8260789E-02
+  conv eps     0.2155594               6
+ ESTIMATED additional number of runs          40          64
+  Loop number         221
+ accept/reject         881        1615
+ accept/reject         854        1642
+ iforwt      551837
+  correlation eps   6.8349600E-02
+  conv eps     0.2145007               6
+ ESTIMATED additional number of runs          40          66
+  Loop number         222
+ accept/reject         911        1585
+ accept/reject         876        1620
+ iforwt      554334
+  correlation eps   6.6455722E-02
+  conv eps     0.2121809               6
+ ESTIMATED additional number of runs          39          65
+  Loop number         223
+ accept/reject         809        1687
+ accept/reject         787        1709
+ iforwt      556831
+  correlation eps   6.5950274E-02
+  conv eps     0.2109061               6
+ ESTIMATED additional number of runs          39          66
+  Loop number         224
+ accept/reject         941        1555
+ accept/reject         757        1739
+ iforwt      559328
+  correlation eps   6.6470623E-02
+  conv eps     0.2127583               6
+ ESTIMATED additional number of runs          40          68
+  Loop number         225
+ accept/reject         964        1532
+ accept/reject         914        1582
+ iforwt      561825
+  correlation eps   6.5874934E-02
+  conv eps     0.2113105               6
+ ESTIMATED additional number of runs          39          69
+  Loop number         226
+ accept/reject         897        1599
+ accept/reject         890        1606
+ iforwt      564322
+  correlation eps   6.6396862E-02
+  conv eps     0.2084432               6
+ ESTIMATED additional number of runs          39          68
+  Loop number         227
+ accept/reject         845        1651
+ accept/reject         900        1596
+ iforwt      566819
+  correlation eps   6.6486388E-02
+  conv eps     0.2075038               6
+ ESTIMATED additional number of runs          38          69
+  Loop number         228
+ accept/reject         857        1639
+ accept/reject         850        1646
+ iforwt      569316
+  correlation eps   6.4676166E-02
+  conv eps     0.2065058               6
+ ESTIMATED additional number of runs          38          69
+  Loop number         229
+ accept/reject         961        1535
+ accept/reject         869        1627
+ iforwt      571813
+  correlation eps   6.4119190E-02
+  conv eps     0.2083718               6
+ ESTIMATED additional number of runs          39          71
+  Loop number         230
+ accept/reject         894        1602
+ accept/reject        1006        1490
+ iforwt      574310
+  correlation eps   6.3276768E-02
+  conv eps     0.2086399               6
+ ESTIMATED additional number of runs          39          72
+  Loop number         231
+ accept/reject         850        1646
+ accept/reject         805        1691
+ iforwt      576807
+  correlation eps   6.2993616E-02
+  conv eps     0.2071817               6
+ ESTIMATED additional number of runs          39          72
+  Loop number         232
+ accept/reject         927        1569
+ accept/reject         876        1620
+ iforwt      579304
+  correlation eps   6.3773423E-02
+  conv eps     0.2058949               6
+ ESTIMATED additional number of runs          39          72
+  Loop number         233
+ accept/reject         780        1716
+ accept/reject         893        1603
+ iforwt      581801
+  correlation eps   6.1790049E-02
+  conv eps     0.2052417               6
+ ESTIMATED additional number of runs          39          72
+  Loop number         234
+ accept/reject         942        1554
+ accept/reject         931        1565
+ iforwt      584298
+  correlation eps   6.0977072E-02
+  conv eps     0.2039366               6
+ ESTIMATED additional number of runs          38          72
+  Loop number         235
+ accept/reject         976        1520
+ accept/reject         992        1504
+ iforwt      586795
+  correlation eps   6.0641080E-02
+  conv eps     0.2033518               6
+ ESTIMATED additional number of runs          38          73
+  Loop number         236
+ accept/reject         917        1579
+ accept/reject         863        1633
+ iforwt      589292
+  correlation eps   6.0706615E-02
+  conv eps     0.2031046               6
+ ESTIMATED additional number of runs          38          73
+  Loop number         237
+ accept/reject         933        1563
+ accept/reject         886        1610
+ iforwt      591789
+  correlation eps   6.0923815E-02
+  conv eps     0.2023524               6
+ ESTIMATED additional number of runs          38          74
+  Loop number         238
+ accept/reject         883        1613
+ accept/reject         881        1615
+ iforwt      594286
+  correlation eps   6.2120020E-02
+  conv eps     0.2040811               6
+ ESTIMATED additional number of runs          39          76
+  Loop number         239
+ accept/reject        1073        1423
+ accept/reject         870        1626
+ iforwt      596783
+  correlation eps   6.2858850E-02
+  conv eps     0.2027411               6
+ ESTIMATED additional number of runs          39          76
+  Loop number         240
+ accept/reject         797        1699
+ accept/reject         873        1623
+ iforwt      599280
+  correlation eps   6.3930243E-02
+  conv eps     0.2001636               6
+ ESTIMATED additional number of runs          38          75
+  Loop number         241
+ accept/reject         901        1595
+ accept/reject         892        1604
+ iforwt      601777
+  correlation eps   6.3294441E-02
+  conv eps     0.1993164               6
+ ESTIMATED additional number of runs          38          76
+  Loop number         242
+ accept/reject         876        1620
+ accept/reject         911        1585
+ iforwt      604274
+  correlation eps   6.3113779E-02
+  conv eps     0.1977346               6
+ ESTIMATED additional number of runs          37          75
+  Loop number         243
+ accept/reject         886        1610
+ accept/reject         876        1620
+ iforwt      606771
+  correlation eps   6.4804949E-02
+  conv eps     0.1963372               6
+ ESTIMATED additional number of runs          37          76
+  Loop number         244
+ accept/reject        1062        1434
+ accept/reject        1085        1411
+ iforwt      609268
+  correlation eps   6.9798604E-02
+  conv eps     0.1949053               6
+ ESTIMATED additional number of runs          37          75
+  Loop number         245
+ accept/reject         902        1594
+ accept/reject        1023        1473
+ iforwt      611765
+  correlation eps   7.1547598E-02
+  conv eps     0.1941490               6
+ ESTIMATED additional number of runs          37          76
+  Loop number         246
+ accept/reject         990        1506
+ accept/reject         998        1498
+ iforwt      614262
+  correlation eps   6.7857429E-02
+  conv eps     0.1933109               6
+ ESTIMATED additional number of runs          37          76
+  Loop number         247
+ accept/reject         855        1641
+ accept/reject        1021        1475
+ iforwt      616759
+  correlation eps   7.0160322E-02
+  conv eps     0.1987536               6
+ ESTIMATED additional number of runs          38          81
+  Loop number         248
+ accept/reject         849        1647
+ accept/reject         771        1725
+ iforwt      619256
+  correlation eps   7.2164364E-02
+  conv eps     0.2017583               6
+ ESTIMATED additional number of runs          39          83
+  Loop number         249
+ accept/reject         882        1614
+ accept/reject         884        1612
+ iforwt      621753
+  correlation eps   7.4953094E-02
+  conv eps     0.2021129               6
+ ESTIMATED additional number of runs          40          85
+  Loop number         250
+ accept/reject         966        1530
+ accept/reject         763        1733
+ iforwt      624250
+  correlation eps   7.5163320E-02
+  conv eps     0.2010160               6
+ ESTIMATED additional number of runs          39          85
+  Loop number         251
+ accept/reject         849        1647
+ accept/reject         915        1581
+ iforwt      626747
+  correlation eps   7.6905385E-02
+  conv eps     0.2034682               6
+ ESTIMATED additional number of runs          40          88
+  Loop number         252
+ accept/reject         828        1668
+ accept/reject         726        1770
+ iforwt      629244
+  correlation eps   7.8405529E-02
+  conv eps     0.2003396               6
+ ESTIMATED additional number of runs          40          87
+  Loop number         253
+ accept/reject         802        1694
+ accept/reject         866        1630
+ iforwt      631741
+  correlation eps   7.6171339E-02
+  conv eps     0.1985849               6
+ ESTIMATED additional number of runs          39          87
+  Loop number         254
+ accept/reject         905        1591
+ accept/reject         896        1600
+ iforwt      634238
+  correlation eps   7.3096782E-02
+  conv eps     0.1973110               6
+ ESTIMATED additional number of runs          39          86
+  Loop number         255
+ accept/reject         972        1524
+ accept/reject         958        1538
+ iforwt      636735
+  correlation eps   7.1576685E-02
+  conv eps     0.1974799               6
+ ESTIMATED additional number of runs          39          88
+  Loop number         256
+ accept/reject         969        1527
+ accept/reject         906        1590
+ iforwt      639232
+  correlation eps   6.8151012E-02
+  conv eps     0.1976350               6
+ ESTIMATED additional number of runs          39          89
+  Loop number         257
+ accept/reject         858        1638
+ accept/reject         791        1705
+ iforwt      641729
+  correlation eps   6.8308592E-02
+  conv eps     0.1984342               6
+ ESTIMATED additional number of runs          40          91
+  Loop number         258
+ accept/reject         878        1618
+ accept/reject         902        1594
+ iforwt      644226
+  correlation eps   6.7588598E-02
+  conv eps     0.1992397               6
+ ESTIMATED additional number of runs          40          92
+  Loop number         259
+ accept/reject         822        1674
+ accept/reject         921        1575
+ iforwt      646723
+  correlation eps   6.8860643E-02
+  conv eps     0.2004969               6
+ ESTIMATED additional number of runs          41          95
+  Loop number         260
+ accept/reject         831        1665
+ accept/reject         909        1587
+ iforwt      649220
+  correlation eps   6.5511212E-02
+  conv eps     0.1977872               6
+ ESTIMATED additional number of runs          40          93
+  Loop number         261
+ accept/reject         898        1598
+ accept/reject         970        1526
+ iforwt      651717
+  correlation eps   6.4674154E-02
+  conv eps     0.1966303               6
+ ESTIMATED additional number of runs          40          94
+  Loop number         262
+ accept/reject         941        1555
+ accept/reject         956        1540
+ iforwt      654214
+  correlation eps   6.7446947E-02
+  conv eps     0.1978219               6
+ ESTIMATED additional number of runs          40          96
+  Loop number         263
+ accept/reject         867        1629
+ accept/reject         801        1695
+ iforwt      656711
+  correlation eps   6.7897886E-02
+  conv eps     0.1962136               6
+ ESTIMATED additional number of runs          40          97
+  Loop number         264
+ accept/reject         813        1683
+ accept/reject         773        1723
+ iforwt      659208
+  correlation eps   6.8511665E-02
+  conv eps     0.1960075               6
+ ESTIMATED additional number of runs          40          97
+  Loop number         265
+ accept/reject         936        1560
+ accept/reject         834        1662
+ iforwt      661705
+  correlation eps   6.7663997E-02
+  conv eps     0.1946994               6
+ ESTIMATED additional number of runs          40          98
+  Loop number         266
+ accept/reject         917        1579
+ accept/reject         915        1581
+ iforwt      664202
+  correlation eps   6.3716888E-02
+  conv eps     0.1919281               6
+ ESTIMATED additional number of runs          39          97
+  Loop number         267
+ accept/reject         900        1596
+ accept/reject         834        1662
+ iforwt      666699
+  correlation eps   6.3227922E-02
+  conv eps     0.1912813               6
+ ESTIMATED additional number of runs          39          98
+  Loop number         268
+ accept/reject         972        1524
+ accept/reject         885        1611
+ iforwt      669196
+  correlation eps   6.2766939E-02
+  conv eps     0.1904899               6
+ ESTIMATED additional number of runs          39          98
+  Loop number         269
+ accept/reject         898        1598
+ accept/reject         808        1688
+ iforwt      671693
+  correlation eps   6.3322097E-02
+  conv eps     0.1895285               6
+ ESTIMATED additional number of runs          39          99
+  Loop number         270
+ accept/reject         952        1544
+ accept/reject         815        1681
+ iforwt      674190
+  correlation eps   6.4092673E-02
+  conv eps     0.1890937               6
+ ESTIMATED additional number of runs          39          99
+  Loop number         271
+ accept/reject         880        1616
+ accept/reject         946        1550
+ iforwt      676687
+  correlation eps   6.3470632E-02
+  conv eps     0.1841707               6
+ ESTIMATED additional number of runs          37          97
+  Loop number         272
+ accept/reject         917        1579
+ accept/reject         956        1540
+ iforwt      679184
+  correlation eps   5.8841437E-02
+  conv eps     0.1833522               6
+ ESTIMATED additional number of runs          37          97
+  Loop number         273
+ accept/reject         970        1526
+ accept/reject         933        1563
+ iforwt      681681
+  correlation eps   6.0239583E-02
+  conv eps     0.1837078               6
+ ESTIMATED additional number of runs          37          99
+  Loop number         274
+ accept/reject         892        1604
+ accept/reject         904        1592
+ iforwt      684178
+  correlation eps   6.0116827E-02
+  conv eps     0.1836018               6
+ ESTIMATED additional number of runs          37          99
+  Loop number         275
+ accept/reject         875        1621
+ accept/reject         877        1619
+ iforwt      686675
+  correlation eps   6.1581075E-02
+  conv eps     0.1831468               6
+ ESTIMATED additional number of runs          37         101
+  Loop number         276
+ accept/reject         928        1568
+ accept/reject         895        1601
+ iforwt      689172
+  correlation eps   6.2179636E-02
+  conv eps     0.1830000               6
+ ESTIMATED additional number of runs          37         101
+  Loop number         277
+ accept/reject         928        1568
+ accept/reject         906        1590
+ iforwt      691669
+  correlation eps   6.4054981E-02
+  conv eps     0.1817146               6
+ ESTIMATED additional number of runs          37         102
+  Loop number         278
+ accept/reject         847        1649
+ accept/reject         841        1655
+ iforwt      694166
+  correlation eps   6.5813690E-02
+  conv eps     0.1797985               6
+ ESTIMATED additional number of runs          37         101
+  Loop number         279
+ accept/reject         857        1639
+ accept/reject         822        1674
+ iforwt      696663
+  correlation eps   6.5600313E-02
+  conv eps     0.1794096               6
+ ESTIMATED additional number of runs          37         102
+  Loop number         280
+ accept/reject         926        1570
+ accept/reject         905        1591
+ iforwt      699160
+  correlation eps   6.4947747E-02
+  conv eps     0.1767972               6
+ ESTIMATED additional number of runs          36         100
+  Loop number         281
+ accept/reject         823        1673
+ accept/reject         874        1622
+ iforwt      701657
+  correlation eps   6.6481113E-02
+  conv eps     0.1773685               6
+ ESTIMATED additional number of runs          36         103
+  Loop number         282
+ accept/reject         843        1653
+ accept/reject         888        1608
+ iforwt      704154
+  correlation eps   6.5723017E-02
+  conv eps     0.1746965               6
+ ESTIMATED additional number of runs          35         100
+  Loop number         283
+ accept/reject         941        1555
+ accept/reject         902        1594
+ iforwt      706651
+  correlation eps   6.2498040E-02
+  conv eps     0.1743001               6
+ ESTIMATED additional number of runs          35         102
+  Loop number         284
+ accept/reject         809        1687
+ accept/reject         854        1642
+ iforwt      709148
+  correlation eps   6.2051535E-02
+  conv eps     0.1737766               6
+ ESTIMATED additional number of runs          35         102
+  Loop number         285
+ accept/reject         991        1505
+ accept/reject         854        1642
+ iforwt      711645
+  correlation eps   6.2123023E-02
+  conv eps     0.1730319               6
+ ESTIMATED additional number of runs          35         103
+  Loop number         286
+ accept/reject         952        1544
+ accept/reject         994        1502
+ iforwt      714142
+  correlation eps   6.1153512E-02
+  conv eps     0.1725810               6
+ ESTIMATED additional number of runs          35         102
+  Loop number         287
+ accept/reject         883        1613
+ accept/reject         839        1657
+ iforwt      716639
+  correlation eps   6.1637755E-02
+  conv eps     0.1712845               6
+ ESTIMATED additional number of runs          35         103
+  Loop number         288
+ accept/reject         980        1516
+ accept/reject         928        1568
+ iforwt      719136
+  correlation eps   5.9918761E-02
+  conv eps     0.1718082               6
+ ESTIMATED additional number of runs          35         104
+  Loop number         289
+ accept/reject         817        1679
+ accept/reject         868        1628
+ iforwt      721633
+  correlation eps   6.0556158E-02
+  conv eps     0.1720317               6
+ ESTIMATED additional number of runs          35         105
+  Loop number         290
+ accept/reject         878        1618
+ accept/reject         915        1581
+ iforwt      724130
+  correlation eps   6.0361359E-02
+  conv eps     0.1721430               6
+ ESTIMATED additional number of runs          36         106
+  Loop number         291
+ accept/reject         889        1607
+ accept/reject         910        1586
+ iforwt      726627
+  correlation eps   5.9937619E-02
+  conv eps     0.1718268               6
+ ESTIMATED additional number of runs          36         106
+  Loop number         292
+ accept/reject         915        1581
+ accept/reject         849        1647
+ iforwt      729124
+  correlation eps   5.7201404E-02
+  conv eps     0.1715430               6
+ ESTIMATED additional number of runs          36         106
+  Loop number         293
+ accept/reject         818        1678
+ accept/reject         898        1598
+ iforwt      731621
+  correlation eps   5.8256567E-02
+  conv eps     0.1698855               6
+ ESTIMATED additional number of runs          35         106
+  Loop number         294
+ accept/reject         834        1662
+ accept/reject         853        1643
+ iforwt      734118
+  correlation eps   5.8206096E-02
+  conv eps     0.1693676               6
+ ESTIMATED additional number of runs          35         105
+  Loop number         295
+ accept/reject         843        1653
+ accept/reject         855        1641
+ iforwt      736615
+  correlation eps   5.7960771E-02
+  conv eps     0.1693910               6
+ ESTIMATED additional number of runs          35         106
+  Loop number         296
+ accept/reject         840        1656
+ accept/reject         880        1616
+ iforwt      739112
+  correlation eps   5.6993674E-02
+  conv eps     0.1704159               6
+ ESTIMATED additional number of runs          36         108
+  Loop number         297
+ accept/reject         977        1519
+ accept/reject         860        1636
+ iforwt      741609
+  correlation eps   5.6504149E-02
+  conv eps     0.1691622               6
+ ESTIMATED additional number of runs          35         107
+  Loop number         298
+ accept/reject         934        1562
+ accept/reject         872        1624
+ iforwt      744106
+  correlation eps   5.6107126E-02
+  conv eps     0.1689603               6
+ ESTIMATED additional number of runs          35         108
+  Loop number         299
+ accept/reject         853        1643
+ accept/reject         847        1649
+ iforwt      746603
+  correlation eps   5.7324544E-02
+  conv eps     0.1685774               6
+ ESTIMATED additional number of runs          35         108
+  Loop number         300
+ accept/reject         919        1577
+ accept/reject         854        1642
+ iforwt      749100
+  correlation eps   5.5961698E-02
+  conv eps     0.1686378               6
+ ESTIMATED additional number of runs          36         109
+  Loop number         301
+ accept/reject         787        1709
+ accept/reject         867        1629
+ iforwt      751597
+  correlation eps   5.4958180E-02
+  conv eps     0.1678752               6
+ ESTIMATED additional number of runs          35         109
+  Loop number         302
+ accept/reject         942        1554
+ accept/reject         962        1534
+ iforwt      754094
+  correlation eps   5.4302920E-02
+  conv eps     0.1669453               6
+ ESTIMATED additional number of runs          35         108
+  Loop number         303
+ accept/reject         944        1552
+ iforwt      756591
+  correlation eps   5.3710323E-02
+  conv eps     0.1665926               6
+ ESTIMATED additional number of runs          35         109
+  Loop number         304
+ accept/reject         971        1525
+ accept/reject         992        1504
+ iforwt      759088
+  correlation eps   5.3247623E-02
+  conv eps     0.1662265               6
+ ESTIMATED additional number of runs          35         109
+  Loop number         305
+ accept/reject         873        1623
+ accept/reject         850        1646
+ iforwt      761585
+  correlation eps   5.2702874E-02
+  conv eps     0.1652874               6
+ ESTIMATED additional number of runs          35         109
+  Loop number         306
+ accept/reject         969        1527
+ accept/reject         955        1541
+ iforwt      764082
+  correlation eps   5.5260058E-02
+  conv eps     0.1661142               6
+ ESTIMATED additional number of runs          35         110
+  Loop number         307
+ accept/reject         931        1565
+ accept/reject         887        1609
+ iforwt      766579
+  correlation eps   5.3883772E-02
+  conv eps     0.1660637               6
+ ESTIMATED additional number of runs          35         111
+  Loop number         308
+ accept/reject         961        1535
+ accept/reject         846        1650
+ iforwt      769076
+  correlation eps   5.3530335E-02
+  conv eps     0.1656937               6
+ ESTIMATED additional number of runs          35         111
+  Loop number         309
+ accept/reject         905        1591
+ accept/reject         915        1581
+ iforwt      771573
+  correlation eps   5.4646879E-02
+  conv eps     0.1654220               6
+ ESTIMATED additional number of runs          35         112
+  Loop number         310
+ accept/reject         982        1514
+ accept/reject         872        1624
+ iforwt      774070
+  correlation eps   5.5103540E-02
+  conv eps     0.1655164               6
+ ESTIMATED additional number of runs          36         113
+  Loop number         311
+ accept/reject         854        1642
+ accept/reject         871        1625
+ iforwt      776567
+  correlation eps   5.5833519E-02
+  conv eps     0.1668960               6
+ ESTIMATED additional number of runs          36         115
+  Loop number         312
+ accept/reject         853        1643
+ accept/reject         828        1668
+ iforwt      779064
+  correlation eps   5.6512505E-02
+  conv eps     0.1674063               6
+ ESTIMATED additional number of runs          37         117
+  Loop number         313
+ accept/reject         941        1555
+ accept/reject         880        1616
+ iforwt      781561
+  correlation eps   5.6518883E-02
+  conv eps     0.1671684               6
+ ESTIMATED additional number of runs          37         118
+  Loop number         314
+ accept/reject         935        1561
+ accept/reject         872        1624
+ iforwt      784058
+  correlation eps   5.6053728E-02
+  conv eps     0.1660083               6
+ ESTIMATED additional number of runs          36         117
+  Loop number         315
+ accept/reject         927        1569
+ accept/reject         777        1719
+ iforwt      786555
+  correlation eps   5.5113316E-02
+  conv eps     0.1659188               6
+ ESTIMATED additional number of runs          36         118
+  Loop number         316
+ accept/reject         844        1652
+ accept/reject         941        1555
+ iforwt      789052
+  correlation eps   5.5456251E-02
+  conv eps     0.1655662               6
+ ESTIMATED additional number of runs          36         118
+  Loop number         317
+ accept/reject         830        1666
+ accept/reject         891        1605
+ iforwt      791549
+  correlation eps   5.5081546E-02
+  conv eps     0.1656556               6
+ ESTIMATED additional number of runs          37         120
+  Loop number         318
+ accept/reject         819        1677
+ accept/reject         924        1572
+ iforwt      794046
+  correlation eps   5.5091649E-02
+  conv eps     0.1648550               6
+ ESTIMATED additional number of runs          36         119
+  Loop number         319
+ accept/reject         926        1570
+ accept/reject         837        1659
+ iforwt      796543
+  correlation eps   5.5426419E-02
+  conv eps     0.1644713               6
+ ESTIMATED additional number of runs          36         120
+  Loop number         320
+ accept/reject         973        1523
+ accept/reject         864        1632
+ iforwt      799040
+  correlation eps   5.5307120E-02
+  conv eps     0.1634966               6
+ ESTIMATED additional number of runs          36         120
+  Loop number         321
+ accept/reject         886        1610
+ accept/reject         741        1755
+ iforwt      801537
+  correlation eps   5.5810660E-02
+  conv eps     0.1625130               6
+ ESTIMATED additional number of runs          36         120
+  Loop number         322
+ accept/reject         989        1507
+ accept/reject         827        1669
+ iforwt      804034
+  correlation eps   5.5357277E-02
+  conv eps     0.1620581               6
+ ESTIMATED additional number of runs          36         119
+  Loop number         323
+ accept/reject         823        1673
+ accept/reject         968        1528
+ iforwt      806531
+  correlation eps   5.4813027E-02
+  conv eps     0.1611172               6
+ ESTIMATED additional number of runs          36         120
+  Loop number         324
+ accept/reject         948        1548
+ accept/reject         936        1560
+ iforwt      809028
+  correlation eps   4.9613088E-02
+  conv eps     0.1589481               6
+ ESTIMATED additional number of runs          35         117
+  Loop number         325
+ accept/reject         799        1697
+ accept/reject         954        1542
+ iforwt      811525
+  correlation eps   4.8955232E-02
+  conv eps     0.1609541               6
+ ESTIMATED additional number of runs          36         121
+  Loop number         326
+ accept/reject         989        1507
+ accept/reject         972        1524
+ iforwt      814022
+  correlation eps   4.4477850E-02
+  conv eps     0.1593716               6
+ ESTIMATED additional number of runs          35         119
+  Loop number         327
+ accept/reject         881        1615
+ accept/reject         940        1556
+ iforwt      816519
+  correlation eps   4.4667900E-02
+  conv eps     0.1586882               6
+ ESTIMATED additional number of runs          35         120
+  Loop number         328
+ accept/reject         932        1564
+ accept/reject         908        1588
+ iforwt      819016
+  correlation eps   4.4938743E-02
+  conv eps     0.1586881               6
+ ESTIMATED additional number of runs          35         120
+  Loop number         329
+ accept/reject         868        1628
+ accept/reject         956        1540
+ iforwt      821513
+  correlation eps   4.4716001E-02
+  conv eps     0.1579256               6
+ ESTIMATED additional number of runs          35         120
+  Loop number         330
+ accept/reject         902        1594
+ accept/reject         961        1535
+ iforwt      824010
+  correlation eps   4.5082390E-02
+  conv eps     0.1570683               6
+ ESTIMATED additional number of runs          35         119
+  Loop number         331
+ accept/reject         899        1597
+ accept/reject         925        1571
+ iforwt      826507
+  correlation eps   4.5529068E-02
+  conv eps     0.1569327               6
+ ESTIMATED additional number of runs          35         120
+  Loop number         332
+ accept/reject         950        1546
+ accept/reject         999        1497
+ iforwt      829004
+  correlation eps   4.5003116E-02
+  conv eps     0.1565807               6
+ ESTIMATED additional number of runs          35         120
+  Loop number         333
+ accept/reject         934        1562
+ accept/reject         953        1543
+ iforwt      831501
+  correlation eps   4.5600832E-02
+  conv eps     0.1569959               6
+ ESTIMATED additional number of runs          35         122
+  Loop number         334
+ accept/reject         869        1627
+ accept/reject         827        1669
+ iforwt      833998
+  correlation eps   4.5109332E-02
+  conv eps     0.1567466               6
+ ESTIMATED additional number of runs          35         122
+  Loop number         335
+ accept/reject         872        1624
+ accept/reject         920        1576
+ iforwt      836495
+  correlation eps   4.4871658E-02
+  conv eps     0.1558984               6
+ ESTIMATED additional number of runs          35         122
+  Loop number         336
+ accept/reject         945        1551
+ accept/reject         973        1523
+ iforwt      838992
+  correlation eps   4.4673979E-02
+  conv eps     0.1556633               6
+ ESTIMATED additional number of runs          35         122
+  Loop number         337
+ accept/reject         786        1710
+ accept/reject         942        1554
+ iforwt      841489
+  correlation eps   4.4944942E-02
+  conv eps     0.1563380               6
+ ESTIMATED additional number of runs          35         124
+  Loop number         338
+ accept/reject         893        1603
+ accept/reject         957        1539
+ iforwt      843986
+  correlation eps   4.4275165E-02
+  conv eps     0.1556336               6
+ ESTIMATED additional number of runs          35         123
+  Loop number         339
+ accept/reject         841        1655
+ accept/reject         941        1555
+ iforwt      846483
+  correlation eps   4.4107080E-02
+  conv eps     0.1552762               6
+ ESTIMATED additional number of runs          35         124
+  Loop number         340
+ accept/reject         908        1588
+ accept/reject         891        1605
+ iforwt      848980
+  correlation eps   4.3582082E-02
+  conv eps     0.1543010               6
+ ESTIMATED additional number of runs          35         123
+  Loop number         341
+ accept/reject         963        1533
+ accept/reject         946        1550
+ iforwt      851477
+  correlation eps   4.3915331E-02
+  conv eps     0.1544407               6
+ ESTIMATED additional number of runs          35         124
+  Loop number         342
+ accept/reject         876        1620
+ accept/reject         900        1596
+ iforwt      853974
+  correlation eps   4.2879283E-02
+  conv eps     0.1533799               6
+ ESTIMATED additional number of runs          35         123
+  Loop number         343
+ accept/reject         871        1625
+ accept/reject         965        1531
+ iforwt      856471
+  correlation eps   4.3529510E-02
+  conv eps     0.1534957               6
+ ESTIMATED additional number of runs          35         125
+  Loop number         344
+ accept/reject         889        1607
+ accept/reject         902        1594
+ iforwt      858968
+  correlation eps   4.3649554E-02
+  conv eps     0.1535270               6
+ ESTIMATED additional number of runs          35         125
+  Loop number         345
+ accept/reject         858        1638
+ accept/reject         998        1498
+ iforwt      861465
+  correlation eps   4.4128239E-02
+  conv eps     0.1517860               6
+ ESTIMATED additional number of runs          34         123
+  Loop number         346
+ accept/reject         847        1649
+ accept/reject         929        1567
+ iforwt      863962
+  correlation eps   4.6383649E-02
+  conv eps     0.1541380               6
+ ESTIMATED additional number of runs          36         128
+  Loop number         347
+ accept/reject         911        1585
+ accept/reject         933        1563
+ iforwt      866459
+  correlation eps   4.8574179E-02
+  conv eps     0.1543357               6
+ ESTIMATED additional number of runs          36         129
+  Loop number         348
+ accept/reject         932        1564
+ accept/reject         860        1636
+ iforwt      868956
+  correlation eps   4.8579931E-02
+  conv eps     0.1552691               6
+ ESTIMATED additional number of runs          36         131
+  Loop number         349
+ accept/reject         831        1665
+ accept/reject         817        1679
+ iforwt      871453
+  correlation eps   4.7650367E-02
+  conv eps     0.1542686               6
+ ESTIMATED additional number of runs          36         131
+  Loop number         350
+ accept/reject         923        1573
+ accept/reject         892        1604
+ iforwt      873950
+  correlation eps   4.6530843E-02
+  conv eps     0.1546864               6
+ ESTIMATED additional number of runs          36         132
+  Loop number         351
+ accept/reject         809        1687
+ accept/reject         898        1598
+ iforwt      876447
+  correlation eps   4.6682924E-02
+  conv eps     0.1549830               6
+ ESTIMATED additional number of runs          37         134
+  Loop number         352
+ accept/reject         900        1596
+ accept/reject         940        1556
+ iforwt      878944
+  correlation eps   4.5606881E-02
+  conv eps     0.1535024               6
+ ESTIMATED additional number of runs          36         132
+  Loop number         353
+ accept/reject         801        1695
+ accept/reject         890        1606
+ iforwt      881441
+  correlation eps   4.4248879E-02
+  conv eps     0.1511291               6
+ ESTIMATED additional number of runs          35         130
+  Loop number         354
+ accept/reject         861        1635
+ accept/reject         985        1511
+ iforwt      883938
+  correlation eps   4.4026256E-02
+  conv eps     0.1512069               6
+ ESTIMATED additional number of runs          35         130
+  Loop number         355
+ accept/reject        1019        1477
+ accept/reject         844        1652
+ iforwt      886435
+  correlation eps   4.3712199E-02
+  conv eps     0.1506591               6
+ ESTIMATED additional number of runs          35         131
+  Loop number         356
+ accept/reject         876        1620
+ accept/reject         856        1640
+ iforwt      888932
+  correlation eps   4.3933988E-02
+  conv eps     0.1497790               6
+ ESTIMATED additional number of runs          35         130
+  Loop number         357
+ accept/reject         895        1601
+ accept/reject         918        1578
+ iforwt      891429
+  correlation eps   4.6544164E-02
+  conv eps     0.1520034               6
+ ESTIMATED additional number of runs          36         134
+  Loop number         358
+ accept/reject         905        1591
+ accept/reject         840        1656
+ iforwt      893926
+  correlation eps   4.5499682E-02
+  conv eps     0.1505739               6
+ ESTIMATED additional number of runs          35         133
+  Loop number         359
+ accept/reject         871        1625
+ accept/reject         914        1582
+ iforwt      896423
+  correlation eps   4.5096993E-02
+  conv eps     0.1496366               6
+ ESTIMATED additional number of runs          35         132
+  Loop number         360
+ accept/reject         789        1707
+ accept/reject         976        1520
+ iforwt      898920
+  correlation eps   4.3670863E-02
+  conv eps     0.1475383               6
+ ESTIMATED additional number of runs          34         129
+  Loop number         361
+ accept/reject         873        1623
+ accept/reject         979        1517
+ iforwt      901417
+  correlation eps   4.4552714E-02
+  conv eps     0.1474448               6
+ ESTIMATED additional number of runs          34         130
+  Loop number         362
+ accept/reject         898        1598
+ accept/reject         857        1639
+ iforwt      903914
+  correlation eps   4.4467747E-02
+  conv eps     0.1473850               6
+ ESTIMATED additional number of runs          35         130
+  Loop number         363
+ accept/reject         887        1609
+ accept/reject         998        1498
+ iforwt      906411
+  correlation eps   4.4424444E-02
+  conv eps     0.1463631               6
+ ESTIMATED additional number of runs          34         130
+  Loop number         364
+ accept/reject         858        1638
+ accept/reject         920        1576
+ iforwt      908908
+  correlation eps   4.5011193E-02
+  conv eps     0.1461723               6
+ ESTIMATED additional number of runs          34         130
+  Loop number         365
+ accept/reject         983        1513
+ accept/reject         877        1619
+ iforwt      911405
+  correlation eps   4.5726269E-02
+  conv eps     0.1451506               6
+ ESTIMATED additional number of runs          34         129
+  Loop number         366
+ accept/reject         942        1554
+ accept/reject         904        1592
+ iforwt      913902
+  correlation eps   4.5623749E-02
+  conv eps     0.1449073               6
+ ESTIMATED additional number of runs          34         129
+  Loop number         367
+ accept/reject         886        1610
+ accept/reject         889        1607
+ iforwt      916399
+  correlation eps   4.4106990E-02
+  conv eps     0.1448574               6
+ ESTIMATED additional number of runs          34         130
+  Loop number         368
+ accept/reject        1004        1492
+ accept/reject         837        1659
+ iforwt      918896
+  correlation eps   4.4841379E-02
+  conv eps     0.1449711               6
+ ESTIMATED additional number of runs          34         131
+  Loop number         369
+ accept/reject         886        1610
+ accept/reject         919        1577
+ iforwt      921393
+  correlation eps   4.5003474E-02
+  conv eps     0.1448714               6
+ ESTIMATED additional number of runs          34         132
+  Loop number         370
+ accept/reject         874        1622
+ accept/reject         875        1621
+ iforwt      923890
+  correlation eps   4.4932157E-02
+  conv eps     0.1438388               6
+ ESTIMATED additional number of runs          34         130
+  Loop number         371
+ accept/reject         800        1696
+ accept/reject         816        1680
+ iforwt      926387
+  correlation eps   4.4933975E-02
+  conv eps     0.1426714               6
+ ESTIMATED additional number of runs          33         129
+  Loop number         372
+ accept/reject         951        1545
+ accept/reject         819        1677
+ iforwt      928884
+  correlation eps   4.5303524E-02
+  conv eps     0.1425507               6
+ ESTIMATED additional number of runs          33         129
+  Loop number         373
+ accept/reject         811        1685
+ accept/reject         931        1565
+ iforwt      931381
+  correlation eps   4.7753423E-02
+  conv eps     0.1462050               6
+ ESTIMATED additional number of runs          35         137
+  Loop number         374
+ accept/reject         900        1596
+ accept/reject         952        1544
+ iforwt      933878
+  correlation eps   4.7624886E-02
+  conv eps     0.1453877               6
+ ESTIMATED additional number of runs          35         136
+  Loop number         375
+ accept/reject         856        1640
+ accept/reject         905        1591
+ iforwt      936375
+  correlation eps   4.7608107E-02
+  conv eps     0.1449850               6
+ ESTIMATED additional number of runs          35         137
+  Loop number         376
+ accept/reject         833        1663
+ accept/reject         862        1634
+ iforwt      938872
+  correlation eps   4.8295677E-02
+  conv eps     0.1452217               6
+ ESTIMATED additional number of runs          35         137
+  Loop number         377
+ accept/reject         886        1610
+ accept/reject        1043        1453
+ iforwt      941369
+  correlation eps   4.8518836E-02
+  conv eps     0.1445241               6
+ ESTIMATED additional number of runs          35         137
+  Loop number         378
+ accept/reject         962        1534
+ accept/reject         834        1662
+ iforwt      943866
+  correlation eps   4.9062669E-02
+  conv eps     0.1445191               6
+ ESTIMATED additional number of runs          35         138
+  Loop number         379
+ accept/reject         936        1560
+ accept/reject        1012        1484
+ iforwt      946363
+  correlation eps   4.9446732E-02
+  conv eps     0.1443555               6
+ ESTIMATED additional number of runs          35         139
+  Loop number         380
+ accept/reject         788        1708
+ accept/reject        1007        1489
+ iforwt      948860
+  correlation eps   4.6550691E-02
+  conv eps     0.1419682               6
+ ESTIMATED additional number of runs          34         135
+  Loop number         381
+ accept/reject         936        1560
+ accept/reject         885        1611
+ iforwt      951357
+  correlation eps   4.6724975E-02
+  conv eps     0.1422560               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         382
+ accept/reject         974        1522
+ accept/reject         937        1559
+ iforwt      953854
+  correlation eps   4.7041148E-02
+  conv eps     0.1422087               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         383
+ accept/reject         865        1631
+ accept/reject         943        1553
+ iforwt      956351
+  correlation eps   4.6135336E-02
+  conv eps     0.1415089               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         384
+ accept/reject         828        1668
+ accept/reject         927        1569
+ iforwt      958848
+  correlation eps   4.4301510E-02
+  conv eps     0.1408420               6
+ ESTIMATED additional number of runs          34         136
+  Loop number         385
+ accept/reject         827        1669
+ accept/reject         869        1627
+ iforwt      961345
+  correlation eps   4.4148922E-02
+  conv eps     0.1404866               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         386
+ accept/reject         927        1569
+ accept/reject         852        1644
+ iforwt      963842
+  correlation eps   4.4130355E-02
+  conv eps     0.1405876               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         387
+ accept/reject         902        1594
+ accept/reject         859        1637
+ iforwt      966339
+  correlation eps   4.2431623E-02
+  conv eps     0.1382615               6
+ ESTIMATED additional number of runs          33         134
+  Loop number         388
+ accept/reject         916        1580
+ accept/reject         955        1541
+ iforwt      968836
+  correlation eps   4.2706817E-02
+  conv eps     0.1385846               6
+ ESTIMATED additional number of runs          33         135
+  Loop number         389
+ accept/reject         984        1512
+ accept/reject         827        1669
+ iforwt      971333
+  correlation eps   4.3127388E-02
+  conv eps     0.1381789               6
+ ESTIMATED additional number of runs          33         135
+  Loop number         390
+ accept/reject         929        1567
+ accept/reject         816        1680
+ iforwt      973830
+  correlation eps   4.3897092E-02
+  conv eps     0.1392279               6
+ ESTIMATED additional number of runs          34         137
+  Loop number         391
+ accept/reject         959        1537
+ accept/reject         930        1566
+ iforwt      976327
+  correlation eps   4.3469101E-02
+  conv eps     0.1397079               6
+ ESTIMATED additional number of runs          34         140
+  Loop number         392
+ accept/reject         952        1544
+ accept/reject         838        1658
+ iforwt      978824
+  correlation eps   4.3153942E-02
+  conv eps     0.1398707               6
+ ESTIMATED additional number of runs          34         140
+  Loop number         393
+ accept/reject         956        1540
+ accept/reject         858        1638
+ iforwt      981321
+  correlation eps   4.2916059E-02
+  conv eps     0.1389888               6
+ ESTIMATED additional number of runs          34         140
+  Loop number         394
+ accept/reject         820        1676
+ accept/reject         913        1583
+ iforwt      983818
+  correlation eps   4.2089462E-02
+  conv eps     0.1387865               6
+ ESTIMATED additional number of runs          34         140
+  Loop number         395
+ accept/reject         913        1583
+ accept/reject         914        1582
+ iforwt      986315
+  correlation eps   4.1509897E-02
+  conv eps     0.1375588               6
+ ESTIMATED additional number of runs          34         138
+  Loop number         396
+ accept/reject         855        1641
+ accept/reject         937        1559
+ iforwt      988812
+  correlation eps   4.2035043E-02
+  conv eps     0.1379743               6
+ ESTIMATED additional number of runs          34         140
+  Loop number         397
+ accept/reject         997        1499
+ accept/reject         826        1670
+ iforwt      991309
+  correlation eps   4.2310774E-02
+  conv eps     0.1370818               6
+ ESTIMATED additional number of runs          34         139
+  Loop number         398
+ accept/reject         927        1569
+ accept/reject         848        1648
+ iforwt      993806
+  correlation eps   4.2620689E-02
+  conv eps     0.1368159               6
+ ESTIMATED additional number of runs          34         139
+  Loop number         399
+ accept/reject         938        1558
+ accept/reject         846        1650
+ iforwt      996303
+  correlation eps   4.3400943E-02
+  conv eps     0.1378988               6
+ ESTIMATED additional number of runs          34         142
+  Loop number         400
+ accept/reject         992        1504
+ accept/reject         927        1569
+ iforwt      998800
+  correlation eps   4.3925196E-02
+  conv eps     0.1388682               6
+ ESTIMATED additional number of runs          35         145
+  Loop number         401
+ accept/reject         992        1504
+ accept/reject         925        1571
+ iforwt     1001297
+  correlation eps   4.4249088E-02
+  conv eps     0.1386138               6
+ ESTIMATED additional number of runs          35         146
+  Loop number         402
+ accept/reject         956        1540
+ accept/reject         912        1584
+ iforwt     1003794
+  correlation eps   4.2918980E-02
+  conv eps     0.1377109               6
+ ESTIMATED additional number of runs          34         144
+  Loop number         403
+ accept/reject         945        1551
+ accept/reject         904        1592
+ iforwt     1006291
+  correlation eps   4.3417245E-02
+  conv eps     0.1375939               6
+ ESTIMATED additional number of runs          34         146
+  Loop number         404
+ accept/reject         920        1576
+ accept/reject         865        1631
+ iforwt     1008788
+  correlation eps   4.2302191E-02
+  conv eps     0.1365750               6
+ ESTIMATED additional number of runs          34         144
+  Loop number         405
+ accept/reject         898        1598
+ accept/reject         955        1541
+ iforwt     1011285
+  correlation eps   4.2123020E-02
+  conv eps     0.1364395               6
+ ESTIMATED additional number of runs          34         145
+  Loop number         406
+ accept/reject         977        1519
+ accept/reject         915        1581
+ iforwt     1013782
+  correlation eps   4.2621285E-02
+  conv eps     0.1357976               6
+ ESTIMATED additional number of runs          34         144
+  Loop number         407
+ accept/reject         762        1734
+ accept/reject         873        1623
+ iforwt     1016279
+  correlation eps   4.0065408E-02
+  conv eps     0.1339952               6
+ ESTIMATED additional number of runs          33         141
+  Loop number         408
+ accept/reject         936        1560
+ accept/reject         869        1627
+ iforwt     1018776
+  correlation eps   3.8894027E-02
+  conv eps     0.1325199               6
+ ESTIMATED additional number of runs          32         138
+  Loop number         409
+ accept/reject         880        1616
+ accept/reject         869        1627
+ iforwt     1021273
+  correlation eps   3.8609952E-02
+  conv eps     0.1320078               6
+ ESTIMATED additional number of runs          32         138
+  Loop number         410
+ accept/reject         866        1630
+ accept/reject         857        1639
+ iforwt     1023770
+  correlation eps   3.8976163E-02
+  conv eps     0.1306148               6
+ ESTIMATED additional number of runs          32         135
+  Loop number         411
+ accept/reject         930        1566
+ accept/reject         841        1655
+ iforwt     1026267
+  correlation eps   3.8731635E-02
+  conv eps     0.1304101               6
+ ESTIMATED additional number of runs          32         136
+  Loop number         412
+ accept/reject         955        1541
+ accept/reject         803        1693
+ iforwt     1028764
+  correlation eps   3.9281934E-02
+  conv eps     0.1303017               6
+ ESTIMATED additional number of runs          32         136
+  Loop number         413
+ accept/reject         921        1575
+ accept/reject         841        1655
+ iforwt     1031261
+  correlation eps   3.9396763E-02
+  conv eps     0.1303665               6
+ ESTIMATED additional number of runs          32         137
+  Loop number         414
+ accept/reject         833        1663
+ accept/reject         915        1581
+ iforwt     1033758
+  correlation eps   4.0034056E-02
+  conv eps     0.1313638               6
+ ESTIMATED additional number of runs          32         139
+  Loop number         415
+ accept/reject         920        1576
+ accept/reject         825        1671
+ iforwt     1036255
+  correlation eps   4.0576279E-02
+  conv eps     0.1301456               6
+ ESTIMATED additional number of runs          32         138
+  Loop number         416
+ accept/reject         891        1605
+ accept/reject         967        1529
+ iforwt     1038752
+  correlation eps   4.1481853E-02
+  conv eps     0.1314835               6
+ ESTIMATED additional number of runs          33         141
+  Loop number         417
+ accept/reject         852        1644
+ accept/reject         917        1579
+ iforwt     1041249
+  correlation eps   4.1271240E-02
+  conv eps     0.1312469               6
+ ESTIMATED additional number of runs          33         142
+  Loop number         418
+ accept/reject         931        1565
+ accept/reject         823        1673
+ iforwt     1043746
+  correlation eps   4.1107595E-02
+  conv eps     0.1314141               6
+ ESTIMATED additional number of runs          33         142
+  Loop number         419
+ accept/reject         901        1595
+ accept/reject         941        1555
+ iforwt     1046243
+  correlation eps   4.1165650E-02
+  conv eps     0.1322441               6
+ ESTIMATED additional number of runs          33         145
+  Loop number         420
+ accept/reject         931        1565
+ accept/reject         998        1498
+ iforwt     1048740
+  correlation eps   4.1063666E-02
+  conv eps     0.1314427               6
+ ESTIMATED additional number of runs          33         144
+  Loop number         421
+ accept/reject         839        1657
+ accept/reject         936        1560
+ iforwt     1051237
+  correlation eps   4.0756613E-02
+  conv eps     0.1314179               6
+ ESTIMATED additional number of runs          33         145
+  Loop number         422
+ accept/reject         908        1588
+ accept/reject         953        1543
+ iforwt     1053734
+  correlation eps   4.0516883E-02
+  conv eps     0.1312337               6
+ ESTIMATED additional number of runs          33         145
+  Loop number         423
+ accept/reject         883        1613
+ accept/reject        1067        1429
+ iforwt     1056231
+  correlation eps   4.2312890E-02
+  conv eps     0.1310276               6
+ ESTIMATED additional number of runs          33         145
+  Loop number         424
+ accept/reject         951        1545
+ accept/reject         998        1498
+ iforwt     1058728
+  correlation eps   4.3217421E-02
+  conv eps     0.1306959               6
+ ESTIMATED additional number of runs          33         145
+  Loop number         425
+ accept/reject         864        1632
+ accept/reject         880        1616
+ iforwt     1061225
+  correlation eps   4.2647779E-02
+  conv eps     0.1307655               6
+ ESTIMATED additional number of runs          33         146
+  Loop number         426
+ accept/reject         956        1540
+ accept/reject         974        1522
+ iforwt     1063722
+  correlation eps   4.1550070E-02
+  conv eps     0.1303701               6
+ ESTIMATED additional number of runs          33         146
+  Loop number         427
+ accept/reject        1004        1492
+ accept/reject         906        1590
+ iforwt     1066219
+  correlation eps   4.1656613E-02
+  conv eps     0.1304851               6
+ ESTIMATED additional number of runs          33         147
+  Loop number         428
+ accept/reject         746        1750
+ accept/reject         891        1605
+ iforwt     1068716
+  correlation eps   4.1242391E-02
+  conv eps     0.1298189               6
+ ESTIMATED additional number of runs          33         146
+  Loop number         429
+ accept/reject         921        1575
+ accept/reject         931        1565
+ iforwt     1071213
+  correlation eps   4.0672511E-02
+  conv eps     0.1288402               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         430
+ accept/reject        1000        1496
+ accept/reject         935        1561
+ iforwt     1073710
+  correlation eps   4.0619612E-02
+  conv eps     0.1280318               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         431
+ accept/reject         888        1608
+ accept/reject         886        1610
+ iforwt     1076207
+  correlation eps   4.0447980E-02
+  conv eps     0.1279895               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         432
+ accept/reject         812        1684
+ accept/reject         777        1719
+ iforwt     1078704
+  correlation eps   3.9914817E-02
+  conv eps     0.1272888               6
+ ESTIMATED additional number of runs          32         142
+  Loop number         433
+ accept/reject         989        1507
+ accept/reject         933        1563
+ iforwt     1081201
+  correlation eps   4.0308267E-02
+  conv eps     0.1271392               6
+ ESTIMATED additional number of runs          32         142
+  Loop number         434
+ accept/reject         980        1516
+ accept/reject         978        1518
+ iforwt     1083698
+  correlation eps   3.9397776E-02
+  conv eps     0.1271251               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         435
+ accept/reject         956        1540
+ accept/reject        1028        1468
+ iforwt     1086195
+  correlation eps   3.9125025E-02
+  conv eps     0.1263447               6
+ ESTIMATED additional number of runs          32         141
+  Loop number         436
+ accept/reject        1014        1482
+ accept/reject         903        1593
+ iforwt     1088692
+  correlation eps   3.9617270E-02
+  conv eps     0.1258527               6
+ ESTIMATED additional number of runs          32         140
+  Loop number         437
+ accept/reject         908        1588
+ accept/reject         960        1536
+ iforwt     1091189
+  correlation eps   4.0502638E-02
+  conv eps     0.1266942               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         438
+ accept/reject         938        1558
+ accept/reject         998        1498
+ iforwt     1093686
+  correlation eps   4.1109562E-02
+  conv eps     0.1272044               6
+ ESTIMATED additional number of runs          32         145
+  Loop number         439
+ accept/reject         790        1706
+ iforwt     1096183
+  correlation eps   4.1229278E-02
+  conv eps     0.1268362               6
+ ESTIMATED additional number of runs          32         145
+  Loop number         440
+ accept/reject         890        1606
+ accept/reject         892        1604
+ iforwt     1098680
+  correlation eps   4.1130036E-02
+  conv eps     0.1264678               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         441
+ accept/reject         847        1649
+ accept/reject         922        1574
+ iforwt     1101177
+  correlation eps   4.1274965E-02
+  conv eps     0.1259902               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         442
+ accept/reject         916        1580
+ accept/reject         871        1625
+ iforwt     1103674
+  correlation eps   4.0939361E-02
+  conv eps     0.1256744               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         443
+ accept/reject        1031        1465
+ accept/reject         804        1692
+ iforwt     1106171
+  correlation eps   4.2009413E-02
+  conv eps     0.1253310               6
+ ESTIMATED additional number of runs          32         143
+  Loop number         444
+ accept/reject         927        1569
+ accept/reject         936        1560
+ iforwt     1108668
+  correlation eps   4.2247385E-02
+  conv eps     0.1254349               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         445
+ accept/reject         914        1582
+ accept/reject         974        1522
+ iforwt     1111165
+  correlation eps   4.2440802E-02
+  conv eps     0.1258085               6
+ ESTIMATED additional number of runs          32         145
+  Loop number         446
+ accept/reject         977        1519
+ accept/reject         899        1597
+ iforwt     1113662
+  correlation eps   4.2645216E-02
+  conv eps     0.1262882               6
+ ESTIMATED additional number of runs          33         147
+  Loop number         447
+ accept/reject         846        1650
+ accept/reject         875        1621
+ iforwt     1116159
+  correlation eps   4.2724043E-02
+  conv eps     0.1261275               6
+ ESTIMATED additional number of runs          33         147
+  Loop number         448
+ accept/reject         960        1536
+ accept/reject         877        1619
+ iforwt     1118656
+  correlation eps   4.2671204E-02
+  conv eps     0.1261894               6
+ ESTIMATED additional number of runs          33         148
+  Loop number         449
+ accept/reject         870        1626
+ accept/reject         999        1497
+ iforwt     1121153
+  correlation eps   4.2156041E-02
+  conv eps     0.1246359               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         450
+ accept/reject         867        1629
+ accept/reject         841        1655
+ iforwt     1123650
+  correlation eps   4.1661918E-02
+  conv eps     0.1244320               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         451
+ accept/reject         863        1633
+ accept/reject        1011        1485
+ iforwt     1126147
+  correlation eps   4.1838765E-02
+  conv eps     0.1245452               6
+ ESTIMATED additional number of runs          32         145
+  Loop number         452
+ accept/reject         873        1623
+ accept/reject         896        1600
+ iforwt     1128644
+  correlation eps   4.2642444E-02
+  conv eps     0.1247997               6
+ ESTIMATED additional number of runs          32         146
+  Loop number         453
+ accept/reject         915        1581
+ accept/reject         880        1616
+ iforwt     1131141
+  correlation eps   4.2313486E-02
+  conv eps     0.1249292               6
+ ESTIMATED additional number of runs          33         147
+  Loop number         454
+ accept/reject         917        1579
+ accept/reject         843        1653
+ iforwt     1133638
+  correlation eps   4.2717397E-02
+  conv eps     0.1250318               6
+ ESTIMATED additional number of runs          33         148
+  Loop number         455
+ accept/reject         917        1579
+ accept/reject         939        1557
+ iforwt     1136135
+  correlation eps   4.3102413E-02
+  conv eps     0.1244188               6
+ ESTIMATED additional number of runs          32         147
+  Loop number         456
+ accept/reject         946        1550
+ accept/reject         863        1633
+ iforwt     1138632
+  correlation eps   4.2890757E-02
+  conv eps     0.1241372               6
+ ESTIMATED additional number of runs          32         146
+  Loop number         457
+ accept/reject         832        1664
+ accept/reject         936        1560
+ iforwt     1141129
+  correlation eps   4.1502416E-02
+  conv eps     0.1223945               6
+ ESTIMATED additional number of runs          31         142
+  Loop number         458
+ accept/reject         846        1650
+ accept/reject         914        1582
+ iforwt     1143626
+  correlation eps   4.1433930E-02
+  conv eps     0.1220678               6
+ ESTIMATED additional number of runs          31         142
+  Loop number         459
+ accept/reject         781        1715
+ accept/reject         806        1690
+ iforwt     1146123
+  correlation eps   4.1389525E-02
+  conv eps     0.1226014               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         460
+ accept/reject         970        1526
+ accept/reject         735        1761
+ iforwt     1148620
+  correlation eps   4.0907562E-02
+  conv eps     0.1223941               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         461
+ accept/reject         952        1544
+ accept/reject         990        1506
+ iforwt     1151117
+  correlation eps   4.1539669E-02
+  conv eps     0.1222816               6
+ ESTIMATED additional number of runs          32         144
+  Loop number         462
+ accept/reject         899        1597
+ accept/reject         833        1663
+ iforwt     1153614
+  correlation eps   4.0202528E-02
+  conv eps     0.1207820               6
+ ESTIMATED additional number of runs          31         140
+  Loop number         463
+ accept/reject         854        1642
+ accept/reject         982        1514
+ iforwt     1156111
+  correlation eps   4.0886074E-02
+  conv eps     0.1207080               6
+ ESTIMATED additional number of runs          31         141
+  Loop number         464
+ accept/reject         920        1576
+ accept/reject         922        1574
+ iforwt     1158608
+  correlation eps   4.2287648E-02
+  conv eps     0.1212043               6
+ ESTIMATED additional number of runs          31         142
+  Loop number         465
+ accept/reject         857        1639
+ accept/reject         914        1582
+ iforwt     1161105
+  correlation eps   4.1662961E-02
+  conv eps     0.1199597               6
+ ESTIMATED additional number of runs          31         139
+  Loop number         466
+ accept/reject         914        1582
+ accept/reject         968        1528
+ iforwt     1163602
+  correlation eps   4.0821910E-02
+  conv eps     0.1189027               6
+ ESTIMATED additional number of runs          30         137
+  Loop number         467
+ accept/reject         971        1525
+ accept/reject         776        1720
+ iforwt     1166099
+  correlation eps   3.9047360E-02
+  conv eps     0.1187991               6
+ ESTIMATED additional number of runs          30         137
+  Loop number         468
+ accept/reject         864        1632
+ accept/reject         915        1581
+ iforwt     1168596
+  correlation eps   3.9011359E-02
+  conv eps     0.1183175               6
+ ESTIMATED additional number of runs          30         136
+  Loop number         469
+ accept/reject         869        1627
+ accept/reject         945        1551
+ iforwt     1171093
+  correlation eps   3.8939863E-02
+  conv eps     0.1180379               6
+ ESTIMATED additional number of runs          30         136
+  Loop number         470
+ accept/reject         764        1732
+ accept/reject         869        1627
+ iforwt     1173590
+  correlation eps   3.8261116E-02
+  conv eps     0.1158910               6
+ ESTIMATED additional number of runs          29         130
+  Loop number         471
+ accept/reject         929        1567
+ accept/reject         885        1611
+ iforwt     1176087
+  correlation eps   3.7644267E-02
+  conv eps     0.1150189               6
+ ESTIMATED additional number of runs          28         128
+  Loop number         472
+ accept/reject         942        1554
+ accept/reject         812        1684
+ iforwt     1178584
+  correlation eps   3.7839293E-02
+  conv eps     0.1152658               6
+ ESTIMATED additional number of runs          28         128
+  Loop number         473
+ accept/reject         923        1573
+ accept/reject         976        1520
+ iforwt     1181081
+  correlation eps   3.8013220E-02
+  conv eps     0.1153033               6
+ ESTIMATED additional number of runs          28         129
+  Loop number         474
+ accept/reject         870        1626
+ accept/reject         787        1709
+ iforwt     1183578
+  correlation eps   3.7926853E-02
+  conv eps     0.1153779               6
+ ESTIMATED additional number of runs          29         129
+  Loop number         475
+ accept/reject         854        1642
+ accept/reject        1070        1426
+ iforwt     1186075
+  correlation eps   3.7184775E-02
+  conv eps     0.1154774               6
+ ESTIMATED additional number of runs          29         130
+  Loop number         476
+ accept/reject         806        1690
+ accept/reject         888        1608
+ iforwt     1188572
+  correlation eps   3.6390066E-02
+  conv eps     0.1146002               6
+ ESTIMATED additional number of runs          28         128
+  Loop number         477
+ accept/reject         926        1570
+ accept/reject         893        1603
+ iforwt     1191069
+  correlation eps   3.6469698E-02
+  conv eps     0.1144809               6
+ ESTIMATED additional number of runs          28         128
+  Loop number         478
+ accept/reject         905        1591
+ accept/reject         945        1551
+ iforwt     1193566
+  correlation eps   3.6129594E-02
+  conv eps     0.1139497               6
+ ESTIMATED additional number of runs          28         126
+  Loop number         479
+ accept/reject         887        1609
+ accept/reject         873        1623
+ iforwt     1196063
+  correlation eps   3.5870790E-02
+  conv eps     0.1135930               6
+ ESTIMATED additional number of runs          28         126
+  Loop number         480
+ accept/reject         994        1502
+ accept/reject         927        1569
+ iforwt     1198560
+  correlation eps   3.5775721E-02
+  conv eps     0.1134014               6
+ ESTIMATED additional number of runs          28         125
+  Loop number         481
+ accept/reject         894        1602
+ accept/reject         910        1586
+ iforwt     1201057
+  correlation eps   3.5505593E-02
+  conv eps     0.1131190               6
+ ESTIMATED additional number of runs          28         125
+  Loop number         482
+ accept/reject         906        1590
+ accept/reject         932        1564
+ iforwt     1203554
+  correlation eps   3.4737229E-02
+  conv eps     0.1128976               6
+ ESTIMATED additional number of runs          28         124
+  Loop number         483
+ accept/reject         835        1661
+ accept/reject         862        1634
+ iforwt     1206051
+  correlation eps   3.4146607E-02
+  conv eps     0.1121148               6
+ ESTIMATED additional number of runs          27         122
+  Loop number         484
+ accept/reject         968        1528
+ accept/reject         848        1648
+ iforwt     1208548
+  correlation eps   3.3467352E-02
+  conv eps     0.1110802               6
+ ESTIMATED additional number of runs          27         119
+  Loop number         485
+ accept/reject         830        1666
+ accept/reject         913        1583
+ iforwt     1211045
+  correlation eps   3.3410013E-02
+  conv eps     0.1109404               6
+ ESTIMATED additional number of runs          27         119
+  Loop number         486
+ accept/reject         904        1592
+ accept/reject         902        1594
+ iforwt     1213542
+  correlation eps   3.3482254E-02
+  conv eps     0.1110831               6
+ ESTIMATED additional number of runs          27         120
+  Loop number         487
+ accept/reject         875        1621
+ accept/reject         944        1552
+ iforwt     1216039
+  correlation eps   3.3692956E-02
+  conv eps     0.1107168               6
+ ESTIMATED additional number of runs          27         119
+  Loop number         488
+ accept/reject         928        1568
+ accept/reject         837        1659
+ iforwt     1218536
+  correlation eps   3.3185959E-02
+  conv eps     0.1101434               6
+ ESTIMATED additional number of runs          26         117
+  Loop number         489
+ accept/reject         813        1683
+ accept/reject         854        1642
+ iforwt     1221033
+  correlation eps   3.2824934E-02
+  conv eps     0.1100821               6
+ ESTIMATED additional number of runs          26         117
+  Loop number         490
+ accept/reject         801        1695
+ accept/reject         922        1574
+ iforwt     1223530
+  correlation eps   3.2827079E-02
+  conv eps     0.1096857               6
+ ESTIMATED additional number of runs          26         116
+  Loop number         491
+ accept/reject         883        1613
+ accept/reject         955        1541
+ iforwt     1226027
+  correlation eps   3.3270419E-02
+  conv eps     0.1101265               6
+ ESTIMATED additional number of runs          27         118
+  Loop number         492
+ accept/reject         993        1503
+ accept/reject         994        1502
+ iforwt     1228524
+  correlation eps   3.3636391E-02
+  conv eps     0.1106632               6
+ ESTIMATED additional number of runs          27         119
+  Loop number         493
+ accept/reject         916        1580
+ accept/reject         924        1572
+ iforwt     1231021
+  correlation eps   3.3555627E-02
+  conv eps     0.1095530               6
+ ESTIMATED additional number of runs          26         116
+  Loop number         494
+ accept/reject         916        1580
+ accept/reject         971        1525
+ iforwt     1233518
+  correlation eps   3.3695966E-02
+  conv eps     0.1092420               6
+ ESTIMATED additional number of runs          26         116
+  Loop number         495
+ accept/reject         874        1622
+ accept/reject         941        1555
+ iforwt     1236015
+  correlation eps   3.3410043E-02
+  conv eps     0.1085761               6
+ ESTIMATED additional number of runs          26         114
+  Loop number         496
+ accept/reject         970        1526
+ accept/reject         799        1697
+ iforwt     1238512
+  correlation eps   3.3307552E-02
+  conv eps     0.1084784               6
+ ESTIMATED additional number of runs          26         114
+  Loop number         497
+ accept/reject         888        1608
+ accept/reject         862        1634
+ iforwt     1241009
+  correlation eps   3.2819331E-02
+  conv eps     0.1071622               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         498
+ accept/reject         930        1566
+ accept/reject         886        1610
+ iforwt     1243506
+  correlation eps   3.3201247E-02
+  conv eps     0.1074297               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         499
+ accept/reject         985        1511
+ accept/reject         926        1570
+ iforwt     1246003
+  correlation eps   3.3762753E-02
+  conv eps     0.1070057               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         500
+ accept/reject         989        1507
+ accept/reject         947        1549
+ iforwt     1248500
+  correlation eps   3.3232808E-02
+  conv eps     0.1064583               6
+ ESTIMATED additional number of runs          25         109
+  Loop number         501
+ accept/reject         907        1589
+ accept/reject         955        1541
+ iforwt     1250997
+  correlation eps   3.2982141E-02
+  conv eps     0.1061211               6
+ ESTIMATED additional number of runs          25         109
+  Loop number         502
+ accept/reject         896        1600
+ accept/reject         827        1669
+ iforwt     1253494
+  correlation eps   3.2821596E-02
+  conv eps     0.1056655               6
+ ESTIMATED additional number of runs          24         107
+  Loop number         503
+ accept/reject         964        1532
+ accept/reject         987        1509
+ iforwt     1255991
+  correlation eps   3.2882005E-02
+  conv eps     0.1053375               6
+ ESTIMATED additional number of runs          24         107
+  Loop number         504
+ accept/reject         879        1617
+ accept/reject         926        1570
+ iforwt     1258488
+  correlation eps   3.2029361E-02
+  conv eps     0.1036198               6
+ ESTIMATED additional number of runs          23         101
+  Loop number         505
+ accept/reject         942        1554
+ accept/reject         822        1674
+ iforwt     1260985
+  correlation eps   3.1845033E-02
+  conv eps     0.1037843               6
+ ESTIMATED additional number of runs          23         102
+  Loop number         506
+ accept/reject         895        1601
+ accept/reject         814        1682
+ iforwt     1263482
+  correlation eps   3.2132447E-02
+  conv eps     0.1041603               6
+ ESTIMATED additional number of runs          24         103
+  Loop number         507
+ accept/reject         998        1498
+ accept/reject         936        1560
+ iforwt     1265979
+  correlation eps   3.2194078E-02
+  conv eps     0.1041240               6
+ ESTIMATED additional number of runs          24         104
+  Loop number         508
+ accept/reject         878        1618
+ accept/reject        1033        1463
+ iforwt     1268476
+  correlation eps   3.2721400E-02
+  conv eps     0.1046951               6
+ ESTIMATED additional number of runs          24         105
+  Loop number         509
+ accept/reject         850        1646
+ accept/reject         871        1625
+ iforwt     1270973
+  correlation eps   3.1978011E-02
+  conv eps     0.1043414               6
+ ESTIMATED additional number of runs          24         105
+  Loop number         510
+ accept/reject         907        1589
+ accept/reject         925        1571
+ iforwt     1273470
+  correlation eps   3.2091796E-02
+  conv eps     0.1039608               6
+ ESTIMATED additional number of runs          24         104
+  Loop number         511
+ accept/reject         921        1575
+ accept/reject         893        1603
+ iforwt     1275967
+  correlation eps   3.1948388E-02
+  conv eps     0.1033560               6
+ ESTIMATED additional number of runs          23         102
+  Loop number         512
+ accept/reject         907        1589
+ accept/reject         887        1609
+ iforwt     1278464
+  correlation eps   3.1989396E-02
+  conv eps     0.1036455               6
+ ESTIMATED additional number of runs          24         103
+  Loop number         513
+ accept/reject         887        1609
+ accept/reject         963        1533
+ iforwt     1280961
+  correlation eps   3.2833755E-02
+  conv eps     0.1057114               6
+ ESTIMATED additional number of runs          25         110
+  Loop number         514
+ accept/reject         928        1568
+ accept/reject         952        1544
+ iforwt     1283458
+  correlation eps   3.2584965E-02
+  conv eps     0.1059672               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         515
+ accept/reject         934        1562
+ accept/reject        1012        1484
+ iforwt     1285955
+  correlation eps   3.1985760E-02
+  conv eps     0.1043612               6
+ ESTIMATED additional number of runs          24         107
+  Loop number         516
+ accept/reject         868        1628
+ accept/reject         966        1530
+ iforwt     1288452
+  correlation eps   3.2384694E-02
+  conv eps     0.1053950               6
+ ESTIMATED additional number of runs          25         110
+  Loop number         517
+ accept/reject         905        1591
+ accept/reject         907        1589
+ iforwt     1290949
+  correlation eps   3.3972979E-02
+  conv eps     0.1059273               6
+ ESTIMATED additional number of runs          25         112
+  Loop number         518
+ accept/reject         914        1582
+ accept/reject         840        1656
+ iforwt     1293446
+  correlation eps   3.4083128E-02
+  conv eps     0.1056687               6
+ ESTIMATED additional number of runs          25         112
+  Loop number         519
+ accept/reject         888        1608
+ accept/reject         863        1633
+ iforwt     1295943
+  correlation eps   3.4029782E-02
+  conv eps     0.1053014               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         520
+ accept/reject         924        1572
+ accept/reject         948        1548
+ iforwt     1298440
+  correlation eps   3.4452081E-02
+  conv eps     0.1051036               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         521
+ accept/reject         859        1637
+ accept/reject         982        1514
+ iforwt     1300937
+  correlation eps   3.4241140E-02
+  conv eps     0.1043528               6
+ ESTIMATED additional number of runs          25         109
+  Loop number         522
+ accept/reject         938        1558
+ accept/reject        1008        1488
+ iforwt     1303434
+  correlation eps   3.4795642E-02
+  conv eps     0.1048421               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         523
+ accept/reject         973        1523
+ accept/reject         921        1575
+ iforwt     1305931
+  correlation eps   3.3961177E-02
+  conv eps     0.1042325               6
+ ESTIMATED additional number of runs          25         109
+  Loop number         524
+ accept/reject         948        1548
+ accept/reject         931        1565
+ iforwt     1308428
+  correlation eps   3.3377111E-02
+  conv eps     0.1036880               6
+ ESTIMATED additional number of runs          24         108
+  Loop number         525
+ accept/reject         888        1608
+ accept/reject         969        1527
+ iforwt     1310925
+  correlation eps   3.3425868E-02
+  conv eps     0.1041026               6
+ ESTIMATED additional number of runs          25         110
+  Loop number         526
+ accept/reject         889        1607
+ accept/reject         939        1557
+ iforwt     1313422
+  correlation eps   3.3662260E-02
+  conv eps     0.1038437               6
+ ESTIMATED additional number of runs          24         109
+  Loop number         527
+ accept/reject         922        1574
+ accept/reject         873        1623
+ iforwt     1315919
+  correlation eps   3.3415020E-02
+  conv eps     0.1036528               6
+ ESTIMATED additional number of runs          24         109
+  Loop number         528
+ accept/reject         965        1531
+ accept/reject         897        1599
+ iforwt     1318416
+  correlation eps   3.3757687E-02
+  conv eps     0.1041621               6
+ ESTIMATED additional number of runs          25         111
+  Loop number         529
+ accept/reject         942        1554
+ accept/reject         903        1593
+ iforwt     1320913
+  correlation eps   3.2918572E-02
+  conv eps     0.1028231               6
+ ESTIMATED additional number of runs          24         107
+  Loop number         530
+ accept/reject         892        1604
+ accept/reject         926        1570
+ iforwt     1323410
+  correlation eps   3.2729387E-02
+  conv eps     0.1024401               6
+ ESTIMATED additional number of runs          24         106
+  Loop number         531
+ accept/reject         871        1625
+ accept/reject         972        1524
+ iforwt     1325907
+  correlation eps   3.2321751E-02
+  conv eps     0.1019514               6
+ ESTIMATED additional number of runs          23         105
+  Loop number         532
+ accept/reject         955        1541
+ accept/reject         906        1590
+ iforwt     1328404
+  correlation eps   3.2051206E-02
+  conv eps     0.1015911               6
+ ESTIMATED additional number of runs          23         104
+  Loop number         533
+ accept/reject         860        1636
+ accept/reject         916        1580
+ iforwt     1330901
+  correlation eps   3.2217145E-02
+  conv eps     0.1013058               6
+ ESTIMATED additional number of runs          23         103
+  Loop number         534
+ accept/reject         856        1640
+ accept/reject         884        1612
+ iforwt     1333398
+  correlation eps   3.2608211E-02
+  conv eps     0.1013757               6
+ ESTIMATED additional number of runs          23         103
+  Loop number         535
+ accept/reject         973        1523
+ accept/reject         903        1593
+ iforwt     1335895
+  correlation eps   3.2648146E-02
+  conv eps     0.1013090               6
+ ESTIMATED additional number of runs          23         104
+  Loop number         536
+ accept/reject         860        1636
+ accept/reject         870        1626
+ iforwt     1338392
+  correlation eps   3.1643867E-02
+  conv eps     9.9559292E-02           6
+ ESTIMATED additional number of runs          22          98
+  Loop number         537
+ accept/reject         871        1625
+ accept/reject         900        1596
+ iforwt     1340889
+  correlation eps   3.1157792E-02
+  conv eps     9.8357745E-02           6
+ ESTIMATED additional number of runs          21          94
+  Loop number         538
+ accept/reject         830        1666
+ accept/reject         809        1687
+ iforwt     1343386
+  correlation eps   3.1071901E-02
+  conv eps     9.7842790E-02           6
+ ESTIMATED additional number of runs          21          93
+  Loop number         539
+ accept/reject         835        1661
+ accept/reject         862        1634
+ iforwt     1345883
+  correlation eps   3.0403316E-02
+  conv eps     9.7372867E-02           6
+ ESTIMATED additional number of runs          21          91
+  Loop number         540
+ accept/reject         863        1633
+ accept/reject         907        1589
+ iforwt     1348380
+  correlation eps   2.9750586E-02
+  conv eps     9.6183524E-02           6
+ ESTIMATED additional number of runs          20          88
+  Loop number         541
+ accept/reject         969        1527
+ accept/reject         857        1639
+ iforwt     1350877
+  correlation eps   2.9535174E-02
+  conv eps     9.6124224E-02           6
+ ESTIMATED additional number of runs          20          88
+  Loop number         542
+ accept/reject         916        1580
+ accept/reject         887        1609
+ iforwt     1353374
+  correlation eps   2.9244542E-02
+  conv eps     9.5386565E-02           6
+ ESTIMATED additional number of runs          19          85
+  Loop number         543
+ accept/reject         911        1585
+ accept/reject         903        1593
+ iforwt     1355871
+  correlation eps   2.9220521E-02
+  conv eps     9.5352568E-02           6
+ ESTIMATED additional number of runs          19          85
+  Loop number         544
+ accept/reject         874        1622
+ accept/reject         868        1628
+ iforwt     1358368
+  correlation eps   2.9130340E-02
+  conv eps     9.4867967E-02           6
+ ESTIMATED additional number of runs          19          83
+  Loop number         545
+ accept/reject         936        1560
+ accept/reject        1034        1462
+ iforwt     1360865
+  correlation eps   2.9287338E-02
+  conv eps     9.5405489E-02           6
+ ESTIMATED additional number of runs          19          85
+  Loop number         546
+ accept/reject         986        1510
+ accept/reject         789        1707
+ iforwt     1363362
+  correlation eps   2.9289842E-02
+  conv eps     9.5487580E-02           6
+ ESTIMATED additional number of runs          19          86
+  Loop number         547
+ accept/reject         955        1541
+ accept/reject         836        1660
+ iforwt     1365859
+  correlation eps   2.9616952E-02
+  conv eps     9.4914570E-02           6
+ ESTIMATED additional number of runs          19          84
+  Loop number         548
+ accept/reject         940        1556
+ accept/reject         938        1558
+ iforwt     1368356
+  correlation eps   2.9403567E-02
+  conv eps     9.4751604E-02           6
+ ESTIMATED additional number of runs          19          84
+  Loop number         549
+ accept/reject         895        1601
+ accept/reject         995        1501
+ iforwt     1370853
+  correlation eps   2.9347539E-02
+  conv eps     9.4376139E-02           6
+ ESTIMATED additional number of runs          19          82
+  Loop number         550
+ accept/reject        1035        1461
+ accept/reject         888        1608
+ iforwt     1373350
+  correlation eps   2.9170036E-02
+  conv eps     9.4163753E-02           6
+ ESTIMATED additional number of runs          19          82
+  Loop number         551
+ accept/reject        1022        1474
+ accept/reject         836        1660
+ iforwt     1375847
+  correlation eps   2.9392362E-02
+  conv eps     9.4197907E-02           6
+ ESTIMATED additional number of runs          19          82
+  Loop number         552
+ accept/reject         942        1554
+ accept/reject         881        1615
+ iforwt     1378344
+  correlation eps   2.9555976E-02
+  conv eps     9.3784839E-02           6
+ ESTIMATED additional number of runs          18          81
+  Loop number         553
+ accept/reject         916        1580
+ accept/reject         868        1628
+ iforwt     1380841
+  correlation eps   2.9101729E-02
+  conv eps     9.3461655E-02           6
+ ESTIMATED additional number of runs          18          80
+  Loop number         554
+ accept/reject         956        1540
+ accept/reject         904        1592
+ iforwt     1383338
+  correlation eps   2.9253840E-02
+  conv eps     9.2971861E-02           6
+ ESTIMATED additional number of runs          18          78
+  Loop number         555
+ accept/reject         957        1539
+ accept/reject         835        1661
+ iforwt     1385835
+  correlation eps   2.8702497E-02
+  conv eps     9.2911184E-02           6
+ ESTIMATED additional number of runs          18          78
+  Loop number         556
+ accept/reject         932        1564
+ accept/reject         809        1687
+ iforwt     1388332
+  correlation eps   2.8450966E-02
+  conv eps     9.2745513E-02           6
+ ESTIMATED additional number of runs          18          78
+  Loop number         557
+ accept/reject         731        1765
+ accept/reject         808        1688
+ iforwt     1390829
+  correlation eps   2.8465569E-02
+  conv eps     9.2859529E-02           6
+ ESTIMATED additional number of runs          18          78
+  Loop number         558
+ accept/reject         939        1557
+ accept/reject         982        1514
+ iforwt     1393326
+  correlation eps   2.8215945E-02
+  conv eps     9.2105791E-02           6
+ ESTIMATED additional number of runs          17          76
+  Loop number         559
+ accept/reject         915        1581
+ accept/reject         960        1536
+ iforwt     1395823
+  correlation eps   2.7789176E-02
+  conv eps     9.1337554E-02           6
+ ESTIMATED additional number of runs          17          73
+  Loop number         560
+ accept/reject         842        1654
+ accept/reject         869        1627
+ iforwt     1398320
+  correlation eps   2.7139366E-02
+  conv eps     8.9865215E-02           6
+ ESTIMATED additional number of runs          16          68
+  Loop number         561
+ accept/reject         933        1563
+ accept/reject         949        1547
+ iforwt     1400817
+  correlation eps   2.6615500E-02
+  conv eps     8.9002296E-02           6
+ ESTIMATED additional number of runs          15          65
+  Loop number         562
+ accept/reject         990        1506
+ accept/reject         812        1684
+ iforwt     1403314
+  correlation eps   2.6469350E-02
+  conv eps     8.9094862E-02           6
+ ESTIMATED additional number of runs          15          65
+  Loop number         563
+ accept/reject         943        1553
+ accept/reject         891        1605
+ iforwt     1405811
+  correlation eps   2.6400745E-02
+  conv eps     8.8576533E-02           6
+ ESTIMATED additional number of runs          15          64
+  Loop number         564
+ accept/reject         894        1602
+ accept/reject         942        1554
+ iforwt     1408308
+  correlation eps   2.6323915E-02
+  conv eps     8.8543087E-02           6
+ ESTIMATED additional number of runs          15          64
+  Loop number         565
+ accept/reject         870        1626
+ accept/reject         791        1705
+ iforwt     1410805
+  correlation eps   2.6110291E-02
+  conv eps     8.7427668E-02           6
+ ESTIMATED additional number of runs          14          60
+  Loop number         566
+ accept/reject         894        1602
+ accept/reject         941        1555
+ iforwt     1413302
+  correlation eps   2.6393950E-02
+  conv eps     8.6831510E-02           6
+ ESTIMATED additional number of runs          14          58
+  Loop number         567
+ accept/reject         925        1571
+ accept/reject         958        1538
+ iforwt     1415799
+  correlation eps   2.6182771E-02
+  conv eps     8.6917199E-02           6
+ ESTIMATED additional number of runs          14          58
+  Loop number         568
+ accept/reject         861        1635
+ accept/reject         897        1599
+ iforwt     1418296
+  correlation eps   2.6950359E-02
+  conv eps     8.7456830E-02           6
+ ESTIMATED additional number of runs          14          60
+  Loop number         569
+ accept/reject         905        1591
+ accept/reject         758        1738
+ iforwt     1420793
+  correlation eps   2.7307510E-02
+  conv eps     8.7529853E-02           6
+ ESTIMATED additional number of runs          14          60
+  Loop number         570
+ accept/reject         935        1561
+ accept/reject         876        1620
+ iforwt     1423290
+  correlation eps   2.7517200E-02
+  conv eps     8.7127477E-02           6
+ ESTIMATED additional number of runs          14          59
+  Loop number         571
+ accept/reject         930        1566
+ accept/reject         889        1607
+ iforwt     1425787
+  correlation eps   2.7704537E-02
+  conv eps     8.7628819E-02           6
+ ESTIMATED additional number of runs          14          60
+  Loop number         572
+ accept/reject         994        1502
+ accept/reject         848        1648
+ iforwt     1428284
+  correlation eps   2.7605772E-02
+  conv eps     8.7296315E-02           6
+ ESTIMATED additional number of runs          14          59
+  Loop number         573
+ accept/reject         921        1575
+ accept/reject         865        1631
+ iforwt     1430781
+  correlation eps   2.7346969E-02
+  conv eps     8.6794369E-02           6
+ ESTIMATED additional number of runs          14          58
+  Loop number         574
+ accept/reject         846        1650
+ accept/reject         915        1581
+ iforwt     1433278
+  correlation eps   2.7336597E-02
+  conv eps     8.6580344E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         575
+ accept/reject         866        1630
+ accept/reject         907        1589
+ iforwt     1435775
+  correlation eps   2.7499139E-02
+  conv eps     8.6669452E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         576
+ accept/reject         922        1574
+ accept/reject         943        1553
+ iforwt     1438272
+  correlation eps   2.7006149E-02
+  conv eps     8.6359009E-02           6
+ ESTIMATED additional number of runs          14          56
+  Loop number         577
+ accept/reject         874        1622
+ accept/reject         798        1698
+ iforwt     1440769
+  correlation eps   2.7010262E-02
+  conv eps     8.6680107E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         578
+ accept/reject         889        1607
+ accept/reject         827        1669
+ iforwt     1443266
+  correlation eps   2.7014554E-02
+  conv eps     8.7062486E-02           6
+ ESTIMATED additional number of runs          14          59
+  Loop number         579
+ accept/reject         846        1650
+ accept/reject         911        1585
+ iforwt     1445763
+  correlation eps   2.6045024E-02
+  conv eps     8.5009247E-02           6
+ ESTIMATED additional number of runs          13          52
+  Loop number         580
+ accept/reject         960        1536
+ accept/reject         926        1570
+ iforwt     1448260
+  correlation eps   2.6411176E-02
+  conv eps     8.5538238E-02           6
+ ESTIMATED additional number of runs          13          53
+  Loop number         581
+ accept/reject         877        1619
+ accept/reject         888        1608
+ iforwt     1450757
+  correlation eps   2.6669383E-02
+  conv eps     8.5643396E-02           6
+ ESTIMATED additional number of runs          13          54
+  Loop number         582
+ accept/reject         910        1586
+ accept/reject         883        1613
+ iforwt     1453254
+  correlation eps   2.7301192E-02
+  conv eps     8.6418681E-02           6
+ ESTIMATED additional number of runs          14          56
+  Loop number         583
+ accept/reject         922        1574
+ accept/reject         803        1693
+ iforwt     1455751
+  correlation eps   2.7307808E-02
+  conv eps     8.6608559E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         584
+ accept/reject         896        1600
+ accept/reject         855        1641
+ iforwt     1458248
+  correlation eps   2.7356684E-02
+  conv eps     8.6494558E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         585
+ accept/reject         843        1653
+ accept/reject        1013        1483
+ iforwt     1460745
+  correlation eps   2.7226210E-02
+  conv eps     8.6386420E-02           6
+ ESTIMATED additional number of runs          14          57
+  Loop number         586
+ accept/reject         870        1626
+ accept/reject         806        1690
+ iforwt     1463242
+  correlation eps   2.7247429E-02
+  conv eps     8.6273193E-02           6
+ ESTIMATED additional number of runs          14          56
+  Loop number         587
+ accept/reject         948        1548
+ accept/reject         858        1638
+ iforwt     1465739
+  correlation eps   2.7195930E-02
+  conv eps     8.6079806E-02           6
+ ESTIMATED additional number of runs          14          56
+  Loop number         588
+ accept/reject         993        1503
+ accept/reject         953        1543
+ iforwt     1468236
+  correlation eps   2.6467621E-02
+  conv eps     8.6021990E-02           6
+ ESTIMATED additional number of runs          14          55
+  Loop number         589
+ accept/reject         834        1662
+ accept/reject         956        1540
+ iforwt     1470733
+  correlation eps   2.6413679E-02
+  conv eps     8.5286885E-02           6
+ ESTIMATED additional number of runs          13          53
+  Loop number         590
+ accept/reject         910        1586
+ accept/reject         848        1648
+ iforwt     1473230
+  correlation eps   2.6422143E-02
+  conv eps     8.5374564E-02           6
+ ESTIMATED additional number of runs          13          53
+  Loop number         591
+ accept/reject         904        1592
+ accept/reject         917        1579
+ iforwt     1475727
+  correlation eps   2.6973546E-02
+  conv eps     8.5479572E-02           6
+ ESTIMATED additional number of runs          13          54
+  Loop number         592
+ accept/reject         938        1558
+ accept/reject         863        1633
+ iforwt     1478224
+  correlation eps   2.6848972E-02
+  conv eps     8.5285105E-02           6
+ ESTIMATED additional number of runs          13          53
+  Loop number         593
+ accept/reject         855        1641
+ accept/reject         892        1604
+ iforwt     1480721
+  correlation eps   2.6588202E-02
+  conv eps     8.5191280E-02           6
+ ESTIMATED additional number of runs          13          53
+  Loop number         594
+ accept/reject         938        1558
+ accept/reject        1024        1472
+ iforwt     1483218
+  correlation eps   2.5861561E-02
+  conv eps     8.3984882E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         595
+ accept/reject         912        1584
+ accept/reject        1000        1496
+ iforwt     1485715
+  correlation eps   2.6102960E-02
+  conv eps     8.4276021E-02           6
+ ESTIMATED additional number of runs          12          50
+  Loop number         596
+ accept/reject         807        1689
+ accept/reject         863        1633
+ iforwt     1488212
+  correlation eps   2.6241004E-02
+  conv eps     8.4185705E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         597
+ accept/reject         788        1708
+ accept/reject        1034        1462
+ iforwt     1490709
+  correlation eps   2.5784492E-02
+  conv eps     8.3962813E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         598
+ accept/reject         917        1579
+ accept/reject         925        1571
+ iforwt     1493206
+  correlation eps   2.5699496E-02
+  conv eps     8.4016703E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         599
+ accept/reject         937        1559
+ accept/reject         862        1634
+ iforwt     1495703
+  correlation eps   2.5859952E-02
+  conv eps     8.3964728E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         600
+ accept/reject         937        1559
+ accept/reject         890        1606
+ iforwt     1498200
+  correlation eps   2.5951684E-02
+  conv eps     8.3759345E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         601
+ accept/reject         905        1591
+ accept/reject         926        1570
+ iforwt     1500697
+  correlation eps   2.5897086E-02
+  conv eps     8.3739974E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         602
+ accept/reject         888        1608
+ accept/reject         967        1529
+ iforwt     1503194
+  correlation eps   2.5871813E-02
+  conv eps     8.3855100E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         603
+ accept/reject         933        1563
+ accept/reject         894        1602
+ iforwt     1505691
+  correlation eps   2.5191665E-02
+  conv eps     8.2808450E-02           6
+ ESTIMATED additional number of runs          11          45
+  Loop number         604
+ accept/reject         846        1650
+ accept/reject         998        1498
+ iforwt     1508188
+  correlation eps   2.6089072E-02
+  conv eps     8.3451405E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         605
+ accept/reject         850        1646
+ accept/reject         887        1609
+ iforwt     1510685
+  correlation eps   2.6091754E-02
+  conv eps     8.3414122E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         606
+ accept/reject         929        1567
+ accept/reject         829        1667
+ iforwt     1513182
+  correlation eps   2.5633097E-02
+  conv eps     8.3199784E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         607
+ accept/reject         947        1549
+ accept/reject         958        1538
+ iforwt     1515679
+  correlation eps   2.5723875E-02
+  conv eps     8.3520785E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         608
+ accept/reject        1011        1485
+ accept/reject         919        1577
+ iforwt     1518176
+  correlation eps   2.5015771E-02
+  conv eps     8.3669394E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         609
+ accept/reject         865        1631
+ accept/reject         946        1550
+ iforwt     1520673
+  correlation eps   2.4581373E-02
+  conv eps     8.3376750E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         610
+ accept/reject         884        1612
+ accept/reject         928        1568
+ iforwt     1523170
+  correlation eps   2.4603784E-02
+  conv eps     8.3444990E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         611
+ accept/reject         996        1500
+ accept/reject         857        1639
+ iforwt     1525667
+  correlation eps   2.4527609E-02
+  conv eps     8.3345138E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         612
+ accept/reject         898        1598
+ accept/reject         918        1578
+ iforwt     1528164
+  correlation eps   2.4425209E-02
+  conv eps     8.3127774E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         613
+ accept/reject         867        1629
+ accept/reject         961        1535
+ iforwt     1530661
+  correlation eps   2.4421535E-02
+  conv eps     8.2580417E-02           6
+ ESTIMATED additional number of runs          11          45
+  Loop number         614
+ accept/reject         910        1586
+ accept/reject         913        1583
+ iforwt     1533158
+  correlation eps   2.4401546E-02
+  conv eps     8.1879541E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         615
+ accept/reject         802        1694
+ accept/reject         897        1599
+ iforwt     1535655
+  correlation eps   2.4393551E-02
+  conv eps     8.2100794E-02           6
+ ESTIMATED additional number of runs          11          43
+  Loop number         616
+ accept/reject         895        1601
+ accept/reject         967        1529
+ iforwt     1538152
+  correlation eps   2.4454519E-02
+  conv eps     8.2331732E-02           6
+ ESTIMATED additional number of runs          11          44
+  Loop number         617
+ accept/reject         835        1661
+ accept/reject         957        1539
+ iforwt     1540649
+  correlation eps   2.4427012E-02
+  conv eps     8.2056738E-02           6
+ ESTIMATED additional number of runs          11          43
+  Loop number         618
+ accept/reject         946        1550
+ accept/reject         960        1536
+ iforwt     1543146
+  correlation eps   2.4632402E-02
+  conv eps     8.2078248E-02           6
+ ESTIMATED additional number of runs          11          43
+  Loop number         619
+ accept/reject         901        1595
+ accept/reject         904        1592
+ iforwt     1545643
+  correlation eps   2.4204522E-02
+  conv eps     8.1928827E-02           6
+ ESTIMATED additional number of runs          11          43
+  Loop number         620
+ accept/reject         947        1549
+ accept/reject         882        1614
+ iforwt     1548140
+  correlation eps   2.4171405E-02
+  conv eps     8.1865177E-02           6
+ ESTIMATED additional number of runs          11          43
+  Loop number         621
+ accept/reject         911        1585
+ accept/reject         844        1652
+ iforwt     1550637
+  correlation eps   2.4063237E-02
+  conv eps     8.1601739E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         622
+ accept/reject         974        1522
+ accept/reject         925        1571
+ iforwt     1553134
+  correlation eps   2.3650832E-02
+  conv eps     8.1516922E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         623
+ accept/reject         919        1577
+ accept/reject         941        1555
+ iforwt     1555631
+  correlation eps   2.2970140E-02
+  conv eps     8.1159711E-02           6
+ ESTIMATED additional number of runs          10          41
+  Loop number         624
+ accept/reject         979        1517
+ accept/reject         937        1559
+ iforwt     1558128
+  correlation eps   2.3061574E-02
+  conv eps     8.0994979E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         625
+ accept/reject         928        1568
+ accept/reject         806        1690
+ iforwt     1560625
+  correlation eps   2.3321062E-02
+  conv eps     8.0474362E-02           6
+ ESTIMATED additional number of runs          10          38
+  Loop number         626
+ accept/reject         902        1594
+ accept/reject         931        1565
+ iforwt     1563122
+  correlation eps   2.3737073E-02
+  conv eps     8.0384202E-02           6
+ ESTIMATED additional number of runs          10          38
+  Loop number         627
+ accept/reject         935        1561
+ accept/reject         851        1645
+ iforwt     1565619
+  correlation eps   2.3859225E-02
+  conv eps     8.0659837E-02           6
+ ESTIMATED additional number of runs          10          39
+  Loop number         628
+ accept/reject         857        1639
+ accept/reject         944        1552
+ iforwt     1568116
+  correlation eps   2.4018921E-02
+  conv eps     8.0345109E-02           6
+ ESTIMATED additional number of runs          10          38
+  Loop number         629
+ accept/reject         861        1635
+ accept/reject         779        1717
+ iforwt     1570613
+  correlation eps   2.4309352E-02
+  conv eps     8.0100179E-02           6
+ ESTIMATED additional number of runs          10          37
+  Loop number         630
+ accept/reject         961        1535
+ accept/reject         984        1512
+ iforwt     1573110
+  correlation eps   2.4083011E-02
+  conv eps     7.9721205E-02           6
+ ESTIMATED additional number of runs           9          36
+  Loop number         631
+ accept/reject         869        1627
+ accept/reject         871        1625
+ iforwt     1575607
+  correlation eps   2.4063319E-02
+  conv eps     8.0378368E-02           6
+ ESTIMATED additional number of runs          10          38
+  Loop number         632
+ accept/reject         851        1645
+ accept/reject         938        1558
+ iforwt     1578104
+  correlation eps   2.4136290E-02
+  conv eps     8.0433756E-02           6
+ ESTIMATED additional number of runs          10          39
+  Loop number         633
+ accept/reject         840        1656
+ accept/reject         814        1682
+ iforwt     1580601
+  correlation eps   2.4270430E-02
+  conv eps     7.9635791E-02           6
+ ESTIMATED additional number of runs           9          36
+  Loop number         634
+ accept/reject         958        1538
+ accept/reject         956        1540
+ iforwt     1583098
+  correlation eps   2.4479195E-02
+  conv eps     7.9587273E-02           6
+ ESTIMATED additional number of runs           9          36
+  Loop number         635
+ accept/reject         874        1622
+ accept/reject         912        1584
+ iforwt     1585595
+  correlation eps   2.4636738E-02
+  conv eps     7.9593174E-02           6
+ ESTIMATED additional number of runs           9          36
+  Loop number         636
+ accept/reject         950        1546
+ accept/reject         809        1687
+ iforwt     1588092
+  correlation eps   2.4477765E-02
+  conv eps     7.9682209E-02           6
+ ESTIMATED additional number of runs           9          36
+  Loop number         637
+ accept/reject         826        1670
+ accept/reject         944        1552
+ iforwt     1590589
+  correlation eps   2.4506085E-02
+  conv eps     8.0591112E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         638
+ accept/reject        1007        1489
+ accept/reject         943        1553
+ iforwt     1593086
+  correlation eps   2.4683423E-02
+  conv eps     8.0626808E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         639
+ accept/reject         932        1564
+ accept/reject         871        1625
+ iforwt     1595583
+  correlation eps   2.4500296E-02
+  conv eps     8.0721326E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         640
+ accept/reject         987        1509
+ accept/reject        1033        1463
+ iforwt     1598080
+  correlation eps   2.4359435E-02
+  conv eps     8.0788009E-02           6
+ ESTIMATED additional number of runs          10          41
+  Loop number         641
+ accept/reject         845        1651
+ accept/reject         878        1618
+ iforwt     1600577
+  correlation eps   2.3980141E-02
+  conv eps     8.1580766E-02           6
+ ESTIMATED additional number of runs          11          44
+  Loop number         642
+ accept/reject         864        1632
+ accept/reject         913        1583
+ iforwt     1603074
+  correlation eps   2.4006069E-02
+  conv eps     8.2107693E-02           6
+ ESTIMATED additional number of runs          12          46
+  Loop number         643
+ accept/reject         915        1581
+ accept/reject         922        1574
+ iforwt     1605571
+  correlation eps   2.4323165E-02
+  conv eps     8.2356341E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         644
+ accept/reject         883        1613
+ accept/reject         886        1610
+ iforwt     1608068
+  correlation eps   2.4275661E-02
+  conv eps     8.2408875E-02           6
+ ESTIMATED additional number of runs          12          47
+  Loop number         645
+ accept/reject         795        1701
+ accept/reject         860        1636
+ iforwt     1610565
+  correlation eps   2.4475157E-02
+  conv eps     8.3255067E-02           6
+ ESTIMATED additional number of runs          13          50
+  Loop number         646
+ accept/reject         945        1551
+ accept/reject         863        1633
+ iforwt     1613062
+  correlation eps   2.4392366E-02
+  conv eps     8.3183251E-02           6
+ ESTIMATED additional number of runs          13          50
+  Loop number         647
+ accept/reject         873        1623
+ accept/reject         925        1571
+ iforwt     1615559
+  correlation eps   2.4247348E-02
+  conv eps     8.2867675E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         648
+ accept/reject         979        1517
+ accept/reject         966        1530
+ iforwt     1618056
+  correlation eps   2.4578333E-02
+  conv eps     8.2964845E-02           6
+ ESTIMATED additional number of runs          13          50
+  Loop number         649
+ accept/reject         960        1536
+ accept/reject         987        1509
+ iforwt     1620553
+  correlation eps   2.4640083E-02
+  conv eps     8.2681440E-02           6
+ ESTIMATED additional number of runs          12          49
+  Loop number         650
+ accept/reject         931        1565
+ accept/reject         916        1580
+ iforwt     1623050
+  correlation eps   2.4453580E-02
+  conv eps     8.2458086E-02           6
+ ESTIMATED additional number of runs          12          48
+  Loop number         651
+ accept/reject         873        1623
+ accept/reject         919        1577
+ iforwt     1625547
+  correlation eps   2.4242043E-02
+  conv eps     8.1728309E-02           6
+ ESTIMATED additional number of runs          12          45
+  Loop number         652
+ accept/reject         967        1529
+ accept/reject         915        1581
+ iforwt     1628044
+  correlation eps   2.4047613E-02
+  conv eps     8.0941774E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         653
+ accept/reject         888        1608
+ accept/reject         876        1620
+ iforwt     1630541
+  correlation eps   2.4106100E-02
+  conv eps     8.0302447E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         654
+ accept/reject         782        1714
+ accept/reject         978        1518
+ iforwt     1633038
+  correlation eps   2.4404638E-02
+  conv eps     8.0247052E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         655
+ accept/reject         941        1555
+ accept/reject         813        1683
+ iforwt     1635535
+  correlation eps   2.4146535E-02
+  conv eps     8.0623657E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         656
+ accept/reject         926        1570
+ accept/reject         958        1538
+ iforwt     1638032
+  correlation eps   2.3592725E-02
+  conv eps     8.0738939E-02           6
+ ESTIMATED additional number of runs          11          42
+  Loop number         657
+ accept/reject         869        1627
+ accept/reject         893        1603
+ iforwt     1640529
+  correlation eps   2.3287326E-02
+  conv eps     8.0481894E-02           6
+ ESTIMATED additional number of runs          10          41
+  Loop number         658
+ accept/reject         868        1628
+ accept/reject         907        1589
+ iforwt     1643026
+  correlation eps   2.3061812E-02
+  conv eps     8.0460653E-02           6
+ ESTIMATED additional number of runs          10          41
+  Loop number         659
+ accept/reject         955        1541
+ accept/reject         807        1689
+ iforwt     1645523
+  correlation eps   2.2781566E-02
+  conv eps     8.0142796E-02           6
+ ESTIMATED additional number of runs          10          40
+  Loop number         660
+ accept/reject         933        1563
+ accept/reject         962        1534
+ iforwt     1648020
+  correlation eps   2.2815660E-02
+  conv eps     8.0295749E-02           6
+ ESTIMATED additional number of runs          10          41
+  Loop number         661
+ accept/reject        1010        1486
+ accept/reject         906        1590
+ iforwt     1650517
+  correlation eps   2.2748306E-02
+  conv eps     7.9834849E-02           6
+ ESTIMATED additional number of runs          10          39
+  Loop number         662
+ accept/reject         815        1681
+ accept/reject         895        1601
+ iforwt     1653014
+  correlation eps   2.2646666E-02
+  conv eps     7.9502434E-02           6
+ ESTIMATED additional number of runs          10          38
+  Loop number         663
+ accept/reject         981        1515
+ accept/reject         948        1548
+ iforwt     1655511
+  correlation eps   2.2471189E-02
+  conv eps     7.8744389E-02           6
+ ESTIMATED additional number of runs           9          35
+  Loop number         664
+ accept/reject         911        1585
+ accept/reject         958        1538
+ iforwt     1658008
+  correlation eps   2.2362888E-02
+  conv eps     7.8503922E-02           6
+ ESTIMATED additional number of runs           9          34
+  Loop number         665
+ accept/reject         947        1549
+ accept/reject         869        1627
+ iforwt     1660505
+  correlation eps   2.1574631E-02
+  conv eps     7.7347212E-02           6
+ ESTIMATED additional number of runs           8          30
+  Loop number         666
+ accept/reject         827        1669
+ accept/reject         882        1614
+ iforwt     1663002
+  correlation eps   2.1508448E-02
+  conv eps     7.7013314E-02           6
+ ESTIMATED additional number of runs           7          28
+  Loop number         667
+ accept/reject         914        1582
+ accept/reject         834        1662
+ iforwt     1665499
+  correlation eps   2.1837234E-02
+  conv eps     7.6614335E-02           6
+ ESTIMATED additional number of runs           7          27
+  Loop number         668
+ accept/reject         887        1609
+ accept/reject         860        1636
+ iforwt     1667996
+  correlation eps   2.1842539E-02
+  conv eps     7.6869100E-02           6
+ ESTIMATED additional number of runs           7          28
+  Loop number         669
+ accept/reject         785        1711
+ accept/reject         825        1671
+ iforwt     1670493
+  correlation eps   2.1832645E-02
+  conv eps     7.6845221E-02           6
+ ESTIMATED additional number of runs           7          28
+  Loop number         670
+ accept/reject         889        1607
+ accept/reject         949        1547
+ iforwt     1672990
+  correlation eps   2.1767080E-02
+  conv eps     7.6276071E-02           6
+ ESTIMATED additional number of runs           7          26
+  Loop number         671
+ accept/reject         949        1547
+ accept/reject         772        1724
+ iforwt     1675487
+  correlation eps   2.1745041E-02
+  conv eps     7.6265097E-02           6
+ ESTIMATED additional number of runs           7          26
+  Loop number         672
+ accept/reject         862        1634
+ accept/reject         914        1582
+ iforwt     1677984
+  correlation eps   2.1318913E-02
+  conv eps     7.6295882E-02           6
+ ESTIMATED additional number of runs           7          26
+  Loop number         673
+ accept/reject         923        1573
+ accept/reject         950        1546
+ iforwt     1680481
+  correlation eps   2.2221446E-02
+  conv eps     7.6226570E-02           6
+ ESTIMATED additional number of runs           7          26
+  Loop number         674
+ accept/reject         813        1683
+ accept/reject         892        1604
+ iforwt     1682978
+  correlation eps   2.1996975E-02
+  conv eps     7.5784162E-02           6
+ ESTIMATED additional number of runs           6          24
+  Loop number         675
+ accept/reject        1015        1481
+ accept/reject         889        1607
+ iforwt     1685475
+  correlation eps   2.1357119E-02
+  conv eps     7.5465336E-02           6
+ ESTIMATED additional number of runs           6          23
+  Loop number         676
+ accept/reject         956        1540
+ accept/reject         945        1551
+ iforwt     1687972
+  correlation eps   2.1126568E-02
+  conv eps     7.5069226E-02           6
+ ESTIMATED additional number of runs           6          21
+  Loop number         677
+ accept/reject         958        1538
+ accept/reject         912        1584
+ iforwt     1690469
+  correlation eps   2.1136118E-02
+  conv eps     7.5313412E-02           6
+ ESTIMATED additional number of runs           6          22
+  Loop number         678
+ accept/reject         966        1530
+ accept/reject         932        1564
+ iforwt     1692966
+  correlation eps   2.1342456E-02
+  conv eps     7.5298056E-02           6
+ ESTIMATED additional number of runs           6          22
+  Loop number         679
+ accept/reject         928        1568
+ accept/reject         934        1562
+ iforwt     1695463
+  correlation eps   2.1254301E-02
+  conv eps     7.5105734E-02           6
+ ESTIMATED additional number of runs           6          21
+  Loop number         680
+ accept/reject         967        1529
+ accept/reject         812        1684
+ iforwt     1697960
+  correlation eps   2.1185756E-02
+  conv eps     7.5057738E-02           6
+ ESTIMATED additional number of runs           6          21
+  Loop number         681
+ accept/reject         872        1624
+ accept/reject         771        1725
+ iforwt     1700457
+  correlation eps   2.1280959E-02
+  conv eps     7.4539237E-02           6
+ ESTIMATED additional number of runs           5          19
+  Loop number         682
+ accept/reject         992        1504
+ accept/reject         887        1609
+ iforwt     1702954
+  correlation eps   2.1770701E-02
+  conv eps     7.4096270E-02           6
+ ESTIMATED additional number of runs           5          17
+  Loop number         683
+ accept/reject         859        1637
+ accept/reject         941        1555
+ iforwt     1705451
+  correlation eps   2.1644553E-02
+  conv eps     7.4309230E-02           6
+ ESTIMATED additional number of runs           5          18
+  Loop number         684
+ accept/reject         869        1627
+ accept/reject         919        1577
+ iforwt     1707948
+  correlation eps   2.2625811E-02
+  conv eps     7.3989727E-02           6
+ ESTIMATED additional number of runs           5          17
+  Loop number         685
+ accept/reject         953        1543
+ accept/reject         936        1560
+ iforwt     1710445
+  correlation eps   2.2584699E-02
+  conv eps     7.3735498E-02           6
+ ESTIMATED additional number of runs           4          16
+  Loop number         686
+ accept/reject         942        1554
+ accept/reject         871        1625
+ iforwt     1712942
+  correlation eps   2.2790477E-02
+  conv eps     7.3647864E-02           6
+ ESTIMATED additional number of runs           4          16
+  Loop number         687
+ accept/reject         900        1596
+ accept/reject         865        1631
+ iforwt     1715439
+  correlation eps   2.2978015E-02
+  conv eps     7.3249079E-02           6
+ ESTIMATED additional number of runs           4          14
+  Loop number         688
+ accept/reject         927        1569
+ accept/reject         834        1662
+ iforwt     1717936
+  correlation eps   2.3231050E-02
+  conv eps     7.3181041E-02           6
+ ESTIMATED additional number of runs           4          14
+  Loop number         689
+ accept/reject         903        1593
+ accept/reject         905        1591
+ iforwt     1720433
+  correlation eps   2.3299523E-02
+  conv eps     7.3474891E-02           6
+ ESTIMATED additional number of runs           4          15
+  Loop number         690
+ accept/reject         826        1670
+ accept/reject         960        1536
+ iforwt     1722930
+  correlation eps   2.3236504E-02
+  conv eps     7.3220924E-02           6
+ ESTIMATED additional number of runs           4          14
+  Loop number         691
+ accept/reject         949        1547
+ accept/reject         906        1590
+ iforwt     1725427
+  correlation eps   2.3208115E-02
+  conv eps     7.3135830E-02           6
+ ESTIMATED additional number of runs           4          14
+  Loop number         692
+ accept/reject        1013        1483
+ accept/reject         859        1637
+ iforwt     1727924
+  correlation eps   2.3158938E-02
+  conv eps     7.2676979E-02           6
+ ESTIMATED additional number of runs           3          12
+  Loop number         693
+ accept/reject         873        1623
+ accept/reject        1024        1472
+ iforwt     1730421
+  correlation eps   2.3271289E-02
+  conv eps     7.2165102E-02           6
+ ESTIMATED additional number of runs           3          10
+  Loop number         694
+ accept/reject         892        1604
+ accept/reject         897        1599
+ iforwt     1732918
+  correlation eps   2.2919834E-02
+  conv eps     7.2489470E-02           6
+ ESTIMATED additional number of runs           3          11
+  Loop number         695
+ accept/reject        1029        1467
+ accept/reject         765        1731
+ iforwt     1735415
+  correlation eps   2.3085820E-02
+  conv eps     7.2463565E-02           6
+ ESTIMATED additional number of runs           3          11
+  Loop number         696
+ accept/reject         980        1516
+ accept/reject         968        1528
+ iforwt     1737912
+  correlation eps   2.3295457E-02
+  conv eps     7.2129197E-02           6
+ ESTIMATED additional number of runs           3          10
+  Loop number         697
+ accept/reject         966        1530
+ accept/reject         875        1621
+ iforwt     1740409
+  correlation eps   2.3210848E-02
+  conv eps     7.1560122E-02           6
+ ESTIMATED additional number of runs           2           7
+  Loop number         698
+ accept/reject         853        1643
+ accept/reject         960        1536
+ iforwt     1742906
+  correlation eps   2.3299597E-02
+  conv eps     7.1420863E-02           6
+ ESTIMATED additional number of runs           2           7
+  Loop number         699
+ accept/reject         947        1549
+ accept/reject         821        1675
+ iforwt     1745403
+  correlation eps   2.3271522E-02
+  conv eps     7.1437903E-02           6
+ ESTIMATED additional number of runs           2           7
+  Loop number         700
+ accept/reject         958        1538
+ accept/reject         892        1604
+ iforwt     1747900
+  correlation eps   2.3646576E-02
+  conv eps     7.1324408E-02           6
+ ESTIMATED additional number of runs           2           6
+  Loop number         701
+ accept/reject         903        1593
+ accept/reject         952        1544
+ iforwt     1750397
+  correlation eps   2.4016844E-02
+  conv eps     7.0917465E-02           6
+ ESTIMATED additional number of runs           1           4
+  Loop number         702
+ accept/reject         946        1550
+ accept/reject         820        1676
+ iforwt     1752894
+  correlation eps   2.4184207E-02
+  conv eps     7.0833564E-02           6
+ ESTIMATED additional number of runs           1           4
+  Loop number         703
+ accept/reject         907        1589
+ accept/reject         922        1574
+ iforwt     1755391
+  correlation eps   2.4048716E-02
+  conv eps     7.0186839E-02           6
+ ESTIMATED additional number of runs           1           1
+  Loop number         704
+ accept/reject         900        1596
+ accept/reject         845        1651
+ iforwt     1757888
+  correlation eps   2.3916861E-02
+  conv eps     6.9736578E-02           6
+ number of forward modelling calls     1757888
+  End of Metropolis-Hastings 
+ Inversion, time:     8191.670 secs.
+16357.655u 44.134s 2:39:03.98 171.8%	0+0k 0+0io 0pf+0w

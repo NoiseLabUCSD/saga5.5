@@ -1,0 +1,48 @@
+ sspmis_a   from the matched field workshop 93
+ c b A m12                                ! options
+1  32  10                            ! niter, q ,npop
+0.8 0.5 0.05                            ! px,pu,pm
+                         ! snap options
+
+1                       ! number of frequencies
+250                      ! frequencies
+1                        ! number of sectors
+ 1 00  00             ! dum, phase sp (00 = all), dum
+
+  100     0    0  20. 0.      !depth, dum,dum, range, dum
+   0.0000  1499.4    1    0 
+  100       1481.6
+ 100     1.8 -0.2        ! no sediment 50
+   0.0     1600.0
+   100   1600.0 
+ 1.8  -0.2  1750.0      ! bottom
+  0  0                   ! not used
+
+  78.0               ! source depth [m]
+ 5 99.9999 20          ! rec depth
+ 1                       ! number of ranges
+ 9300                ! receiver range
+
+ 4                        ! nparm                 
+ 2 1  1  1490.0 1510.0 51  ! ssp top
+2 2  1  1470.0 1490.0 51  ! ssp bottom
+8  1  0     1.0    100 51  ! source depth
+9  1  0       5000     10000 51  ! source range
+
+
+17 1  1  10   50    128   ! sediment thickness
+ 3  1  1 1500 1600   128   ! sound speed sed 
+ 3  2  1 1550 1750   128   ! sound speed sed 
+ 12 1  1 1600  1800  128   ! sound speed sed
+ 6  1  1 1.400 1.850 128      !density in sediment
+ 14 1 1 1.600 2.000 128       !density in half space
+*********
+ 2  1  1 1475 1485   128   ! sound speed ocean 
+ 1  1  1   100  110   128   ! water depth
+
+ 9  1  1 3901 6100  128   ! source range         
+ 8  1  1   10   80  128   ! source depth           
+
+ 107.244094848633   100.0000    0    0  10. 0.      !depth, dum,dum, range, dum
+
+

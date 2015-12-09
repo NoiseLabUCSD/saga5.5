@@ -1,0 +1,74 @@
+Elba 6 frequencies 
+E i   pX d                ! options
+
+  1000  64  5         ! niter, q, npop
+  0.8 0.5 0.05          ! px,pu,pm
+
+   130.   1.0   -1.
+     0.   1521.
+    36.   1519.
+    38.   1514.
+    50.   1511.
+   130.   1508.
+  -1.    -1.
+     0.   0.
+     1   1.5  1600.  0.09
+     1   1.5  1600.  0.09
+     1   1.5  1600.  0.09
+     2   1.5  1600.  0.09
+     2   1.5  1600.  0.09
+     2   1.5  1600.  0.09
+     3   1.5  1600.  0.09
+     3   1.5  1600.  0.09
+     5   1.5  1600.  0.09
+    -1.   1.8  1600.  0.09
+   0.   0.
+  6   316. 400 501 630 794 1000                ! nfreq, freq
+  1   60.                ! nsd sd
+  1   60.                ! nrd rd
+ -1   -1
+2                         ! isb (1=surf, 2=bott)
+  1                       ! tau0 
+198.8  198.5 196.4 196.3 195.5 192.8  ! source level
+76 74.5 72.2 70.5 67 63.5 ! noise level
+-30  -30 -30 -30 -30 -30  ! lambert law
+1          !   lampow
+10.03067 30  0.1706666                   ! tmin,tmax, tinc
+ 
+ 9                                     ! nparm
+ 11  1   -35 -25  128                   ! lambert DMU
+ 11  2   -5   5  128                   ! lambert DMU
+ 11  3   -5   5  128                   ! lambert DMU
+ 11  4   -5   5  128                   ! lambert DMU
+ 11  5   -5   5  128                   ! lambert DMU
+ 11  6   -5   5  128                  ! lambert DMU
+ 11  7  1530 1600  128                   ! vel sed 1
+ 11  8  0 100  128                   ! vel sed 1
+ 11  9  0 100  128                   ! vel sed 1
+ 11  10  0 0.3  128                   ! attenuation
+
+ 
+
+
+
+-------------------
+This is file  POPP.HLP.			Last Edit: DDE/6-Jun-1994
+By copying it to POPP.INP you can use it as input to POPP.
+-------------------
+TITLE
+H, RHOWC, ALPWC		! Water: depth, density (1.0), and absorption (0.)
+ZP(I), CP(I)		! Sound speed profile
+ -1.  -1.
+C2S, ALP2S		! Shear speed and attenuation (dB/m-kHz) in 
+			!   basement  (Not yet implemented)
+HBOT(I), RHOBOT(I), CBOT(I), ALPBOT(I)	! Bottom properties: layer
+				! thickness, density, sound speed, attenuation
+				! (last layer thickness = -1)
+ROUGHS, ROUGHB(1)	! Surface and bottom roughness (rms m)
+NFREQ, FREQ		! Number of frequencies (=1), frequency
+NS, (ZS(I), I= 1, NS)	! Number of sources; source depths
+NR, (ZR(I), I= 1, NR)	! Number of receivers; receiver depths
+				(For n > 1, these above two items untested)
+NL, NMAX		! Num. of computational layers (<0  =>default of 251);
+			! Maximum number of modes to calculate (<0 => default)
+RMIN, DELR, NUMRNG	! Ranges for TL: minimum, increment, number of ranges

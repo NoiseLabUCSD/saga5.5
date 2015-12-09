@@ -1,0 +1,40 @@
+#makefile for SNAP
+#
+#fortran compiler
+#
+# Standard
+#FC = kf77  -fkapargs='-conc'
+FC = f77  
+FCO = $(FC) -O
+#
+# debugging
+#
+# FC = f77 -g -C -O0 
+# FCO = $(FC) 
+#
+# Cray-2
+#
+#FC = cf77 -i64 -dp -Zv -Wd,-e7
+#FCO = $(FC) 
+# some machine dependent source files
+LIBDIR= ../obj/
+#
+
+snap:	slavesnap.o
+	f77 -o slave  slavesnap.o $(LIBDIR)snap.a 
+
+slavesnap.o:	 slavesnap.f 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

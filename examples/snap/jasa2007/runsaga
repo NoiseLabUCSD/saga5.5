@@ -1,0 +1,5 @@
+matlab -nodisplay << INN >> ./list.out
+sac2matfreqbeam
+% beamhour2kat % program file name
+quit
+INN

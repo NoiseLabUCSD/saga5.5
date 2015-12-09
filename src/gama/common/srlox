@@ -1,0 +1,13 @@
+      common /srlox/ rtol,atol,rterp,rmn,rmx,twin,rsrc,tsrc,rng,tminsr,
+     .   tmall,dbsr,rtmp(128),drtmp0,drtmp,csarr(128),crarr(128),
+     .   srloc(128),xyz(128,3),dz(128),dz0(128),nrnf,jzs,jzr,nzs,nzr,
+     .   nrangx,nrtot,nsr,jxy,nnxy,nxy(128),kxy(128),nrec,mmr0,mmr1,
+     .   mmr2,mr1(128),mr2(128),mrmin(0:50),m21,m22,krmin,krweak,mray,
+     .   mmray,iirr,nnda
+      integer*4 nrnf,jzs,jzr,nzs,nzr,nrangx,
+     .   nrtot,nsr,jxy,nnxy,nxy,kxy,nrec,mmr0,mmr1,mmr2,
+     .   mr1,mr2,mrmin,m21,m22,krmin,krweak,mray,mmray,
+     .   iirr,nnda
+      real*8 rtol,atol,rterp,rmn,rmx,twin,rsrc,tsrc,rng,tminsr,
+     .   tmall,dbsr,rtmp,drtmp0,drtmp,csarr,crarr,
+     .   srloc,xyz,dz,dz0

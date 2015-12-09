@@ -1,0 +1,5 @@
+c: deltaf_com
+c: OUTPUT VARIABLES:
+      common /dfreq1/ jfhi_up,jflo_up,ishft,ndfmaxl,isubb,
+     .                fint_maxl
+      integer*4 jfhi_up,jflo_up,ishft,ndfmaxl,isubb,fint_maxl

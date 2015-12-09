@@ -1,0 +1,7 @@
+#/bin/csh
+
+# copy one set of saga input to new set
+
+cp $1.dat $2.dat
+cp $1.in  $2.in
+cp $1.eof $2.eof

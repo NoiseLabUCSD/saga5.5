@@ -1,0 +1,4 @@
+c: i_o_1tf_com
+c: OUTPUT VARIABLES:
+      common /outtf_com/ tf(NTFMAX)
+      complex*8 tf

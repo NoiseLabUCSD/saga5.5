@@ -1,0 +1,71 @@
+#!/bin/bash 
+#  command file for the saga post processor
+#  Peter Gerstoft, 1994
+#
+ulimit -s unlimited
+ulimit -d unlimited
+
+#export sagabin $SAGADIR/bin
+export sagabin=$SAGADIR/bin/${HOSTTYPE}-$FORTRAN
+export FOR001=$1.dat
+export FOR002=$1.in
+export FOR003=$1.wei
+export FOR004=$1.unc 
+export FOR007=$1.pout
+export FOR009=$1.eof 
+export FOR010=$1.mat
+export FOR011=$1b.mat
+export FOR013=$1.m
+export FOR015=$1.cor
+export FOR016=$1.trf
+export FOR019=$1.plp
+export FOR020=$1.plt
+export FOR028=$1.cdr
+export FOR029=$1.bdr
+export FOR030=$1.obs
+export FOR060=$1.ext
+export DB 
+
+if [ $# == 3 ]; then
+  if [ "$3" == "cov" ];  then
+     export FOR002=cov.in
+     echo 'cov.in is used'  
+  fi
+  if [ "$3" == "dbx" ];  then
+     export DB=dbx
+     echo 'entering debugging mode'  
+  fi
+fi
+
+if [ $# == 1 ]; then
+  echo ' Only one parameter; Was the forward model specified ?'
+fi
+  if [ "$2" == "snap" ]; then 
+       $DB $sagabin/postsnap 
+  elif [ "$2" == "snaprd" ]; then 
+       $DB $sagabin/postsnaprd 
+  elif [ "$2" == "oast" ]; then 
+       $DB $sagabin/postoast 
+  elif [ "$2" == "oasr" ]; then 
+       $DB $sagabin/postoasr 
+  elif [ "$2" == "oastg" ]; then 
+       $DB $sagabin/postoastg 
+  elif [ "$2" == "popp" ]; then 
+       $DB $sagabin/postpopp 
+  elif [ "$2" == "tpem" ]; then 
+       $DB $sagabin/posttpem 
+  elif [ "$2" == "prosim" ]; then 
+       $DB $sagabin/postprosim 
+  elif [ "$2" == "cprosim" ]; then 
+       $DB $sagabin/postcprosim 
+  elif [ "$2" == "gama" ]; then 
+       $DB $sagabin/postgama 
+  elif [ "$2" == "ramgeo" ]; then 
+       $DB $sagabin/postramgeo 
+  elif [ "$2" == "orca" ]; then 
+       $DB $sagabin/postorca 
+  else 
+       echo " Forward model  "$2" not valid "
+ fi
+
+

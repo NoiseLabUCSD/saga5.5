@@ -1,0 +1,21 @@
+#! /bin/sh
+# mail_peter - send a message back to MPL 
+# 
+
+# these items identify the date/release of the codes
+DATE="September 2010"
+VERSION="5.5"
+
+# home address
+ADDRESS="gerstoft@ucsd.edu"
+
+# message
+MESSAGE="Installing SAGA V.${VERSION} (Rel. ${DATE}) on ${HOST} (${HOSTTYPE}) - ROOT $PWD "
+
+
+
+	echo "$MESSAGE" | mail $ADDRESS
+
+exit 0
+
+

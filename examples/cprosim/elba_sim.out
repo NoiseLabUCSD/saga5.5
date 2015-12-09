@@ -1,0 +1,30 @@
+ waa.dat, 96 frequencies all phones.                                            
+ W F e p                   ! options     
+ Observed data written out to unit 30 
+  Frequency domain matched filter
+  inversion reading real data in VA-format
+  plot of best model and the initial model
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 3 0 0 5 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Only positive gradients in sediment and bottom
+  reading ranges in....
+ number of ranges         128
+  ncurv=         128 nbart=           0
+ number of receiver depths read           1
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   1    200.00    260.00      0.47    7  128
+  2 Source depth (m)         8   1   1     55.00     65.00      0.08    7  128
+  3 Water depth (m)          1   1   1    125.00    135.00      0.08    7  128
+  4 Sediment depth (m)      17   1   1      1.00     20.00      0.15    7  128
+  5 Time delay              20   1   1      0.00      0.10      0.00    7  128
+  6 Sediment sound speed (   3   1   1   1460.00   1530.00      0.55    7  128
+  7 Sediment sound speed (   3   2   1   1460.00   1530.00      0.55    7  128
+  8 Bottom speed (m/s)      12   1   1   1533.00   1700.00      1.31    7  128
+  Number of data points       14976
+ Size of the search space: 10** 16.86

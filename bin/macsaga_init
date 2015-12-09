@@ -1,0 +1,22 @@
+#!/bin/csh
+# -------------------------------------
+#   initialization script for SAGA
+#       using the bash shell
+#
+#
+#   to init:    source   saga_init.bsh
+#
+#   My Machine dependent!
+#                     Newhall  WHOI
+# -------------------------------------
+
+echo ">>> Initializing SAGA <<<"
+#export SAGADIR=/usr/local/models/saga/saga50
+
+setenv FORTRAN xlf
+setenv HOSTTYPE 
+        powermac-xlf
+set path = ($path $SAGADIR/bin/$HOSTTYPE-$FORTRAN $SAGADIR/bin)
+
+# -------------------------------------------
+

@@ -1,0 +1,10 @@
+#!/bin/csh  
+#
+#foreach i (`ls *.f *.h */*.f */*.h`)
+#
+#foreach i (`ls *.f *.h Makefile`)
+foreach i (`ls dum.f`)
+echo '*******'
+echo $i
+  sed -e s/"real\*4"/"real\*8"/g -e s/"real "/"real\*8"/g  $i >! trans/$i
+end 

@@ -1,0 +1,4 @@
+      common /svp/ svtol,cmin,cmax(3),
+     .  csvp(0:51),zsvp(0:51),bsvp(2,0:51),cfsvp(0:51),zfsvp(0:51),
+     .  g0(51,2),g1(51,2),g2(51,2),artop,arbot,cs,cr,
+     .   nsvp,nfsvp,kseg,klev(0:3),kseq(2,3,3)

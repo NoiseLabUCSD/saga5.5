@@ -1,0 +1,244 @@
+test  comparison with oases and snap                                            
+   Wpfe                  ! options       
+ Observed data written out to unit 30 
+  plot of best model and the initial model
+ Incoherent addition over frequencies
+  inversion reading real data in VA-format
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 3 0 0 4 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Points in water:           2
+  number of receiver depths read          48
+  reading ranges in....
+ number of ranges           1
+  ncurv=           2 nbart=           0
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   4500.00   6500.00     15.75    7  128
+  2 Source depth (m)         8   1     50.00     90.00      0.31    7  128
+  3 Sediment sound speed (   3   1   1450.00   1550.00      0.79    7  128
+  4 Sediment sound speed (   3   2   1500.00   1600.00      0.79    7  128
+ Size of the search space: 10**  8.43
+  uses snap as forward model
+
+ Calling SNAP
+ flagpu           1
+  Frequency:   100.000000       200.000000    
+  R1,R2   1.79999995       2.00000000    
+  SCATT(1),SCATT(2)   0.00000000       0.00000000    
+  H0,H1   200.00000000000000        78.000000000000000     
+  ND0,ND1           2           2
+  BETA(1),BETA(2),BETA(3)  0.200000003      0.200000003       0.00000000    
+  c2,c2s   1600.00000       0.00000000    
+ z0,c0
+  1     0.000  1500.000
+  2   200.000  1500.000
+
+ z1,c1
+  1     0.000  1571.000
+  2    78.000  1571.000
+
+  np           1
+  first reciever depth   18.7199993    
+  ranges   100.000000    
+ number of sources           1
+  source depth,i   50.0000000               1
+  ndep,rd,rdlow:           48   18.7199993       112.720001    
+ arrayshape:    0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  multistatic:  F
+  tilt:  F
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ freq,number of modes           1          11
+ freq,number of modes           2          22
+ >>>Warning, The start parm is not in the search int For parameter  1 with value  0.1000E+03
+ >>>Warning, The start parm is not in the search int For parameter  3 with value  0.1571E+04
+
+  initial fitness   20.0000172    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              64
+  number of populations              10
+
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   26
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   13
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   26
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   13
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   27
+ retuned point   5670.28125       51.0122528       1475.69983       1501.59705    
+ retuned value   8.91537729E-06
+ freq,number of modes           1          11
+ freq,number of modes           2          22
+ >>>Warning, The start parm is not in the search int For parameter  1 with value  0.1000E+03
+ >>>Warning, The start parm is not in the search int For parameter  3 with value  0.1571E+04
+
+  initial fitness   20.0000172    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              64
+  number of populations              10
+
+ freq,number of modes           1          12
+ freq,number of modes           2          24
+ freq,number of modes           1          12
+ freq,number of modes           2          25
+ freq,number of modes           1          12
+ freq,number of modes           2          24
+ freq,number of modes           1          12
+ freq,number of modes           2          24
+ freq,number of modes           1          13
+ freq,number of modes           2          26
+ freq,number of modes           1          12
+  >>> Estimated serial Inversion time:         55.2 secs.
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+ retuned point   6263.77930       50.6299210       1550.00000       1600.00000    
+ retuned value   9.51340837E-07
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+ retuned point   6266.89502       50.7044754       1549.98059       1599.58838    
+ retuned value   9.63189450E-07
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6265.48145       50.5235100       1549.99646       1598.92590    
+ retuned value   9.72945145E-07
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   26
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6273.03613       50.8956642       1549.97864       1593.52136    
+ retuned value   1.16984188E-06
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6248.03125       50.6299210       1550.00000       1600.00000    
+ retuned value   1.23074585E-06
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6266.83496       50.4509010       1549.98218       1596.89807    
+ retuned value   1.03073342E-06
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   13
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6265.23535       50.4621010       1549.96387       1599.81470    
+ retuned value   9.54272309E-07
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6265.86279       50.4309311       1549.91467       1596.99023    
+ retuned value   1.04118283E-06
+  Population          10
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   25
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   13
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   24
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   23
+ retuned point   6270.39746       50.2728043       1550.00000       1595.20093    
+ retuned value   1.09089910E-06
+
+   best of all energy   9.51340837E-07
+  best-of all      deviation  
+   1  6263.779         6163.779
+   2    50.630            0.630
+   3  1550.000          -21.000
+   4  1600.000           29.000
+ local fit   9.51340837E-07
+   1  6263.779         6163.779
+   2    50.630            0.630
+   3  1550.000          -21.000
+   4  1600.000           29.000
+
+ Forward  modelling calls:   20640
+  ndep,rd,rdlow:           48   18.7199993       112.720001    
+  arrayshape:    0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  multistatic:  F
+  tilt:  F
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ Inversion, time:       25.912 secs.

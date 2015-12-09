@@ -1,0 +1,59 @@
+ North elba
+ E A   c                ! options 
+  2000  32  10           ! niter, q, npop
+  0.8 0.5 0.05           ! px,pu,pm
+                         ! snap options
+ 1 100                   ! freq  max_no_modes
+ 164.795 169.92 175.048                   
+2                        ! Number of sectors
+6                        ! Sector length in km
+ 129.9,0.,0.,0           ! water depth scatt(1),scatt(2),beta(0)
+    0.     1525.5
+   56.8    1526.4
+   65.1    1523.1
+   68.9    1520.6
+   71.3    1517.2
+   75.6    1512.1
+   76.8    1510.9
+   79.9    1510.1
+  100.4    1508.4
+  129.9    1508.3
+ 10 1.75 0.13            ! sediment thickness, r1, beta(1)
+    0      1520.
+    5      1580.
+   10      1600
+ 1.8, 0.15, 1600.        ! bottom r2 beta(2),c2
+ 0.,0.                   ! bottom shear beta(3) c2s
+
+6                        ! sector length  SECTOR 2
+ 127.1,0.,0.,0           ! water depth scatt(1),scatt(2),beta(0)
+    0.0    1525.5
+   56.4    1526.3
+   60.1    1525.8
+   66.6    1522.1
+   70.6    1517.7
+   77.9    1510.3
+   86.1    1509.1
+  101.1    1508.3
+  127.1    1508.3
+ 10 1.75 0.13            ! sediment thickness, r1, beta(1)
+    0      1520.
+    5      1580.
+   10      1600
+ 1.8, 0.15, 1600.        ! bottom r2 beta(2),c2
+ 0.,0.                   ! bottom shear beta(3) c2s
+
+ 80                      ! source depth
+ 112.7 18.7 48 1         ! rec depth
+ 1                       ! number of ranges
+ 5600                    ! receiver range
+
+ 1                       ! nparm                 
+ 8 1 1   70   85   128   ! source depth           
+ 9 1 1 5300 5900   128   ! source range         
+ 1 1 1  127  132   128   ! water depth
+ 1 1 2  127  132   128   ! water depth
+11 1 1 1510 1560   128   ! sound speed sed 
+11 2 1   0   100   128   ! sound speed sed
+11 3 1   0   100   128   ! sound speed bot
+

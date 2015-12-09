@@ -1,0 +1,277 @@
+ waa.dat, 96 frequencies all phones.                                            
+ fe p                   ! options        
+ Incoherent addition over frequencies
+  inversion reading real data in VA-format
+  plot of best model and the initial model
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 3 0 0 4 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Only positive gradients in sediment and bottom
+ number of receiver depths read         100
+  reading ranges in....
+ number of ranges           1
+  ncurv=          96 nbart=           0
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   1   5000.00   5400.00      3.15    7  128
+  2 Source depth (m)         8   1   1     10.00     30.00      0.16    7  128
+  3 Water depth (m)          1   1   1    100.00    120.00      0.16    7  128
+  4 Sediment depth (m)      17   1   1     10.00     50.00      0.31    7  128
+  5 Sediment sound speed (   3   1   1   1500.00   1600.00      0.79    7  128
+  6 Sediment sound speed (   3   2   1   1550.00   1750.00      1.57    7  128
+  7 Bottom speed (m/s)      12   1   1   1600.00   1800.00      1.57    7  128
+  8 Sediment Density (g/cm   6   1   1      1.40      1.85      0.00    7  128
+  9 Bottom density (g/cm3)  14   1   1      1.60      2.00      0.00    7  128
+  Number of data points        9600
+ Size of the search space: 10** 18.96
+  Reading data for frequency:     25.00000    
+  Skipping data for frequency:    26.00000    
+  Skipping data for frequency:    27.00000    
+  Skipping data for frequency:    28.00000    
+  Skipping data for frequency:    29.00000    
+  Reading data for frequency:     30.00000    
+  Skipping data for frequency:    31.00000    
+  Skipping data for frequency:    32.00000    
+  Skipping data for frequency:    33.00000    
+  Skipping data for frequency:    34.00000    
+  Reading data for frequency:     35.00000    
+  Skipping data for frequency:    36.00000    
+  Skipping data for frequency:    37.00000    
+  Skipping data for frequency:    38.00000    
+  Skipping data for frequency:    39.00000    
+  Reading data for frequency:     40.00000    
+  Skipping data for frequency:    41.00000    
+  Skipping data for frequency:    42.00000    
+  Skipping data for frequency:    43.00000    
+  Skipping data for frequency:    44.00000    
+  Reading data for frequency:     45.00000    
+  Skipping data for frequency:    46.00000    
+  Skipping data for frequency:    47.00000    
+  Skipping data for frequency:    48.00000    
+  Skipping data for frequency:    49.00000    
+  Reading data for frequency:     50.00000    
+  Skipping data for frequency:    51.00000    
+  Skipping data for frequency:    52.00000    
+  Skipping data for frequency:    53.00000    
+  Skipping data for frequency:    54.00000    
+  Reading data for frequency:     55.00000    
+  Skipping data for frequency:    56.00000    
+  Skipping data for frequency:    57.00000    
+  Skipping data for frequency:    58.00000    
+  Skipping data for frequency:    59.00000    
+  Reading data for frequency:     60.00000    
+  Skipping data for frequency:    61.00000    
+  Skipping data for frequency:    62.00000    
+  Skipping data for frequency:    63.00000    
+  Skipping data for frequency:    64.00000    
+  Reading data for frequency:     65.00000    
+  Skipping data for frequency:    66.00000    
+  Skipping data for frequency:    67.00000    
+  Skipping data for frequency:    68.00000    
+  Skipping data for frequency:    69.00000    
+  Reading data for frequency:     70.00000    
+  Skipping data for frequency:    71.00000    
+  Skipping data for frequency:    72.00000    
+  Skipping data for frequency:    73.00000    
+  Skipping data for frequency:    74.00000    
+  Reading data for frequency:     75.00000    
+  Skipping data for frequency:    76.00000    
+  Skipping data for frequency:    77.00000    
+  Skipping data for frequency:    78.00000    
+  Skipping data for frequency:    79.00000    
+  Reading data for frequency:     80.00000    
+  Skipping data for frequency:    81.00000    
+  Skipping data for frequency:    82.00000    
+  Skipping data for frequency:    83.00000    
+  Skipping data for frequency:    84.00000    
+  Reading data for frequency:     85.00000    
+  Skipping data for frequency:    86.00000    
+  Skipping data for frequency:    87.00000    
+  Skipping data for frequency:    88.00000    
+  Skipping data for frequency:    89.00000    
+  Reading data for frequency:     90.00000    
+  Skipping data for frequency:    91.00000    
+  Skipping data for frequency:    92.00000    
+  Skipping data for frequency:    93.00000    
+  Skipping data for frequency:    94.00000    
+  Reading data for frequency:     95.00000    
+  Skipping data for frequency:    96.00000    
+  Skipping data for frequency:    97.00000    
+  Skipping data for frequency:    98.00000    
+  Skipping data for frequency:    99.00000    
+  Reading data for frequency:     100.0000    
+  Skipping data for frequency:    101.0000    
+  Skipping data for frequency:    102.0000    
+  Skipping data for frequency:    103.0000    
+  Skipping data for frequency:    104.0000    
+  Reading data for frequency:     105.0000    
+  Skipping data for frequency:    106.0000    
+  Skipping data for frequency:    107.0000    
+  Skipping data for frequency:    108.0000    
+  Skipping data for frequency:    109.0000    
+  Reading data for frequency:     110.0000    
+  Skipping data for frequency:    111.0000    
+  Skipping data for frequency:    112.0000    
+  Skipping data for frequency:    113.0000    
+  Skipping data for frequency:    114.0000    
+  Reading data for frequency:     115.0000    
+  Skipping data for frequency:    116.0000    
+  Skipping data for frequency:    117.0000    
+  Skipping data for frequency:    118.0000    
+  Skipping data for frequency:    119.0000    
+  Reading data for frequency:     120.0000    
+  Skipping data for frequency:    121.0000    
+  Skipping data for frequency:    122.0000    
+  Skipping data for frequency:    123.0000    
+  Skipping data for frequency:    124.0000    
+  Reading data for frequency:     125.0000    
+  Skipping data for frequency:    126.0000    
+  Skipping data for frequency:    127.0000    
+  Skipping data for frequency:    128.0000    
+  Skipping data for frequency:    129.0000    
+  Reading data for frequency:     130.0000    
+  Skipping data for frequency:    131.0000    
+  Skipping data for frequency:    132.0000    
+  Skipping data for frequency:    133.0000    
+  Skipping data for frequency:    134.0000    
+  Reading data for frequency:     135.0000    
+  Skipping data for frequency:    136.0000    
+  Skipping data for frequency:    137.0000    
+  Skipping data for frequency:    138.0000    
+  Skipping data for frequency:    139.0000    
+  Reading data for frequency:     140.0000    
+  Skipping data for frequency:    141.0000    
+  Skipping data for frequency:    142.0000    
+  Skipping data for frequency:    143.0000    
+  Skipping data for frequency:    144.0000    
+  Reading data for frequency:     145.0000    
+  Skipping data for frequency:    146.0000    
+  Skipping data for frequency:    147.0000    
+  Skipping data for frequency:    148.0000    
+  Skipping data for frequency:    149.0000    
+  Reading data for frequency:     150.0000    
+  Skipping data for frequency:    151.0000    
+  Skipping data for frequency:    152.0000    
+  Skipping data for frequency:    153.0000    
+  Skipping data for frequency:    154.0000    
+  Reading data for frequency:     155.0000    
+  Skipping data for frequency:    156.0000    
+  Skipping data for frequency:    157.0000    
+  Skipping data for frequency:    158.0000    
+  Skipping data for frequency:    159.0000    
+  Reading data for frequency:     160.0000    
+  Skipping data for frequency:    161.0000    
+  Skipping data for frequency:    162.0000    
+  Skipping data for frequency:    163.0000    
+  Skipping data for frequency:    164.0000    
+  Reading data for frequency:     165.0000    
+  Skipping data for frequency:    166.0000    
+  Skipping data for frequency:    167.0000    
+  Skipping data for frequency:    168.0000    
+  Skipping data for frequency:    169.0000    
+  Reading data for frequency:     170.0000    
+  Skipping data for frequency:    171.0000    
+  Skipping data for frequency:    172.0000    
+  Skipping data for frequency:    173.0000    
+  Skipping data for frequency:    174.0000    
+  Reading data for frequency:     175.0000    
+  Skipping data for frequency:    176.0000    
+  Skipping data for frequency:    177.0000    
+  Skipping data for frequency:    178.0000    
+  Skipping data for frequency:    179.0000    
+  Reading data for frequency:     180.0000    
+  Skipping data for frequency:    181.0000    
+  Skipping data for frequency:    182.0000    
+  Skipping data for frequency:    183.0000    
+  Skipping data for frequency:    184.0000    
+  Reading data for frequency:     185.0000    
+  Skipping data for frequency:    186.0000    
+  Skipping data for frequency:    187.0000    
+  Skipping data for frequency:    188.0000    
+  Skipping data for frequency:    189.0000    
+  Reading data for frequency:     190.0000    
+  Skipping data for frequency:    191.0000    
+  Skipping data for frequency:    192.0000    
+  Skipping data for frequency:    193.0000    
+  Skipping data for frequency:    194.0000    
+  Reading data for frequency:     195.0000    
+  Skipping data for frequency:    196.0000    
+  Skipping data for frequency:    197.0000    
+  Skipping data for frequency:    198.0000    
+  Skipping data for frequency:    199.0000    
+  Reading data for frequency:     200.0000    
+  Reading data for frequency:     205.0000    
+  Reading data for frequency:     210.0000    
+  Reading data for frequency:     215.0000    
+  Reading data for frequency:     220.0000    
+  Reading data for frequency:     225.0000    
+  Reading data for frequency:     230.0000    
+  Reading data for frequency:     235.0000    
+  Reading data for frequency:     240.0000    
+  Reading data for frequency:     245.0000    
+  Reading data for frequency:     250.0000    
+  Reading data for frequency:     255.0000    
+  Reading data for frequency:     260.0000    
+  Reading data for frequency:     265.0000    
+  Reading data for frequency:     270.0000    
+  Reading data for frequency:     275.0000    
+  Reading data for frequency:     280.0000    
+  Reading data for frequency:     285.0000    
+  Reading data for frequency:     290.0000    
+  Reading data for frequency:     295.0000    
+  Reading data for frequency:     300.0000    
+  Reading data for frequency:     305.0000    
+  Reading data for frequency:     310.0000    
+  Reading data for frequency:     315.0000    
+  Reading data for frequency:     320.0000    
+  Reading data for frequency:     325.0000    
+  Reading data for frequency:     330.0000    
+  Reading data for frequency:     335.0000    
+  Reading data for frequency:     340.0000    
+  Reading data for frequency:     345.0000    
+  Reading data for frequency:     350.0000    
+  Reading data for frequency:     355.0000    
+  Reading data for frequency:     360.0000    
+  Reading data for frequency:     365.0000    
+  Reading data for frequency:     370.0000    
+  Reading data for frequency:     375.0000    
+  Reading data for frequency:     380.0000    
+  Reading data for frequency:     385.0000    
+  Reading data for frequency:     390.0000    
+  Reading data for frequency:     395.0000    
+  Reading data for frequency:     400.0000    
+  Reading data for frequency:     405.0000    
+  Reading data for frequency:     410.0000    
+  Reading data for frequency:     415.0000    
+  Reading data for frequency:     420.0000    
+  Reading data for frequency:     425.0000    
+  Reading data for frequency:     430.0000    
+  Reading data for frequency:     435.0000    
+  Reading data for frequency:     440.0000    
+  Reading data for frequency:     445.0000    
+  Reading data for frequency:     450.0000    
+  Reading data for frequency:     455.0000    
+  Reading data for frequency:     460.0000    
+  Reading data for frequency:     465.0000    
+  Reading data for frequency:     470.0000    
+  Reading data for frequency:     475.0000    
+  Reading data for frequency:     480.0000    
+  Reading data for frequency:     485.0000    
+  Reading data for frequency:     490.0000    
+  Reading data for frequency:     495.0000    
+  Reading data for frequency:     500.0000    
+ 
+  initial fitness  3.8188999E-05
+ 
+  crossover probability      0.8000000    
+  mutation  probability      5.0000001E-02
+  update    probability      0.5000000    
+  number of iterations             1000
+  size   of populations              32
+  number of populations              20
+ 
+  >>> Estimated serial Inversion time:        262.5 secs.

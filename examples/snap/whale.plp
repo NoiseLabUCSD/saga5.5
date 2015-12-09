@@ -1,0 +1,1321 @@
+       1024          MODU
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq:  104.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+    0.400000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  2    
+ Freq:  164.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  3    
+ Freq:  208.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+    0.600000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  4    
+ Freq:  248.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  5    
+ Freq:  312.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.180000                                          XLEFT
+    0.360000                                         XRIGHT
+    0.200000E-01                                       XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  6    
+ Freq:  412.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  7    
+ Freq:  468.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+    0.400000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  8    
+ Freq:  512.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no:  9    
+ Freq:  720.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+    0.600000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        2                                  NUMBER OF LABELS
+ Curve no: 10    
+ Freq:  804.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     100.000                                           XDIV
+ Magnitude (10** -2)$                                                            
+ LIN
+     22.0000                                          YDOWN
+     6.00000                                            YUP
+     2.00000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+        4                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     23.0000                                          XLEFT
+     26.0000                                         XRIGHT
+    0.500000                                           XINC
+     1.00000                                           XDIV
+ Water depth (m) $                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       16                                                 N
+     23.0000                                           XOFF
+    0.200000                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     23.0000                                          XLEFT
+     26.0000                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Water depth (m) $                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.300000                                          XLEFT
+     1.00000                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Source range (km) $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      512                                                 N
+    0.300000                                           XOFF
+    0.136986E-02                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     300.000                                          XLEFT
+     1000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Source range (km) $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     23.0000                                         XRIGHT
+     5.00000                                           XINC
+     1.00000                                           XDIV
+ Source depth (m) $                                                              
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+     1.00000                                           XOFF
+    0.349206                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     23.0000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Source depth (m) $                                                              
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     5.00000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      512                                                 N
+    -10.0000                                           XOFF
+    0.391389E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     5.00000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      512                                                 N
+    -10.0000                                           XOFF
+    0.391389E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     5.00000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      512                                                 N
+    -10.0000                                           XOFF
+    0.391389E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -10.0000                                          XLEFT
+     10.0000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Range offset (m)$                                                               
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     3.00000                                         XRIGHT
+    0.500000                                           XINC
+     1.00000                                           XDIV
+ Sediment density (g/cm^3)$                                                      
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+     1.00000                                           XOFF
+    0.317460E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     3.00000                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Sediment density (g/cm^3)$                                                      
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     3.00000                                         XRIGHT
+    0.500000                                           XINC
+     1.00000                                           XDIV
+ Bottom density (g/cm^3)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+     1.00000                                           XOFF
+    0.317460E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     3.00000                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Bottom density (g/cm^3)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+     1.10000                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Attenuation (dB/\lambda)$                                                       
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+    0.100000                                           XOFF
+    0.158730E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+     1.10000                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+ Attenuation (dB/\lambda)$                                                       
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+     1.10000                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Attenuation (dB/\lambda)$                                                       
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+    0.100000                                           XOFF
+    0.158730E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000                                          XLEFT
+     1.10000                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+ Attenuation (dB/\lambda)$                                                       
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1500.00                                          XLEFT
+     2000.00                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      256                                                 N
+     1500.00                                           XOFF
+     1.96078                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1500.00                                          XLEFT
+     2000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      256                                                 N
+     0.00000                                           XOFF
+     3.92157                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      256                                                 N
+     0.00000                                           XOFF
+     3.92157                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+     0.00000                                           XOFF
+     15.8730                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+     0.00000                                           XOFF
+     15.8730                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     0.00000                                          XLEFT
+     1000.00                                         XRIGHT
+     200.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     10346.6                                          XLEFT
+     10364.4                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     10346.6                                           XOFF
+    0.140002                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     10346.6                                          XLEFT
+     10364.4                                         XRIGHT
+     2.00000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -2.42042                                          XLEFT
+     4.67334                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+    -2.42042                                           XOFF
+    0.112599                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -2.42042                                          XLEFT
+     4.67334                                         XRIGHT
+     2.00000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -2.67965                                          XLEFT
+     1.19665                                         XRIGHT
+    0.500000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+    -2.67965                                           XOFF
+    0.615285E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -2.67965                                          XLEFT
+     1.19665                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -1.06028                                          XLEFT
+    0.537769                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+    -1.06028                                           XOFF
+    0.253659E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    -1.06028                                          XLEFT
+    0.537769                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+    0.600000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+   -0.407903                                          XLEFT
+    0.541466                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       64                                                 N
+   -0.407903                                           XOFF
+    0.150693E-01                                         DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ 'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.20000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+   -0.407903                                          XLEFT
+    0.541466                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY

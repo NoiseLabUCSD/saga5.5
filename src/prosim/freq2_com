@@ -1,0 +1,4 @@
+c: freq2_com
+c: VARIABLES:
+      common /n_mod/ mod_updt(NFCMAX)
+      integer*4 mod_updt

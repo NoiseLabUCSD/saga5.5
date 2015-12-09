@@ -1,0 +1,23 @@
+c Part of gen_com
+      common /bb_com/ wbb(NFBBMAX),kim_bb(NFBBMAX),nffth1bb,
+     .   xhbb(20),iifull,phibb(NZ_NF_MAX),dpsibb(NZ_NF_MAX),
+     .   nh_off,lheadw,lrecw,phim_bb(NFBBMAX)
+      integer*4 nffth1bb,iifull,nh_off,lheadw,lrecw
+      real*8 wbb,kim_bb
+      real*4 xhbb,phim_bb
+      complex*8 phibb,dpsibb
+c
+      common /bb_com1/ df, nf1, nf2, nmbb(NFBBMAX)
+      integer*4 nf1,nf2, nmbb
+      real*4 df
+c
+      common /tiltparm/tiltv,tilth,dtiltv,dtilth
+      logical tiltv,tilth
+      real dtiltv,dtilth
+c     logics for determine if modes should be calculated.
+      integer i_call_porter,i_geom
+      common /log_mode/i_call_porter,i_geom
+c
+c     Keep track of number of jjfails
+      integer tot_jjfail
+      common /fails/tot_jjfail

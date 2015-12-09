@@ -1,0 +1,2 @@
+      common /attcon/ akp1(-2:43),akp2(-2:42),dakp(-2:42),
+     .  aks1(-2:43),aks2(-2:42)

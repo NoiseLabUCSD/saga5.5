@@ -1,0 +1,1 @@
+      common /weakcom/ nbwk,mweak(200,3)

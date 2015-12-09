@@ -1,0 +1,4 @@
+      character*64 slfile,blfile,slname,blname
+      common /scatcom/ swind,ssigma,ctop,atop,amtop,bwind,bsigma,
+     .   cbas,abas,ambas,slfile,blfile,slname,blname,
+     .   iisl,iibl,nasl,nfsl,nabl,nfbl,lslf,lblf

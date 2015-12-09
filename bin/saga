@@ -1,0 +1,95 @@
+#!/bin/bash -x
+#
+ulimit -s unlimited
+ulimit -d unlimited
+#set verbose 
+#export sagabin=$SAGADIR/bin
+export sagabin=$SAGADIR/bin/$HOSTTYPE-$FORTRAN
+export filename=$1
+export FOR001=$1.dat
+export FOR002=$1.in
+export FOR003=$1.wei
+export FOR004=$1.unc 
+export FOR007=$1.out
+export FOR009=$1.eof 
+export FOR010=$1.mat
+export FOR011=$1b.mat
+export FOR013=$1.m
+export FOR019=$1.plp
+export FOR020=$1.plt
+export FOR028=$1.cdr
+export FOR029=$1.bdr
+export FOR030=$1.obs
+#export FOR031=slave.par
+#export FOR032=slave.obs
+export FOR042=$1.sou
+export FOR040=$1_mh.m
+export FOR060=$1.ext
+export FOR080=$1.enum
+export FOR085=$1.mh1
+export FOR086=$1.mh2
+export FOR090=$1.env
+    #if ($USER == "chenfen") then
+    #    export DB='nice +4 '
+    #else
+    #    export DB='nice +19'
+    #endif
+
+export DB=' '
+
+if [ $# == 3 ]; then
+  if [ "$3" == "cov" ]; then
+     export FOR002=cov.in
+     echo 'cov.in is linked'  
+  fi
+
+  if [ "$3" == "dbx" ];  then
+     export DB=idb
+     echo 'entering debugging mode'  
+  fi
+fi
+
+if [ $# == 1 ]; then
+  echo ' Only one parameter; Was the forward model specified ?'
+fi
+  if [ "$2" == "snap" ]; then        
+       $DB $sagabin/sagasnap 
+  elif [ "$2" == "snaprd" ]; then 
+       $DB $sagabin/sagasnaprd 
+  elif [ "$2" == "oast" ]; then 
+       $DB $sagabin/sagaoast 
+  elif [ "$2" == "oasr" ]; then 
+       $DB $sagabin/sagaoasr 
+  elif [ "$2" == "oastg" ]; then 
+       $DB $sagabin/sagaoastg 
+  elif [ "$2" == "test" ]; then 
+       $DB ~/saga30jul/bin/sagaoastg 
+  elif [ "$2" == "popp" ]; then 
+       $DB $sagabin/sagapopp 
+  elif [ "$2" == "tpem" ]; then 
+       $DB $sagabin/sagatpem 
+  elif [ "$2" == "slave" ]; then 
+       $DB $sagabin/sagaslave 
+  elif [ "$2" == "tabu" ]; then 
+       $DB $sagabin/tabu 
+  elif [ "$2" == "prosim" ]; then 
+       echo  $DB $sagabin/sagaprosim 
+       $DB $sagabin/sagaprosim 
+  elif [ "$2" == "cprosim" ]; then 
+       echo  $DB $sagabin/sagacprosim 
+       $DB $sagabin/sagacprosim 
+  elif [ "$2" == "gama" ]; then 
+       echo  $DB $sagabin/sagagama 
+       $DB $sagabin/sagagama 
+  elif [ "$2" == "ramgeo" ]; then 
+       echo  $DB $sagabin/sagaramgeo 
+       $DB $sagabin/sagaramgeo 
+  elif [ "$2" == "orca" ]; then 
+       echo  $DB $sagabin/sagaorca 
+       $DB $sagabin/sagaorca 
+  else 
+       echo " Forward model "$2" not valid "
+  fi
+
+
+

@@ -1,0 +1,51 @@
+Inversion Workshop, Test Case 0 RAM Input File
+E ef A p                   ! options
+1000  32  10               ! niter, q ,npop
+0.8 0.5 0.05               ! px,pu,pm
+                           ! ram options
+
+5                          ! #freq
+ 100 200 300  400  500     ! freq
+ 20                        !ZS
+3000 3000.0 0              !rmin RMAX dr_hydro
+40                         ! DR 
+220.0  0.333333333333  3   !ZMAX DZ NDZ
+20 80                      !rdmin,rdmax
+1488.6 5 1 0.0             !C0 NPADE NS RS
+
+     0.0     105.0         ! bathymetry
+  3000.0     160.0         ! 
+ -1   -1 
+    0.0     1495.0         ! ocean sound speed
+  160.0     1488.6
+ -1   -1
+     .00    1535.0         ! bottom sound speed
+    3.00    1541.4
+   10.00    1556.4
+   35.00    1610.0 
+   35.1     1800.0
+ -1   -1
+    .0      1.55           ! bottom density
+  34.9      1.59
+  35.1      1.95
+ -1   -1
+     .0     0.123          ! bottom attenuation
+   35.0     0.032
+   35.1     0.036
+   60.      0.036
+   70.     10
+  150     100
+ -1   -1
+ -1   -1
+
+9                          ! nparm 
+11 1 1  1500 1600 128     ! upper sound speed point
+11 2 1  1     100 128     ! sound speed increase
+11 3 1  1     100 128     ! sound speed increase 
+11 4 1  1     100 128     ! sound speed increase
+11 5 1  10    400 128     ! sound speed increase
+3  1 1  1.2   1.6 128     ! upper density
+4  1 1  0.01  0.5 128     ! upper attenuation
+12 1 1  100   200 128     ! bathymetry
+12 2 1  100   200 128     ! bathymetry
+

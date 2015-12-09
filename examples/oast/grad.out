@@ -1,0 +1,107 @@
+tellaro_oast                                                                    
+ E n D R             ! options           
+ Using EOF.... 
+ cost function (abs(a)-abs(b))
+ inversion reading real data
+ inversion  divided by sqrt(r)
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+ Options: 2 2 3 0 1 0 1 0 0 0 0 0 0 1 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 3 0 0 0 0 0 0 0 0 0 0
+ Options (norm): 0 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:        1000
+options for oases 
+N J I T                                 
+  number of frequencies           1   330.0000    
+ number of layers            9
+   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+   0.000E+00   0.152E+04  -0.100E+04   0.100E-07   0.000E+00   0.100E+01
+   0.150E+02   0.149E+04  -0.100E+04   0.400E+00   0.000E+00   0.150E+01
+   0.160E+02   0.152E+04  -0.100E+04   0.350E+00   0.000E+00   0.160E+01
+   0.190E+02   0.153E+04  -0.100E+04   0.350E+00   0.000E+00   0.160E+01
+   0.220E+02   0.153E+04  -0.100E+04   0.350E+00   0.000E+00   0.160E+01
+   0.260E+02   0.153E+04  -0.100E+04   0.350E+00   0.000E+00   0.160E+01
+   0.320E+02   0.153E+04  -0.100E+04   0.350E+00   0.000E+00   0.160E+01
+   0.400E+02   0.153E+04   0.000E+00   0.350E+00   0.000E+00   0.160E+01
+  reading ranges in....
+ rng1,rng2   270.0000       1600.000    
+  ncurv=           1 nbart=           0
+
+ The EOF are
+       physparm layer  ... shape functions
+   1   2  3    1.0  1.0  0.0  0.0  0.0  0.0  0.0  0.0
+   2   2  4    1.0  0.0  0.1  0.0  0.0  0.0  0.0  0.0
+   3   2  5    1.0  0.0  0.6  0.0  0.0  0.0  0.0  0.0
+   4   2  6    1.0  0.0  1.0  0.0  0.0  0.0  0.0  0.0
+   5   2  7    1.0  0.0  1.0  0.2  0.0  0.0  0.0  0.0
+   6   2  8    1.0  0.0  1.0  0.6  0.0  0.0  0.0  0.0
+   7   2  9    1.0  0.0  1.0  1.0  0.0  0.0  0.0  0.0
+   8   4  3    0.0  0.0  0.0  0.0  1.0  1.0  0.0  0.0
+   9   4  4    0.0  0.0  0.0  0.0  1.0  0.0  0.1  0.0
+  10   4  5    0.0  0.0  0.0  0.0  1.0  0.0  0.6  0.0
+  11   4  6    0.0  0.0  0.0  0.0  1.0  0.0  1.0  0.0
+  12   4  7    0.0  0.0  0.0  0.0  1.0  0.0  1.0  0.2
+  13   4  8    0.0  0.0  0.0  0.0  1.0  0.0  1.0  0.6
+  14   4  9    0.0  0.0  0.0  0.0  1.0  0.0  1.0  1.0
+  The starting values of the EOF amplitudes are:
+   1515.00    -10.00    100.00    300.00      0.50     -0.10     -0.10     -0.20
+ 
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Shape coefficient       11   1   1480.00   1550.00      0.55    7  128
+  2 Shape coefficient       11   2    -50.00     25.00      0.59    7  128
+  3 Shape coefficient       11   3    -80.00    550.00      4.96    7  128
+  4 Shape coefficient       11   4    -60.00   1000.00      8.35    7  128
+  5 Shape coefficient       11   5      0.01      1.00      0.01    7  128
+  6 Shape coefficient       11   6     -0.20      0.60      0.01    7  128
+  7 Shape coefficient       11   7     -0.20      0.60      0.01    7  128
+  8 Shape coefficient       11   8     -0.20      0.20      0.00    7  128
+ Size of the search space: 10** 16.86
+  Using OAST  as forward model
+
+
+ OPTIONS:
+
+ NORMAL STRESS
+ COMPLEX INTEGRATION CONTOUR
+ HANKEL TRANSFORM INTEGRANDS
+ TRANSMISSION LOSS
+
+
+ NUMBER OF LAYERS:        9
+ NUMBER OF SOURCES:       1
+ NUMBER OF RECEIVERS:     1
+
+
+  CMIN =     1300.00     M/S 
+  CMAX =     3000.00     M/S 
+
+
+    NW       IC1       IC2
+    -1      1024        -1
+  
+ RANGE STEP:         -6.283 m MAX FFT RANGE:       0.006 km
+ 
+ THE DEFAULT CONTOUR OFFSET IS APPLIED
+      DEPTH        ALPHA       BETA      ATTENA       ATTENB         RHO      RO
+ UGHNESS
+     0.00000     0.00000     0.00000  0.00000000  0.00000000 0.00000E+00 0.00000E+00
+     0.00000  1523.00000 -1505.00000  0.00000001  0.00000000 0.10000E+04 0.00000E+00
+    15.00000  1505.00000 -1529.30005  0.40000001  0.00000000 0.15000E+04 0.00000E+00
+    16.00000  1529.30005 -1572.09998  0.48570001  0.00000000 0.16000E+04 0.00000E+00
+    19.00000  1572.09998 -1615.00000  0.44290000  0.00000000 0.16000E+04 0.00000E+00
+    22.00000  1615.00000 -1681.66003  0.40000001  0.00000000 0.16000E+04 0.00000E+00
+    26.00000  1681.66003 -1781.65002  0.35556000  0.00000000 0.16000E+04 0.00000E+00
+    32.00000  1781.65002 -1915.00000  0.28889999  0.00000000 0.16000E+04 0.00000E+00
+    40.00000  1915.00000     0.00000  0.19999999  0.00000000 0.16000E+04 0.00000E+00
+
+
+ RECEIVER DATA:
+
+   NO.         DEPTH  LAYER           Z
+      1    5.00000         2    5.00000    
+
+
+ SOURCE DATA:
+
+   N0.         DEPTH  LAYER           ZU             ZL
+      1    7.00000         2    7.00000        8.00000    

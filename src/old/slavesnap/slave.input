@@ -1,0 +1,21 @@
+ sspmis_a   from the matched field workshop 93
+                                        ! snap options
+1  100                                  ! #freq, max modes 
+250.                                    ! freq
+100  0  0  0                            ! wd scat(1) scat(2) beta
+  0 1499.4  
+  100 1481.6 
+100 1.8 0.2
+  0 1600
+  100 1750
+1.8 0.2 1750
+0   0
+
+78                                      ! source depth
+5 100 20 1                              ! receiver depth
+
+1                                       ! number of ranges
+9300                                    ! receiver range
+
+
+

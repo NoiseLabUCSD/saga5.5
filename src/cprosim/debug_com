@@ -1,0 +1,3 @@
+c: debug_com
+      common /ddbug/ idebug,iidebug
+      integer*4 idebug,iidebug

@@ -1,0 +1,2 @@
+      common /caustix1/ fminsaga,fmaxsaga
+      real*8 fminsaga,fmaxsaga

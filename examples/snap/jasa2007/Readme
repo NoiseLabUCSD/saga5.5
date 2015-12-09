@@ -1,0 +1,10 @@
+Hi Peter, 
+for fig. 5, I have used the files f195hla_oS1_gm.in, .eof and .dat.
+
+For Fig. 6, I have used f195hla_oS1resa_gm.dat and .eof files. The
+.trf files generated for 300, 400 and 500 Hz are in
+f195hla_oS1resa_gm300.trf, f195hla_oS1resa_gm400.trf and
+f195hla_oS1resa_gm500.trf. The fort.81 file is saved as
+fort.81_f195hla_oS1_gm.
+
+

@@ -1,0 +1,42 @@
+      FUNCTION CZS(ZS,Z0,C0,ND0,HSTART)
+
+      DOUBLE PRECISION Z0(*), C0(*)
+
+      COMMON /LUNIT/ LUPLP, LUPLT, LUPRT
+
+  100 FORMAT(1X,' ERROR IN FIRST VALUE OF SVP ')
+  200 FORMAT(1X,' WARNING: SOURCE DEPTH NOT INCLUDED IN WATER SVP')
+
+C   Z0 ARRAY HAS BEEN NORMALIZED IN SUB SSNAP2
+      ZSN=ZS/HSTART
+C
+      Z2=Z0(1)
+      C2=C0(1)
+      IF(Z2.NE.0.0)   THEN
+       WRITE(6,100)
+       IF(LUPRT .NE. 6)   WRITE(LUPRT,100)       
+       STOP
+      END IF
+      IF(ND0.EQ.1)  THEN
+       CZS=C2
+       RETURN
+      END IF 
+      DO 1000    KK=2,ND0
+      Z1=Z2
+      C1=C2
+      Z2=Z0(KK)
+      C2=C0(KK)
+      IF(ZSN.EQ.Z2)   THEN
+       CZS=C2
+       RETURN
+      END IF
+      IF(ZSN.LT.Z2)   THEN
+       CZS=C1 + ((C2-C1)*(ZSN-Z1))/(Z2-Z1)
+       RETURN
+      END IF
+ 1000 CONTINUE
+      CZS=C1 + ((C2-C1)*(ZSN-Z1))/(Z2-Z1)
+      WRITE(6,200)
+      IF(LUPRT .NE. 6)   WRITE(LUPRT,200)
+      RETURN
+      END      

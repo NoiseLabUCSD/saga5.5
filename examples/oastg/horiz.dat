@@ -1,0 +1,30 @@
+Horizontal array with  SNR=10
+z  c g U W                     ! Options
+2000 32   1                    ! niter, q,npop
+0.8 0.5 0.05  10               ! px,pu,pm
+N J I T t                      ! Oases forward model
+100 300 1  0                   ! Fmin Fmax Nfreq
+4
+0      0   0  0   0   0  
+0   1500   0  0   0   1  
+50  1700   0 0.1 0.2 1.6      
+55  1800   0 0.1 0.2 1.6 
+
+10
+10 10 20 -150
+500 1e8
+8000 100 2700
+
+1                                ! The Range information is dummy-
+1000                             !    For wave number inversion
+
+2                               ! nparm q
+9 2  100 2000    50
+8 2  1   50    50
+2 3  1600 2000 40            ! P-speed, lay 3           
+2 4  1500 1800 40            ! P-speed, lay 4           
+
+
+
+
+

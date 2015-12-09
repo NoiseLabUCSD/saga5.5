@@ -1,0 +1,2 @@
+      real*4 ss,ss2,bs,bs2
+      common /scatarr/ ss(2,22),ss2(2,22),bs(2,22),bs2(2,22)

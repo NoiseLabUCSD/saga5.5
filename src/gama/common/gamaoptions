@@ -1,0 +1,3 @@
+      common /gamaoptions/ iipic,iibar,iieig,iirth,iibd,iidiag,cutdb,
+     .   cutmag,iipl,iitf,iibmp,iiblt,iipltf,iicaus,iibet,iitrx,iidat,
+     .   iimet

@@ -1,0 +1,28 @@
+ sdc.dat test case  orca                                                        
+ S2 c  b   z             ! options       
+ GibbS sampling of posteriori probability
+  ...Enumerative integration
+ reading in covariance matrix 
+ The covariance is divided by Ndep 
+  Noise is added to the data in the *.obs file
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 4 0 0 1 0 0 0 1 1 1 1 0 0 0 0 0 1 0 0 0 0 0 0 0 0 011 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Gaussian noise added tothe data in the *.obs file,  SNR=   20.00000    
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           1
+  ncurv=           1 nbart=           1
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Layer Thickness (m)      7   1   1     10.00     50.00      1.38    5   30
+  2 Sediment sound speed (   2   1   1   1500.00   1600.00      3.45    5   30
+  3 Sediment sound speed (   2   1   2   1550.00   1750.00      6.90    5   30
+  4 Sediment sound speed (   2   2   0   1600.00   1800.00      6.90    5   30
+ Size of the search space: 10**  5.91
+ 
+  initial fitness  0.1583333    

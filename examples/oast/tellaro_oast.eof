@@ -1,0 +1,36 @@
+8 14  2                       !Neof Neofvar Nblock
+2 3                           ! Bottom sound-speed
+2 4
+2 5
+2 6
+2 7
+2 8
+2 9
+4 3                           ! Bottom attennuation
+4 4
+4 5
+4 6
+4 7
+4 8
+4 9
+! first block is sediment sound-speed
+4 7
+1 1 0 0  
+1 0 0.143 0 
+1 0 0.571 0
+1 0 1     0                      ! 22 m point
+1 0 1     0.2222 
+1 0 1     0.5555  
+1 0 1     1
+! Bottom attennuation
+4 7
+1 1 0 0  
+1 0 0.143 0 
+1 0 0.571 0
+1 0 1     0                      ! 22 m point
+1 0 1     0.2222 
+1 0 1     0.5555  
+1 0 1     1
+!
+1515 -10 100. 300.  .500 -0.1 -0.1 -0.2
+0

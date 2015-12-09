@@ -1,0 +1,5 @@
+      common /sd/ sd_id(12),set_id(50,12),nset_open(12),
+     .   jset_open(50,12),idims(5,50,12),rank(50,12),iifirst(12)
+      integer*4 sd_id,set_id,nset_open,jset_open,idims,rank,iifirst
+      integer sfstart,sfcreate,sfsdtstr,sfdimid,sfsdmstr,sfsdmname,
+     .   sfsdscale,sfwdata,sfendacc,sfend,sfsdmvc,sfselect

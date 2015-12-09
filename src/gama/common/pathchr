@@ -1,0 +1,2 @@
+      character*1 fdir,ldir,czprop
+      common /pathchr/ fdir(198),ldir(198),czprop(198)

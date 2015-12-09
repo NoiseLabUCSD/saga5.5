@@ -1,0 +1,11 @@
+There are 2 examples:
+
+parametric.dat: Inverting for the slopes etc i a trilinear profile,
+see also the tpem option "p" in the SAGA manual Sect 12.12.1 
+
+
+F040298_07_2.dAT: A complicated RFC  example, used to produce Fig 11
+in the 2003 Radio Science paper. Use plotleg.m to plot the results.
+
+Peter
+

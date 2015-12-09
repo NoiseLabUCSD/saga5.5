@@ -1,0 +1,38 @@
+! comments                                                                      
+ ***************
+  best obtainable theoretical fit  0.0000000E+00
+  best fit (best, ppd, mean)  0.9848300      0.7091037      0.7091037    
+
+                                best-of all  most likely     mean   std-dev
+  1 Source range (m)            1  1   299.409      299.409   299.409     0.000
+  2 Source depth (m)            1  1    46.890       46.890    46.890     0.000
+  3 Receiver depth (m)          1  1    61.378       61.378    61.378     0.000
+  4 Water depth (m)             1  1   127.433      127.433   127.433     0.000
+  5 Sediment sound speed (m/s)  1  1  1567.717     1567.717  1567.717     0.000
+  6 Sediment sound speed (m/s)  2  1  1675.984     1675.984  1675.984     0.000
+  7 Bottom speed (m/s)          1  1  1760.630     1760.630  1760.630     0.000
+  8 Sediment depth (m)          1  1     7.778        7.778     7.778     0.000
+  9 Bottom density (g/cm3)      1  1     1.737        1.737     1.737     0.000
+ 10 Sediment Density (g/cm3)    1  1     1.535        1.535     1.535     0.000
+ 11 Attenuation (dB/lambda)     1  1    -0.189       -0.189    -0.189     0.000
+ 12 Attenuation (dB/lambda)     2  1    -0.480       -0.480    -0.480     0.000
+
+! comments                                                                      
+ ***************
+  best obtainable theoretical fit  0.0000000E+00
+  best fit (best, ppd, mean)  0.9848300      0.7060037      0.7060037    
+
+                                best-of all  most likely     mean   std-dev
+  1 Source range (m)            1  1   299.409      299.409   299.409     0.000
+  2 Source depth (m)            1  1    46.890       46.890    46.890     0.000
+  3 Receiver depth (m)          1  1    61.378       61.378    61.378     0.000
+  4 Water depth (m)             1  1   127.433      127.433   127.433     0.000
+  5 Sediment sound speed (m/s)  1  1  1567.717     1567.717  1567.717     0.000
+  6 Sediment sound speed (m/s)  2  1  1675.984     1675.984  1675.984     0.000
+  7 Bottom speed (m/s)          1  1  1760.630     1760.630  1760.630     0.000
+  8 Sediment depth (m)          1  1     7.778        7.778     7.778     0.000
+  9 Bottom density (g/cm3)      1  1     1.737        1.737     1.737     0.000
+ 10 Sediment Density (g/cm3)    1  1     1.535        1.535     1.535     0.000
+ 11 Attenuation (dB/lambda)     1  1    -0.189       -0.189    -0.189     0.000
+ 12 Attenuation (dB/lambda)     2  1    -0.480       -0.480    -0.480     0.000
+ 

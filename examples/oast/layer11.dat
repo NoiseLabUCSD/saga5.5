@@ -1,0 +1,42 @@
+11 layers- example used in GA-paper.
+Q wd W GN  A                     ! Options
+2000 32   1                      ! niter, q,npop
+0.8 0.5 0.05                     !px,pu,pm
+N J I T                          ! Oases forward model
+100 100 1  0                     ! Fmin Fmax Nfreq
+13
+0      0   0  0   0   0  
+0   1500   0  0   0   1  
+50  1600   0 0.1 0.2 1.6 
+60  1600   0 0.1 0.2 1.6 
+70  1600   0 0.1 0.2 1.6 
+80  1600   0 0.1 0.2 1.6 
+90  1600   0 0.1 0.2 1.6 
+100 1800   0 0.1 0.2 2.0 
+110 1800   0 0.1 0.2 2.0 
+120 1800   0 0.1 0.2 2.0 
+130 1800   0 0.1 0.2 2.0 
+140 1800   0 0.1 0.2 2.0 
+150 2200   0 0.1 0.2 2.2 
+50
+50 50 1 
+1400 2500
+64 1 64
+
+1                                ! The Range information is dummy
+1300                             ! For wave number inversion
+
+11                               ! nparm q
+2 3  1500 2300 128            ! P-speed, lay 3           
+2 4  1500 2300 128            ! P-speed, lay 4           
+2 5  1500 2300 128            ! P-speed, lay 5           
+2 6  1500 2300 128            ! P-speed, lay 6           
+2 7  1500 2300 128            ! P-speed, lay 7           
+2 8  1500 2300 128            ! P-speed, lay 8           
+2 9  1500 2300 128            ! P-speed, lay 9           
+2 10 1500 2300 128            ! P-speed, lay 10           
+2 11 1500 2300 128            ! P-speed, lay 11           
+2 12 1500 2300 128            ! P-speed, lay 12           
+2 13 1500 2300 128            ! P-speed, lay 13           
+
+

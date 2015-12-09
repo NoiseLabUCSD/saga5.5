@@ -1,0 +1,136 @@
+                   TPEM 1.0 SOURCE CODE IMPLEMENTATION
+                          NCCOSC RDTE DIV 543
+                        49170 PROPAGATION PATH
+                       SAN DIEGO CA  92152-7385
+
+INTRODUCTION
+
+    This document describes the source code implementation of the main
+calculation routines used in TPEM 1.0.  All the source routines are con-
+tained in the file TPEMSUBS.FOR included on this disk and were written 
+using the 32-bit Microsoft Fortran Powerstation compiler.
+
+    The user must create a main driver program that calls the routines in
+TPEMSUBS.FOR.  A sample driver program is included on this disk called
+SAMPLE.FOR and will be discussed in the last section of this document.
+There are only two subroutines that the user needs to call from the main
+driver program - PEINIT and PESTEP.  PEINIT initializes and processes all
+the information that is passed to it by the main driver program.  PESTEP
+is then called by the driver program at each range step to propagate the
+field forward and returns the propagation loss at specified height output
+points.
+
+    In all the following subroutine calls, variables in CAPS in the
+parameter list are variables that are returned.
+
+PEINIT
+
+    In order for this routine to initialize and process information for
+subsequent calls to PESTEP, information must be passed to it from the
+main driver program.  The variables that need to be initialized from the
+main program are in the include file TPEM.INC.  Parameter statements are
+also included here that set the maximum amount of points in a refractivity
+profile, a terrain profile, etc.  These constants are used in TPEM 1.0,
+however, the user can change these values to suit their particular
+applications.
+
+    Since TPEM is a pure split-step PE model, coverage will not be given
+at all heights and ranges specified.  PEINIT automatically determines a
+suitable angle such that coverage is given to AT LEAST all heights and 90%
+of the maximum range or greater.  This can always be overridden by the user
+by specifying an angle for desired coverage in the variable PROPANG (in deg)
+in the INPUTVAR structure.
+
+    All variables are described in TPEM.INC.  Once these are initialized,
+the call to PEINIT follows:
+
+      call peinit( ef, vnp, rf, sv, tr, HMINTER, ROUT, IERROR )
+
+where EF, VNP, RF, SV, TR, are structures (from TPEM.INC) declared with the
+following statements in the main driver program:
+
+      record / errorflag / ef
+      record / inputvar / vnp
+      record / refractivity / rf
+      record / systemvar / sv 
+      record / terrain / tr 
+
+    Upon exit, PEINIT returns HMINTER, ROUT, and IERROR.  HMINTER is the
+reference height that is determined from the terrain profile passed in the
+structure TR.  It corresponds to the minimum terrain elevation in the
+terrain profile.  The terrain profile is adjusted by this height in order
+to maximize the calculation domain.  All propagation loss values at specified
+height output points are referenced to this height.  ROUT is initialized to
+0 upon exiting PEINIT in preparation for subsequent calls to PESTEP.  IERROR
+is an integer error flag that returns a negative value if an error occurs in
+PEINIT.  Here is a list of possible errors and their returned values:
+
+IERROR = Integer value that is returned if any errors exist in input data:
+           -6 : Last range in terrain profile is less than RMAX. (Will only
+                return this error if error flag EF.LERR6 is set to .TRUE.).
+           -8 : HMAX is less than maximum height of terrain profile.
+          -10 : Transform size needed to do the given problem is greater than
+                the maximum transform size allowed. (Returned from subroutine
+                GETFFTSZ).
+          -12 : Range of last refractivity profile entered (for range dependent
+                case) is less than RMAX. (This is returned from subroutine 
+                REFINIT).  Will only return this error if error flag EF.LERR12 
+                is set to .TRUE.).
+          -14 : Last gradient in any refractivity profile entered is negative.
+                (This is returned from REFINIT).
+          -17 : Range points in terrain profile are not increasing.
+          -18 : First range point is not 0.
+
+PESTEP
+
+    Once the input data has been initialized, and PEINIT returns no error,
+calls to PESTEP are made to determine propagation loss at specified range 
+steps.  This call follows:
+
+    call pestep( hminter, vnp, rf, tr, ROUT, MLOSS, JSTART, JEND )
+
+ROUT is the current range step in meters.  MLOSS is a 2-byte integer array
+(must be declared in main driver program) that contains the propagation
+loss in centibels, i.e., MLOSS() = NINT( propagation loss in dB * 10. ).
+JSTART is the index at which valid loss points begin in MLOSS().  JEND is
+the index at which valid loss points end in MLOSS().  The values in MLOSS()
+will always be referenced to the height HMINTER.
+
+    Terrain information is also contained within MLOSS().  All loss values
+returned in MLOSS() with a value of 0 represent terrain while all loss
+values of -1 represent invalid loss data.  For example, if a terrain profile
+is specified, and the number of output height points specified is 5 (NZOUT=5,
+in structure INPUTVAR), then for a given output range step less than 90% of
+RMAX, MLOSS() may be returned as:
+
+        MLOSS(1) = 0          at height dz
+        MLOSS(2) = loss1      at height 2.*dz
+        MLOSS(3) = loss2      at height 3.*dz
+        MLOSS(4) = loss3      at height 4.*dz
+        MLOSS(5) = -1         at height 5.*dz
+
+In this case JSTART will have a value of 2 (since this is the start of
+valid loss data), and JEND will have a value of 4 (since this is the end of
+valid loss data).  Here, DZ is the output height increment given by
+DZ=HMAX/NZOUT, with all loss values referenced to height HMINTER.
+
+SAMPLE.FOR
+
+    Included on this disk is a sample driver program called SAMPLE.FOR.
+In order to make a stand-alone executable program that calculates propagation
+loss at specified height and ranges over variable terrain, the following files
+need to be compiled and linked:
+
+    TPEM.INC
+    FFTSIZ.INC
+    SAMPLE.FOR
+    TPEMSUBS.FOR
+    SINFFT.FOR
+
+SAMPLE.FOR determines loss values at heights of 200 m, 400 m, 600 m, 800 m,
+and 1000 m at each of these ranges: 20 km, 40 km, 60 km, 80 km, and 100 km.
+The environment consists of a homogeneous 300 m surface-based duct with
+a wedge terrain profile 10 km wide and 200 m high centered at 50 km.  The
+frequency is 1000 MHz.  The antenna is omni, and the antenna height is at
+25 m.  The ascii output is written to a file called SAMPLE.OUT, also included
+on this disk.

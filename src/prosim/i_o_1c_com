@@ -1,0 +1,18 @@
+c: i_o_1c_com
+c: OUTPUT VARIABLES:
+c: Mode eigenvalues [refer to kn(1:nmode); kn(0) is dummy]:
+      common /out2_com/ kn(0:NM_MAX) 
+      complex*16 kn
+c: Broadband eigenvalues and characteristics:
+      common /out2_com2/ knbb(NM_MAX,NFCMAX)
+      complex*16 knbb
+      common /eig1_com1/ vg_bb(NM_MAX,NFCMAX),dvg_bb(NM_MAX,NFCMAX)
+      real*8 vg_bb,dvg_bb
+      common /eig2_com1/ phi_bb(NVRMAX,NM_MAX,NFCMAX)
+      real*4 phi_bb
+      common /eig2_com2/ dphi_bb(NVRMAX,NM_MAX,NFCMAX)
+      real*4 dphi_bb
+      common /eig2_com3/ dphiz_bb(NVRMAX,NM_MAX,NFCMAX)
+      real*4 dphiz_bb
+      common /eig2_com4/ ddphiz_bb(NVRMAX,NM_MAX,NFCMAX)
+      real*4 ddphiz_bb

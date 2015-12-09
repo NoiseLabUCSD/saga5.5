@@ -1,0 +1,5 @@
+      common /lab_com/ flab,rlab,mnlab,tlab,krlab,kilab,thlab,mlab,
+     .   phlab,dlab,pllab,mrlab,milab,malab,mplab,z4,dblab,mtlab,kmlab
+      character*64 flab,rlab,mnlab,tlab,krlab,kilab,thlab,mlab,phlab,
+     .   dlab,pllab,mrlab,milab,malab,mplab,dblab,mtlab,kmlab
+      real*4 z4

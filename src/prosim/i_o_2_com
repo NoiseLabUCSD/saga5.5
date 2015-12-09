@@ -1,0 +1,27 @@
+c: i_o_2_com
+c: OUTPUT VARIABLES:
+      common /out_com3/ nzsr, nlay, NSCTOR, wclmn
+      integer*4 nzsr, nlay, NSCTOR, wclmn
+      common /par_com1/ nmode,nm_lim,nmodemin,nrng,nfbb
+      integer*4 nmode,nm_lim,nmodemin,nrng,nfbb
+c: nlay=# layers in geo,h,zdep.
+      common /out_com2/ lsvp,lopt,out,lout
+      integer*4 lsvp,lopt,out,lout
+c: iifail=1 when failure occurs in cw_modes or bb_modes:
+      common /out_com2a/ 
+c: Arrays for mapping zsr(1:nzsr) to zsrc,zrec,zmf (see opt_com for nsrc, etc):
+     .   mzsrc(NVRMAX),mzrec(NVRMAX),nzref(NM_MAX),
+c: Arrays for mapping sorted ranges to plc(1:nsrc,1:nrec):
+     .   loutf,iifail
+      integer*4 loutf,iifail,nzref,mzsrc,mzrec
+c: Broadband # frequencies, frequency axis:
+      common /out_com2b/ faxbb(NFBBMAX),
+c: Source/receiver geometry arrays (see opt_com for zsrc,zrec,xsrc):
+c fbv     .   xrec(NSRMAX),yrec(NSRMAX),
+c: Number of modes, mode numbers, max # modes for dispersion curves:
+     .   mode_phz(3,0:NM_MAX),iigeom,
+c: Broadband nfft on frequency axis:
+     .   nfftbb,nfft0
+      integer*4 nfftbb,iigeom,nfft0
+      real*4 faxbb,mode_phz
+c      real*4 faxbb,xsrc,ysrc,xrec,yrec,mode_phz

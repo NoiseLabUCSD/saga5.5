@@ -1,0 +1,109 @@
+ North elba                                                                     
+  E A   c                ! options       
+ Using EOF.... 
+ Adding the input values to PPD-plot 
+ reading in covariance matrix 
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 0 0 1 1 1 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Points in water:          10
+  Points in water:           9
+ number of receiver depths read          48
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           3
+  ncurv=           3 nbart=           3
+
+ The EOF are
+       physparm layer  ... shape functions
+   1   3  1  1    1.00  0.00  0.00
+   2   3  1  2    1.00  0.00  0.00
+   3   3  2  1    1.00  1.00  0.00
+   4   3  2  2    1.00  1.00  0.00
+   5   3  3  1    1.00  1.00  1.00
+   6   3  3  2    1.00  1.00  1.00
+   7  12  1  1    1.00  1.00  1.00
+   8  12  1  2    1.00  1.00  1.00
+  The starting values of the EOF amplitudes are:
+   1520.00     20.00     30.00
+
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   1   5300.00   5900.00      4.72    7  128
+  2 Source depth (m)         8   1   1     70.00     85.00      0.12    7  128
+  3 Water depth (m)          1   1   1    127.00    132.00      0.04    7  128
+  4 Water depth (m)          1   1   2    127.00    132.00      0.04    7  128
+  5 Shape coefficient       11   1   1   1510.00   1560.00      0.39    7  128
+  6 Shape coefficient       11   2   1      0.00    100.00      0.79    7  128
+  7 Shape coefficient       11   3   1      0.00    100.00      0.79    7  128
+ Size of the search space: 10** 14.75
+  uses snapRD as forward model
+
+  initial fitness  0.472109586    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              32
+  number of populations              10
+
+ retuned point   5465.71533       76.3229141       130.634445       127.125725       1531.13684       22.0150852       34.9376907    
+ retuned value  0.117966942    
+ Size of the search space: 10** 14.75
+  uses snapRD as forward model
+
+  initial fitness  0.472109586    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              32
+  number of populations              10
+
+  >>> Estimated serial Inversion time:         70.6 secs.
+ retuned point   5418.09961       74.6104050       127.016060       127.949547       1517.43774       13.4374361       63.3063431    
+ retuned value  0.107614011    
+ retuned point   5421.17773       74.5744705       127.000839       128.140823       1511.36267       26.6845207       52.1198578    
+ retuned value  0.109268934    
+ retuned point   5425.13037       74.4234543       127.005241       128.523102       1518.18604       20.0296116       51.8341942    
+ retuned value  0.109817125    
+ retuned point   5403.58105       75.0270462       127.011330       127.220833       1510.80176       17.6017132       67.9069138    
+ retuned value  0.107337907    
+ retuned point   5409.19092       74.8968811       127.046097       127.643639       1511.71179       21.3026638       60.6272087    
+ retuned value  0.107700258    
+ retuned point   5405.70654       75.0754852       127.080177       127.021744       1510.04932       17.9905796       66.7677994    
+ retuned value  0.107514791    
+ retuned point   5444.61719       75.7754898       129.645859       127.560631       1510.02246       60.0841789       14.2986050    
+ retuned value  0.113017552    
+ retuned point   5436.68115       75.7988968       129.046753       127.162529       1510.00806       41.9978638       36.0195618    
+ retuned value  0.112478808    
+  Population          10
+ retuned point   5468.68115       75.3016968       129.561783       129.231430       1520.16541       62.6735687       1.60437860E-02
+ retuned value  0.115387261    
+
+   best of all energy  0.108371764    
+  best-of all      deviation  
+   1  5422.834         -177.166
+   2    74.724           -5.276
+   3   127.118           -2.782
+   4   127.984            0.884
+   5  1516.693           -3.307
+   6    15.748           -4.252
+   7    60.630           30.630
+ local fit  0.107337907    
+   1  5403.581         -196.419
+   2    75.027           -4.973
+   3   127.011           -2.889
+   4   127.221            0.121
+   5  1510.802           -9.198
+   6    17.602           -2.398
+   7    67.907           37.907
+
+ Forward  modelling calls:   22553
+ Inversion, time:       32.002 secs.

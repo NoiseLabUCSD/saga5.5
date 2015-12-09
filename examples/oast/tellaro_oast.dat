@@ -1,0 +1,32 @@
+tellaro_oast
+E n D R             ! options
+1000 32 1            ! niter, q, npop
+0.8 0.5 0.05
+N J I T
+330 330 1  0           ! Fmin fmax Nfreq
+9
+0      0 0 0     0 0
+0   1523 0 1e-8  0 1.0 
+15  1490 0 0.40  0 1.5 
+16  1525 0 0.35  0 1.6 
+19  1525 0 0.35  0 1.6 
+22  1525 0 0.35  0 1.6 
+26  1525 0 0.35  0 1.6 
+32  1525 0 0.35  0 1.6 
+40  1525 0 0.35  0 1.6 
+7
+5 5 1 1
+1300 3000                             
+1024 100 950
+
+270 1600                        ! Ranges for option D
+
+8                                  ! nparm q                1
+11 1 1480 1550  128			! ocean sound-speed
+11 2  -50   25  128			! sediment speed 
+11 3  -80  550  128			! sediment speed 
+11 4  -60 1000  128			! sediment speed 
+11 5 0.01    1  128			! sediment absor 
+11 6  -.2   .6  128			! sediment absor 
+11 7  -.2   .6  128 			! sediment absor 
+11 8  -.2   .2  128 			! sediment absor 

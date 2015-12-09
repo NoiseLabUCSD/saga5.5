@@ -1,0 +1,16 @@
+      integer   maxdep,msec
+      parameter(maxdep=NLMAX,MSEC=RGMAX)
+c---  environmental common
+c
+      COMMON /R_DENS/ R_R0, R_R1, R_R2
+      real*8 R_R0(msec), R_R1(msec), R_R2(msec)
+      COMMON /R_AB/  R_BETA, R_SCATT, R_C2S, R_C2
+      real*8 R_BETA(-1:maxDEP,msec), R_SCATT(2,msec), 
+     .       R_C2S(msec), R_C2(msec)
+      common /matprop/  R_c0,R_z0,R_c1,R_z1
+      DOUBLE PRECISION R_C0(maxDEP,msec), R_Z0(maxDEP,msec), 
+     1                 R_C1(maxDEP,msec),R_Z1(maxDEP,msec)
+      COMMON /R_G/ R_H0, R_H1
+      DOUBLE PRECISION  R_H0(msec), R_H1(msec)
+      COMMON /R_NA/ R_ND0, R_ND1
+      integer R_ND0(msec), R_ND1(msec)

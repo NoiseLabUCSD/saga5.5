@@ -1,0 +1,22 @@
+#!/bin/bash
+# -------------------------------------
+#   initialization script for SAGA
+#       using the bash shell
+#
+#
+#   to init:    source   saga_init.bsh
+#
+#   My Machine dependent!
+#                     Newhall  WHOI
+# -------------------------------------
+
+echo ">>> Initializing SAGA <<<"
+export SAGADIR=~/saga
+
+#export FORTRAN=ifort
+export FORTRAN=gfortran
+export HOSTTYPE=x86_64
+PATH=$PATH:$SAGADIR/bin/$HOSTTYPE-$FORTRAN:$SAGADIR/bin
+
+# -------------------------------------------
+

@@ -1,0 +1,18 @@
+TPEM optimizing for the tri-linear profiles (fig 6)                             
+ ***************
+  best obtainable theoretical fit  0.0000000E+00
+  best fit (best, ppd, mean)  6.6565130E-15  7.6247356E-15  9.9841298E-15
+
+                                best-of all  most likely     mean   std-dev
+  1 Shape coefficient           2  1    49.331       49.331    49.689     0.015
+  2 Shape coefficient           3  1   249.197      249.197   253.674     0.029
+  3 Shape coefficient           4  1    50.110       50.890    47.242     0.081
+                             best-of all  most likely    mean 
+  1 Refractivity               1   339.00000      339.000   339.000
+  2 Refractivity               2   368.40521      368.405   368.933
+  3 Refractivity               3   319.07449      319.074   319.244
+  4 Refractivity               4   330.95630      330.864   330.936
+  5 Heights of refractivity po 2   249.19684      249.197   253.674
+  6 Heights of refractivity po 3   299.30707      300.087   300.915
+  7 Heights of refractivity po 4   400.00000      400.000   400.000
+ 

@@ -1,0 +1,19 @@
+c
+      common /out_com1/ tf(NTFMAX),phi_reuse(NFBBMAX,NSR_NM_MAX),
+     .	     zsrgeom(NSRMAX),iwat0,nzsrgeom
+      complex tf,phi_reuse
+      real*8 zsrgeom,iwat0
+      integer nzsrgeom
+c
+c
+      common /out_com3/ nzs,nrec,nsrc,nfcw,iicw,iiwrite,iirx,
+     .       zsrc(NSRMAX),zrec(NSRMAX),rkm(NSRMAX),fcw(NFBBMAX),
+     .       fsbb,fmin,fmax,rmin,ver_cur
+      integer nzs,nrec,nsrc,nfcw,iicw,iiwrite,iirx
+      real zsrc,zrec,rkm,fcw,fsbb,fmin,fmax,rmin,ver_cur
+
+      common /out_com4/ iifail,jjfail,nfbb,nfftbb,
+     .      faxbb(NFBBMAX)
+      integer iifail,jjfail,nfbb,nfftbb
+      real faxbb
+

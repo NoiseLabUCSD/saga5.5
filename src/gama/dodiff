@@ -1,0 +1,9 @@
+#!/bin/csh  
+#
+#foreach i (`ls *.f *.h */*.f */*.h`)
+#
+foreach i (`/bin/ls *.f Makefile`)
+echo '*******'
+echo $i
+  diff -b -B -i --ignore-all-space --expand-tabs  $i /home/nielsen/saga50/src/gama/$i
+end 

@@ -1,0 +1,109 @@
+c: VARIABLES FROM SVP FILE (read by svp_read):
+      common /svp_com0/ nsvp,nlayb,nlayt,ktb(NLMAX),ktt(NLMAX),svp_ver
+      integer*4 nsvp,nlayb,nlayt,ktb,ktt
+      real*4 svp_ver
+      common /svp_com/ 
+     .   svp_title,ctol,zsvp(5*NLMAX),csvp(5*NLMAX),rho_svp,alpha_svp,
+     .   hb(NLMAX),geob(2,5,NLMAX),bpb(2,NLMAX),
+     .   ht(NLMAX),geot(2,5,NLMAX),bpt(2,NLMAX),htop,Htot,cs_cw_rat,
+     .   tau_2way,gbar
+      real*8 ctol,zsvp,csvp,rho_svp,alpha_svp,hb,geob,bpb,ht,geot,bpt,
+     .   htop,Htot,cs_cw_rat,tau_2way,gbar
+      character*64 svp_title
+c: VARIABLES FROM OPTION FILE (read by opt_read):
+      common /opt_com/ 
+c: Line 1: (set iiwrite=1 to output files, 0 to suppress output)
+     .   ver_no,iikpl,iirc,iiparm,n_env,iifmt,
+c: Line 2:
+     .   cphmin,cphmax,rmax,phfac,db_cut,iiAih(2),iigbs,
+     .   iidiag,
+c: Line 3: 
+c: Line 4:
+     .   iitl,iimf,iisig,iimt,iidc,iikn,iilist,iikrak,iioas,iifepe,
+     .   iimlab,iitsp,
+c: Lines 5 or 8:
+     .   nth_gbs,nb_gbs,th_gbs(NSRMAX),b_gbs(NSRMAX),
+c: Line 6:
+     .   iiri,iimp,nzmf,zmf(NSRMAX),
+c: Line 7 (deleted):
+     .   nr_tsp,r1_tsp,r2_tsp,nt_tsp,Tw_tsp,iimex,mr_tsp,pct_tsp,
+     .   nrm_tsp,
+c: Line 7:
+     .   Tw,iifft,iiout,iift,
+c: Line 9:
+     .   nrun,nparm,rseed,kvar(4,NPMAX),xvar(2,NPMAX),
+c: Line 10 and 11:
+     .   nseg,geom_file,lgeom,iitype(NSEGMAX),iicont(NSEGMAX),
+     .   vs(NSEGMAX),t1(NSEGMAX),t2(NSEGMAX),dt(NSEGMAX),cpa(NSEGMAX),
+     .   phid(NSEGMAX),x2(NSEGMAX),y2(NSEGMAX),
+c: Line 12:
+     .   fkpl,iivar,iiform,xkhr1,xkhr2,nreal,xkhi1,xkhi2,nimag,kduc,
+     .      iiwr,iishp,iishs,
+c: Line 13 and 14:
+     .   freq1,freq2,nfreq,iilog,th1,th2,nang,fsrc,nfft
+      integer*4 iikpl,iirc,iiparm,n_env,iifmt,iigbs,
+     .   iidiag,iitl,iimf,iisig,iimt,
+     .   nth_gbs,nb_gbs,iiri,iimp,nzmf,nr_tsp,nt_tsp,iimex,
+     .   mr_tsp,nrm_tsp,iifft,iiout,iift,
+     .   iidc,iikn,iilist,iikrak,iioas,iifepe,iimlab,iitsp,
+     .   nrun,nparm,rseed,kvar,nseg,lgeom,iitype,iicont,iivar,
+     .   iiform,nreal,nimag,kduc,iiwr,iishp,iishs,nfreq,iilog,nang,nfft
+      real*4 ver_no,cphmin,cphmax,rmax,phfac,db_cut,iiAih,
+     .   th_gbs,b_gbs,zmf,r1_tsp,r2_tsp,Tw_tsp,
+     .   pct_tsp,Tw,xvar,vs,t1,t2,dt,cpa,phid,x2,y2,fkpl,
+     .   xkhr1,xkhr2,xkhi1,xkhi2,freq1,freq2,th1,th2,fsrc
+      character*64 geom_file
+c
+c: OUTPUT VARIABLES:
+      common /out_com/ svp_file,opt_file,outroot,outfile,
+c: Geoacoustic profile (geo index 1:1=top, 2=bottom;
+c: index 2: 1=cp, 2=cs, 3=rho, 4=alphap, 5=alphas; index 3=layer #):
+     .   geo(2,5,NLMAX),h(NLMAX),zdep(NLMAX),
+c: Complex field array [refer to as plc(1:nzs,1:nsrc,1:nrec)]:
+     .   plc(NTLMAX),
+c: Mode eigenvalues [refer to kn(1:nmode); kn(0) is dummy]:
+     .   kn(0:NM_MAX),
+c: Mode functions [refer to phi,dphi,psi,dpsi as phi(1:nzsr,1:nmode)]:
+     .   phi(NSR_NM_MAX),dphi(NSR_NM_MAX),psi(NSR_NM_MAX),
+     .   dpsi(NSR_NM_MAX),exp_gbs(NSR_NM_MAX),
+c: Mode characteristics (row 1=L=ln(R1*R2), 2=dL/dk, 3=dL/dw, 4=vG, 5=R1):
+     .   eig_char(5,NM_MAX),
+c: Miscellaneous arrays:
+     .   zsr(NSRMAX),zsr_im_gbs(NSRMAX),rho_sr(NSRMAX),cp_sr(NSRMAX),
+     .   cs_sr(NSRMAX),range(NSNRMAX),
+     .   sq2pir(NSRMAX,NSNRMAX),ksm2_sr(NSRMAX),
+c: Broadband eigenvalues and characteristics:
+     .   knbb(NM_NF_MAX),eig_bb(5*NM_NF_MAX),
+     .   dtiltvp(NSRMAX),dtilthp
+      complex*16 kn,eig_char,knbb,eig_bb,ksm2_sr,cp_sr,cs_sr
+      character*64 svp_file,opt_file,outroot,outfile
+      real*8 geo,h,zdep,zsr,zsr_im_gbs,rho_sr,range,exp_gbs,
+     .   dtiltvp,dtilthp
+      complex*8 plc,phi,dphi,psi,dpsi,sq2pir
+c: Integer*4 and real*4 arrays:
+      common /out_com2/
+c: nlay=# layers in geo,h,zdep.
+     .   nlay,lsvp,lopt,out,lout,loutf,nzref(NM_MAX),kksh(NSRMAX),
+c: Number of modes, mode numbers, max # modes for dispersion curves:
+     .   nmode,nm_put,nm_tot,nm_lim,mode_no(3,NM_MAX),nm_miss,
+     .   mode_phz(3,0:NM_MAX),nm_cw_max,iishn(NM_MAX),
+c: iifail=1 when failure occurs in cw_modes or bb_modes:
+     .   iidone,xlam_fb1,xlam_fb2,
+c: Arrays for mapping zsr(1:nzsr) to zsrc,zrec,zmf (see opt_com for nsrc, etc):
+     .   nzsr,mzsrc(NSRMAX),mzrec(NSRMAX),mzmf(NSRMAX),rng_sr(NSNRMAX),
+c: Arrays for mapping sorted ranges to plc(1:nsrc,1:nrec):
+     .   nrng,nrec_jr(NSNRMAX),krec_jr(NSNRMAX),jrec_jr(2,NSNRMAX),
+c: Broadband nfft, # frequencies, frequency axis:
+     .   iish_bb(NM_NF_MAX),
+c: TL array [refer to as tl(1:nzs,1:nsrc,1:nrec)]:
+     .   tl(NTLMAX),
+c: Source/receiver geometry arrays (see opt_com for zsrc,zrec,xsrc):
+     .   xsrc(NRNGMAX),ysrc(NRNGMAX),xrec(NSRMAX),yrec(NSRMAX),iigeom,
+     .   kn_indx(NM_MAX),zsr_indx(NSNRMAX)
+      integer*4 nlay,lsvp,lopt,out,lout,loutf,nmode,nm_put,nm_tot,
+     .   nm_lim,mode_no,
+     .   nm_miss,nm_cw_max,iishn,iidone,nzref,nzsr,kksh,mzsrc,
+     .   mzrec,mzmf,nrng,nrec_jr,krec_jr,jrec_jr,iish_bb,
+     .   iigeom,kn_indx,zsr_indx
+      real*4 tl,xsrc,ysrc,xrec,yrec,rng_sr,mode_phz,
+     .   xlam_fb1,xlam_fb2

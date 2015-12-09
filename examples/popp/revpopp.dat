@@ -1,0 +1,61 @@
+Elba reverberation data 91-2-03  Profile
+   pX d                   ! options
+
+  1000  64  1                ! niter, q, npop
+  0.8 0.5 0.05            ! px,pu,pm
+
+   130.   1.0   0.
+     0.   1521.
+    36.   1519.
+    38.   1514.
+    50.   1511.
+   130.   1508.
+  -1.  -1.
+   0.   0.
+  -1.   1.8  1600.  0.09
+   0.   0.
+  1   630.                       ! nfreq, freq
+  1   60.                        ! nsd sd
+  1   60.                        ! nrd rd
+ -1   -1
+2                                ! isb (1=surf, 2=bott)
+  1   197  -30  1               ! tau0 ri0(dB) dmu(dB)  lampow
+198.8  198.5 196.4 196.3 195.5 192.8  ! source level
+76 74.5 72.2 70.5 67 63.5 ! noise level
+-30  -30 -30 -30 -30 -30  ! lambert law
+10.03067 30  0.1706666          ! tmin,tmax, tinc
+
+1
+8  1 59 70 128
+
+ 1                              ! nparm
+ 8  1  50   70    128           ! source depth
+ 3  1  1520 1620  128           ! vel sed 1
+ 1  1  120. 140.  128           ! water depth
+ 15 1   50. 70.   128           ! recvr depth
+ 17 1   -50 -20  128                   ! lambert DMU
+ 
+
+
+
+-------------------
+This is file  POPP.HLP.			Last Edit: DDE/6-Jun-1994
+By copying it to POPP.INP you can use it as input to POPP.
+-------------------
+TITLE
+H, RHOWC, ALPWC		! Water: depth, density (1.0), and absorption (0.)
+ZP(I), CP(I)		! Sound speed profile
+ -1.  -1.
+C2S, ALP2S		! Shear speed and attenuation (dB/m-kHz) in 
+			!   basement  (Not yet implemented)
+HBOT(I), RHOBOT(I), CBOT(I), ALPBOT(I)	! Bottom properties: layer
+				! thickness, density, sound speed, attenuation
+				! (last layer thickness = -1)
+ROUGHS, ROUGHB(1)	! Surface and bottom roughness (rms m)
+NFREQ, FREQ		! Number of frequencies (=1), frequency
+NS, (ZS(I), I= 1, NS)	! Number of sources; source depths
+NR, (ZR(I), I= 1, NR)	! Number of receivers; receiver depths
+				(For n > 1, these above two items untested)
+NL, NMAX		! Num. of computational layers (<0  =>default of 251);
+			! Maximum number of modes to calculate (<0 => default)
+RMIN, DELR, NUMRNG	! Ranges for TL: minimum, increment, number of ranges

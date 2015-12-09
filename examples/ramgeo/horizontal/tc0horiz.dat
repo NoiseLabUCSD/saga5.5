@@ -1,0 +1,59 @@
+Inversion Workshop, Test Case 0 RAM Input File
+ T k1  A p                               ! options
+1000  32  10                            ! niter, q ,npop
+0.8 0.5 0.05                            ! px,pu,pm
+                                        ! snap options
+
+2					! #freq, max modes 
+ 100 200 300  400  500                  ! freq
+ 20				        !ZS
+1000 1300.0 5                       !Rmin RMAX dphone
+10                                      !DR (dr should approx dphone)
+220.0  0.2  3		!ZMAX DZ NDZ
+85 85					!rdmin,rdmax
+1488.6 4  1 0.0				!C0 NPADE NS RS
+
+     0.0              105.0
+  3000.0              160.0
+    -1                 -1 
+       0.000    1495.000
+      20.000    1494.200
+      40.000    1493.400
+      60.000    1492.600
+      80.000    1491.800
+     100.000    1491.000
+     120.000    1490.200
+     140.000    1489.400
+     160.000    1488.600
+   -1   -1
+     .000    1535.000
+     3.00    1541.400
+     10.00    1556.400
+     35.00    1610.000
+     35.100    1800.000
+   -1   -1
+  .000          1.550
+  34.900        1.590
+  35.100        1.950
+   -1   -1
+   .000         0.123
+   35.00       0.032
+   35.100       0.036
+   60.000      0.036
+   70.000      10
+   150          100
+   -1   -1
+   -1   -1
+1
+3  1 1  1.55  1.56 128                 ! upper density
+
+9                                       ! nparm 
+11  1 1  1500 1600 128                 ! upper velocity point
+11  2 1  1 100 128                 ! upper velocity point
+11  3 1  1 100 128                 ! upper velocity point
+11  4 1  1 100 128                 ! upper velocity point
+11  5 1  10 400 128                 ! upper velocity point
+3  1 1  1.2  1.600 128                 ! upper density
+4  1 1  0.01 0.500 128                 ! upper attenuation
+12 1 1  100  200 128
+12 2 1  100  200 128

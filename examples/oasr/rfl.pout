@@ -1,0 +1,74 @@
+ Refection coefficient.                                                         
+ d Q W p N                               
+ inversion reading real data
+ inversion debugging
+ Observed data written out to unit 30 
+  plot of best model and the initial model
+ Cost based on |a-b|^2
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+ Options: 3 1 0 0 0 1 1 0 0 1 0 0 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0 0
+ Options (norm): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:   2000.000    
+options for oases 
+                                        
+   0.000E+00   0.150E+04   0.000E+00   0.000E+00   0.000E+00   0.100E+01
+   0.000E+00   0.200E+04   0.000E+00   0.100E+00   0.200E+00   0.160E+01
+   0.300E+02   0.250E+04   0.000E+00   0.100E+00   0.200E+00   0.160E+01
+ nb of frequencies           2   50.00000    
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Depth                    1   3      0.00     50.00      0.05   10  999
+  2 P-velocity               2   2   1500.00   3093.75      1.60   10  999
+  3 P-velocity               2   3   1500.00   3093.75      1.60   10  999
+ Size of the search space: 10**  9.00
+  Using OASR  as forward model
+ nb of frequencies           2   50.00000       100.0000    
+
+
+ OPTIONS:
+
+ P-P REFLECTION COEFFICIENT
+
+
+ SOURCE DATA:
+
+   N0.    DEPTH  LAYER      ZU        ZL
+      1      -1.0     1      -1.0       1.0
+
+
+ REFLECTION COEFFICIENTS
+ ***********************
+
+ MINIMUM FREQUENCY:        50.0000     Hz
+ MAXIMUM FREQUENCY:        100.000     Hz
+ NUMBER OF FREQUENCIES:              2
+
+
+ MINIMUM ANGLE:            0.00000     deg.
+ MAXIMUM ANGLE:            90.0000     deg.
+ NUMBER OF ANGLES:                 100
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000  1500.00000     0.00000  0.00000001  0.00000000 0.10000E+04 0.00000E+00
+      0.00000  2000.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     30.00000  2500.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+  initial fitness   2.906865E-14
+ 
+  crossover probability      0.8000000    
+  mutation  probability       5.000000E-02
+  update    probability      0.5000000    
+  number of iterations        1000.000    
+  size   of populations              32
+  number of populations       2.000000    
+ 
+ setting model for maxppd parameters
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000  1500.00000     0.00000  0.00000001  0.00000000 0.10000E+04 0.00000E+00
+      0.00000  1592.62280     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     13.52705  2507.67163     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+ setting model for mean parameters
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000  1500.00000     0.00000  0.00000001  0.00000000 0.10000E+04 0.00000E+00
+      0.00000  1829.25073     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     18.51440  2514.69019     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+  cost: All calculated data are zero 

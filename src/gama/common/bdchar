@@ -1,0 +1,3 @@
+      common /bdchar/gbd(20),tbd(20),ebd(20),trmbd(20),trpbd(20),
+     .   g2bd(20),t2bd(20),e2bd(20),trm2bd(20),trp2bd(20),xaibd(20),
+     .   s1fbd(20),s2fbd(20),parma(21,6),parmb(21,6),jc(20),nparm(21)

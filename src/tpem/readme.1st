@@ -1,0 +1,62 @@
+                    TPEM 1.0 DISTIBRUTION DISK
+
+This is a brief description of files on this disk.
+
+README.1ST:  This file.
+
+USERSMAN.TXT:  TPEM 1.0 User's Manual documentation.
+
+SOURCMAN.TXT:  TPEM 1.0 source code implementation documentation.
+
+DOSXMSF.EXE:  Fortran Powerstation extender - required to be in path to
+              execute TPEM 1.0.
+
+MSFONTS.FON:  Recommended Microsoft font file to be set in FONT environment
+              variable.
+
+TPEM.EXE:  TPEM 1.0 DOS executable program.  Requires extended memory.
+
+SAMPLE.FOR: Fortran source code for sample driver program that calls routines
+            in TPEMSUBS.FOR.
+
+TPEMSUBS.FOR:  Fortran source code containing all calculation routines used
+               in TPEM 1.0.
+
+SINFFT.FOR:  Fortran source code for sine FFT routine.  The include file,
+             FFTSIZ.INC, is required.
+
+TPEM.INC:  Fortran source include file used in TPEM.EXE and required for
+           SAMPLE.FOR and TPEMSUBS.FOR routines.  Contains all variable
+           information to be initialized by main driver program.
+
+FFTSIZ.INC: Fortran source include file used in TPEM.EXE and is required
+            for SAMPLE.FOR and TPEMSUBS.FOR routines.  Contains variable
+            information for size limits on FFT transform arrays.  This file
+            in conjunction with SINFFT.FOR can be used as a stand alone
+            sine FFT routine.
+
+SAMPLE.OUT:  Ascii file containing output data from program SAMPLE.FOR.
+
+TPEM.INP:  Sample input file.
+
+STAND.MET:  Sample refractivity profile consisting of a homogeneous standard
+            atmosphere.
+
+300MSBD.MET:  Sample refractivity profile consisting of a homogeneous
+              300 m surface-based duct.
+
+RANGDEP.MET:  Measured range-dependent refractivity profile. Ref. [1].
+
+WEDGE.TER:  Sample terrain profile consisting of a wedge 10 km wide, 200 m
+            high, and centered at 50 km.
+
+LONGBMU.TER:  Terrain profile from Long Beach to Point Mugu.
+
+RADAR.SYS:  Sample radar system file containing default parameters used in
+            EREPS 3.0 - COVER.
+
+REFERENCES
+
+1.  A.E. Barrios, "Parabolic Equation Modeling in Horizontally Inhomogeneous
+    Environments", IEEE Trans. Ant. and Prop., Vol. 40, No. 7, July 1992,
+    pp. 791-797.

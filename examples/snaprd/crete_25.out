@@ -1,0 +1,42 @@
+ crete freq 25 1X1000                                                           
+  i p  A c      ! c:covariance (no normal
+ plotting ppd on a full scale 
+  plot of best model and the initial model
+ Adding the input values to PPD-plot 
+ reading in covariance matrix 
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 1 0 1 1 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       24000
+  tilt of array is included
+  Points in water:          28
+  Points in water:          19
+ number of receiver depths read          32
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators          25
+  ncurv=          25 nbart=          25
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   1  11000.00  13000.00     15.75    7  128
+  2 Source depth (m)         8   1   1     10.00     20.00      0.08    7  128
+  3 Water depth (m)          1   1   1    120.00    128.00      0.06    7  128
+  4 Water depth (m)          1   1   2    114.00    121.00      0.06    7  128
+  5 Array tilt (m)          19   1   1     -3.00      3.00      0.05    7  128
+  6 Receiver depth (m)      15   1   1     98.12    102.12      0.03    7  128
+ Size of the search space: 10** 12.64
+  uses snapRD as forward model
+ 
+  initial fitness   37352.09    
+ 
+  crossover probability      0.8000000    
+  mutation  probability      5.0000001E-02
+  update    probability      0.5000000    
+  number of iterations             2000
+  size   of populations              64
+  number of populations              12
+ 
+  >>> Estimated serial Inversion time:       1736.2 secs.

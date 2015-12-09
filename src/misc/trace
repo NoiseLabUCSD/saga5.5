@@ -1,0 +1,3 @@
+ls -d *.f *.c | sed 's@.*@diff -sbw -C 1 & ../../newsrc/Misc/&@' | sh
+
+

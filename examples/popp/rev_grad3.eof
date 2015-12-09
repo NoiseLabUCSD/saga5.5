@@ -1,0 +1,69 @@
+10 26  3         ! number of shapefunctions, number of pionts, number of blocks
+17 1           Lambert DMU
+17 2           Lambert DMU
+17 3           Lambert DMU
+17 4           Lambert DMU
+17 5           Lambert DMU
+17 6           Lambert DMU
+3 1  1        ! vel sed
+3 2  1        ! vel sed
+3 3  1        ! vel sed
+3 4  1        ! vel sed
+3 5  1        ! vel sed
+3 6  1        ! vel sed
+3 7  1        ! vel sed
+3 8  1        ! vel sed
+3 9  1        ! vel sed
+3 10  1        ! vel sed
+4 1  1        ! atten
+4 2  1        ! atten
+4 3  1        ! atten
+4 4  1        ! atten
+4 5  1        ! atten
+4 6  1        ! atten
+4 7  1        ! atten
+4 8  1        ! atten
+4 9  1        ! atten
+4 10  1        ! atten
+! Block 0 Lambert
+6 6
+1 1 0 0 0 0 
+1 0 1 0 0 0
+1 0 0 0 0 0
+1 0 0 1 0 0
+1 0 0 0 1 0 
+1 0 0 0 0 1
+! Block 1: coupling of sed pts
+3 10
+1 0.1   0                  0-1m
+1 0.25  0              1- 2m 
+1 0.5   0                2-3m
+1 0.95  0               3-5m
+1 1    0.1              5-7m
+1 1    0.25           7-9m
+1 1    0.4             9-12m
+1 1    0.6            12-15m
+1 1    0.87          15-20m
+1  1   1
+! Block 2: coupling of attenuation
+1 10
+1
+1
+1
+1
+1
+1
+1
+1
+1
+1
+-30 0 0 0 0 0 1550 25 60 0.09         ! starting values
+
+
+
+
+
+
+
+
+

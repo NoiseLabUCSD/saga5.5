@@ -1,0 +1,1 @@
+      common /causbad/ ctbad(20),rcbad(20),delbad(20),shadext,ncbad

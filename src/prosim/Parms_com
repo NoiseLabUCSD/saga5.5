@@ -1,0 +1,65 @@
+C: 	EDIT THIS PARAMETER FILE IF PROGRAM DOES NOT COMPILE BECAUSE THE 
+C:	STORAGE REQUIREMENTS ARE TOO GREAT (DECREASE SIZES) OR IF YOUR RUN
+C:	PARAMETERS RESULT IN A "STORAGE EXCEEDED" MESSAGE (INCREASE SIZES).
+c: NLMAX =	GEOACOUSTIC PARAMETER ARRAYS
+c:		(total # layers in SVP, bottom, and top + 2)
+c: NSRMAX = 	SOURCE AND RECEIVER DEPTH ARRAYS
+c:		(# source depths + # receiver depths)
+c: NVRMAX = 	VIRTUAL RECEIVER ARRAYS
+c:		(# virtual receiver depths)
+c: NM_MAX =	MODE CHARACTERISTICS ARRAYS
+c:		(# modes)
+c: NTFMAX =	TRANSFER FUNCTION ARRAY FOR BROADBAND CALCULATIONS
+c: 		(# FFT freqs)*(# rec depths)*(# src-rec ranges)
+c: NFMAX =	SOURCE FREQUENCIES USED FOR BROADBAND CALCULATIONS
+c:		[# source freqs to compute]
+c: NFCMAX =	FREQUENCIES USED IN THE SUBBAND
+c:		[# freqs components into the subband]
+c: NFBBMAX =	FREQUENCY AXIS ARRAY FOR BROADBAND CALCULATIONS
+c:		[# freqs to compute transfer function=(fmax-fmin)/(fs/nfft)]
+c: 		FREQUENCY AXIS ARRAY FOR CW & REFL COEFF CALCULATIONS
+c:		(# frequencies)
+c: RGMAX =      SEGMENTS ALLOWED FOR THE CALCULATION
+c:		(# of segments used for the rd environment)
+c: SUFX =	OUTPUT FILE SUFFIX DELIMITER ('_' or '.', FOR EXAMPLE)
+      integer*4 NLMAX,NSRMAX,NM_MAX,NTFMAX,NFBBMAX,NVRMAX,
+     .          LML,RGMAX,NFMAX,NFCMAX,luinp,luttrf,lualon
+      character*1 SUFX
+      character*128 MLINE,VLINE,TLINE
+c      parameter(NLMAX=200,RGMAX=150,NFMAX=50,NFCMAX=200,
+c     . NSRMAX=200,NM_MAX=500,NFBBMAX=10000,NVRMAX=250,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c Broadband #1
+c      parameter(NLMAX=50,RGMAX=130,NFMAX=50,NFCMAX=100,
+c     . NSRMAX=400,NM_MAX=500,NFBBMAX=5000,NVRMAX=450,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c
+c MPL TEST INPUT #1
+      parameter(NLMAX=50,RGMAX=150,NFMAX=50,NFCMAX=20,
+     . NSRMAX=400,NM_MAX=200,NFBBMAX=1000,NVRMAX=500,
+     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c
+c Broadband #2
+c      parameter(NLMAX=300,RGMAX=200,NFMAX=50,NFCMAX=100,
+c     . NSRMAX=400,NM_MAX=200,NFBBMAX=1500,NVRMAX=900,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c
+c Many SSP points in depth but limitation in frequency components
+c      parameter(NLMAX=180,RGMAX=221,NFMAX=50,NFCMAX=100,
+c     . NSRMAX=201,NM_MAX=100,NFBBMAX=1000,NVRMAX=852,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c
+c A lot of SSP points for movng front
+c      parameter(NLMAX=50,RGMAX=151,NFMAX=50,NFCMAX=100,
+c     . NSRMAX=201,NM_MAX=100,NFBBMAX=3000,NVRMAX=500,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+c A lot of receivers in range and depth for source loc
+c      parameter(NLMAX=50,RGMAX=100,NFMAX=50,NFCMAX=100,
+c     . NSRMAX=2501,NM_MAX=100,NFBBMAX=200,NVRMAX=2501,
+c     . NTFMAX=NSRMAX*NFBBMAX,SUFX='_',
+     . luinp=1,luttrf=16,lualon=17,
+     . VLINE='NOT PROPERLY DEFINED INPUT DATA!  CHECK INPUTS ',
+     . TLINE='PROSIM TRY TO SOLVE (ADAPTIVELY) THE PROBLEM ',
+     . MLINE='MEMORY LIMIT EXCEEDED!  CHECK INPUTS OR CHANGE '//
+     . 'LIMITS IN Parms_com.',LML=67)
+

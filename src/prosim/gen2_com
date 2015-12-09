@@ -1,0 +1,3 @@
+c: gen2_com
+      common /dphi_com/ Dphi_w(2,NLMAX),Ddphi_w(2,NLMAX)
+      real*8 Dphi_w,Ddphi_w

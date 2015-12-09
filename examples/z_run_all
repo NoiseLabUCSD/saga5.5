@@ -1,0 +1,57 @@
+#!/bin/csh -v 
+# script for running all the examples for the saga program
+#
+# Peter Gerstoft
+
+# snap
+cd snap
+saga elba snap
+saga sspmisa snap
+saga simplesnap snap
+saga tellarosnap snap
+saga ys3 snap
+
+# snaprd
+cd ../snaprd
+saga elbard snaprd
+saga crete_25 snaprd
+saga  tl_malta_rd snaprd
+
+
+# popp
+cd ../popp
+saga revpop popp
+
+
+# oasr
+cd ../oasr
+saga rfl oasr
+
+#oast 
+cd ../oast
+saga layer11 oast
+saga simpleoast oast
+saga tellaro_oast oast
+
+# prosim
+cd ../prosim
+saga waa prosim
+saga waa_lf prosim
+saga waa_1freq prosim
+
+# cprosim
+cd ../cprosim
+saga waa cprosim
+saga elba_sim cprosim
+
+# tpem 
+cd ../tpem
+saga tpem_ex tpem
+saga vocar_eof tpem
+
+# orca
+saga sdc orca
+saga sspmisorca orca
+saga sdc_nearfield
+
+

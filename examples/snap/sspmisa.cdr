@@ -1,0 +1,43 @@
+CONDR,FIP,FMT,CPX,REV,COL,SCS,NCL                                   
+ sspmis_a   from the matched field workshop 93                                  
+sspmisa.bdr                                       
+Water sound speed (m/s)                 
+       1497.5000     RMIN
+      1502.5000      RMAX
+       1497.5000     XLEFT
+      1502.5000      XRIGHT
+         0.4545      XSCALE
+         1.0000      XINC
+Water sound speed (m/s)                 
+       1482.5000     YUP
+      1477.5000      YDOWN
+         0.4545      YSCALE
+         1.0000      YINC
+         51.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         51.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+       1482.5000     RDUP 
+       1477.5000     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+         51.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         51.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+          0.0250     ZMIN 
+          0.2250     ZMAX 
+          0.0250     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 

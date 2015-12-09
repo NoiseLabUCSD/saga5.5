@@ -1,0 +1,25 @@
+c: i_o_opt_com
+c: VARIABLES FROM OPTION FILE (read by opt_read):
+      common /opt_com/ 
+c: Lines 5 or 8:
+     .   nzs,zsrc(NVRMAX),nrec,zrec(NVRMAX),nsrc,rkm(RGMAX),
+     .   zrecusr(NSRMAX),
+c: Line 3 
+     .   fcw(NFMAX),
+     .   nfcw,nrecusr,ncountr,
+c: Line 1: (set iiwrite=1 to output files, 0 to suppress output)
+     .   ver_no,iicw,iikpl,iirc,n_env,iiwrite,
+c: Line 2:
+     .   cphmin,cphmax,rmin,rmax,phfac,db_cut,iidiag,iirx,iifb,
+c: Line 4:
+     .   iimt,iidc,
+c: Line 7:
+     .   fsbb,Tw,fmin,fmax,iifft,iiout,iift
+      integer*4 iicw,iikpl,iirc,n_env,iiwrite,iidiag,iirx,iifb,
+     .   nfcw,nzs,nrec,nsrc,
+     .   iifft,iiout,iift,iidc,iimt,
+     .   nrecusr,ncountr
+      real*4 ver_no,cphmin,cphmax,rmin,rmax,phfac,db_cut,fcw,zsrc,
+     .   zrecusr,zrec,rkm,fsbb,Tw,fmin,fmax
+      common /lgc_com/ multcw
+      logical multcw 

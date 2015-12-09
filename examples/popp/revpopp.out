@@ -1,0 +1,88 @@
+Elba reverberation data 91-2-03  Profile                                        
+    pX d                   ! options     
+  plot of best model and the initial model
+  cost function (|a|-|b|)^2, no offset correc.
+ inversion reading real data
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           4 1 0 0 3 0 1 0 0 1 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:        1000
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source depth (m)         8   1     50.00     70.00      0.16    7  128
+ Size of the search space: 10**  2.11
+
+ Calling POPP
+ flagpu           0
+  Frequency:   630.000000    
+  H,RHOWC   130.000000       1.00000000    
+  Nwl,Nbl           5           1
+water profile
+ 
+  1     0.000  1521.000
+  2    36.000  1519.000
+  3    38.000  1514.000
+  4    50.000  1511.000
+  5   130.000  1508.000
+
+  sediment
+ 
+  1    -1.000     1.800  1600.000     0.090
+
+  sd       60.0000000    
+  zr       60.0000000    
+  dmu     -30.0000000    
+  lampow   10.0306702    
+ number of modes          35
+  revebration level
+   1.00000000               1   76.0000000    
+   2.00000000               2   76.0000000    
+   3.00000000               3   76.0000000    
+   4.00000000               4   76.0000000    
+   5.00000000               5   76.0000000    
+   6.00000000               6   76.0000000    
+   7.00000000               7   76.0000000    
+
+  initial fitness   22.9555550    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             1000
+  size   of populations              64
+  number of populations               1
+
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+ number of modes          35
+  >>> Estimated serial Inversion time:          7.2 secs.
+ retuned point   68.9419098    
+ retuned value   22.9555550    
+
+   best of all energy   22.9555550    
+  best-of all      deviation  
+   1    67.323            7.323
+ local fit   22.9555550    
+   1    68.942            8.942
+
+ Forward  modelling calls:     149
+ Inversion, time:        1.097 secs.

@@ -1,0 +1,201 @@
+       1024          MODU
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1497.50                                          XLEFT
+     1502.50                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Water sound speed (m/s)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       51                                                 N
+     1497.50                                           XOFF
+    0.100000                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     6.00000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1497.50                                          XLEFT
+     1502.50                                         XRIGHT
+     2.00000                                           XINC
+     1.00000                                           XDIV
+ Water sound speed (m/s)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1477.50                                          XLEFT
+     1482.50                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Water sound speed (m/s)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       51                                                 N
+     1477.50                                           XOFF
+    0.100000                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     6.00000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1477.50                                          XLEFT
+     1482.50                                         XRIGHT
+     2.00000                                           XINC
+     1.00000                                           XDIV
+ Water sound speed (m/s)$                                                        
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     5.00000                                          XLEFT
+     10.0000                                         XRIGHT
+     1.00000                                           XINC
+     1.00000                                           XDIV
+ Source range (km) $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       51                                                 N
+     5.00000                                           XOFF
+    0.100000                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     6.00000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     5000.00                                          XLEFT
+     10000.0                                         XRIGHT
+     2000.00                                           XINC
+     1.00000                                           XDIV
+ Source range (km) $                                                             
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000E-01                                      XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Source depth (m) $                                                              
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+       51                                                 N
+    0.100000E-01                                       XOFF
+     1.99980                                             DX
+     1.00000                                           YOFF
+     0.00000                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+  sspmis_a   from the matched field workshop 93                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     6.00000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000E-01                                      XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Source depth (m) $                                                              
+ LIN
+     1.00000                                          YDOWN
+     0.00000                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+     0.00000                                           XOFF
+     0.00000                                             DX
+     0.00000                                           YOFF
+     0.00000                                             DY

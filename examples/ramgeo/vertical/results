@@ -1,0 +1,176 @@
+Inversion Workshop, Test Case 0 RAM Input File                                  
+ ***************
+  best obtainable theoretical fit  0.
+  best fit (best, ppd, mean)    2.40740E-02   0.634818    3.59592E-02
+
+                                best-of all  most likely     mean   std-dev
+  1 Shape coefficient           1  1  1501.575     1501.575  1502.150     0.033
+  2 Shape coefficient           2  1   132.402      139.441   138.621     0.040
+  3 Shape coefficient           3  1   135.921      135.921   130.420     0.113
+  4 Shape coefficient           4  1   172.756       49.921    69.618     0.126
+  5 Shape coefficient           5  1     3.890        3.890     3.876     0.013
+  6 Shape coefficient           6  1     2.000        2.000     2.427     0.118
+  7 Shape coefficient           7  1    22.724       22.724    22.668     0.048
+  8 Shape coefficient           8  1     1.583        1.578     1.566     0.130
+  9 Bottom density (g/cm^3)     3  1     1.669        1.820     1.766     0.189
+ 10 Shape coefficient           9  1     0.203        0.218     0.207     0.081
+ 11 Shape coefficient          10  1     0.031        0.049     0.045     0.156
+ 12 Bathymetry (m)              1  1    89.583       89.567    89.613     0.066
+ 13 Bathymetry (m)              2  1   150.606      150.307   150.421     0.194
+                             best-of all  most likely    mean 
+  1 Bottom sound speed (m/s)   1  1501.57483     1501.575  1502.150
+  2 Bottom sound speed (m/s)   2  1501.57483     1501.575  1502.150
+  3 Bottom sound speed (m/s)   3  1633.97644     1641.016  1640.771
+  4 Bottom sound speed (m/s)   4  1633.97644     1641.016  1640.771
+  5 Bottom sound speed (m/s)   5  1769.89771     1776.937  1771.191
+  6 Bottom sound speed (m/s)   6  1769.89771     1776.937  1771.191
+  7 Bottom sound speed (m/s)   7  1942.65356     1826.858  1840.809
+  8 Depth (m)                  2     3.88976        3.890     3.876
+  9 Depth (m)                  3     3.88976        3.890     3.876
+ 10 Depth (m)                  4     5.88976        5.890     6.304
+ 11 Depth (m)                  5     5.88976        5.890     6.304
+ 12 Depth (m)                  6    28.61417       28.614    28.972
+ 13 Depth (m)                  7    28.61417       28.614    28.972
+ 14 Depth (m)                  2    28.61417       28.614    28.972
+ 15 Depth (m)                  3    28.61417       28.614    28.972
+ 16                            2    28.61417       28.614    28.972
+ 17                            3    28.61417       28.614    28.972
+ 18 Bottom density (g/cm^3)    1     1.58268        1.578     1.566
+ 19 Bottom density (g/cm^3)    2     1.58268        1.578     1.566
+ 20 Bottom attenuation (dB)    1     0.20291        0.218     0.207
+ 21 Bottom attenuation (dB)    2     0.20291        0.218     0.207
+ 22 Bottom attenuation (dB)    3     0.03094        0.049     0.045
+ 23 Bottom attenuation (dB)    4     0.03094        0.049     0.045
+ 
+Inversion Workshop, Test Case 0 RAM Input File                                  
+ ***************
+  best obtainable theoretical fit   0.000000E+00
+  best fit (best, ppd, mean)   2.647328E-02  0.6278839      0.2316744    
+
+                                best-of all  most likely     mean   std-dev
+  1 Shape coefficient           1  1  1506.299     1507.087  1508.362     0.035
+  2 Shape coefficient           2  1   140.614      140.614   141.067     0.061
+  3 Shape coefficient           3  1   107.764      107.764    93.971     0.198
+  4 Shape coefficient           4  1    74.488       74.488    88.222     0.131
+  5 Shape coefficient           5  1     3.890        3.890     3.774     0.025
+  6 Shape coefficient           6  1     2.000        2.142     4.958     0.320
+  7 Shape coefficient           7  1    29.559       30.000    27.622     0.168
+  8 Shape coefficient           8  1     1.550        1.550     1.506     0.177
+  9 Bottom density (g/cm^3)     3  1     1.600        1.600     1.852     0.262
+ 10 Shape coefficient           9  1     0.099        0.099     0.148     0.126
+ 11 Shape coefficient          10  1     0.095        0.179     0.125     0.219
+ 12 Bathymetry (m)              1  1    89.787       89.787    89.905     0.106
+ 13 Bathymetry (m)              2  1   150.685      149.929   149.874     0.196
+                             best-of all  most likely    mean 
+  1 Bottom sound speed (m/s)   1  1506.29919     1507.087  1508.362
+  2 Bottom sound speed (m/s)   2  1506.29919     1507.087  1508.362
+  3 Bottom sound speed (m/s)   3  1646.91333     1647.701  1649.429
+  4 Bottom sound speed (m/s)   4  1646.91333     1647.701  1649.429
+  5 Bottom sound speed (m/s)   5  1754.67712     1755.465  1743.400
+  6 Bottom sound speed (m/s)   6  1754.67712     1755.465  1743.400
+  7 Bottom sound speed (m/s)   7  1829.16541     1829.953  1831.622
+  8 Depth (m)                  2     3.88976        3.890     3.774
+  9 Depth (m)                  3     3.88976        3.890     3.774
+ 10 Depth (m)                  4     5.88976        6.031     8.732
+ 11 Depth (m)                  5     5.88976        6.031     8.732
+ 12 Depth (m)                  6    35.44882       36.031    36.354
+ 13 Depth (m)                  7    35.44882       36.031    36.354
+ 14 Depth (m)                  2    35.44882       36.031    36.354
+ 15 Depth (m)                  3    35.44882       36.031    36.354
+ 16                            2    35.44882       36.031    36.354
+ 17                            3    35.44882       36.031    36.354
+ 18 Bottom density (g/cm^3)    1     1.54961        1.550     1.506
+ 19 Bottom density (g/cm^3)    2     1.54961        1.550     1.506
+ 20 Bottom attenuation (dB)    1     0.09874        0.099     0.148
+ 21 Bottom attenuation (dB)    2     0.09874        0.099     0.148
+ 22 Bottom attenuation (dB)    3     0.09528        0.179     0.125
+ 23 Bottom attenuation (dB)    4     0.09528        0.179     0.125
+ 
+Inversion Workshop, Test Case 0 RAM Input File                                  
+ ***************
+  best obtainable theoretical fit   0.000000E+00
+  best fit (best, ppd, mean)   2.647328E-02  0.6278839      0.2316744    
+
+                                best-of all  most likely     mean   std-dev
+  1 Shape coefficient           1  1  1506.299     1507.087  1508.362     0.035
+  2 Shape coefficient           2  1   140.614      140.614   141.067     0.061
+  3 Shape coefficient           3  1   107.764      107.764    93.971     0.198
+  4 Shape coefficient           4  1    74.488       74.488    88.222     0.131
+  5 Shape coefficient           5  1     3.890        3.890     3.774     0.025
+  6 Shape coefficient           6  1     2.000        2.142     4.958     0.320
+  7 Shape coefficient           7  1    29.559       30.000    27.622     0.168
+  8 Shape coefficient           8  1     1.550        1.550     1.506     0.177
+  9 Bottom density (g/cm^3)     3  1     1.600        1.600     1.852     0.262
+ 10 Shape coefficient           9  1     0.099        0.099     0.148     0.126
+ 11 Shape coefficient          10  1     0.095        0.179     0.125     0.219
+ 12 Bathymetry (m)              1  1    89.787       89.787    89.905     0.106
+ 13 Bathymetry (m)              2  1   150.685      149.929   149.874     0.196
+                             best-of all  most likely    mean 
+  1 Bottom sound speed (m/s)   1  1506.29919     1507.087  1508.362
+  2 Bottom sound speed (m/s)   2  1506.29919     1507.087  1508.362
+  3 Bottom sound speed (m/s)   3  1646.91333     1647.701  1649.429
+  4 Bottom sound speed (m/s)   4  1646.91333     1647.701  1649.429
+  5 Bottom sound speed (m/s)   5  1754.67712     1755.465  1743.400
+  6 Bottom sound speed (m/s)   6  1754.67712     1755.465  1743.400
+  7 Bottom sound speed (m/s)   7  1829.16541     1829.953  1831.622
+  8 Depth (m)                  2     3.88976        3.890     3.774
+  9 Depth (m)                  3     3.88976        3.890     3.774
+ 10 Depth (m)                  4     5.88976        6.031     8.732
+ 11 Depth (m)                  5     5.88976        6.031     8.732
+ 12 Depth (m)                  6    35.44882       36.031    36.354
+ 13 Depth (m)                  7    35.44882       36.031    36.354
+ 14 Depth (m)                  2    35.44882       36.031    36.354
+ 15 Depth (m)                  3    35.44882       36.031    36.354
+ 16                            2    35.44882       36.031    36.354
+ 17                            3    35.44882       36.031    36.354
+ 18 Bottom density (g/cm^3)    1     1.54961        1.550     1.506
+ 19 Bottom density (g/cm^3)    2     1.54961        1.550     1.506
+ 20 Bottom attenuation (dB)    1     0.09874        0.099     0.148
+ 21 Bottom attenuation (dB)    2     0.09874        0.099     0.148
+ 22 Bottom attenuation (dB)    3     0.09528        0.179     0.125
+ 23 Bottom attenuation (dB)    4     0.09528        0.179     0.125
+ 
+Inversion Workshop, Test Case 0 RAM Input File                                  
+ ***************
+  best obtainable theoretical fit   0.000000E+00
+  best fit (best, ppd, mean)   2.647328E-02  0.6278839      0.2316744    
+
+                                best-of all  most likely     mean   std-dev
+  1 Shape coefficient           1  1  1506.299     1507.087  1508.362     0.035
+  2 Shape coefficient           2  1   140.614      140.614   141.067     0.061
+  3 Shape coefficient           3  1   107.764      107.764    93.971     0.198
+  4 Shape coefficient           4  1    74.488       74.488    88.222     0.131
+  5 Shape coefficient           5  1     3.890        3.890     3.774     0.025
+  6 Shape coefficient           6  1     2.000        2.142     4.958     0.320
+  7 Shape coefficient           7  1    29.559       30.000    27.622     0.168
+  8 Shape coefficient           8  1     1.550        1.550     1.506     0.177
+  9 Bottom density (g/cm^3)     3  1     1.600        1.600     1.852     0.262
+ 10 Shape coefficient           9  1     0.099        0.099     0.148     0.126
+ 11 Shape coefficient          10  1     0.095        0.179     0.125     0.219
+ 12 Bathymetry (m)              1  1    89.787       89.787    89.905     0.106
+ 13 Bathymetry (m)              2  1   150.685      149.929   149.874     0.196
+                             best-of all  most likely    mean 
+  1 Bottom sound speed (m/s)   1  1506.29919     1507.087  1508.362
+  2 Bottom sound speed (m/s)   2  1506.29919     1507.087  1508.362
+  3 Bottom sound speed (m/s)   3  1646.91333     1647.701  1649.429
+  4 Bottom sound speed (m/s)   4  1646.91333     1647.701  1649.429
+  5 Bottom sound speed (m/s)   5  1754.67712     1755.465  1743.400
+  6 Bottom sound speed (m/s)   6  1754.67712     1755.465  1743.400
+  7 Bottom sound speed (m/s)   7  1829.16541     1829.953  1831.622
+  8 Depth (m)                  2     3.88976        3.890     3.774
+  9 Depth (m)                  3     3.88976        3.890     3.774
+ 10 Depth (m)                  4     5.88976        6.031     8.732
+ 11 Depth (m)                  5     5.88976        6.031     8.732
+ 12 Depth (m)                  6    35.44882       36.031    36.354
+ 13 Depth (m)                  7    35.44882       36.031    36.354
+ 14 Depth (m)                  2    35.44882       36.031    36.354
+ 15 Depth (m)                  3    35.44882       36.031    36.354
+ 16                            2    35.44882       36.031    36.354
+ 17                            3    35.44882       36.031    36.354
+ 18 Bottom density (g/cm^3)    1     1.54961        1.550     1.506
+ 19 Bottom density (g/cm^3)    2     1.54961        1.550     1.506
+ 20 Bottom attenuation (dB)    1     0.09874        0.099     0.148
+ 21 Bottom attenuation (dB)    2     0.09874        0.099     0.148
+ 22 Bottom attenuation (dB)    3     0.09528        0.179     0.125
+ 23 Bottom attenuation (dB)    4     0.09528        0.179     0.125
+ 

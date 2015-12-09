@@ -1,0 +1,4 @@
+      common /bottom/ z(42),cp1(-2:43),cp2(-2:42),
+     .   cs1(-2:43),cs2(-2:42),bp(42),bp2(42),bet(42),rcon(42),
+     .   rho1(-2:43),rho2(-2:42),mismch(0:42),ntot,kprof(42)
+ 

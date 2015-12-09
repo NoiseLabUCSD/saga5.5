@@ -1,0 +1,43 @@
+CONDR,FIP,FMT,CPX,COL,REV,NCL,SCS                                   
+ [JD158 03:53] ASIAEX                                                           
+asiaexcsdm135.bdr                                 
+Source range (km)                       
+          1.6000     RMIN
+         1.9000      RMAX
+          1.6000     XLEFT
+         1.9000      XRIGHT
+         0.0273      XSCALE
+         0.0500      XINC
+Source depth (m)                        
+         65.0000     YUP
+        35.0000      YDOWN
+         2.7273      YSCALE
+         5.0000      YINC
+        128.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+        128.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+         65.0000     RDUP 
+         35.0000     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+        128.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+        128.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+         -6.6443     ZMIN 
+         -2.1443     ZMAX 
+          0.5000     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 

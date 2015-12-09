@@ -1,0 +1,117 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{section.1}
+\contentsline {section}{\numberline {2}Background}{4}{section.2}
+\contentsline {subsection}{\numberline {2.1}Optimization using Genetic Algorithms}{4}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}{\it A posteriori} statistics}{7}{subsection.2.2}
+\contentsline {section}{\numberline {3}Cook book for inversion}{10}{section.3}
+\contentsline {section}{\numberline {4}Installing SAGA}{13}{section.4}
+\contentsline {subsection}{\numberline {4.1}SAGA directory}{13}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Loading SAGA files}{13}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}SAGA platforms}{14}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Building SAGA}{14}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}SAGA example files}{15}{subsection.4.5}
+\contentsline {subsubsection}{\numberline {4.5.1}Forward model OAST}{15}{subsubsection.4.5.1}
+\contentsline {subsubsection}{\numberline {4.5.2}Forward model OASR}{15}{subsubsection.4.5.2}
+\contentsline {subsubsection}{\numberline {4.5.3}Forward model OASTG}{15}{subsubsection.4.5.3}
+\contentsline {subsubsection}{\numberline {4.5.4}Forward model SNAP}{16}{subsubsection.4.5.4}
+\contentsline {subsubsection}{\numberline {4.5.5}Forward model SNAP3D}{16}{subsubsection.4.5.5}
+\contentsline {subsubsection}{\numberline {4.5.6}Forward model SNAPRD}{16}{subsubsection.4.5.6}
+\contentsline {subsubsection}{\numberline {4.5.7}Forward model PROSIM}{17}{subsubsection.4.5.7}
+\contentsline {subsubsection}{\numberline {4.5.8}Forward model POPP}{17}{subsubsection.4.5.8}
+\contentsline {subsubsection}{\numberline {4.5.9}Forward model RAMGEO}{17}{subsubsection.4.5.9}
+\contentsline {subsubsection}{\numberline {4.5.10}Forward model GAMA}{17}{subsubsection.4.5.10}
+\contentsline {subsubsection}{\numberline {4.5.11}Forward model ORCA90}{17}{subsubsection.4.5.11}
+\contentsline {subsubsection}{\numberline {4.5.12}Forward model TPEM}{17}{subsubsection.4.5.12}
+\contentsline {section}{\numberline {5}SAGA: General features}{19}{section.5}
+\contentsline {subsection}{\numberline {5.1}Graphics}{20}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Useful scripts}{21}{subsection.5.2}
+\contentsline {section}{\numberline {6}SAGA: The input file}{22}{section.6}
+\contentsline {subsection}{\numberline {6.1}SAGA options}{22}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}List of SAGA options}{32}{subsection.6.2}
+\contentsline {section}{\numberline {7}Format of the observed data}{34}{section.7}
+\contentsline {subsection}{\numberline {7.1}Covariance matrix file}{34}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}General data input (option d)}{35}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Range data input (option D)}{35}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Vertical array data (option e)}{36}{subsection.7.4}
+\contentsline {subsection}{\numberline {7.5}Horizontal array data (option T)}{36}{subsection.7.5}
+\contentsline {subsection}{\numberline {7.6}Weighting file (option M)}{37}{subsection.7.6}
+\contentsline {section}{\numberline {8}The objective function}{38}{section.8}
+\contentsline {subsection}{\numberline {8.1}Transformation of data}{38}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Direct observations}{39}{subsection.8.2}
+\contentsline {subsection}{\numberline {8.3}Covariance matrix}{40}{subsection.8.3}
+\contentsline {subsection}{\numberline {8.4}Cramer-Rao bound}{41}{subsection.8.4}
+\contentsline {section}{\numberline {9}Shape functions}{44}{section.9}
+\contentsline {subsubsection}{\numberline {9.0.1}Example of a shape function file}{44}{subsubsection.9.0.1}
+\contentsline {section}{\numberline {10}Output files}{47}{section.10}
+\contentsline {subsection}{\numberline {10.1}The *.mat, *b.mat and *.ext files}{47}{subsection.10.1}
+\contentsline {section}{\numberline {11}Sampling the fields}{48}{section.11}
+\contentsline {subsection}{\numberline {11.1}Running the program}{48}{subsection.11.1}
+\contentsline {section}{\numberline {12}Forward models and examples}{49}{section.12}
+\contentsline {subsection}{\numberline {12.1}Forward model: OAST }{49}{subsection.12.1}
+\contentsline {subsubsection}{\numberline {12.1.1}Change in input format}{50}{subsubsection.12.1.1}
+\contentsline {subsubsection}{\numberline {12.1.2}Additional OAST options}{50}{subsubsection.12.1.2}
+\contentsline {subsubsection}{\numberline {12.1.3}Pointers in OAST}{51}{subsubsection.12.1.3}
+\contentsline {subsubsection}{\numberline {12.1.4}OAST example. File: {\bf layer11}}{51}{subsubsection.12.1.4}
+\contentsline {subsubsection}{\numberline {12.1.5}OAST example. File: {\bf tellaro\_oast}}{54}{subsubsection.12.1.5}
+\contentsline {subsection}{\numberline {12.2}Forward model: OASR }{54}{subsection.12.2}
+\contentsline {subsubsection}{\numberline {12.2.1}Pointers in OASR}{58}{subsubsection.12.2.1}
+\contentsline {subsubsection}{\numberline {12.2.2}OASR example. File: {\bf rfl}}{58}{subsubsection.12.2.2}
+\contentsline {subsection}{\numberline {12.3}Forward model: OASTG }{59}{subsection.12.3}
+\contentsline {subsubsection}{\numberline {12.3.1}OASTG example. File: {\bf horiz}}{59}{subsubsection.12.3.1}
+\contentsline {subsection}{\numberline {12.4}Forward model: SNAP}{59}{subsection.12.4}
+\contentsline {subsubsection}{\numberline {12.4.1}Change in input format}{61}{subsubsection.12.4.1}
+\contentsline {subsubsection}{\numberline {12.4.2}Options in SNAP}{62}{subsubsection.12.4.2}
+\contentsline {subsubsection}{\numberline {12.4.3}Pointers in SNAP}{64}{subsubsection.12.4.3}
+\contentsline {subsubsection}{\numberline {12.4.4}SNAP example. File: {\bf sspmisa}}{65}{subsubsection.12.4.4}
+\contentsline {subsubsection}{\numberline {12.4.5}SNAP example. File: {\bf tellaro\_snap}}{67}{subsubsection.12.4.5}
+\contentsline {subsubsection}{\numberline {12.4.6}SNAP example. File: {\bf ys3}}{70}{subsubsection.12.4.6}
+\contentsline {subsubsection}{\numberline {12.4.7}SNAP example. Files: resampsnap, jasa2006 and jasa2007}{70}{subsubsection.12.4.7}
+\contentsline {subsection}{\numberline {12.5}Forward model: SNAPRD }{74}{subsection.12.5}
+\contentsline {subsubsection}{\numberline {12.5.1}Options in SNAPRD}{74}{subsubsection.12.5.1}
+\contentsline {subsubsection}{\numberline {12.5.2}Pointers in SNAPRD}{76}{subsubsection.12.5.2}
+\contentsline {subsubsection}{\numberline {12.5.3}SNAPRD example. File: {\bf elbard}}{76}{subsubsection.12.5.3}
+\contentsline {subsubsection}{\numberline {12.5.4}SNAPRD example. File: {\bf shot05}}{78}{subsubsection.12.5.4}
+\contentsline {subsubsection}{\numberline {12.5.5}SNAPRD example. File: {\bf tl\_malta\_rd}}{79}{subsubsection.12.5.5}
+\contentsline {subsection}{\numberline {12.6}Forward model: PROSIM }{81}{subsection.12.6}
+\contentsline {subsubsection}{\numberline {12.6.1}Options in PROSIM}{83}{subsubsection.12.6.1}
+\contentsline {subsubsection}{\numberline {12.6.2}Pointers in PROSIM}{83}{subsubsection.12.6.2}
+\contentsline {subsubsection}{\numberline {12.6.3}PROSIM example. File: {\bf waa}}{84}{subsubsection.12.6.3}
+\contentsline {subsubsection}{\numberline {12.6.4}PROSIM example, file: {\bf mf}}{85}{subsubsection.12.6.4}
+\contentsline {subsection}{\numberline {12.7}Forward model: CPROSIM }{85}{subsection.12.7}
+\contentsline {subsection}{\numberline {12.8}Forward model: POPP }{85}{subsection.12.8}
+\contentsline {subsubsection}{\numberline {12.8.1}Pointers in POPP}{89}{subsubsection.12.8.1}
+\contentsline {subsubsection}{\numberline {12.8.2}POPP example. File: {\bf revpopp}}{89}{subsubsection.12.8.2}
+\contentsline {subsection}{\numberline {12.9}Forward model: GAMA }{91}{subsection.12.9}
+\contentsline {subsubsection}{\numberline {12.9.1}Options in GAMA}{91}{subsubsection.12.9.1}
+\contentsline {subsubsection}{\numberline {12.9.2}Pointers in GAMA}{92}{subsubsection.12.9.2}
+\contentsline {subsubsection}{\numberline {12.9.3}GAMA example. File: {\bf map2k\_phla2000067091700}}{93}{subsubsection.12.9.3}
+\contentsline {subsection}{\numberline {12.10}Forward model: ORCA }{94}{subsection.12.10}
+\contentsline {subsubsection}{\numberline {12.10.1}Options in ORCA}{94}{subsubsection.12.10.1}
+\contentsline {subsubsection}{\numberline {12.10.2}Pointers in ORCA}{94}{subsubsection.12.10.2}
+\contentsline {subsubsection}{\numberline {12.10.3}ORCA example. File: {\bf sdc}}{95}{subsubsection.12.10.3}
+\contentsline {subsection}{\numberline {12.11}Forward model: RAMGEO }{96}{subsection.12.11}
+\contentsline {subsubsection}{\numberline {12.11.1}Options in RAMGEO}{96}{subsubsection.12.11.1}
+\contentsline {subsubsection}{\numberline {12.11.2}Pointers in RAMGEO}{98}{subsubsection.12.11.2}
+\contentsline {subsubsection}{\numberline {12.11.3}RAMGEO example. File: {\bf tc1v1}}{98}{subsubsection.12.11.3}
+\contentsline {subsection}{\numberline {12.12}Forward model: TPEM }{100}{subsection.12.12}
+\contentsline {subsubsection}{\numberline {12.12.1}Options in TPEM}{102}{subsubsection.12.12.1}
+\contentsline {subsubsection}{\numberline {12.12.2}Pointers in TPEM}{103}{subsubsection.12.12.2}
+\contentsline {subsubsection}{\numberline {12.12.3}TPEM example. File: {\bf tpem\_ex} }{104}{subsubsection.12.12.3}
+\contentsline {section}{\numberline {13} 3D array localization using SNAP}{109}{section.13}
+\contentsline {subsection}{\numberline {13.1}Geometry}{109}{subsection.13.1}
+\contentsline {subsubsection}{\numberline {13.1.1}Parabola}{109}{subsubsection.13.1.1}
+\contentsline {subsubsection}{\numberline {13.1.2}Rotation}{111}{subsubsection.13.1.2}
+\contentsline {subsection}{\numberline {13.2}Visualization of the rotations}{114}{subsection.13.2}
+\contentsline {subsection}{\numberline {13.3}Additional Options in SNAP}{114}{subsection.13.3}
+\contentsline {subsection}{\numberline {13.4}Additional Pointers in SNAP}{114}{subsection.13.4}
+\contentsline {subsubsection}{\numberline {13.4.1}Examples of SNAP3D files}{115}{subsubsection.13.4.1}
+\contentsline {references}{References}{118}{subsubsection.13.4.1}
+\contentsline {annex}{\numberline {Annex\nobreakspace {}A\nobreakspace {}-\nobreakspace {}}Likelihood functions for a vertical array}{125}{section.1}
+\contentsline {subsection}{\numberline {A.1}Multi-frequency matched field processing}{125}{subsection.1.1}
+\contentsline {subsection}{\numberline {A.2}Multi-frequency matched mode processing}{127}{subsection.1.2}
+\contentsline {subsection}{\numberline {A.3}Estimation of the covariance matrix}{128}{subsection.1.3}
+\contentsline {annex}{\numberline {Annex\nobreakspace {}B\nobreakspace {}-\nobreakspace {}}Regularization}{130}{section.2}
+\contentsline {subsection}{\numberline {B.1}Thikhonov regularization}{130}{subsection.2.1}
+\contentsline {subsection}{\numberline {B.2}Including the {\it a priori} probability distribution}{131}{subsection.2.2}
+\contentsline {annex}{\numberline {Annex\nobreakspace {}C\nobreakspace {}-\nobreakspace {}}Updating SAGA}{133}{section.3}
+\contentsline {subsection}{\numberline {C.1}Porting a forward model into SAGA}{133}{subsection.3.1}
+\contentsline {subsection}{\numberline {C.2}Introducing a new option}{135}{subsection.3.2}

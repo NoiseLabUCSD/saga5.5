@@ -1,0 +1,1 @@
+      common /discint/ adlo(3),adhi(3),adlop(3),adhip(3)

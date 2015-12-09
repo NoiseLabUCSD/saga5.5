@@ -1,0 +1,25 @@
+5 5  1         ! number of shapefunctions, number of points, number of blocks
+2 1  1        ! vel sed
+2 2  1        ! vel sed
+2 3  1        ! vel sed
+2 4  1        ! vel sed
+2 5  1        ! vel sed
+! Block 1: coupling of sed pts
+5 5
+1 0 0 0 0 
+1 1 0 0 0 
+1 1 1 0 0
+1 1 1 1 0        
+1 1 1 1 1        
+1534 6.4 15 53.6 190          ! starting values
+
+
+
+
+
+
+
+
+
+
+

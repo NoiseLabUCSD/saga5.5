@@ -1,0 +1,5 @@
+#!/bin/csh -f
+ls -d $1/*.c $1/*.f
+ls -d *.c *.f | sed 's@.*@diff -sbw -C 1 & ../../newsrc/Misc/&@' | sh
+ls -d *.c *.f | sed 's@.*@diff -sbw -C 1 & ./&@' | sh
+

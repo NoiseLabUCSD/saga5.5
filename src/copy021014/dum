@@ -1,0 +1,1 @@
+ifort    -O  -o ../bin/intel-mac-ifort/sagasnap ./obj/intel-mac-ifort/global.o ./obj/intel-mac-ifort/ga.o ./obj/intel-mac-ifort/snapinit.o   ./obj/intel-mac-ifort/snapinter.o ./obj/intel-mac-ifort/libsaga.a            ./obj/intel-mac-ifort/apmath.a ./obj/intel-mac-ifort/misc.a   ./obj/intel-mac-ifort/snap.a 

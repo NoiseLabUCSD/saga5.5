@@ -1,0 +1,40 @@
+ waa.dat, 96 frequencies all phones.
+fe p                   ! options 
+ 1000 32 20            ! niter, q, npop
+  0.8 0.5 0.05         ! px,pu,pm
+p                      ! Prosim option: only positive gradient
+ -1    0               ! number of frequencies
+5 25  500  1 25 550            ! frequencies
+1                      ! number of sectors
+1   0.  0.              ! dum, phase sp (00 = all), dum
+100     0    0  10. 0.    !depth, dum,dum, range, dum
+   0.  1480.     
+  100  1460.
+50     1.500 -0.23       ! sediment
+   0.  1550
+  50   1700 
+2.00 -0.23  1800.0       ! bottom
+   0  0                  ! not used
+
+20                       ! source depth
+1 99.9999 100            ! rec depth
+1                        ! number of ranges
+5000.                    ! receiver range
+
+ 9                       ! nparm                 
+ 9  1  1 5000 5400 128   ! source range         
+ 8  1  1   10   30 128   ! source depth           
+ 1  1  1  100  120 128   ! water depth
+ 17 1  1   10   50 128   ! sediment thickness
+ 3  1  1 1500 1600 128   ! sound speed sed 
+ 3  2  1 1550 1750 128   ! sound speed sed 
+ 12 1  1 1600 1800 128   ! sound speed sed
+ 6  1  1 1.40 1.85 128   ! density in sediment
+ 14 1 1 1.600 2.00 128   ! density in half space
+
+
+
+
+ 107.244094848633   100.0000    0    0  10. 0.      !depth, dum,dum, range, dum
+
+

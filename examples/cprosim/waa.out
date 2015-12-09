@@ -1,0 +1,30 @@
+ waa.dat, 96 frequencies all phones.                                            
+ W f1 e p                   ! options    
+ Observed data written out to unit 30 
+ Incoherent addition over frequencies
+  ...with each frequency weighted identicallly
+  inversion reading real data in VA-format
+  plot of best model and the initial model
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 3 0 0 4 0 1 0 0 1 0 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  reading ranges in....
+ number of ranges           1
+  ncurv=          96 nbart=           0
+ number of receiver depths read         100
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   1   5000.00   5400.00      3.15    7  128
+  2 Source depth (m)         8   1   1     10.00     30.00      0.16    7  128
+  3 Water depth (m)          1   1   1    100.00    120.00      0.16    7  128
+  4 Sediment depth (m)      17   1   1     10.00     50.00      0.31    7  128
+  5 Sediment sound speed (   3   1   1   1500.00   1600.00      0.79    7  128
+  6 Sediment sound speed (   3   2   1   1550.00   1750.00      1.57    7  128
+  7 Bottom speed (m/s)      12   1   1   1600.00   1800.00      1.57    7  128
+  8 Sediment Density (g/cm   6   1   1      1.40      1.85      0.00    7  128
+  9 Bottom density (g/cm3)  14   1   1      1.60      2.00      0.00    7  128
+  Number of data points        9600

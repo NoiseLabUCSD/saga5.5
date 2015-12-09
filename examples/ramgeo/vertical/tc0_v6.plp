@@ -1,0 +1,611 @@
+       1024          MODU
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        2                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq:  100.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+    0.400000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     80.0000                                          YDOWN
+     20.0000                                            YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        2                                  NUMBER OF LABELS
+ Curve no:  2    
+ Freq:  200.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+    0.300000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     80.0000                                          YDOWN
+     20.0000                                            YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        2                                  NUMBER OF LABELS
+ Curve no:  3    
+ Freq:  300.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+    0.400000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     80.0000                                          YDOWN
+     20.0000                                            YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        2                                  NUMBER OF LABELS
+ Curve no:  4    
+ Freq:  400.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+    0.400000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     80.0000                                          YDOWN
+     20.0000                                            YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV STLRAN,DSD,UNI,               
+ Magnitude                                                                       
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        2                                  NUMBER OF LABELS
+ Curve no:  5    
+ Freq:  500.0 Hz$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+    0.300000E-01                                     XRIGHT
+    0.100000E-01                                       XINC
+     1000.00                                           XDIV
+ Magnitude (10** -3)$                                                            
+ LIN
+     80.0000                                          YDOWN
+     20.0000                                            YUP
+     20.0000                                           YINC
+     1.00000                                           YDIV
+ Depth$                                                                          
+ LIN
+        2                                                NC
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       61                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1500.00                                          XLEFT
+     1600.00                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     1500.00                                           XOFF
+    0.787402                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1500.00                                          XLEFT
+     1600.00                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     1.00000                                           XOFF
+    0.779528                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     1.00000                                           XOFF
+    0.779528                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     1.00000                                           XOFF
+    0.779528                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.00000                                          XLEFT
+     100.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     10.0000                                          XLEFT
+     400.000                                         XRIGHT
+     50.0000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     10.0000                                           XOFF
+     3.07087                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     10.0000                                          XLEFT
+     400.000                                         XRIGHT
+     100.000                                           XINC
+     1.00000                                           XDIV
+ Shape coefficient$                                                              
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.20000                                          XLEFT
+     1.60000                                         XRIGHT
+    0.500000E-01                                       XINC
+     1.00000                                           XDIV
+ Bottom density (g/cm^3)$                                                        
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     1.20000                                           XOFF
+    0.314961E-02                                         DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     1.20000                                          XLEFT
+     1.60000                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Bottom density (g/cm^3)$                                                        
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000E-01                                      XLEFT
+    0.500000                                         XRIGHT
+    0.500000E-01                                       XINC
+     1.00000                                           XDIV
+ Bottom attenuation (dB)$                                                        
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+    0.100000E-01                                       XOFF
+    0.385827E-02                                         DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+    0.100000E-01                                      XLEFT
+    0.500000                                         XRIGHT
+    0.100000                                           XINC
+     1.00000                                           XDIV
+ Bottom attenuation (dB)$                                                        
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     100.000                                          XLEFT
+     200.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Bathymetry (m)$                                                                 
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     100.000                                           XOFF
+    0.787402                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     100.000                                          XLEFT
+     200.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Bathymetry (m)$                                                                 
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,UNI,ADD,SEG            
+                                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     1.33330                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     100.000                                          XLEFT
+     200.000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Bathymetry (m)$                                                                 
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+     100.000                                           XOFF
+    0.787402                                             DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ Inversion Workshop, Test Case 0 RAM Input File                                  
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     2.66667                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     100.000                                          XLEFT
+     200.000                                         XRIGHT
+     20.0000                                           XINC
+     1.00000                                           XDIV
+ Bathymetry (m)$                                                                 
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY

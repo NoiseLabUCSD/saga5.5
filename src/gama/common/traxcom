@@ -1,0 +1,4 @@
+      common /traxcom/ dt(50),vs(50),t1(50),t2(50),cpa(50),phid(50),
+     .   dum1(50),dum2(50),iitype(50),iicont(50),nleg,nrleg(50)
+      real x1(50),y1(50),x2(50),y2(50)
+      equivalence(cpa,x1),(phid,y1),(dum1,x2),(dum2,y2)

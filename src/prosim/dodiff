@@ -1,0 +1,43 @@
+#
+# COM files
+rm -f diffcom.lis
+diff Parms_com  ${HOME}/saga/src/prosim/Parms_com > diffcom.lis
+diff deltaf_com ${HOME}/saga/src/prosim/deltaf_com >> diffcom.lis
+diff depth_com  ${HOME}/saga/src/prosim/depth_com >> diffcom.lis
+diff freq2_com  ${HOME}/saga/src/prosim/freq2_com >> diffcom.lis
+diff freq_com   ${HOME}/saga/src/prosim/freq_com >> diffcom.lis
+diff gen1_com   ${HOME}/saga/src/prosim/gen1_com >> diffcom.lis
+diff gen2_com ${HOME}/saga/src/prosim/gen2_com >> diffcom.lis
+diff gen3_com ${HOME}/saga/src/prosim/gen3_com >> diffcom.lis
+diff i_o_1b_com ${HOME}/saga/src/prosim/i_o_1b_com >> diffcom.lis
+diff i_o_1c_com ${HOME}/saga/src/prosim/i_o_1c_com >> diffcom.lis
+diff i_o_1tf_com ${HOME}/saga/src/prosim/i_o_1tf_com >> diffcom.lis
+diff i_o_2_com ${HOME}/saga/src/prosim/i_o_2_com >> diffcom.lis
+diff i_o_gb_com ${HOME}/saga/src/prosim/i_o_gb_com >> diffcom.lis
+diff i_o_opt_com ${HOME}/saga/src/prosim/i_o_opt_com >> diffcom.lis
+diff i_o_svp_com ${HOME}/saga/src/prosim/i_o_svp_com >> diffcom.lis
+diff modrng_com ${HOME}/saga/src/prosim/modrng_com >> diffcom.lis
+diff sector_env_com ${HOME}/saga/src/prosim/sector_env_com >> diffcom.lis
+#
+# FORTRAN FILES:
+#
+rm -f diffortr.lis
+diff bb_fft_out.f     ${HOME}/saga/src/prosim/bb_fft_out.f > diffortr.lis
+diff bb_init.f        ${HOME}/saga/src/prosim/bb_init.f >> diffortr.lis
+diff blug.f           ${HOME}/saga/src/prosim/blug.f >> diffortr.lis  
+diff opt_read.f       ${HOME}/saga/src/prosim/opt_read.f >> diffortr.lis      
+diff prosim.f         ${HOME}/saga/src/prosim/prosim.f >> diffortr.lis        
+diff rx_bb.f          ${HOME}/saga/src/prosim/rx_bb.f >> diffortr.li     
+diff rx_bb_tool.f     ${HOME}/saga/src/prosim/rx_bb_tool.f >> diffortr.lis   
+diff rx_ek_calc.f     ${HOME}/saga/src/prosim/rx_ek_calc.f >> diffortr.lis    
+diff rx_mf_lay.f      ${HOME}/saga/src/prosim/rx_mf_lay.f >> diffortr.lis     
+diff rx_mode_field.f  ${HOME}/saga/src/prosim/rx_mode_field.f >> diffortr.lis 
+diff rx_mode_fun_Dw.f ${HOME}/saga/src/prosim/rx_mode_fun_Dw.f >> diffortr.lis
+diff rx_mode_save.f   ${HOME}/saga/src/prosim/rx_mode_save.f >>diffortr.lis
+diff rx_mode_write.f  ${HOME}/saga/src/prosim/rx_mode_write.f >> diffortr.lis
+diff rx_modes.f       ${HOME}/saga/src/prosim/rx_modes.f >> diffortr.lis
+diff sr_geom.f        ${HOME}/saga/src/prosim/sr_geom.f >> diffortr.lis
+diff svp_adj.f        ${HOME}/saga/src/prosim/svp_adj.f >> diffortr.lis 
+diff svp_check.f      ${HOME}/saga/src/prosim/svp_check.f >> diffortr.lis
+diff svp_read.f       ${HOME}/saga/src/prosim/svp_read.f >> diffortr.lis    
+diff tenv_read.f      ${HOME}/saga/src/prosim/tenv_read.f >> diffortr.lis  

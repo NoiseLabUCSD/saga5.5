@@ -1,0 +1,4 @@
+c: depth_com
+c: OUTPUT VARIABLES:
+      common /deptsec/ secz(RGMAX), secleng(RGMAX)
+      real*8 secz,secleng

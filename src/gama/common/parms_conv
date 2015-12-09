@@ -1,0 +1,20 @@
+      integer   maxdep1,msec
+      parameter(maxdep1=100,MSEC=25)
+c---  environmental common
+c
+      COMMON /BLUG/ R_BLUG1, R_BLUG2
+      real*8 R_BLUG1(maxdep1,msec), R_BLUG2(maxdep1,msec)
+      COMMON /R_DENS/ R_R0, R_R1, R_R2
+      real*8 R_R0(msec), R_R1(maxdep1,msec), R_R2(msec)
+      COMMON /R_AB/  R_BETA, R_SCATT, R_C2S, R_C2
+      real*8 R_BETA(-1:maxdep1,msec), R_SCATT(2,msec), R_C2S(msec), 
+     1       R_C2(msec)
+      common /matprop/  R_c0,R_z0,R_c1,R_z1
+      DOUBLE PRECISION R_C0(maxdep1,msec), R_Z0(maxdep1,msec), 
+     1                 R_C1(maxdep1,msec),R_Z1(maxdep1,msec)
+      COMMON /R_G/ R_H0, R_H1
+      DOUBLE PRECISION  R_H0(msec), R_H1(msec)
+      COMMON /R_NA/ R_ND0, R_ND1
+      integer R_ND0(msec), R_ND1(msec)
+      COMMON /sectors/ISECT,NSCTOR,NSECT,NTYPE
+      integer*4 ISECT,NSCTOR,NSECT,NTYPE

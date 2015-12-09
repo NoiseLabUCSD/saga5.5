@@ -1,0 +1,139 @@
+      SUBROUTINE ISOINT(ISO,MAXMOD,MINMOD,DH0I,MH0I,MSEDI,DSEDI,
+     & CREF,FRQ,SPEED,ADA,C0,Z0,C1,Z1,FIRST)
+
+C___________________________________________________________
+C                                                          |
+C     This routine isolates the eigenvalues by counting    |
+C     sign changes in the Sturm sequence. The counting     |
+C     is done by the routine STURM                         |
+C__________________________________________________________|
+
+      INTEGER EXTPOL
+
+      DOUBLE PRECISION CREF, CMIN, H0, H1
+      DOUBLE PRECISION TWOPI, PI, OMEGA
+      DOUBLE PRECISION ADA(NPOINT), SPEED(NPOINT), ISO(MODEN)
+      DOUBLE PRECISION EIGREF, EIGMIN, EIGMAX, EIGVAL, MINEIG,
+     &                 EIGDH0, EIGDSED, FRQ
+      DOUBLE PRECISION S, DH0I, DSEDI, STIFF
+      DOUBLE PRECISION C0(NDEP), Z0(NDEP), C1(NDEP), Z1(NDEP)
+
+      integer flagpu
+      COMMON /FLAGPU/ FLAGPU
+       COMMON /FLAGPULSE/ EXTPOL, CORREC
+      COMMON /GSNAP/ H0, H1, TWOPI, PI, OMEGA
+      COMMON /GEN/ EIGREF, EIGMIN, EIGMAX, STIFF
+      COMMON /LUNIT/ LUPLP, LUPLT, LUPRT
+      COMMON /NA/ ND0, ND1, CMIN
+      COMMON /PARA1/ NFF, MSP, NDEP, NOPT, ICF, NDP, KSRD, MODEN
+      COMMON /PARA2/ NPOINT, MAXMSH
+C
+  100 FORMAT(1X,/,' *** WARNING : ',/,' MODE CUTOFF FOR SOURCE',
+     & ' FREQUENCY. ',F9.2,'Hz',/,
+     & ' EXECUTION IS TERMINATED FOR THIS SOURCE FREQUENCY. ')
+  200 FORMAT(1X,/,' *** WARNING : ',/,
+     & ' THE MAXIMUM AND MINIMUM ORDER MODES FOR WHICH COMPUTATION',/,
+     & ' IS WANTED ARE LARGER THEN THE MAXIMUM ORDER EXISTING MODE',/,
+     & ' EXECUTION IS TERMINATED FOR THIS SOURCE FREQUENCY. ')
+  300 FORMAT(/,' SOURCE FREQUENCY     =',F9.2,' HZ',/,
+     & ' ESTIMATED MAXIMUM NO. OF MODES =',I5)
+C
+      DO 1000 I=1,MODEN
+ 1000 ISO(I)=0.D0
+C
+C     DEFINE MATRIX DIAGONAL
+C
+      CALL VELOCITY(MH0I,MSEDI,CREF,SPEED,DH0I,DSEDI,
+     &              C0,Z0,C1,Z1,NPOINT,NDEP)
+      EIGDH0=EIGREF*DH0I      
+      DO 1200   N=1,MH0I
+      ADA(N)=(EIGDH0/SPEED(N+1))**2-2.
+ 1200 CONTINUE
+      EIGDSED=EIGREF*DSEDI
+      DO 1400  N=MH0I+1,MH0I+MSEDI
+      ADA(N)=(EIGDSED/SPEED(N+2))**2-2.
+ 1400 CONTINUE
+
+C     FIND THE ESTIMATED NUMBER OF PROPAGATING MODES: MAXMOD.
+C     MODES WHICH ARE TOO CLOSE TO THE CUTOFF REGION ARE
+C     DISCARDED BY SLIGHTLY INCREASING EIGMIN.
+      MINEIG=EIGMIN*1.00001D0
+c      write(*,*)'isoint: s=',s
+c      write(*,*)' EIGVAL,MH0I,MSEDI,DH0I,DSEDI,S,M,NPOINT'
+c      write(*,*) EIGVAL,MH0I,MSEDI,DH0I,DSEDI,S,M,NPOINT
+      CALL STURM(MINEIG,MH0I,MSEDI,DH0I,DSEDI,S,M,ADA,NPOINT)
+      IF((FLAGPU.LT.1.0).AND.(FIRST.EQ.0.0))   THEN
+       WRITE(*,300) FRQ,M
+c       IF(LUPRT .NE. 6)   WRITE(LUPRT,300) FRQ,M
+      END IF
+c      write(*,*)'index,m,m1,step,eigval'
+c      write(*,*)index,m,m1,step,eigval
+c      if (index.ne.70) stop 'ISOINT'
+      FIRST=1.0
+      MAXMOD=MIN(MAXMOD,M)
+      IF(MAXMOD .LT. 1)   THEN
+       WRITE(6,100) FRQ
+       IF(LUPRT .NE. 6)   WRITE(LUPRT,100) FRQ
+       stop
+c       RETURN
+      END IF
+      IF(MAXMOD.LT.MINMOD)   THEN
+       WRITE(6,200)
+       IF(LUPRT .NE. 6)   WRITE(LUPRT,200)
+       RETURN
+      END IF
+
+C
+        MAXIND=MIN(MODEN,M-MINMOD+2)
+        ISO(MAXIND)=MINEIG
+C
+C     ISOLATE THE EIGENVALUES
+C
+      EIGMAX=( (OMEGA*H0)/(MH0I*CMIN) )**2
+C
+      IF(MINMOD.EQ.1) THEN
+        ISO(1)=EIGMAX
+        M1=1
+        ELSE
+        M1=MINMOD-1
+      ENDIF
+ 2000 CONTINUE
+      EIGVAL=(EIGMAX+MINEIG)*.5D0
+      STEP=(EIGMAX-MINEIG)*.5D0
+3000  CONTINUE
+      CALL STURM(EIGVAL,MH0I,MSEDI,DH0I,DSEDI,S,M,ADA,NPOINT)
+      STEP=STEP*.5D0
+      INDEX=MIN(MODEN,M-MINMOD+2)
+      INDEX=MAX(1,INDEX)
+      IF(INDEX.GT.1)   THEN
+      IF(ISO(INDEX).EQ.0.D0.AND.M+1.GE.MINMOD.AND.M.LE.MAXMOD) 
+     &  ISO(INDEX)=EIGVAL
+      ELSE
+      ISO(1)=EIGVAL
+      END IF
+
+      IF(M.GT.M1) THEN
+        EIGVAL=EIGVAL+STEP
+        GO TO 3000
+        ELSEIF(M.LT.M1) THEN
+        EIGVAL=EIGVAL-STEP
+        GO TO 3000
+      ENDIF
+ 4000 CONTINUE
+      M1=M1+1
+      IF(M1.EQ.MAXMOD+1)  RETURN
+      IF(ISO(M1-MINMOD+2).EQ.0.D0) THEN
+        EIGMAX=ISO(M1-MINMOD+1)
+        GO TO 2000
+        ELSE
+        GO TO 4000
+      ENDIF
+      END
+
+
+
+
+
+
+
+

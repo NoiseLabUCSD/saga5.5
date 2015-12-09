@@ -1,0 +1,16 @@
+test  comparison with slave program (sspmisa)
+  c p                  ! options 
+  100  32  1		! niter, q, npop
+  0.8 0.5 0.05		! px,pu,pm
+
+1			! # of freq.
+250                    ! frequency
+
+1                      ! number of observation in range
+20			! number of observation in depth
+2			! number of parameters
+1 9300 
+2  78
+
+ 1 			! nparm                  
+ 1 1  5000 10000   51	! optimizing over parameter one    

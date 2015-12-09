@@ -1,0 +1,87 @@
+ sspmis_a   from the matched field workshop 93                                  
+ C2 c b A m12                            
+ contour of object function
+   ...Plotting as log(1-phi) 
+ reading in covariance matrix 
+ The covariance is divided by Ndep 
+ Adding the input values to PPD-plot 
+computing 2D marginal PPD between parameters  1 and  2
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 3 0 0 0 0 1 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       10000
+  Points in water:           2
+  number of receiver depths read          20
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           1
+  ncurv=           1 nbart=           1
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Water sound speed (m/s   2   1   1497.50   1502.50      0.10    6   51
+  2 Water sound speed (m/s   2   2   1477.50   1482.50      0.10    6   51
+  3 Source range (m)         9   1   5000.00  10000.00    100.00    6   51
+  4 Source depth (m)         8   1      0.01    100.00      2.00    6   51
+ Size of the search space: 10**  6.83
+  uses snap as forward model
+ 
+ Calling SNAP
+ flagpu           1
+  Frequency:   250.0000    
+  R1,R2   1.800000       1.800000    
+  SCATT(1),SCATT(2)  0.0000000E+00  0.0000000E+00
+  H0,H1   100.000000000000        100.000000000000     
+  ND0,ND1           2           2
+  BETA(1),BETA(2),BETA(3)  0.2000000      0.2000000      0.0000000E+00
+  c2,c2s   1750.000      0.0000000E+00
+ z0,c0
+  1     0.000  1499.400
+  2   100.000  1481.600
+
+ z1,c1
+  1     0.000  1600.000
+  2   100.000  1750.000
+
+  np           1
+  first reciever depth   5.000000    
+  ranges   9300.000    
+ number of sources           1
+  source depth,i   78.00000               1
+  ndep,rd,rdlow:           20   5.000000       100.0000    
+ arrayshape:   0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00
+  multistatic:  F
+  tilt:  F
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ freq,number of modes           1          26
+ 
+  initial fitness  1.5784675E-04
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+ freq,number of modes           1          26
+  The Unscaled  minimum and maximum are:
+  zmin,ymin,xmin  -31.92222       1477.500       1502.300    
+  zmax,ymax,xmax -6.8551453E-04   1481.600       1499.400    
+ Inversion, time:        9.340 secs.

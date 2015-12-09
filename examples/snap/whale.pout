@@ -1,0 +1,268 @@
+'saga_20031023T115250_7803pt Australia 2003: multiple frequencies of 11:52:51 so
+ i cb p E A  !SAGA Options W writes basel
+ plotting ppd  on a full scale 
+ reading in covariance matrix 
+ The covariance is divided by Ndep 
+  plot of best model and the initial model
+ Using EOF.... 
+ Adding the input values to PPD-plot 
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 1 0 0 1 1 0 0 1 0 1 1 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       80000
+  tilt of array is included
+  individual receiver offsets are included
+  >>>> unknown snap OPTION: 	 <<<<
+  Points in water:          25
+  number of range offsets read           4
+  number of receiver depths read           4
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators          10
+  ncurv=          10 nbart=          10
+
+ The EOF are
+       physparm layer  ... shape functions
+   1   3  1    1.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+   2   3  2    1.0  1.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+   3   3  3    1.0  1.0  1.0  0.0  0.0  0.0  0.0  0.0  0.0  0.0
+   4   3  4    1.0  1.0  1.0  1.0  0.0  0.0  0.0  0.0  0.0  0.0
+   5  12  1    1.0  1.0  1.0  1.0  1.0  0.0  0.0  0.0  0.0  0.0
+   6   2  1    0.0  0.0  0.0  0.0  0.0  0.1  0.5  0.2  0.4 -0.1
+   7   2  2    0.0  0.0  0.0  0.0  0.0  0.1  0.5  0.2  0.4 -0.1
+   8   2  3    0.0  0.0  0.0  0.0  0.0  0.1  0.4  0.2  0.3  0.0
+   9   2  4    0.0  0.0  0.0  0.0  0.0  0.1  0.2  0.1 -0.2 -0.2
+  10   2  5    0.0  0.0  0.0  0.0  0.0  0.1  0.1  0.0 -0.3 -0.2
+  11   2  6    0.0  0.0  0.0  0.0  0.0  0.1  0.1  0.0 -0.3  0.0
+  12   2  7    0.0  0.0  0.0  0.0  0.0  0.1  0.1 -0.1 -0.2  0.1
+  13   2  8    0.0  0.0  0.0  0.0  0.0  0.1  0.1 -0.1 -0.1  0.2
+  14   2  9    0.0  0.0  0.0  0.0  0.0  0.1  0.0 -0.1 -0.1  0.3
+  15   2 10    0.0  0.0  0.0  0.0  0.0  0.1  0.0 -0.1  0.0  0.3
+  16   2 11    0.0  0.0  0.0  0.0  0.0  0.1  0.0 -0.1  0.1  0.3
+  17   2 12    0.0  0.0  0.0  0.0  0.0  0.1  0.0 -0.2  0.1  0.1
+  18   2 13    0.0  0.0  0.0  0.0  0.0  0.1  0.0 -0.2  0.1 -0.1
+  19   2 14    0.0  0.0  0.0  0.0  0.0  0.1 -0.1 -0.2  0.1 -0.2
+  20   2 15    0.0  0.0  0.0  0.0  0.0  0.1 -0.1 -0.2  0.1 -0.2
+  21   2 16    0.0  0.0  0.0  0.0  0.0  0.1 -0.1 -0.1  0.1 -0.2
+  22   2 17    0.0  0.0  0.0  0.0  0.0  0.1 -0.1 -0.1  0.1 -0.1
+  23   2 18    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.0  0.1 -0.1
+  24   2 19    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.0  0.0 -0.1
+  25   2 20    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.1  0.0 -0.1
+  26   2 21    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.2  0.0  0.0
+  27   2 22    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.2  0.0  0.0
+  28   2 23    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.2  0.0  0.0
+  29   2 24    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.2  0.0  0.1
+  30   2 25    0.0  0.0  0.0  0.0  0.0  0.1 -0.1  0.2  0.0  0.1
+  The starting values of the EOF amplitudes are:
+   1600.00     66.67     66.67     66.67   1200.00  10355.47      1.13     -0.74     -0.26      0.07
+ 
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Water depth (m)          1   1     23.00     26.00      0.20    4   16
+  2 Source range (m)         9   1    300.00   1000.00      1.37    9  512
+  3 Source depth (m)         8   1      1.00     23.00      0.35    6   64
+  4 Range offset (m)        25   2    -10.00     10.00      0.04    9  512
+  5 Range offset (m)        25   3    -10.00     10.00      0.04    9  512
+  6 Range offset (m)        25   4    -10.00     10.00      0.04    9  512
+  7 Sediment density (g/cm   6   1      1.00      3.00      0.03    6   64
+  8 Bottom density (g/cm^3  14   1      1.00      3.00      0.03    6   64
+  9 Attenuation (dB/\lambd   4   1      0.10      1.10      0.02    6   64
+ 10 Attenuation (dB/\lambd   4   2      0.10      1.10      0.02    6   64
+ 11 Shape coefficient       11   1   1500.00   2000.00      1.96    8  256
+ 12 Shape coefficient       11   2      0.00   1000.00      3.92    8  256
+ 13 Shape coefficient       11   3      0.00   1000.00      3.92    8  256
+ 14 Shape coefficient       11   4      0.00   1000.00     15.87    6   64
+ 15 Shape coefficient       11   5      0.00   1000.00     15.87    6   64
+ 16 Shape coefficient       11   6  10346.58  10364.36      0.14    7  128
+ 17 Shape coefficient       11   7     -2.42      4.67      0.11    6   64
+ 18 Shape coefficient       11   8     -2.68      1.20      0.06    6   64
+ 19 Shape coefficient       11   9     -1.06      0.54      0.03    6   64
+ 20 Shape coefficient       11  10     -0.41      0.54      0.02    6   64
+ Size of the search space: 10** 41.24
+  uses snap as forward model
+ 
+ Calling SNAP
+ flagpu           1
+  Frequency:   104.0000       164.0000       208.0000       248.0000    
+   312.0000       412.0000       468.0000       512.0000       720.0000    
+   804.0000    
+  R1,R2   1.500000       1.900000    
+  SCATT(1),SCATT(2)  0.0000000E+00  0.0000000E+00
+  H0,H1   23.7700004577637        20.0000000000000     
+  ND0,ND1          25           4
+  BETA(1),BETA(2),BETA(3)  0.3000000      0.1000000      0.0000000E+00
+  c2,c2s   3000.010      0.0000000E+00
+ z0,c0
+  1     0.000  1527.772
+  2     0.000  1527.772
+  3     1.500  1527.667
+  4     2.500  1527.417
+  5     3.500  1527.272
+  6     4.500  1527.213
+  7     5.500  1527.132
+  8     6.500  1527.076
+  9     7.500  1527.038
+ 10     8.500  1526.982
+ 11     9.500  1526.923
+ 12    10.500  1526.872
+ 13    11.500  1526.821
+ 14    12.500  1526.783
+ 15    13.500  1526.768
+ 16    14.500  1526.746
+ 17    15.500  1526.677
+ 18    16.500  1526.617
+ 19    17.500  1526.556
+ 20    18.500  1526.483
+ 21    19.500  1526.405
+ 22    20.500  1526.369
+ 23    21.500  1526.328
+ 24    22.500  1526.289
+ 25    23.770  1526.279
+
+ z1,c1
+  1     0.000  1600.000
+  2     6.670  1666.670
+  3    13.330  1733.340
+  4    20.000  1800.010
+
+  Tilt (m)=  0.0000000E+00
+ range offsets:   0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  np           1
+  first reciever depth   7.320000    
+  ranges   2000.000    
+ number of sources           1
+  source depth,i   1.100000               1
+  ndep,rd,rdlow:            4   7.320000       21.03000    
+ arrayshape:   0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00
+  multistatic:  F
+  tilt:  T
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ freq,number of modes           1           5
+ freq,number of modes           2           8
+ freq,number of modes           3          10
+ freq,number of modes           4          12
+ freq,number of modes           5          14
+ freq,number of modes           6          19
+ freq,number of modes           7          22
+ freq,number of modes           8          24
+ freq,number of modes           9          33
+ freq,number of modes          10          37
+  initial fitness   20.52040    
+ 
+  crossover probability      0.8000000    
+  mutation  probability      5.0000001E-02
+  update    probability      0.5000000    
+  number of iterations             4000
+  size   of populations              64
+  number of populations              20
+ 
+ setting model for maxppd parameters
+ freq,number of modes           1           4
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   20
+ setting model for mean parameters
+  Calling forwardmodel with best model
+  best obtainable theoretical fit  4.9911030E-02
+  best fit (best, ppd, mean)  8.6941294E-02  9.7334757E-02  8.3279222E-02
+
+                                best-of all  most likely     mean   std-dev
+  1 Water depth (m)            1    24.000       23.600    24.328     0.255
+  2 Source range (m)           1   706.849      680.822   724.489     0.065
+  3 Source depth (m)           1    19.857       19.508    20.015     0.024
+  4 Range offset (m)           2    -0.059       -0.020     0.037     0.005
+  5 Range offset (m)           3    -0.176       -0.098    -0.042     0.005
+  6 Range offset (m)           4    -1.076       -1.076    -0.969     0.006
+  7 Sediment density (g/cm^3)  1     1.762        1.952     1.885     0.044
+  8 Bottom density (g/cm^3)    1     2.968        2.968     2.318     0.298
+  9 Attenuation (dB/\lambda)   1     1.052        0.925     1.003     0.088
+ 10 Attenuation (dB/\lambda)   2     0.894        0.751     0.702     0.229
+ 11 Shape coefficient          1  1576.471     1639.216  1623.103     0.051
+ 12 Shape coefficient          2   360.784      184.314   190.187     0.105
+ 13 Shape coefficient          3   976.471      494.118   644.797     0.247
+ 14 Shape coefficient          4   301.587      888.889   631.597     0.286
+ 15 Shape coefficient          5   396.825       63.492   326.103     0.289
+ 16 Shape coefficient          6 10357.221    10358.061 10355.872     0.216
+ 17 Shape coefficient          7     2.309        1.070     0.938     0.284
+ 18 Shape coefficient          8     0.212       -0.957    -0.731     0.222
+ 19 Shape coefficient          9     0.030       -1.010    -0.250     0.342
+ 20 Shape coefficient         10     0.451        0.135     0.169     0.241
+                             best-of all  most likely    mean 
+  1 Sediment sound speed (m/s) 1  1576.47058     1639.216  1623.103
+  2 Sediment sound speed (m/s) 2  1937.25488     1823.529  1813.290
+  3 Sediment sound speed (m/s) 3  2913.72559     2317.647  2458.087
+  4 Sediment sound speed (m/s) 4  3215.31299     3206.536  3089.684
+  5 Bottom sound speed (m/s)   1  3612.13843     3270.028  3415.787
+  6 Water sound speed (m/s)    1  1528.90149     1527.750  1527.734
+  7 Water sound speed (m/s)    2  1528.90149     1527.750  1527.734
+  8 Water sound speed (m/s)    3  1528.70654     1527.764  1527.643
+  9 Water sound speed (m/s)    4  1527.90186     1527.902  1527.414
+ 10 Water sound speed (m/s)    5  1527.53748     1527.877  1527.282
+ 11 Water sound speed (m/s)    6  1527.45337     1527.829  1527.243
+ 12 Water sound speed (m/s)    7  1527.39929     1527.668  1527.180
+ 13 Water sound speed (m/s)    8  1527.36755     1527.562  1527.139
+ 14 Water sound speed (m/s)    9  1527.32874     1527.508  1527.113
+ 15 Water sound speed (m/s)   10  1527.26721     1527.385  1527.062
+ 16 Water sound speed (m/s)   11  1527.19019     1527.267  1527.006
+ 17 Water sound speed (m/s)   12  1527.05310     1527.196  1526.945
+ 18 Water sound speed (m/s)   13  1526.87830     1527.151  1526.879
+ 19 Water sound speed (m/s)   14  1526.77014     1527.119  1526.836
+ 20 Water sound speed (m/s)   15  1526.73865     1527.109  1526.822
+ 21 Water sound speed (m/s)   16  1526.72986     1527.090  1526.803
+ 22 Water sound speed (m/s)   17  1526.73035     1527.023  1526.742
+ 23 Water sound speed (m/s)   18  1526.71680     1526.963  1526.685
+ 24 Water sound speed (m/s)   19  1526.70496     1526.906  1526.626
+ 25 Water sound speed (m/s)   20  1526.67908     1526.837  1526.556
+ 26 Water sound speed (m/s)   21  1526.66895     1526.767  1526.487
+ 27 Water sound speed (m/s)   22  1526.66785     1526.737  1526.457
+ 28 Water sound speed (m/s)   23  1526.64465     1526.693  1526.418
+ 29 Water sound speed (m/s)   24  1526.65515     1526.630  1526.389
+ 30 Water sound speed (m/s)   25  1526.65771     1526.616  1526.384
+ 
+  Deviation from initial model:
+  1 Water depth (m)                0.230       -0.170     0.558     0.255
+  2 Source range (m)           -1293.151    -1319.178 -1275.511     0.065
+  3 Source depth (m)              18.757       18.408    18.915     0.024
+  4 Range offset (m)              -0.059       -0.020     0.037     0.005
+  5 Range offset (m)              -0.176       -0.098    -0.042     0.005
+  6 Range offset (m)              -1.076       -1.076    -0.969     0.006
+  7 Sediment density (g/cm^3)      0.262        0.452     0.385     0.044
+  8 Bottom density (g/cm^3)        1.068        1.068     0.418     0.298
+  9 Attenuation (dB/\lambda)       0.752        0.625     0.703     0.088
+ 10 Attenuation (dB/\lambda)       0.794        0.651     0.602     0.229
+ 11 Shape coefficient            -23.529       39.216    23.103     0.051
+ 12 Shape coefficient            294.114      117.644   123.517     0.105
+ 13 Shape coefficient            909.801      427.448   578.127     0.247
+ 14 Shape coefficient            234.917      822.219   564.927     0.286
+ 15 Shape coefficient           -803.175    -1136.508  -873.896     0.289
+ 16 Shape coefficient              1.751        2.591     0.402     0.216
+ 17 Shape coefficient              1.179       -0.060    -0.192     0.284
+ 18 Shape coefficient              0.952       -0.217     0.009     0.222
+ 19 Shape coefficient              0.290       -0.750     0.010     0.342
+ 20 Shape coefficient              0.381        0.065     0.099     0.241
+ Bartlett power (dB) for freq   1    -0.45
+ Bartlett power (dB) for freq   2    -0.05
+ Bartlett power (dB) for freq   3    -0.14
+ Bartlett power (dB) for freq   4    -0.17
+ Bartlett power (dB) for freq   5    -0.24
+ Bartlett power (dB) for freq   6    -0.37
+ Bartlett power (dB) for freq   7    -0.55
+ Bartlett power (dB) for freq   8    -0.49
+ Bartlett power (dB) for freq   9    -0.83
+ Bartlett power (dB) for freq  10    -0.54
+  Calling forwardmodel with best model
+  ndep,rd,rdlow:            4   7.320000       21.03000    
+ arrayshape:   0.0000000E+00  0.0000000E+00  0.0000000E+00  0.0000000E+00
+  0.0000000E+00
+  multistatic:  F
+  tilt:  T
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ Postprossing, time:       23.490 secs.

@@ -1,0 +1,23 @@
+! shape function file for the TPEM 
+5  7  1       ! number of shapefunctions, number of points, number of blocks
+1 1  1        ! sound speed sed
+1 2  1        ! sound speed sed
+1 3  1        ! sound speed sed
+1 4  1        ! sound speed sed
+2 2  1        ! height
+2 3  1        ! height
+2 4  1         ! height
+! Block 1: coupling of all parameters using the tri-linear profiles
+! c(1) Deff base thich top
+5 7
+ 1    0    0     0    0
+ 1    0  0.118   0    0
+ 1   -1  0.118   0    0
+ 1   -1    0  -0.118 .118   
+ 0    0    1     0    0     ! second height
+ 0    0    1     1    0     ! third  height
+ 0    0    0     0    1
+! Now comes the starting values
+339 49.5 250   50  400        ! starting values
+
+

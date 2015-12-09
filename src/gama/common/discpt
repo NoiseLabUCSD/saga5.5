@@ -1,0 +1,2 @@
+      common /discpt/ kdisc(150),kpt,jbd(-2:42),jpen(-2:42),
+     .                jtrav(-2:42)

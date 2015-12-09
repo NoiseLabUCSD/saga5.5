@@ -1,0 +1,2 @@
+      common /artype/ iiarr,nx1,ny
+

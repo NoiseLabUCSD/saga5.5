@@ -1,0 +1,4 @@
+
+      common /depth/ zs,zr,zr1,zlev(46),kksr2,nlev
+      integer*4 kksr2,nlev
+      real*8 zs,zr,zr1,zlev

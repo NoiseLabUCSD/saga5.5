@@ -1,0 +1,24 @@
+c: i_o_1b_com
+c: OUTPUT VARIABLES:
+      common /file_com/ svp_file,opt_file,outroot,outfile
+      character*64 svp_file,opt_file,outroot,outfile
+ccc
+c: GEOACUSTICS VARIABLES:
+      common /out1_com/ 
+c: Geoacoustic profile (geo index 1:1=top, 2=bottom;
+c: index 2: 1=cp, 2=cs, 3=rho, 4=alphap, 5=alphas; index 3=layer #):
+     .   geo(2,5,NLMAX),h(NLMAX),zdep(NLMAX),
+     .   zsr(NVRMAX+1),cp_sr(NVRMAX),srcd
+      real*8 geo,h,zdep,zsr,srcd
+      complex*16 cp_sr
+      common /indexes/ zsr_indx(NVRMAX+1)
+      integer*4 zsr_indx
+c: Miscellaneous arrays:
+      common /out_b/ 
+     .   sq2pir(RGMAX,NSRMAX),range(RGMAX),rho_sr(NVRMAX),
+     .   dtiltp(NSRMAX)
+      real*8 range,rho_sr,dtiltp
+      complex*8 sq2pir
+c: Mode characteristics (row 1=L=ln(R1*R2), 2=dL/dk, 3=dL/dw, 4=vG, 5=R1):
+      common /eig1_com/ eig_char(5,NM_MAX)
+      complex*16 eig_char

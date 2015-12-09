@@ -1,0 +1,44 @@
+ [A26-1417-2f170AT] Elba Test case
+  i c			! options 
+
+  2000  64  10		! niter, q, npop
+  0.8 0.5 0.05		! px,pu,pm
+                        ! snap options
+ 1 500                  ! freq  max_no_modes
+ 169.9219
+ 127.,0.,0.,0		! water depth scatt(1),scatt(2),beta(0)
+   0.0            1525.5
+   56.46          1526.35
+   60.12          1525.81
+   66.61          1522.16
+   70.67          1517.73
+   77.98          1510.32
+   86.10          1509.12
+   93.00          1508.88
+   101.12         1508.34
+   120.61         1508.40
+   127.           1508.32
+ 2.5 1.75 0.13		! sediment thichness, r1, beta(1)
+ 0.0 1520.
+ 2.5 1580.
+ 1.8, 0.15, 1600.	! bottom r2 beta(2),c2
+ 0.,0.			! bottom shear beta(3) c2s
+ 50			! source depth
+ 112.72 18.72 48 1	! rec depth
+
+ 1					! number of ranges
+ 6500					! receiver range
+
+ 12 					! nparm                 
+ 9  1  4500 6500  128			! source range           
+ 8  1  50   90    128			! source depth           
+ 3  1  1450 1550  128                   ! vel sed 1
+ 3  2  1500 1600  128			! vel sed 2
+ 12 1  1550 1650  128			! vel bot
+ 1  1  127. 128.  128			! water depth
+ 15 1  111. 113.  128                   ! recvr depth
+ 6  1  1.5  2.0   128                   ! rho sed
+ 14 1  1.7  2.2   128			! rho bot
+ 4  1  0.0  0.4   128			! att sed
+ 4  2  0.0  0.4   128			! att bot
+ 17 1  0.0  10.0  128                   ! sed thickness

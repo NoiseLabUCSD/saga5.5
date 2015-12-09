@@ -1,0 +1,16 @@
+c: i_o_svp_com
+c: VARIABLES FROM SVP FILE (read by svp_read):
+      common /svp_com1/
+     . nsvp,nlayb,nlayt,svp_ver,
+     . rend,rstart,f_max
+      integer*4 nsvp,nlayb,nlayt
+      real*4 svp_ver
+      real*8 rend,rstart,f_max
+      common /svp_com1a/ ktb(NLMAX),ktt(NLMAX)
+      integer*4 ktb,ktt
+      common /svp_com2/ 
+     .   svp_title,ctol,zsvp(NLMAX),csvp(NLMAX),rho_svp,alpha_svp,
+     .   hb(NLMAX),geob(2,5,NLMAX),bpb(2,NLMAX),
+     .   ht(NLMAX),geot(2,5,NLMAX),bpt(2,NLMAX)
+      real*8 ctol,zsvp,csvp,rho_svp,alpha_svp,hb,geob,bpb,ht,geot,bpt
+      character*64 svp_title

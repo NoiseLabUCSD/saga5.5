@@ -1,0 +1,2 @@
+      common /hccom/ iihc,nldif,nlsam,kp0,kpair,mbphc(2),iifcs(2,2),
+     .   krdb1(2),krdb2(2),krsh1(2),krsh2(2),krish(2)

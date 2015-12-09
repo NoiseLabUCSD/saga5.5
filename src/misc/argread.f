@@ -1,0 +1,43 @@
+      SUBROUTINE ARGREAD(OPTS,RSLTS,NOO,ARGS,LARG,NOA)
+
+C     PASSING VARIABLES
+      CHARACTER*(*) OPTS(*)
+      LOGICAL       RSLTS(*)
+      INTEGER       NOO
+      CHARACTER*(*) ARGS(*)
+      INTEGER       LARG(*)
+      INTEGER       NOA
+
+C     LOCAL VARIABLES
+      CHARACTER*80  DUMMY
+      INTEGER       IARGC,LENSTR2,NMAX,DLEN
+      LOGICAL       ARGOPT,CND1
+
+C     EXTERNAL ROUTINE
+      EXTERNAL      IARGC,LENSTR2,GETARG
+
+      NMAX = IARGC()
+
+C     READ ARGUMENTS
+      II = 0
+      DO 10 I=1,NMAX
+         CALL GETARG(I,DUMMY)
+         DLEN = LENSTR2(DUMMY)
+         CND1 = DUMMY(1:1).NE.'-'
+         IF(CND1) THEN
+            II = II + 1
+            ARGS(II) = DUMMY(1:DLEN)
+            LARG(II) = DLEN
+         END IF
+ 10   CONTINUE
+      
+C     READ OPTIONS
+      DO 20 I=1,NOO
+         RSLTS(I) = ARGOPT(OPTS(I))
+ 20   CONTINUE
+
+      RETURN
+      END
+
+
+

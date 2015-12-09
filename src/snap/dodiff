@@ -1,0 +1,8 @@
+#!/bin/csh  
+#
+#foreach i (`ls *.f *.h */*.f */*.h`)
+foreach i (`ls *.f *.h Makefile`)
+echo '*******'
+echo $i
+  diff $i ~davidb/labsrc/mpl/sagasrc/snap/$i
+end 

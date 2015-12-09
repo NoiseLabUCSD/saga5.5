@@ -1,0 +1,28 @@
+OUT OF PLANE ARRAY
+
+The out-of plane component is described as a sum of an out of plane line
+and a parabola.
+The out of plane line is the line connecting the first and last
+receiver.
+This line is described by the angle from the (source, first receiver)
+and the out of plane line. The angle is 0 deg when the last receiver
+points away from source.
+The parabola has maximum in the array midpoint and a positive sag,
+points away from the source for 0<angle<180 deg.
+The length of the array is estimated along the parabola using first
+order theory.
+
+
+modifications to snap:
+
+use snap-option
+o        out of plane option.
+
+This requires an additional line below the receiver line where 
+the angle and top of parabola is specified:
+
+127 127 10 200
+45  10 
+
+The array is at a depth of 127m has 10 elements and the length of the
+array is 200 m. It has 45 deg angle to the plane and the sag is 10 m.

@@ -1,0 +1,43 @@
+CONDR,FIP,FMT,CPX,UNI,COL,REV,NCL,SCS                               
+
+/nfs/aosf10/gerstoft/saga/examples/tpem/tpem_ex_co
+M-Deficit (M) 
+          1.0000     RMIN
+       100.0000      RMAX
+          1.0000     XLEFT
+       100.0000      XRIGHT
+         9.0000      XSCALE
+        10.0000      XINC
+Base height (m)
+        400.0000     YUP
+         1.0000      YDOWN
+        36.2727      YSCALE
+        50.0000      YINC
+         50.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         50.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+        400.0000     RDUP 
+          1.0000     RDLO 
+          1000.0000     SOURCE DEPTH (M) 
+         50.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         50.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+         -5.6     ZMIN 
+         -0.2     ZMAX 
+          0.5     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 

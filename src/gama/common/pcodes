@@ -1,0 +1,1 @@
+      common /pcodes/ nst,kb1(10),kb2(10),ncp0,ktop(200),kbot(200)

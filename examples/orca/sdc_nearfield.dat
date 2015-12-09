@@ -1,0 +1,30 @@
+ sdc.dat test case  orca
+S2 k1 T   z  W            ! options 
+2000  32  10             ! niter, q ,npop
+0.8 0.5 0.05  20         ! px,pu,pm
+0.00833 0.1 0.1 2        ! nu   e_stop e_rot k_grow0.033 
+H C                        ! orca90 options
+1                        ! number of frequencies
+100                      ! frequencies
+
+ 2                       ! number of SSP points
+    0.0000 1480.00    
+  100      1460.00
+ 1                       ! number of bottom layers
+30.6873 1530.44,1604.15 0,0 1.5008,1.5008 -0.23,-0.23 0,0
+1689.0 0.0 1.70064 -0.23 0.0
+
+    20                   ! source depth
+  5 5 1           ! rec depth
+ -128                       ! number of ranges
+ 0.3 0.556                       ! receiver range (km)
+
+4                        ! nparm                 
+7  1  1  10   50    30   ! sediment thickness
+2  1  1  1500 1600   30  ! sound speed sed  
+2  1  2  1550 1750   30  ! sound speed sed 
+2  2  0 1600  1800  30   ! sound speed sed
+6  1  1 1.400 1.850 20   !density in sediment
+14 1 1 1.600 2.000 128   !density in half space
+
+

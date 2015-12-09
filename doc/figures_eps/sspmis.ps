@@ -1,0 +1,597 @@
+%!PS-Adobe-2.0 EPSF-2.0
+%%BoundingBox: 33 26 402 212
+%%Title: ./sspmis
+%%CreationDate: 10:54 PM January  4, 1993
+%%Pages: 1 +1
+%%EndComments
+1 setlinejoin
+/M  { moveto } bind def /S { show  } bind def
+/R { rmoveto } bind def /L { lineto } bind def
+/B { newpath 0 0 M 0 1 L 1 1 L 1 0 L closepath } bind def
+/CS { closepath stroke } bind def
+/newfont 10 dict def
+newfont begin
+
+ /FontType 3 def
+ /FontMatrix [1 0 0 1 0 0] def
+ /FontBBox [0 0 1 1] def
+ /Encoding 256 array def
+ 0 1 255 {Encoding exch /.notdef put} for
+
+ /CharProcs 1 dict def
+ CharProcs begin
+ /.notdef {} def
+
+end
+
+ /BuildChar {
+  1 0
+  0 0 1 1
+  setcachedevice
+  exch begin
+  Encoding exch get
+  CharProcs exch get
+  end
+  exec
+ } def
+end
+/PatternFont newfont definefont pop
+
+/bwproc {
+	rgbproc
+	dup length 3 idiv string 0 3 0
+	5 -1 roll {
+	add 2 1 roll 1 sub dup 0 eq
+	{ pop 3 idiv 3 -1 roll dup 4 -1 roll dup
+	  3 1 roll 5 -1 roll put 1 add 3 0 }
+	{ 2 1 roll } ifelse
+	} forall
+	pop pop pop
+} def
+systemdict /colorimage known not {
+	/colorimage {
+		pop
+		pop
+		/rgbproc exch def
+		{ bwproc } image
+	} def
+} if
+/incr {
+    2 1 roll dup 3 -1 roll
+    5 -1 roll dup 6 1 roll cvi put
+    3 1 roll dup 4 1 roll add 3 1 roll
+} bind def
+/scanspan {
+/xb2 exch def
+/xg2 exch def
+/xr2 exch def
+/xx2 exch def
+/xb1 exch def
+/xg1 exch def
+/xr1 exch def
+/xx1 exch def
+/dx xx2 xx1 sub def
+dx 0 ne {
+	/drdx xr2 xr1 sub dx div def
+	/dgdx xg2 xg1 sub dx div def
+	/dbdx xb2 xb1 sub dx div def
+}{
+	/drdx 0 def
+	/dgdx 0 def
+	/dbdx 0 def
+} ifelse
+/len dx 1 add cvi 3 mul def
+len string dup dup
+xr1 drdx 3 -1 roll
+0 3 len 1 sub { incr } for
+pop pop pop
+xg1 dgdx 3 -1 roll
+1 3 len 1 sub { incr } for
+pop pop pop
+xb1 dbdx 3 -1 roll
+2 3 len 1 sub { incr } for
+3 1 roll pop pop
+} bind def
+/scantrap {
+/trapsave save def
+/b4 exch def
+/g4 exch def
+/r4 exch def
+/x4 exch def
+/b3 exch def
+/g3 exch def
+/r3 exch def
+/x3 exch def
+/b2 exch def
+/g2 exch def
+/r2 exch def
+/y2 exch def
+/x2 exch def
+/b1 exch def
+/g1 exch def
+/r1 exch def
+/y1 exch def
+/x1 exch def
+/dy y1 y2 sub def
+dy 0 ne {
+	/dxdy12 x2 x1 sub dy div def
+	/dxdy43 x3 x4 sub dy div def
+	/drdy12 r2 r1 sub dy div def
+	/drdy43 r3 r4 sub dy div def
+	/dgdy12 g2 g1 sub dy div def
+	/dgdy43 g3 g4 sub dy div def
+	/dbdy12 b2 b1 sub dy div def
+	/dbdy43 b3 b4 sub dy div def
+}{
+	/dxdy12 0 def
+	/dxdy43 0 def
+	/drdy12 0 def
+	/drdy43 0 def
+	/dgdy12 0 def
+	/dgdy43 0 def
+	/dbdy12 0 def
+	/dbdy43 0 def
+} ifelse
+y1 -1 y2 {
+	x4 x1 sub 0 lt { exit } if
+	/y exch def
+	/traploopsave save def
+	x1 r1 g1 b1 x4 r4 g4 b4 scanspan
+	/img exch def
+	/xlen x4 x1 sub 1 add def
+	x1 y translate
+	xlen 1 scale
+	xlen cvi 1 8 [xlen 0 0 0.9 0 0] { img } false 3 colorimage
+	traploopsave restore
+	/x1 x1 dxdy12 add def
+	/r1 r1 drdy12 add def
+	/g1 g1 dgdy12 add def
+	/b1 b1 dbdy12 add def
+	/x4 x4 dxdy43 add def
+	/r4 r4 drdy43 add def
+	/g4 g4 dgdy43 add def
+	/b4 b4 dbdy43 add def
+} for
+trapsave restore
+} def
+/d {
+newpath
+moveto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/q {
+newpath
+moveto
+lineto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/draw3 {
+setgray
+newpath
+moveto
+lineto
+lineto
+closepath
+stroke
+} bind def
+/F3 {
+setgray
+newpath
+moveto
+lineto
+lineto
+closepath
+fill
+} bind def
+/F4 {
+setgray
+newpath
+moveto
+lineto
+lineto
+lineto
+closepath
+fill
+} bind def
+/F5 {
+setgray
+newpath
+moveto
+lineto
+lineto
+lineto
+lineto
+closepath
+fill
+} bind def
+/showcaseisoencoding [
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/.notdef /.notdef /.notdef /.notdef
+/space /exclam /quotedbl /numbersign
+/dollar /percent /ampersand /quoteright
+/parenleft /parenright /asterisk /plus
+/comma /minus /period /slash
+/zero /one /two /three /four /five /six /seven
+/eight /nine /colon /semicolon
+/less /equal /greater /question
+/at /A /B /C /D /E /F /G
+/H /I /J /K /L /M /N /O
+/P /Q /R /S /T /U /V /W
+/X /Y /Z /bracketleft
+/backslash /bracketright /asciicircum /underscore
+/quoteleft /a /b /c /d /e /f /g
+/h /i /j /k /l /m /n /o
+/p /q /r /s /t /u /v /w
+/x /y /z /braceleft
+/bar /braceright /asciitilde /guilsinglright
+/fraction /florin /quotesingle /quotedblleft
+/guilsinglleft /fi /fl /endash
+/dagger /daggerdbl /bullet /quotesinglbase
+/quotedblbase /quotedblright /ellipsis /trademark
+/dotlessi /grave /acute /circumflex
+/tilde /macron /breve /dotaccent
+/dieresis /perthousand /ring /cedilla
+/Ydieresis /hungarumlaut /ogonek /caron
+/emdash /exclamdown /cent /sterling
+/currency /yen /brokenbar /section
+/dieresis /copyright /ordfeminine /guillemotleft
+/logicalnot /hyphen /registered /macron
+/degree /plusminus /twosuperior /threesuperior
+/acute /mu /paragraph /periodcentered
+/cedilla /onesuperior /ordmasculine /guillemotright
+/onequarter /onehalf /threequarters /questiondown
+/Agrave /Aacute /Acircumflex /Atilde
+/Adieresis /Aring /AE /Ccedilla
+/Egrave /Eacute /Ecircumflex /Edieresis
+/Igrave /Iacute /Icircumflex /Idieresis
+/Eth /Ntilde /Ograve /Oacute
+/Ocircumflex /Otilde /Odieresis /multiply
+/Oslash /Ugrave /Uacute /Ucircumflex
+/Udieresis /Yacute /Thorn /germandbls
+/agrave /aacute /acircumflex /atilde
+/adieresis /aring /ae /ccedilla
+/egrave /eacute /ecircumflex /edieresis
+/igrave /iacute /icircumflex /idieresis
+/eth /ntilde /ograve /oacute
+/ocircumflex /otilde /odieresis /divide
+/oslash /ugrave /uacute /ucircumflex
+/udieresis /yacute /thorn /ydieresis ] def
+/Helvetica-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Helvetica-Bold-SHOWISO exch definefont pop
+/Courier-Bold findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Courier-Bold-SHOWISO exch definefont pop
+/Helvetica findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Helvetica-SHOWISO exch definefont pop
+/Symbol findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Symbol-SHOWISO exch definefont pop
+/Courier findfont
+dup length dict begin
+  {1 index /FID ne {def} {pop pop} ifelse} forall
+  /Encoding showcaseisoencoding def
+  currentdict
+end
+/Courier-SHOWISO exch definefont pop
+%%EndProlog
+%%Page: label 1
+gsave
+0 0 0 setrgbcolor
+gsave
+newpath
+23 147 M 3 164 L 111 164 L 111 147 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+33 153 M (D) S
+/Symbol findfont 10 scalefont setfont
+40.22 153 M 43.54 153 M (=) S
+52.35 153 M (100) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+67.35 153 M 70.67 153 M (m) S
+grestore
+0.87451 0.87451 0.87451 setrgbcolor
+gsave
+0.87451 0.87451 0.87451 setrgbcolor
+newpath
+85.5019 155.454 M
+370.197 155.439 L
+370.009 70.9354 L
+85.3381 70.7484 L
+closepath
+eofill
+0.87451 0.87451 0.87451 setrgbcolor
+3 setlinewidth
+newpath
+85.5019 155.454 M
+370.197 155.439 L
+370.009 70.9354 L
+85.3381 70.7484 L
+closepath
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+270 83 M 250 99 L 341 99 L 341 83 L
+closepath clip newpath
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+280 89 M (r) S
+288.25 89 M (=) S
+296.5 89 M (1.8) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+177 82 M 157 98 L 269 98 L 269 82 L
+closepath clip newpath
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+187 88 M (a) S
+196.787 88 M (=) S
+205.753 88 M (.2) S
+/Courier-SHOWISO findfont 10 scalefont setfont
+216.73 88 M (dB) S
+/Symbol findfont 10 scalefont setfont
+228.73 88 M (/l) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+177 105 M 157 125 L 298 125 L 298 105 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+187 114 M (c) S
+/Symbol findfont 10 scalefont setfont
+192 114 M (\(200\)) S
+213.66 111 M 217.24 114 M (=) S
+226.31 114 M (1750) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+249.89 114 M (m/s) S
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+390.369 203.762 translate
+0 rotate
+1.1 1.1 scale
+newpath 0 0 M -20 -5 L -20 5 L closepath fill
+grestore
+1 setlinewidth
+newpath
+84.3962 203.762 M
+371.369 203.762 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+3 setlinewidth
+newpath
+148.563 156.004 M
+173 114 L
+173.018 70.509 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+matrix currentmatrix
+[0 0 0 0 85.1172 87.1729] concat
+B
+setmatrix
+3 setlinewidth
+gsave stroke grestore
+fill
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+136 189 M 116 206 L 277 206 L 277 189 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+146 195 M (c) S
+/Symbol findfont 10 scalefont setfont
+151 195 M (\(0\)) S
+/Courier-SHOWISO findfont 10 scalefont setfont
+162.66 195 M /Symbol findfont 10 scalefont setfont
+166.452 195 M (=) S
+175.733 195 M (1500) S
+199.525 195 M (+) S
+0 0 0 setrgbcolor
+gsave 199.525 193 M 205.015 193 L stroke grestore
+205.015 195 M 208.807 195 M (2.5) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+225.098 195 M 228.89 195 M (m/s) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+51 196 M 31 211 L 110 211 L 110 196 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+61 200 M (0) S
+69.67 200 M (m) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+43 105 M 23 122 L 111 122 L 111 105 L
+closepath clip newpath
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+53 111 M (200) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+68 111 M 70.67 111 M (m) S
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+4 setlinewidth
+[1 3] 0 setdash
+newpath
+85.1172 202.136 M
+85.1172 158.211 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+3 setlinewidth
+newpath
+123.512 157.435 M
+130.001 203.529 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+gsave
+0 setlinejoin
+85.1172 42.2484 translate
+-90 rotate
+1.1 1.1 scale
+newpath 0 0 M -20 -5 L -20 5 L closepath fill
+grestore
+1 setlinewidth
+newpath
+85.1172 204.305 M
+85.1172 61.2484 L
+stroke
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+386 197 M 366 212 L 432 212 L 432 197 L
+closepath clip newpath
+396 201 M gsave
+-396 0.0 translate
+1.2012 1.0 scale
+329.67 0.0 translate
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(r) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+72 26 M 52 41 L 119 41 L 119 26 L
+closepath clip newpath
+82 30 M /Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(z) S
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+newpath
+131 158 M 111 178 L 275 178 L 275 158 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+141 167 M (c\(D) S
+/Symbol findfont 10 scalefont setfont
+159.911 167 M (\)) S
+163.241 164 M 166.603 167 M (=) S
+175.454 167 M (1480) S
+198.816 167 M (+) S
+0 0 0 setrgbcolor
+gsave 198.816 165 M 204.306 165 L stroke grestore
+204.306 167 M 207.667 167 M (2.5) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+223.529 167 M 226.89 167 M (m/s) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+145 168 M 125 183 L 194 183 L 194 168 L
+closepath clip newpath
+155 172 M gsave
+-155 0.0 translate
+1.19863 1.0 scale
+129.314 0.0 translate
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(-) S
+grestore
+grestore
+0 0 0 setrgbcolor
+0 0 0 setrgbcolor
+gsave
+newpath
+181 135 M 161 155 L 298 155 L 298 135 L
+closepath clip newpath
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+191 144 M (c\(D) S
+/Symbol findfont 10 scalefont setfont
+210.18 144 M (\)) S
+213.51 141 M 217.14 144 M (=) S
+226.26 144 M (1600) S
+/Helvetica-SHOWISO findfont 10 scalefont setfont
+246.26 144 M 249.89 144 M (m/s) S
+grestore
+0 0 0 setrgbcolor
+gsave
+newpath
+196 144 M 176 160 L 244 160 L 244 144 L
+closepath clip newpath
+206 150 M gsave
+-206 0.0 translate
+1.0929 1.0 scale
+188.49 0.0 translate
+/Symbol findfont 10 scalefont setfont
+0 0 0 setrgbcolor
+(+) S
+grestore
+grestore
+0 0 0 setrgbcolor
+gsave
+0 0 0 setrgbcolor
+1 setlinewidth
+[1 3] 0 setdash
+newpath
+117.5 159 M
+135 203.5 L
+stroke
+grestore
+grestore
+showpage
+
+

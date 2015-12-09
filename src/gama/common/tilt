@@ -1,0 +1,5 @@
+      common /tilt/ tiltv,tilth,hilbt,dtiltv,dtilth
+
+      real*8 dtilth,dtiltv
+
+      logical tiltv,tilth,hilbt

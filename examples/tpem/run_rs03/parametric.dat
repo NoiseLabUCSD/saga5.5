@@ -1,0 +1,31 @@
+TPEM optimizing for the tri-linear profiles (fig 6)
+ A W D N  p         ! options 
+
+  100  64  10		! niter, q, npop
+  0.8 0.5 0.05		! px,pu,pm
+pu                 ! tpem options
+2850. 2850  1   : Fmin Fmax nfreq, Frequency in MHz (100 to 20000)
+250 1 10      : sampling 
+0                    : Field type ( 1:complex field, 0:magnitude )
+30.78           	: Transmitter height in meters
+2             	: Ant pattern(0=Omni, Gaussian, Sin(x)/x, Csc-Sq, Ht-finder)
+0.4            	: Beamwidth in degrees (full 3 dB to 3 dB width)
+0.0             	: Elevation angle in degrees
+1          	: Maximum receiver height in meters
+10000 60000.          : Maximum receiver range in meters
+100  1         	: Number of range, height points to output
+1   4           ! refractivy proile points (Range, Height)
+
+0                	!First profile is at range zero
+90 20 330 50 400 : baseheight, thick, offset deff, zmax
+0.13 0.118 0 0  : slope mix, slope top, delta
+
+
+ 0              	! terrain points
+
+ 4			 ! nparm                 
+ 15 1 1   1    100  128 ! m-defecit
+ 13 1 1   1    100  128 ! thickness
+ 17 1 1  -1 0.4   128 ! slope mixed layer
+ 17 3 1  0  40   128 ! slope mixed layer
+ 

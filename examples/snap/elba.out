@@ -1,0 +1,194 @@
+ [A26-1417-2f170AT] Elba Test case                                              
+   i c			! options                       
+ plotting ppd on a full scale 
+ reading in covariance matrix 
+ >>>> unknown inversion OPTION: 	 <<<<
+ >>>> unknown inversion OPTION: 	 <<<<
+ >>>> unknown inversion OPTION: 	 <<<<
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Points in water:          11
+  number of receiver depths read          48
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           1
+  ncurv=           1 nbart=           1
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   1   4500.00   6500.00     15.75    7  128
+  2 Source depth (m)         8   1     50.00     90.00      0.31    7  128
+  3 Sediment sound speed (   3   1   1450.00   1550.00      0.79    7  128
+  4 Sediment sound speed (   3   2   1500.00   1600.00      0.79    7  128
+  5 Bottom sound speed (m/  12   1   1550.00   1650.00      0.79    7  128
+  6 Water depth (m)          1   1    127.00    128.00      0.01    7  128
+  7 Receiver depth (m)      15   1    111.00    113.00      0.02    7  128
+  8 Sediment density (g/cm   6   1      1.50      2.00      0.00    7  128
+  9 Bottom density (g/cm^3  14   1      1.70      2.20      0.00    7  128
+ 10 Attenuation (dB/\lambd   4   1      0.00      0.40      0.00    7  128
+ 11 Attenuation (dB/\lambd   4   2      0.00      0.40      0.00    7  128
+ 12 Sediment depth (m)      17   1      0.00     10.00      0.08    7  128
+ Size of the search space: 10** 25.29
+  uses snap as forward model
+
+ Calling SNAP
+ flagpu           1
+  Frequency:   169.921906    
+  R1,R2   1.75000000       1.79999995    
+  SCATT(1),SCATT(2)   0.00000000       0.00000000    
+  H0,H1   127.00000000000000        2.5000000000000000     
+  ND0,ND1          11           2
+  BETA(1),BETA(2),BETA(3)  0.129999995      0.150000006       0.00000000    
+  c2,c2s   1600.00000       0.00000000    
+ z0,c0
+  1     0.000  1525.500
+  2    56.460  1526.350
+  3    60.120  1525.810
+  4    66.610  1522.160
+  5    70.670  1517.730
+  6    77.980  1510.320
+  7    86.100  1509.120
+  8    93.000  1508.880
+  9   101.120  1508.340
+ 10   120.610  1508.400
+ 11   127.000  1508.320
+
+ z1,c1
+  1     0.000  1520.000
+  2     2.500  1580.000
+
+  np           1
+  first reciever depth   112.720001    
+  ranges   6500.00000    
+ number of sources           1
+  source depth,i   50.0000000               1
+  ndep,rd,rdlow:           48   112.720001       18.7199993    
+ arrayshape:    0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  multistatic:  F
+  tilt:  F
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ freq,number of modes           1           9
+
+  initial fitness  0.930349469    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              64
+  number of populations              10
+
+ retuned point   5363.33594       74.3144073       1467.04858       1567.18201       1570.23340       127.612175       111.284874       1.98793077       2.17989612       1.86708887E-04  0.239222899       2.22852087    
+ retuned value   4.17726189E-02
+ freq,number of modes           1           9
+
+  initial fitness  0.930349469    
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             2000
+  size   of populations              64
+  number of populations              10
+
+ freq,number of modes           1           6
+ freq,number of modes           1          12
+ freq,number of modes           1          11
+ freq,number of modes           1           8
+ freq,number of modes           1          10
+ freq,number of modes           1           9
+ freq,number of modes           1           8
+ freq,number of modes           1           8
+ freq,number of modes           1           9
+ freq,number of modes           1          10
+ freq,number of modes           1          11
+ freq,number of modes           1           9
+ freq,number of modes           1           8
+ freq,number of modes           1           6
+ freq,number of modes           1          10
+ freq,number of modes           1          11
+ freq,number of modes           1           9
+ freq,number of modes           1          10
+ freq,number of modes           1           9
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   10
+  >>> Estimated serial Inversion time:         11.4 secs.
+ retuned point   5369.00293       74.5533142       1519.36060       1553.25171       1601.45642       127.007210       111.857941       1.99253249       2.10174775      0.153242335       8.56849775E-02   9.72458076    
+ retuned value   3.92285101E-02
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    9
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    9
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    9
+ retuned point   5386.01367       74.4574051       1491.06201       1587.27478       1574.12793       127.613419       111.401306       1.83662283       2.04991651       1.67824328E-02  0.306026250       5.38591814    
+ retuned value   4.09650356E-02
+ retuned point   5355.10645       74.2470932       1454.12378       1549.61658       1564.74548       127.110901       111.095428       1.88048339       2.13006663       1.31912986E-02  0.120821990       1.81690919    
+ retuned value   4.18391116E-02
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   10
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    8
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    8
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    8
+ retuned point   5374.78906       74.4119873       1516.52600       1535.15967       1575.09692       127.426857       111.415634       1.99046981       2.02045846       1.84692699E-03  0.253795445       4.66141272    
+ retuned value   4.07068878E-02
+ retuned point   5370.51611       74.4119568       1506.89551       1572.20667       1575.30371       127.326385       111.418869       1.98228335       1.87787986       8.69764462E-02  0.212981313       7.07586575    
+ retuned value   4.11041714E-02
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   10
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   11
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   11
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   12
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    9
+ retuned point   5355.37402       74.3008575       1500.57935       1569.43555       1575.48657       127.000565       111.097473       1.97953570       1.84961581       8.23495884E-06  0.331184715       6.68438053    
+ retuned value   4.06040847E-02
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE    8
+ retuned point   5384.12842       74.4159470       1504.09351       1551.14258       1571.34338       127.912125       111.338860       1.98899066       2.14536142       2.94913480E-04  0.232106537       2.88061738    
+ retuned value   4.12241668E-02
+ retuned point   5382.86963       74.6146240       1516.74377       1563.29480       1599.36951       127.232956       111.965858       1.93406749       2.15471125      0.119239926      0.191444322       9.97830677    
+ retuned value   3.92174050E-02
+  Population          10
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   11
+  TRIAL EIGENVALUE BEYOND CUTOFF FOR MODE   11
+ retuned point   5377.17627       74.3626709       1469.62036       1547.27307       1574.30676       127.268654       111.449226       1.67897844       1.83093512       8.11474965E-05  0.233129233       3.04745913    
+ retuned value   4.09762636E-02
+
+   best of all energy   3.99012305E-02
+  best-of all      deviation  
+   1  5381.890        -1118.110
+   2    74.567           24.567
+   3  1516.929           -3.071
+   4  1563.780          -16.220
+   5  1595.669           -4.331
+   6   127.244            0.244
+   7   112.055           -0.665
+   8     1.953            0.203
+   9     2.145            0.345
+  10     0.123           -0.007
+  11     0.198            0.048
+  12     9.764            7.264
+ local fit   3.92174050E-02
+   1  5382.870        -1117.130
+   2    74.615           24.615
+   3  1516.744           -3.256
+   4  1563.295          -16.705
+   5  1599.370           -0.630
+   6   127.233            0.233
+   7   111.966           -0.754
+   8     1.934            0.184
+   9     2.155            0.355
+  10     0.119           -0.011
+  11     0.191            0.041
+  12     9.978            7.478
+
+ Forward  modelling calls:   24158
+  ndep,rd,rdlow:           48   112.720001       18.7199993    
+  arrayshape:    0.00000000       0.00000000       0.00000000       0.00000000       0.00000000    
+  multistatic:  F
+  tilt:  F
+  mbeam:    F
+  msource:  F
+  iscale:             0
+  xplane:             0
+ Inversion, time:        6.004 secs.

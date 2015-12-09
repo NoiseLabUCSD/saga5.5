@@ -1,0 +1,35 @@
+3 June 97.
+
+Some matlab routines for use with SAGA
+----
+Display of output from SAGA:
+
+PLOTSAGA.M    Reads output from a saga run and plot the a posteriori
+              distribution as well as the data and the synthetic data 
+              for the best fit.
+
+It uses the following routines:
+WPLOT.M        Plot a wiggle plot for a single parameter 
+HWIGGLE.M      Plot a wiggle plot for a set of parameters 
+XTITLES.M      Contain the titles for each parameter type for
+               each forward model.
+
+PLOT_CORREL.M  Plots the correlation for the estimated parameters from
+               SAGA. It reads from the file *.cor 
+               There is no arguments to PLOT_CORREL.
+----
+The following two subroutines reads observed data from a SAGA generated file:
+
+READ_COVMAT.M  Reading the covariance matrix in from a file 
+               written in Saga-format.
+READ_PVEC.M    Reading the pressure vector  from a file 
+               written in Saga-format.
+----
+The following two subroutines writes observed data in SAGA format to
+an observed file:
+
+WRITE_COVMAT.M Writes the covariance matrix to a file in SAGA format.
+WRITE_PVEC.M   Writes the  pressure vector  to a file in SAGA format.
+
+----
+COV_DIAGPLOT.M Makes a diagnostic plot of the covariance matrix.

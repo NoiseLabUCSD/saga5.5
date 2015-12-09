@@ -1,0 +1,48 @@
+MAPEX 2000 HLA example to search for sediment and bottom parameters frame 195 
+c E               !W F E e p                   ! options 
+
+  2000  64  20         ! niter, q, npop
+  0.8 0.5 0.05         ! px,pu,pm
+t                      ! snap options
+1 80                  ! frequencies, max modes  
+500                   ! frequencies (300,400 and 500)
+
+115.4,0.0,0.0,0.0 ! water depth scatt(1),scatt(2),beta(0) ! 113
+0.00    1519.0
+10.00   1519.1
+20.00   1519.3
+30.00   1519.5
+40.00   1519.6
+50.00   1519.8
+60.00   1520.0
+70.00   1520.1
+80.00   1520.3
+90.00   1520.50
+100.00  1520.2
+110.00  1512.0
+115.4 1509.9
+
+50.0 1.5 0.13 ! sediment thickness, density, alpha(1) 
+0.0  1520.
+50.0  1650
+
+1.8, 0.1, 1750.       ! bottom density, attenuation, sound speed
+0. 0.       
+
+52.25           ! source depth
+50 60 11 0         ! rec depth ( 1st and last element), # of elements,
+
+ -156                                   ! number of ranges
+ 750 3850                               ! source-receiver range 
+
+6                        ! nparm
+8  1  50  60       64    ! source depth
+1  1  113 117      64    ! water depth 
+6  1  1.0 2.5      64    ! density in sediment
+11 1  1520 1600    128   ! upper sound speed sediment
+11 2  10  150      128   ! lower sound speed sediment
+4  1  0 1          64    ! attenuation in sediment
+!2 5  1516 1522     32    ! sound speed at 40
+!2 6  1516 1522     32    ! sound speed at 50
+!2 7  1516 1522     32    ! sound speed at 60
+!2 8  1516 1522     32    ! sound speed at 70

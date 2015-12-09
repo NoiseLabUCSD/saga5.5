@@ -1,0 +1,2 @@
+      common /vhfacs/ hfac,vhfac,vlfac,dimv,dimh,tlo,thi,dblo,dbhi,
+     .   elo,ehi,silo,sihi,vlfac2,dtau

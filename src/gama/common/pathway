@@ -1,0 +1,3 @@
+      integer nttot
+      common /pathway/ icpth,icxx,nttot(0:43),nbotx,ntop,ndp,nbotx1,
+     .   nbas,mbp,kmult

@@ -1,0 +1,398 @@
+			  TPEM 1.0 USER'S MANUAL
+                           NCCOSC RDTE DIV 543
+                          49170 PROPAGATION PATH
+                         SAN DIEGO CA  92152-7385
+
+INTRODUCTION
+
+	This document describes the Terrain Parabolic Equation Model (TPEM),
+it's operation, and the format required for the environmental and system
+input files.
+
+	TPEM calculates and plots propagation loss in dB on a height vs. range
+display.  It allows for range-dependent refractivity environments and variable 
+terrain.  TPEM is based on methods and source code originally developed by Fred 
+Tappert, from the University of Miami, for propagation over a smooth surface.
+It is a pure PE model based on the split-step Fourier method and is described
+in [1], with a more efficient method described in [2].
+
+	This program was developed for IBM/PC-compatible computers by Amalia
+Barrios, NCCOSC RDTE DIV 543, 49170 PROPAGATION PATH, SAN DIEGO CA  92152-7385,
+(619) 553-1429, email: barrios@nosc.mil.  The program is written entirely in 
+Fortran using the 32-bit Microsoft Fortran Powerstation compiler.
+
+SUMMARY OF CAPABILITIES
+
+1. Accommodates up to 30 M-unit vs. height profiles at arbitrary ranges with
+   up to 300 refractivity/height levels for each profile.  The first profile
+   must be at range zero.
+ 
+2. Accomodates any general terrain profile up to a maximum of 1000 height/range 
+   pairs.  First point must be at range zero.
+ 
+3. Frequency from 100 MHz to 20 GHz.
+ 
+4. Currently allows only horizontal polarization and assumes perfect
+   conductivity.
+ 
+5. Antenna height is variable up to the available memory limit specified by
+   maximum transform size.
+ 
+6. Antenna patterns: Omni, Gaussian, Sin(x)/x, Cosecant-squared, or generic
+   height-finder.
+ 
+7. Vertical beamwidth: .5 to 45 degrees.
+ 
+8. Antenna elevation angle: -10 to 10 degrees.
+ 
+9. No maximum limits on plot range, but is restricted to no less than 5 km.
+ 
+10. Maximum height limited to available transform size and is restricted to
+    no less than 100 m.
+
+OPERATION
+
+        Creating a TPEM directory with all the necessary files to run
+TPEM is highly recommended.  To execute TPEM, a font environment variable must
+be set in your AUTOEXEC.BAT.  The font file MSFONTS.FON residing on the
+distribution disk is recommended, but any .FON file that was supplied with
+WINDOWS can be used.  If a TPEM directory on the C: drive is created, and
+MSFONTS.FON is copied into this directory, then to set the environment
+variable simply type 'SET FONT=C:\TPEM\MSFONTS.FON' in your AUTOEXEC.BAT.
+Also, the file, DOSXMSF.EXE, must be in the same directory as TPEM or in your
+path.  This is the 32-bit DOS extender that allows an executable program
+created under Fortran Powerstation to run under DOS.
+
+	Starting TPEM without any arguments on the command line will print a
+title page consisting of the program name, author, version, date, and a usage
+summary.  To run TPEM there are several options.  The format of the command
+line string follows MSDOS conventions.  Depending on the option specified,
+however, the command line must follow certain formats.  Options are case-
+insensitive.  Following are the allowable command line formats:
+
+         TPEM [/b] [/v] infile
+         TPEM /p [/b] [/v] infile sysfile
+         TPEM /f infile xr yh envfile outfile
+         TPEM /t infile xr yh envfile terfile outfile
+
+         infile = name of input file
+         envfile = name of refractivity file
+         terfile = name of terrain file
+         outfile = file name for ascii output
+         sysfile = name of radar system file
+         xr = range of output point
+         yh = height of output point
+
+The format of the above files is described in the section "FILE FORMATS".
+Below is a list of each command line option and its description.
+
+/b   Batch mode.  Useful for batch runs.  With this option, after a coverage
+     diagram is displayed, the program automatically exits to the DOS prompt. 
+     "infile" must be specified.
+
+/v   View mode.  Useful for viewgraphs.  Uses the labels, LOC, DATE, and TIME,
+     (in the refractivity data file) for printing on the right hand side of
+     the screen.  "infile" must be specified.
+
+/f   Useful for obtaining propagation loss at a specified range and height
+     ("xr" and "yh", respectively) over a smooth (flat) surface.  Parameters
+     on the command line that must be specified are: "infile", "xr", "yh",
+     "envfile", and "outfile".  The environment file, "envfile", specified
+     on the command line will override the file specified in "infile".  This
+     option automatically runs in batch mode, so multiple runs can be made
+     where the propagation loss determined at different values of "xr" and "yh"
+     are stored in ascii in the file "outfile".  "xr"and "yh" are taken to be
+     in the same units specified in the file "infile".
+
+/t   Same as the "/f" option, but allows for terrain runs.  Parameters on the
+     command line that must be specified are: "infile", "xr", "yh", "envfile",
+     "terfile", and "outfile".  The environment and terrain files specified on 
+     the command line will override the files specified in "infile". This option
+     automatically runs in batch mode, so multiple runs can be made where the
+     propagation loss determined at different values of "xr" and "yh" are stored 
+     in the ascii file "outfile".  "xr" and "yh" are taken to be in the same  
+     units specified in the file "infile".  NOTE:  The height specified by "yh" 
+     is taken to be the height above the local terrain at range "xr".
+
+/p   Propagation loss is displayed as probability of detection contours.
+     "infile" and "sysfile" must be specified.
+
+        If TPEM is executed under any option other than the /b, /f, or /t
+options, changes to the input parameters in "infile" can be made, and TPEM
+re-executed, without exiting the program.  Once a coverage diagram has been
+displayed, simply type "alt+p" and the user is automatically placed in a
+"prompts page" with the cursor at the top.  Here all the parameters specified
+in "infile" can be changed by simple editing of each prompt input.  The arrow
+keys are used to move up or down each prompt.  Once all changes are made,
+press the F10 key and a new coverage diagram will be displayed with the new
+input parameters.  In addition, while in the "prompts page", the title can
+be changed by pressing "alt+t" and simply typing an alternate title, followed
+by ENTER.
+
+        While in the "prompts page" the lines RF, TF, and EF refer to the
+refractivity file name, terrain file name, and EREPS compatible file name,
+respectively.  At these prompts the user can enter a new refractivity file,
+terrain file, or EREPS binary file for storage output.  Inputs for the
+antenna pattern, height units, and range units, can be changed by pressing
+the <space> bar.  The parameters for these prompts will then be toggled
+through their available options.  To eliminate unnecessary information from
+the right hand side of the screen (for "cleaner" hardcopies or viewgraphs),
+press F1.  This will toggle the displaying of the lower half of the input
+information on the right hand side of the screen.
+
+EXAMPLE TPEM COMMAND LINES
+
+TPEM TPEM.INP:
+This is the most basic run of TPEM.  Invoking this command will produce a 
+coverage diagram with the parameters specified in the file TPEM.INP.
+
+TPEM /b TPEM.INP:
+This produces a coverage diagram with parameters specified in TPEM.INP and
+exits back to the DOS prompt.  In a typical use, this would be just one 
+command line of several in a batch file in which TPEM was executed with 
+several different input files.
+
+TPEM /t TPEM.INP 100. 30.5 300MSBD.MET LONGBMU.TER DATAOUT:
+This produces a coverage diagram with the parameters specified in TPEM.INP,
+but with the refractivity and terrain files specified by 300MSBD.MET and
+LONGBMU.TER on the command line. In addition, if the units used are metric,
+the propagation loss at a range of 100 km and a height of 30.5 m above the
+ground (at 100 km) is stored in the ascii file DATAOUT.
+
+TPEM /p TPEM.INP RADAR.SYS:
+This produces a coverage diagram in which loss thresholds are determined from 
+radar system information given in RADAR.SYS and 10% to 90% probability of
+detection.
+
+FILE FORMATS
+
+	In all the following files, comments are specified by a pound sign (#)
+in the first column of a line.  There is no limit to the number of comment
+lines in a file, as they are ignored by TPEM.  All files are assumed as ascii
+and file names follow DOS conventions.
+
+infile:
+Below is an example input file.  All parameter inputs are self-explanatory.
+NOTE:  all input parameters must be followed by a colon on the same line.
+Antenna patterns are specified by typing only the first letter of desired
+pattern.  Due to numerical constraints, the maximum height is limited to no
+less than 100 m and the maximum range is limited to no less than 5 km.
+The maximum propagation angle is an optional input that allows the user 
+to override the internal calculation by TPEM.  If left at 0, TPEM will
+automatically calculate a maximum angle such that coverage is obtained at all
+heights and AT LEAST 90% of the maximum plot range.  If the user wishes to see
+greater coverage (at higher angles), then any value (within reason - less than
+20 degrees) can be specified and TPEM will use this angle.  Specifying a
+filename in the last line of the input file will produce an EREPS compatible
+binary file that contains all the propagation loss information of the coverage
+diagram.  This file can be read by EREPS (dated on or after 11 August 1995) to
+display loss vs. range at any receiver height, or height vs. loss at any
+receiver range.  For the format of this binary file, refer to EREPS 3.0
+documentation.
+
+#TPEM Version 1.0 input file
+M             : Height units (M = meters, FT = feet)
+KM            : Range units (M,KM=kilometer,NM=nautical mile,SM=statute mile)
+1000.         : Frequency in MHz (100 to 20000)
+25.           : Transmitter height in above units
+O             : Ant pattern(Omni, Gaussian, Sin(x)/x, Csc-Sq, Ht-finder)
+30            : Beamwidth in degrees (full 3 dB to 3 dB width)
+0             : Elevation angle in degrees
+0             : Maximum propagation angle in degrees.
+500           : Maximum height in above units
+300.          : Maximum range in above units
+115           : Minimum propagation loss in dB for color scale
+5             : Propagation loss increment in dB for color scale
+12            : Number of colors (or contours) for coverage diagram
+300msbd.met   : DOS file name for environment (refractivity profiles)
+	      : DOS file name for terrain profile (Blank assumes smooth surface)
+	      : DOS file name for EREPS output. Blank gives no EREPS output.
+
+envfile:
+Below is an example refractivity environment file.  All refractivity profiles
+must be specified in terms of height/M-unit pairs, where the first column is
+the height at each refractivity level and the second column contains the
+M-unit value at that level.  The first refractivity profile must always be at
+range 0.  For range-dependent environments, subsequent profiles can be added
+following the same rules.  Each subsequent profile must be preceded by the
+RANGE keyword and range value for that particular profile, and all profiles
+must have the same number of refractivity levels.  All height levels in
+refractivity profiles are assumed to be relative to mean sea level.  There
+are several key words in the environment files that are recognized by TPEM.
+All keywords must be preceded by the "at" (@) symbol and must be followed by
+a space.  List of keywords and their definitions:
+
+LABEL -(optional) indicates a 12-character descriptor of the environment is to 
+       follow.  This is used as the environment label to be printed on the
+       right hand side of the screen display.
+
+LOC - (optional) indicates a 12-character descriptor of the location of the 
+      refractivity profile is to follow.  This is used only with the "view-
+      graph", or "/v" option.
+
+DATE - (optional) 12-character descriptor of date of refractivity profile to
+       follow.  This is used only with the "viewgraph", or "/v" option.
+
+TIME - (optional) 12-character descriptor of date of refractivity profile to
+       follow.  This is used only with the "viewgraph", or "/v" option.
+
+RANGE - (required) followed by a number and a character units descriptor
+	indicates the range and units of the refractivity profile.  Acceptable
+        unit descriptors are: KM (kilometers), NM, (nautical miles), SM,
+	(statute miles).
+
+HEIGHT - (required) followed by a units descriptor indicates the units of
+	 height levels of the profile.  Acceptable unit descriptors are:
+         M (meters), FT(feet).
+
+#Environment file for TPEM 1.0 - Standard Atmosphere
+@label Stand Atm
+@range 0. km
+@height m
+0.         0.
+1000.      118.
+
+terfile:
+Below is an example terrain file.  All terrain profiles must be specified in
+terms of range/height pairs, where the first column contains the range and
+the second column contains the terrain elevation, or height, at that range.
+All range points or values must be increasing, and the first terrain elevation
+point must be at range 0.  TPEM allows a maximum of 1000 range/height pairs.
+A warning will occur if this is exceeded.  Keywords must be given on the same
+line and followed by a colon.  Keywords are described below.
+
+LABEL - (optional) followed by a space and an 80-character string describing
+        the terrain profile, i.e., latitude, longitude, city, country, etc.
+        This will be centered and printed at the top of the coverage
+        diagram.
+
+RANGE - (required) followed by a character units descriptor indicates the
+        units of range values to follow.  Acceptable unit descriptors are:
+        M (meters), KM (kilometers), NM (nautical miles), SM (statute miles).
+
+HEIGHT - (required) followed by a character units desciptor indicates the units
+         of following height values.  Acceptable unit descriptors are: M
+         (meters), FT (feet).
+
+#TPEM 1.0 terrain file - Wedge centered at 50 km. - 200 m high and 10 km wide
+@label Wedge centered at 50 km
+@range: km   height: m
+0.             0.
+45.            0.
+50.          200.
+55.            0.
+100.           0.
+
+sysfile:
+Below is an example radar system file for use with the "/p" option in producing
+coverage diagrams in terms of probability of detection contours.  Inputs are
+self-explanatory and the value of the numeric parameters are the defaults given
+in EREPS 3.0 in the program COVER.  The quantities in brackets at the end of
+each line refers to the numerical bounds for that particular parameter.  If
+a value is entered outside of these bounds, then TPEM will produce an error
+and abort.  For an explanation of what is meant by "simple" or "integrated"
+calculations, refer to the EREPS 3.0 documentation.  As with the input file,
+all input parameters must be followed by a colon on the same line.
+
+#TPEM 1.0 Radar system file with default parameters used in EREPS 3.0 - COVER.
+S              : Radar calculation type; S-Simple, I-Integrated
+I              : Coherent or Incoherent integration (only for I radar calc.)
+1              : Number of pulses ( only for I radar calc )
+21             : Antenna Gain (dB) [0 to 100]
+11             : Horizontal Beamwidth (deg) [>0 to 90]
+6              : Horizontal scan rate (rpm) [1 to 1000]
+200            : Peak Power (kW) [.1 to 1.e4]
+60             : Pulse width (microsec) [.1 to 1.e4]
+300            : Pulse repetition frequency (pps) [1 to 1.e4]
+6              : System loss (dB) [0 to 100]
+5              : Noise figure (dB) [0 to 100]
+10.            : Radar cross section (sqm) [>0 to 1.e5]
+1.e-8          : Probability of false alarm [1.e-4 to 1.e-12]
+1              : Swerling case  0-steady, 1-fluctuating
+
+COMMENTS
+
+1. For range-dependent refractivity environments, if the maximum plot range
+   given is greater than the range of the last profile, a warning is given
+   and the user is prompted to continue the run.  If the user answers "y(es)"
+   TPEM will produce a coverage diagram out to the maximum range specified,
+   with the refractivity environment taken to be homogeneous between the range
+   of the last profile and the maximum range.  If the answer is "n(o)" the
+   run is aborted.
+
+2. If the number of points in the terrain profile exceeds the maximum allowed,
+   a warning is given and the user is prompted to continue the run.  If the
+   answer is "y(es)", TPEM will ignore the remaining points in the terrain
+   profile and will use only those range/height pairs up to the 1000-point
+   maximum allowed.  If the answer is "n(o)" the run is aborted.
+
+3. If the last range point in the terrain profile is less than the maximum
+   plot range, a warning is given and the user is prompted to continue the run.
+   If the answer is "y(es)", TPEM will assign the last point in the profile
+   to be equal to the maximum plot range and the elevation height to be equal
+   to the last height given in "terfile".
+
+4. All antenna pattern and sidelobe effects are handled as in EREPS 3.0.
+   For details refer to the EREPS 3.0 documentation.
+
+5. Since TPEM is a pure split-step PE model, coverage is angle and height
+   limited.  TPEM is designed to automatically calculate an angle, given the
+   input parameters, such that coverage is obtained at all heights from
+   90% of the maximum range onward.  At lesser ranges, coverage will then
+   be reduced in height.  If the user wishes to see greater coverage, i.e.,
+   higher angles, the maximum propagation angle can be specified with a
+   non-zero (positive) value in "infile".
+
+6. System requirements for TPEM 1.0 are: IBM/PC or compatible with an EGA
+   or VGA graphics adapter in addition to DOS and other resident programs.
+   TPEM was written under Microsoft Fortran Powerstation (32-bit compiler),
+   therefore, at least 4Mb of extended memory is also required.
+
+7. All coverage diagrams are displayed with a minimum height of 0.  This,
+   however, does not necessarily indicate mean sea level (msl).  Coverage
+   diagrams with terrain profiles are displayed such that the minimum height
+   of the terrain profile is used as the reference height.  For example, if
+   the minimum elevation height for a particular terrain profile is 1000 m
+   above msl, and the maximum plot height specified is 2000 m, a coverage
+   diagram will be displayed with the height axis ranging from 0 to 2000 m,
+   however this 0 height is referenced to 1000 m above msl.  This is indicated
+   on the right hand side of the screen, above the environment label, by
+   the line "REFHT m   XXXX.X", where "XXXX.X" is the particular value of
+   the reference height for a given terrain profile.  In this case, the
+   coverage diagram represents the field coverage over a particular terrain
+   profile from 1000 m to 3000 m above msl.
+   Keep in mind:
+         Height axis displayed on screen =  0  to HMAX
+         What height axis actually represents =  REFHT to HMAX+REFHT
+   where HMAX = the maximum plot range and REFHT = the reference height that
+   is internally determined by TPEM.
+
+8. The antenna height entry in the input file always refers to the
+   antenna height above the local ground at range 0.
+
+9. To read EREPS compatible binary files created by TPEM, download
+   EREPS30.EXE (dated after 11 August 1995) from the web site "http://www.
+   sunspot.nosc.mil/543/software.html".  This is a self-extracting file
+   that creates several programs (PROPR, PROPH, COVER, etc.) which can
+   then be used to read TPEM binary files.
+
+10. When reading TPEM binary files through PROPR, loss is plotted vs. range
+    at a specified height.  This height is relative to the reference height
+    displayed on the right hand side of the screen by the line "REFHT XXXX.X".
+
+11. When reading TPEM binary files through PROPH, loss is plotted vs. height
+    at a specified range.   Here, heights are relative to the local ground
+    height + the reference height at the specified range.  This is displayed
+    on the right hand side of the screen.
+
+
+REFERENCES
+
+1. A.E. Barrios, "A Terrain Parabolic Equation Model for Propagation in the 
+   Troposphere", IEEE Trans. on Ant. and Prop., Vol. 42, No. 1, January 1994,
+   pp.90-98.
+
+2. A.E. Barrios,"Terrain and Refractivity Effects on Non-Optical Paths", AGARD
+   Conf. Proc. 543, Multiple Mechanism Propagation Paths (MMPPs):  Their
+   Characterisation and Influence on System Design, October 1993, pp. 10-1 to
+   10-9.

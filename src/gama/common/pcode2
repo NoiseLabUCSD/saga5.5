@@ -1,0 +1,1 @@
+      common /pcode2/ cz(10),fd(200),cz2(200)

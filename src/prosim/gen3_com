@@ -1,0 +1,4 @@
+c: gen3_com
+      common /bb1_com/ nf1,nf2,df
+      integer*4 nf1,nf2
+      real*8 df

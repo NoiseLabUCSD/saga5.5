@@ -1,0 +1,28 @@
+ sspmis_a   from the matched field workshop 93                                  
+  c b A m12                              
+ reading in covariance matrix 
+ The covariance is divided by Ndep 
+ Adding the input values to PPD-plot 
+computing 2D marginal PPD between parameters  1 and  2
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 0 7 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:          10
+ number of receiver depths read          20
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           1
+  ncurv=           1 nbart=           1
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Water speed (m/s)        2   1   1   1490.00   1510.00      0.40    6   51
+  2 Water speed (m/s)        2   2   1   1470.00   1490.00      0.40    6   51
+  3 Source depth (m)         8   1   0      1.00    100.00      1.98    6   51
+  4 Source range (m)         9   1   0   5000.00  10000.00    100.00    6   51
+  Number of data points          20
+ Size of the search space: 10**  6.83
+
+  initial fitness   1.66417677E-02

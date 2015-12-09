@@ -1,0 +1,277 @@
+Horizontal array with  SNR=10                                                   
+ z  c g U W                     ! Options
+  Noise is added to the data in the *.obs file
+ reading in covariance matrix 
+ inversion using Gauss Newton
+ uncertainty for local methods 
+ Observed data written out to unit 30 
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+ Options: 2 1 0 2 0 0 1 0 0 0 1 0 1 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (norm): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:    2000.00
+  Gaussian noise added tothe data in the *.obs file,  SNR=   10.00000
+options for oases 
+N J I T t                      ! Oases f
+  number of frequencies  1   100.0000
+ number of layers   4
+   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00   0.000E+00
+   0.000E+00   0.150E+04   0.000E+00   0.000E+00   0.000E+00   0.100E+01
+   0.500E+02   0.170E+04   0.000E+00   0.100E+00   0.200E+00   0.160E+01
+   0.550E+02   0.180E+04   0.000E+00   0.100E+00   0.200E+00   0.160E+01
+  reading ranges in....
+ number of ranges  1
+ number of bartlett estimators  1
+  ncurv=  1nbart=  1
+ 
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Source range (m)         9   2    100.00   2000.00     38.78    6   50
+  2 Source depth (m)         8   2      1.00     50.00      1.00    6   50
+ Size of the search space: 10**  3.40
+  Using OAST  as forward model
+
+
+ OPTIONS:
+
+ NORMAL STRESS
+ COMPLEX INTEGRATION CONTOUR
+ HANKEL TRANSFORM INTEGRANDS
+ TRANSMISSION LOSS
+  tilt of array is included
+
+
+ NUMBER OF LAYERS:        4
+ NUMBER OF SOURCES:       1
+ NUMBER OF RECEIVERS:    20
+
+
+  CMIN =     500.000     M/S 
+  CMAX =    0.100000E+09 M/S 
+
+
+    NW       IC1       IC2
+  8000       100      2700
+  
+ RANGE STEP:          4.999 m MAX FFT RANGE:      39.995 km
+ 
+ THE DEFAULT CONTOUR OFFSET IS APPLIED
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000     0.00000     0.00000  0.00000000  0.00000000 0.00000E+00 0.00000E+00
+      0.00000  1500.00000     0.00000  0.00000000  0.00000000 0.10000E+04 0.00000E+00
+     50.00000  1700.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     55.00000  1800.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+
+
+ RECEIVER DATA:
+
+   NO.         DEPTH  LAYER           Z
+      1    10.0000         2    10.0000    
+      2    10.0000         2    10.0000    
+      3    10.0000         2    10.0000    
+      4    10.0000         2    10.0000    
+      5    10.0000         2    10.0000    
+      6    10.0000         2    10.0000    
+      7    10.0000         2    10.0000    
+      8    10.0000         2    10.0000    
+      9    10.0000         2    10.0000    
+     10    10.0000         2    10.0000    
+     11    10.0001         2    10.0001    
+     12    10.0001         2    10.0001    
+     13    10.0001         2    10.0001    
+     14    10.0001         2    10.0001    
+     15    10.0001         2    10.0001    
+     16    10.0001         2    10.0001    
+     17    10.0001         2    10.0001    
+     18    10.0001         2    10.0001    
+     19    10.0001         2    10.0001    
+     20    10.0001         2    10.0001    
+
+
+ SOURCE DATA:
+
+   N0.         DEPTH  LAYER           ZU             ZL
+      1    10.0000         2    10.0000        40.0000    
+   ngrad=   2
+   nthet=   2
+   nforw_eof =   0
+   nforw_eofvar =   0
+ grad   9  2  1
+ grad   8  2  2
+  nparmlay for each layer
+  lay  2 points  1  2
+ 
+ response for range   1000.000
+ response for range    992.105
+ response for range    984.211
+ response for range    976.316
+ response for range    968.421
+ response for range    960.526
+ response for range    952.632
+ response for range    944.737
+ response for range    936.842
+ response for range    928.947
+ response for range    921.053
+ response for range    913.158
+ response for range    905.263
+ response for range    897.368
+ response for range    889.474
+ response for range    881.579
+ response for range    873.684
+ response for range    865.789
+ response for range    857.895
+ response for range    850.000
+ 
+  initial fitness    1.85432E-03
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000     0.00000     0.00000  0.00000000  0.00000000 0.00000E+00 0.00000E+00
+      0.00000  1500.00000     0.00000  0.00000000  0.00000000 0.10000E+04 0.00000E+00
+     50.00000  1700.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     55.00000  1800.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+
+
+ RECEIVER DATA:
+
+   NO.         DEPTH  LAYER           Z
+      1    10.0000         2    10.0000    
+      2    10.0000         2    10.0000    
+      3    10.0000         2    10.0000    
+      4    10.0000         2    10.0000    
+      5    10.0000         2    10.0000    
+      6    10.0000         2    10.0000    
+      7    10.0000         2    10.0000    
+      8    10.0000         2    10.0000    
+      9    10.0000         2    10.0000    
+     10    10.0000         2    10.0000    
+     11    10.0001         2    10.0001    
+     12    10.0001         2    10.0001    
+     13    10.0001         2    10.0001    
+     14    10.0001         2    10.0001    
+     15    10.0001         2    10.0001    
+     16    10.0001         2    10.0001    
+     17    10.0001         2    10.0001    
+     18    10.0001         2    10.0001    
+     19    10.0001         2    10.0001    
+     20    10.0001         2    10.0001    
+
+
+ SOURCE DATA:
+
+   N0.         DEPTH  LAYER           ZU             ZL
+      1    10.0000         2    10.0000        40.0000    
+   ngrad=   2
+   nthet=   2
+   nforw_eof =   0
+   nforw_eofvar =   0
+ grad   9  2  1
+ grad   8  2  2
+  nparmlay for each layer
+  lay  2 points  1  2
+ 
+  response for range   1000.000
+  response for range   1000.000
+  response for range   1000.000
+  response for range    992.105
+  response for range    992.105
+  response for range    992.105
+  response for range    984.211
+  response for range    984.211
+  response for range    984.211
+  response for range    976.316
+  response for range    976.316
+  response for range    976.316
+  response for range    968.421
+  response for range    968.421
+  response for range    968.421
+  response for range    960.526
+  response for range    960.526
+  response for range    960.526
+  response for range    952.632
+  response for range    952.632
+  response for range    952.632
+  response for range    944.737
+  response for range    944.737
+  response for range    944.737
+  response for range    936.842
+  response for range    936.842
+  response for range    936.842
+  response for range    928.947
+  response for range    928.947
+  response for range    928.947
+  response for range    921.053
+  response for range    921.053
+  response for range    921.053
+  response for range    913.158
+  response for range    913.158
+  response for range    913.158
+  response for range    905.263
+  response for range    905.263
+  response for range    905.263
+  response for range    897.368
+  response for range    897.368
+  response for range    897.368
+  response for range    889.474
+  response for range    889.474
+  response for range    889.474
+  response for range    881.579
+  response for range    881.579
+  response for range    881.579
+  response for range    873.684
+  response for range    873.684
+  response for range    873.684
+  response for range    865.789
+  response for range    865.789
+  response for range    865.789
+  response for range    857.895
+  response for range    857.895
+  response for range    857.895
+  response for range    850.000
+  response for range    850.000
+  response for range    850.000
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000     0.00000     0.00000  0.00000000  0.00000000 0.00000E+00 0.00000E+00
+      0.00000  1500.00000     0.00000  0.00000000  0.00000000 0.10000E+04 0.00000E+00
+     50.00000  1700.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     55.00000  1800.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+   ngrad=   2
+   nthet=   2
+   nforw_eof =   0
+   nforw_eofvar =   0
+ grad   9  2  1
+ grad   8  2  2
+  nparmlay for each layer
+  lay  2 points  1  2
+ 
+svd   1   1  0.124984E+02  0.955114E+00 -0.296240E+00
+svd   1   1  0.150023E+01  0.296240E+00  0.955114E+00
+0     DEPTH        ALPHA       BETA      ATTENA       ATENB         RHO      ROUGHNESS
+      0.00000     0.00000     0.00000  0.00000000  0.00000000 0.00000E+00 0.00000E+00
+      0.00000  1500.00000     0.00000  0.00000000  0.00000000 0.10000E+04 0.00000E+00
+     50.00000  1700.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+     55.00000  1800.00000     0.00000  0.10000000  0.20000000 0.16000E+04 0.00000E+00
+   ngrad=   2
+   nthet=   2
+   nforw_eof =   0
+   nforw_eofvar =   0
+ grad   9  2  1
+ grad   8  2  2
+  nparmlay for each layer
+  lay  2 points  1  2
+ 
+svd   2   1  0.463859E+01  0.999959E+00 -0.907898E-02
+svd   2   1  0.124276E+01  0.907898E-02  0.999959E+00
+svd   3   1  0.387973E+02  0.100000E+01 -0.599065E-03
+svd   3   1  0.129347E+01  0.599065E-03  0.100000E+01
+svd   4   1  0.117607E+03  0.999864E+00 -0.164998E-01
+svd   4   1  0.129584E+01  0.164998E-01  0.999864E+00
+svd   5   1  0.278060E+03  0.999989E+00 -0.465352E-02
+svd   5   1  0.129016E+01  0.465352E-02  0.999989E+00
+svd   6   1  0.242841E+03  0.100000E+01 -0.899856E-03
+svd   6   1  0.127742E+01  0.899856E-03  0.100000E+01
+svd   7   1  0.206822E+03  0.999999E+00  0.107114E-02
+svd   7   1  0.126514E+01  0.107114E-02 -0.999999E+00
+svd   8   1  0.168586E+03  0.999997E+00  0.235627E-02
+svd   8   1  0.125930E+01  0.235627E-02 -0.999997E+00
+svd   9   1  0.143649E+03  0.100000E+01  0.935304E-03
+svd   9   1  0.125685E+01  0.935304E-03 -0.100000E+01
+svd  10   1  0.157628E+03  0.999993E+00 -0.364772E-02
+svd  10   1  0.126701E+01  0.364772E-02  0.999993E+00

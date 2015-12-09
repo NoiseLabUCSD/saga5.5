@@ -1,0 +1,4 @@
+      character*64 ktitle,svpn,optn,outn,inpn
+      character*1 ctab
+      common /charcom/ ktitle,svpn,optn,inpn,outn,lktit,
+     .   lsvpn,loptn,linpn,loutn,ctab

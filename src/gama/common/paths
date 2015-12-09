@@ -1,0 +1,1 @@
+      common /paths/ ncp,ncpth(198,3),nbmax,maxtrav(42),nlay,mbpmax

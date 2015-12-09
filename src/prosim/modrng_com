@@ -1,0 +1,16 @@
+c: modrng_com
+c fbv MODES & EIGENVALUES STORED TO BE SHIFTED
+c fbv Mode eigenvalues [refer to kn(1:nmode); kn(0) is dummy]:
+      common /knrng_com/ kn_rng(0:NM_MAX,RGMAX)
+      complex*16 kn_rng
+      common /eigrng_com/
+     .       eig4_rng(0:NM_MAX,RGMAX),eig5_rng(0:NM_MAX,RGMAX)
+      real*8 eig4_rng,eig5_rng
+      common /mrng_com/ phi_rng(NVRMAX,NM_MAX,RGMAX),
+     .                 dphi_rng(NVRMAX,NM_MAX,RGMAX)
+      real*4 phi_rng,dphi_rng
+      common /dphizrng/ dphiz_rng(NVRMAX,NM_MAX,RGMAX),
+     .                 ddphiz_rng(NVRMAX,NM_MAX,RGMAX)
+      real*4 dphiz_rng,ddphiz_rng
+      common /nmoderng/ nmode_rng(RGMAX),ncx_rng(RGMAX)
+      integer*4 nmode_rng,ncx_rng

@@ -1,0 +1,44 @@
+TEST,data based on physical array (opt X)
+C  c Q              ! options 
+
+ 2000  64  10      ! niter, q, npop
+ 0.8 0.5 0.05  0   ! px,pu,pm
+ x3                 ! snap options
+ 13 500            ! freq  max_no_modes
+49 64 79 94 112 130 148 166 201 235 283 338 388 100 200 388
+ 213.,0.,0.,0      ! water depth scatt(1),scatt(2),beta(0)
+      0   1522 
+     10   1519 
+     20   1500 
+     30   1495 
+     61   1491 
+    213   1488 
+ 30 1.76 0.2       ! sediment thichness, r1, beta(1)
+ 0   1572
+ 30  1593
+ 2.1, 0.06, 1880   ! bottom r2 beta(2),c2
+ 0,0               ! bottom shear beta(3) c2s
+ 60                ! source depth
+ 212.9 212.9 -11   ! rec depth
+
+10 20 40 60 90 100 110 130 140 150 170  ! the z depth
+   0  0        ! x and y, the first element must be at (0,0) 
+   3  3
+   7  8
+  10  11
+  15  16
+  26  27
+  32  33
+  46  46
+  54  53
+  64  63
+  74  73
+100  15 ! array param: length[not with x or X], top [not with X]
+90 90 0             ! angles: rotation 1, rotation 2, rotation 3
+ 1                 ! number of ranges
+ 2140              ! receiver range
+
+2                  ! nparm                 
+9 1 1000 2000 60   ! source range           
+8 1 50   90   60   ! source depth           
+

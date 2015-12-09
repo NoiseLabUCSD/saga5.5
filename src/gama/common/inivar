@@ -1,0 +1,1 @@
+      common /inivar/ knext,jbset,jtset,jpset,space(3,40),theps

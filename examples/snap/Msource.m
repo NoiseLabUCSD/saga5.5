@@ -1,0 +1,10 @@
+ iopt=[  2  1  0  0  0  0  1  1  0  1  0  0  1  1  0  0  1  0  0  0  0  0  0  0  0  0  0  0  0  1];
+ nplot_c= 1;
+ npx( 1)=   40;
+ npy( 1)=   40;
+ yp( 1,:)='linspace(     110.000000,     118.000000,  40)';
+ xp( 1,:)='linspace(       7.000000,      11.000000,  40)';
+ ncx( 1)=   17;
+title_x( 1,:)='Source range (km)                       ';
+ ncy( 1)=   15;
+title_y( 1,:)='Water depth (m)                         ';

@@ -1,0 +1,2 @@
+      real*4 cpsec,cptim,etime,dtime
+      common /timing/ cpsec(2),cptim,kdat(3),ktim(3),nrayt,kph

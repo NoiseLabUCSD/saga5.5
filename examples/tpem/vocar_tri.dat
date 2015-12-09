@@ -1,0 +1,32 @@
+TPEM optimizing for the tri-linear profiles (fig 6)
+A W f e  p  E          ! options 
+
+  2000  64  10		! niter, q, npop
+  0.8 0.5 0.05		! px,pu,pm
+                     ! tpem options
+375 375. -3           : Frequency in MHz (100 to 20000)
+143 263 375
+
+1               : Field type ( 1:complex field, 0:magnitude )
+50.           	: Transmitter height in meters
+0             	: Ant pattern(0=Omni, Gaussian, Sin(x)/x, Csc-Sq, Ht-finder)
+30            	: Beamwidth in degrees (full 3 dB to 3 dB width)
+0             	: Elevation angle in degrees
+0 100          	: Minimum & Maximum receiver height in meters
+0 132500.        : Minimum & Maximum receiver range in meters
+1  50         	: Number of range, height points to output
+1   4           ! refractivy proile points (Range, Height)
+
+0                	!First profile is at range zero
+0.         339.         ! Refractivity
+250.       368.5
+300.       319.
+400.      330.8
+
+ 0              	! terrain points
+
+ 4 				! nparm                 
+ 11 1 1   300  350   128        ! first refraction point
+ 11 2 1   1    100   128	! refraction deficit
+ 11 3 1   100    400   128	! base heigth
+ 11 4 1   50   100   128	! thickness

@@ -1,0 +1,38 @@
+test  comparison with oases and snap
+  Wpfe                  ! options 
+  2000  64  10		! niter, q, npop
+  0.8 0.5 0.05		! px,pu,pm
+                        ! snap options
+ 2 100                  ! freq  max_no_modes
+ 100 200 1 
+ 200.,0.,0.,0           ! water depth scatt(1),scatt(2),beta(0)
+   0.0       1500
+   200.0     1500
+ 78 1.8 0.2             ! sediment thichness, r1, beta(1)
+ 0.0 1571.
+ 78 1571.
+ 2.0, 0.2, 1600.	! bottom r2 beta(2),c2
+ 0.,0.			! bottom shear beta(3) c2s
+ 50			! source depth
+ 18.72 112.72  48 1	! rec depth
+
+ 1					! number of ranges
+ 100					! receiver range
+
+ 4 					! nparm                  
+ 9  1 4500  6500 128			! source range           
+ 8  1 50    90   128			! source depth           
+ 3  1 1450  1550 128                   ! vel sed 1
+ 3  2 1500  1600 128			! vel sed 2
+
+
+
+
+ 12 1 1550 1650  128			! vel bot
+ 1  1 127. 128.  128                    ! water depth
+ 15 1 111. 113.  128                    ! recvr depth
+ 6  1  1.5 2.0   128                    ! rho sed
+ 14 1  1.7 2.2   128			! rho bot
+ 4  1  0.0 0.4   128			! att sed
+ 4  2  0.0 0.4   128			! att bot
+ 17 1  0.0 10.0  128                    ! sed thickness

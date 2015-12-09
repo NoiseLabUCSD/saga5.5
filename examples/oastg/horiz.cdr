@@ -1,0 +1,129 @@
+CONDR,FIP,FMT,CPX,COL,NCL,SCS                                       
+Horizontal array with  SNR=10                                                   
+/nfs/aosf16/usr1/users/gerstoft/saga/examples/oast
+Source range (m)$                       
+        137.2549     RMIN
+      1962.7451      RMAX
+        100.0000     XLEFT
+      2000.0000      XRIGHT
+       172.7273      XSCALE
+         0.0000      XINC
+Source depth (m)$                       
+          1.0000     YUP
+        50.0000      YDOWN
+         4.4545      YSCALE
+         0.0000      YINC
+         50.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         50.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+         49.0392     RDUP 
+          1.9608     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+         50.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         50.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+        -27.3070     ZMIN 
+        -25.4832     ZMAX 
+          0.1824     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 
+CONDR,FIP,FMT,CPX,COL,NCL,SCS                                       
+Horizontal array with  SNR=10                                                   
+/nfs/aosf16/usr1/users/gerstoft/saga/examples/oast
+Source range (m)$                       
+        137.2549     RMIN
+      1962.7451      RMAX
+        100.0000     XLEFT
+      2000.0000      XRIGHT
+       172.7273      XSCALE
+         0.0000      XINC
+Source depth (m)$                       
+          1.0000     YUP
+        50.0000      YDOWN
+         4.4545      YSCALE
+         0.0000      YINC
+         50.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         50.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+         49.0392     RDUP 
+          1.9608     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+         50.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         50.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+          2.0037     ZMIN 
+         92.4822     ZMAX 
+          9.0478     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 
+CONDR,FIP,FMT,CPX,COL,NCL,SCS                                       
+Horizontal array with  SNR=10                                                   
+/nfs/aosf16/usr1/users/gerstoft/saga/examples/oast
+Source range (m)$                       
+        137.2549     RMIN
+      1962.7451      RMAX
+        100.0000     XLEFT
+      2000.0000      XRIGHT
+       172.7273      XSCALE
+         0.0000      XINC
+Source depth (m)$                       
+          1.0000     YUP
+        50.0000      YDOWN
+         4.4545      YSCALE
+         0.0000      YINC
+         50.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         50.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+         49.0392     RDUP 
+          1.9608     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+         50.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         50.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+          0.6635     ZMIN 
+          8.7773     ZMAX 
+          0.8114     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 

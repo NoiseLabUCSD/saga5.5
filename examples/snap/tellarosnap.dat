@@ -1,0 +1,30 @@
+tellaro-data
+ D n R Q                          ! options 
+3000 64 15                      ! niter,q,npop
+0.8 0.5 0.05                    ! px,pu,pm
+                                ! option
+1                               ! nb freq
+330.                            ! the freq
+15.0 0.  0. 1e-8                ! water-depth, no roughness, small attenuation
+  0   1523           
+ 15   1523  
+24.0   1.7 0.25                 ! sediment-depth, density,cp-attenuation 
+  0.  1550.                     ! sediment-velocity
+  3.  1550.                     ! sediment-velocity
+  9.  1550.                     ! sediment-velocity
+ 24.  1550.                     ! sediment-velocity
+1.7 .25 2000
+0. 0.                           ! No shear
+
+7                               ! source depth
+5. 5. 1                         ! NRD  RD(1:NRD)
+270 1400                        ! for option D: Rmin, Rmax 
+
+6                               ! nparm         
+3 1 1480  1580 128              ! sediment speed 1
+3 2 1480  1580 128              ! sediment speed 2
+3 3 1480  1580 128              ! sediment speed 3
+3 4 1480  1580 128              ! sediment speed 4
+8 1 6.0   8.0  128              ! source depth
+4 1 0.    0.5  128              ! attenuation in sediment
+

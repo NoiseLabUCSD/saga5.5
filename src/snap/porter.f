@@ -1,0 +1,394 @@
+      SUBROUTINE PORTER(FRQ,MINMOD,MAXMOD,NMES1,JF2,
+     & DELFRQ,MODPLT,EK,EGV,XTS,CC0,CC1,ALFA,MODAVR,ADA,
+     & SPEED,EIGF,ISO,NBEG,MY,C0,Z0,C1,Z1,
+     &  A3,B3,C3,EE,ZZ,SSOLD,EXCH,slow)
+C__________________________________________________________
+C                                                          |
+C     This routine is acting as main for                   |
+C     the routines: ISOINT, STURM, BRENT, NEWTON, CHARAC,  |
+C     RICH, SPEED and EIGVEC                               |
+C     The subject is to find an approximate solution for   |
+C     the eigenvalues of a continuous diff. equation by    |
+C     finite difference and extrapolation                  |
+C     and to calculate the eigenfunctions and losses.      |
+C__________________________________________________________|
+C
+
+      LOGICAL EXCH(NPOINT)
+
+      INTEGER  EXTPOL, MREF(10)
+
+      CHARACTER*3 MODPLT
+      CHARACTER*80 INPFILE, PULSEFILE
+
+      DIMENSION XTS(moden,MSP)
+      DIMENSION ALFA(MODEN)
+      REAL MODAVR(MODEN)
+
+      DOUBLE PRECISION CREF, CC0, CC1, CMIN, H0, H1, ROB, ROS
+      DOUBLE PRECISION ERR1A, ERR1R, ERR2A, ERR2R, SEDK
+      DOUBLE PRECISION A3(NPOINT), B3(NPOINT), C3(NPOINT)
+      DOUBLE PRECISION EE(NPOINT), ZZ(NPOINT), SSOLD(NPOINT)
+      DOUBLE PRECISION MY(MAXMSH,MODEN), ISO(MODEN), ADA(NPOINT)
+      DOUBLE PRECISION DH0(8), DSED(8), DELFRQ, RKOP, TEMP
+      DOUBLE PRECISION DH0SQ(8)
+      DOUBLE PRECISION SPEED(NPOINT), EIGF(NPOINT),slow(npoint)
+      DOUBLE PRECISION FRQ, TWOPI, PI, OMEGA, STIFF, DRAT
+      DOUBLE PRECISION EIGREF, EIGMIN, EIGMAX
+      DOUBLE PRECISION EK(MODEN), EGV(MODEN)
+      DOUBLE PRECISION CON1, CON2, CON3, CON4, CON5, H1N
+      DOUBLE PRECISION C0(NDEP), Z0(NDEP), C1(NDEP), Z1(NDEP)
+
+      COMMON /AB/ BETA(-1:3), SCATT(2), C2S, C2
+      COMMON /ATTEN/ ALF0, ALF1, ALF2, ALF2S, ALFOS, ALFOB
+      COMMON /CONST/ CON1, CON2, CON3, CON4, CON5, SEDK
+      COMMON /DENS/ R0, R1, R2
+      COMMON /DENS8/ ROB, ROS
+      COMMON /EXPMAX/ TRESH, EPS, RRMAX
+      COMMON /FACTORS/ FACT0, FACT1, FLAGF0, FLAGF1
+      integer flagpu
+      COMMON /FLAGPU/ FLAGPU
+      COMMON /FLAGPULSE/  EXTPOL, CORREC
+      COMMON /GSNAP/ H0, H1, TWOPI, PI, OMEGA
+      COMMON /INPUTF/ INPFILE, PULSEFILE
+      COMMON /ITMAX/ MAXIT
+      COMMON /GEN/ EIGREF, EIGMIN, EIGMAX, STIFF
+      COMMON /LUNIT/ LUPLP, LUPLT, LUPRT
+      COMMON /MESHIST/ MH0(8), MSED(8), ICOUNT, USEPAST
+      COMMON /NA/ ND0, ND1, CMIN
+      COMMON /PARA1/ NFF, MSP, NDEP, NOPT, ICF, NDP, KSRD, MODEN
+      COMMON /PARA2/ NPOINT, MAXMSH
+      COMMON /PHVEL/ PHVMIN, PHVMAX
+      COMMON /XREFL/ CINTFC, RINTFC
+
+      DATA MREF/50,64,80,100,128,160,200,256,320,400/
+C
+C     FORMATS
+C
+  300 FORMAT(1X,/)
+  320 FORMAT(1X,5(F10.7,2X))
+  360 FORMAT(1X,//,' ***  WARNING : DUE TO ARRAY SIZE LIMITATIONS,',/,
+     & ' THE NUMBER OF MESHES IS REDUCED TO ',I4)
+  370 FORMAT(1X,//,' ***  WARNING : DUE TO ARRAY SIZE LIMITATIONS,',/,
+     & ' THE NUMBER OF MESHES IS REDUCED TO 1 AND THE NUMBER',/,
+     & ' OF MESH POINTS TO',I6,' (WATER) AND',I6,' (SEDIMENT)')
+  380 FORMAT(1H ,//,14X,'WAVE NUMBER',6X,'ALPHA',7X,'A0 ',7X,'A1 ',7X
+     *,'A2 ',7X,'A2S',7X,'A0S',7X,'A0B',7X,' RB',2X,' SS',2X,' SB')
+  403 FORMAT(1X,' FINDING APPROXIMATION (BRENT) FOR MESH ',I3,3X,
+     & '( ',I5,' , ',I5,' )')
+  413 FORMAT(1X,' FINDING APPROXIMATION (NEWTON) FOR MESH ',I3,3X,
+     & '( ',I5,' , ',I5,' )')
+  420 FORMAT(I6,3X,' MINIMUM ORDER MODE',/,
+     & I6,3X,' NUMBER OF MESH POINTS IN THE WATER LAYER ',/,
+     & I6,3X,' NUMBER OF MESH POINTS IN THE SEDIMENT LAYER ')
+  601 FORMAT(1X,/,1H0,'CALCULATION MESHES',
+     1      /1H ,'STEP   WATER   SEDIMENT',
+     2     (/1H ,I3,I9,I9))
+  620 FORMAT(1X,/,' FINDING FINAL EIGENVECTORS AND LOSSES ',/,
+     & ' MAX ORDER COMPUTED MODE : ',I5,/)
+
+C
+      flagnp=0
+      FIRST=0.
+      CREF=CC0
+      EIGREF=OMEGA*H0/CREF
+      MAXIT=10
+
+      IF(JF2 .EQ. 2)   THEN
+       IF(EXTPOL .EQ. 0)   THEN
+        I=NMES
+       ELSE
+        I=1
+       END IF
+       GO TO 2500
+      END IF
+C
+      NMES=NMES1
+      H1N=H1/H0
+      IF(H1N.LT.1.0D-6)    THEN
+       ROS=1.0D0
+       STIFF=1.0D0
+      ELSE
+       ROS=DBLE(R1)/DBLE(R0)
+       STIFF=(C0(ND0)/C1(1))**2/ROS
+      END IF
+      ROB=DBLE(R2)/DBLE(R0)
+      DRAT=H0/(H0+H1)
+C
+      RKOP=2.0*(FRQ)*H0/CC0
+      RKOP=MAX(1.0D0,RKOP)
+      TEMP=NBEG*RKOP
+      IF(JF2 .GT. 0)   TEMP=2.0*TEMP
+C
+C     INITIALIZE REFLECTION COEFFICIENT CALCULATION
+C
+      IF (C2S.GT.0.0) THEN
+       IF (H1N.GT.0.0) THEN
+        CINTFC=C1(ND1)
+        RINTFC=R1
+       ELSE
+        CINTFC=C0(ND0)
+        RINTFC=R0
+       END IF
+       CALL REFL1(C2,C2S,BETA(2),BETA(3))
+      END IF
+C
+C
+C     DEFINITION OF MESHES
+C
+      TMH0=FACT0*TEMP
+c     li0
+      MRH0=MAX( (TMH0/MREF(1) + 0.5) , 1.)
+      IF(H1 .GT. 0.0)   THEN
+       TMSED=FACT1*TEMP*(H1*CC0)/(H0*CC1)
+c      li1
+       MRSED=MAX( (TMSED/MREF(1) + 0.5) , 1.)
+      ELSE
+       TMSED=0.
+       MRSED=0
+      END IF
+
+      IF( (USEPAST .GT. 0.0) .AND. (ICOUNT .GT. 2) )   THEN
+        ICOUNT= ICOUNT-2
+        ISHIFT= ICOUNT
+      ELSE
+        ISHIFT=0
+        ICOUNT=0
+      END IF
+
+
+      DO 1200 I=1,NMES
+      MH0(I)= MREF(I+ISHIFT)*MRH0
+ 1200 CONTINUE
+C
+      IF(H1.GT.0.0)   THEN
+       DO 1300 I=1,NMES
+       MSED(I)= MREF(I+ ISHIFT)*MRSED
+ 1300  CONTINUE
+      ELSE
+       DO 1400 I=1,NMES
+       MSED(I)=0.0
+       DSED(I)=0.0
+ 1400  CONTINUE
+      END IF
+
+      IF(USEPAST .EQ. 0.0)   ICOUNT=0
+
+      GO TO 1600
+
+ 1500 CONTINUE
+
+      ICOUNT=ICOUNT+I-1
+      DO 1520   I=1,NMES-1
+      MH0(I)=MH0(I+1)
+      MSED(I)=MSED(I+1)
+ 1520 CONTINUE
+      MH0(NMES)=MH0(NMES-3)*2
+      MSED(NMES)=MSED(NMES-3)*2
+
+ 1600 CONTINUE
+      NPMAX=MH0(NMES)+MSED(NMES)
+      IF(NPMAX.GT.NPOINT-2)   THEN
+       FLAGNP=1
+       NMES=NMES-1
+       IF(NMES .GE. 1)  GO TO 1600
+       NMES=1
+       MH0(1)=(((NPOINT-2)/(TMH0+TMSED))*TMH0)/2.0
+       MSED(1)=(((NPOINT-2)/(TMH0+TMSED))*TMSED)/2.0
+       MH0(1)=MH0(1)*2
+       MSED(1)=MSED(1)*2
+       EXTPOL=0
+       WRITE(LUPRT,370) MH0(1), MSED(1)
+CF8    WRITE(08,370) MH0(1), MSED(1)
+      END IF
+      IF(FLAGNP .GT. 0)   THEN
+CF8     WRITE(08,360) NMES
+        WRITE(LUPRT,360) NMES
+      END IF
+      IF(NMES .GE. 2)   THEN
+       USEPAST=1.0
+      ELSE
+       USEPAST=0.
+      END IF
+C
+
+      IF(FLAGPU .LT. 1.)   THEN
+       WRITE(LUPRT,601) (JJ+ICOUNT,MH0(JJ),MSED(JJ),JJ=1,NMES)
+       WRITE(LUPRT,300)
+      END IF
+C
+      DO 1640 I=1,NMES
+      DH0(I)=1.0D0/DFLOAT(MH0(I))
+      DH0SQ(I)=1.0D0/(MH0(I)**2)
+      IF(H1N.NE.0.0)   THEN
+       DSED(I)=H1N/DFLOAT(MSED(I))
+      END IF
+ 1640 CONTINUE
+
+C     FIND APPROXIMATION WITH BRENT (SEARCH WITHIN AN INTERVAL)
+
+      I=1
+ 2500 CONTINUE
+
+CF8   IF(FIRST.NE.0.)   WRITE(08,403) I+ICOUNT,MH0(I),MSED(I)
+      IF(FLAGPU.LT.1. .AND. FIRST.NE.0.) 
+     & WRITE(LUPRT,403) I+ICOUNT,MH0(I),MSED(I)
+
+      IF(H1.GT.0.)   THEN
+       SEDK=((OMEGA*H1)/(C1(1)*DFLOAT(MSED(I))))**2
+      END IF
+c      write(*,*)' porter: phvmax,mh0(i),i',phvmax,mh0(i),i
+      EIGMIN=( (OMEGA*H0)/(DBLE(PHVMAX)*DFLOAT(MH0(I))) )**2
+      CALL ISOBR(I,H1N,DRAT,FRQ,MINMOD,MAXMOD,MODQTY,
+     & DH0,DSED,MH0,MSED,
+     & CREF,ADA,SPEED,ISO,NBEG,MY,C0,Z0,C1,Z1,FIRST)
+      IF(MODQTY.LE.0)   RETURN
+
+      IF( I .EQ. NMES )    GO TO 3200
+      DO 2600 M=1,MODQTY
+      MY(I,M)=MY(I,M)/DH0SQ(I)
+ 2600 CONTINUE
+      IF(CORREC .GT. 0.)   THEN
+       DO 2620 M=1,MODQTY
+       MN=M+MINMOD-1
+       MY(I,M)=MY(I,M) - ((EIGREF**2
+     &   -(DSIN((DFLOAT(MN)-.5D0)*PI*DH0(I)*.5D0)/DH0(I)*2.D0*DRAT)**2)
+     &   -(EIGREF**2-((DFLOAT(MN)-.5D0)*PI*DRAT)**2))
+ 2620  CONTINUE
+      END IF
+ 2800 CONTINUE
+
+C   LAGRANGE PREDICTION TO NEXT MESH
+      CALL LAGRANGE(MODQTY,I,MY,MODEN,DH0SQ)
+      J=I
+
+C     FIND THE SUBSEQUENT APPROXIMATIONS
+C
+      DO 3000   I=J+1,NMES
+
+      IF(CORREC .GT. 0.)   THEN
+       DO 1540 M=1,MODQTY
+       MN=M+MINMOD-1
+       MY(I,M)=MY(I,M) + ((EIGREF**2
+     &   -(DSIN((DFLOAT(MN)-.5D0)*PI*DH0(I)*.5D0)/DH0(I)*2.D0*DRAT)**2)
+     &   -(EIGREF**2-((DFLOAT(MN)-.5D0)*PI*DRAT)**2))
+ 1540  CONTINUE
+      END IF
+      DO 1560 M=1,MODQTY
+      MY(I,M)=MY(I,M)*DH0SQ(I)
+ 1560 CONTINUE
+
+CF8   IF(FIRST.NE.0.)   WRITE(08,413) I+ICOUNT, MH0(I), MSED(I)
+      IF((FLAGPU.LT.1.) .AND. (FIRST.NE.0.))  
+     &    WRITE(LUPRT,413) I+ICOUNT, MH0(I), MSED(I)
+      
+
+      IF(H1.GT.0.)   THEN
+       SEDK=((OMEGA*H1)/(C1(1)*DFLOAT(MSED(I))))**2
+      END IF
+
+      EIGMIN=( (OMEGA*H0)/(DBLE(PHVMAX)*DFLOAT(MH0(I))) )**2
+      CALL NEWTON(*1500,*2500,MY,MODQTY,DH0,MH0(I),I,DSED,
+     &            MSED(I),ADA,SPEED,CREF,C0,Z0,C1,Z1,MINMOD)
+      IF(MODQTY .EQ. 0)   GO TO 2500
+
+
+      IF(I .LT. NMES)   THEN
+       DO 1920 M=1,MODQTY
+       MY(I,M)=MY(I,M)/DH0SQ(I)
+ 1920  CONTINUE
+       IF(CORREC .GT. 0.)   THEN
+C   CORRECTION
+        DO 1940 M=1,MODQTY
+        MN=M+MINMOD-1
+        MY(I,M)=MY(I,M) - ((EIGREF**2
+     &   -(DSIN((DFLOAT(MN)-.5D0)*PI*DH0(I)*.5D0)/DH0(I)*2.D0*DRAT)**2)
+     &   -(EIGREF**2-((DFLOAT(MN)-.5D0)*PI*DRAT)**2))
+ 1940   CONTINUE
+       END IF
+C   PREDICTION
+       CALL LAGRANGE(MODQTY,I,MY,MODEN,DH0SQ)
+      END IF
+
+ 3000 CONTINUE
+ 3200 CONTINUE
+
+      I=NMES
+      DO 3300   M=1,MODQTY
+      EGV(M)=MY(I,M)
+      MY(I,M)=MY(I,M)/DH0SQ(I)
+ 3300 CONTINUE
+      IF(CORREC .GT. 0.)   THEN
+       DO 3400   M=1,MODQTY
+       MN=M+MINMOD-1
+       MY(I,M)=MY(I,M) - ((EIGREF**2
+     &  -(DSIN((DFLOAT(MN)-.5D0)*PI*DH0(I)*.5D0)/DH0(I)*2.D0*DRAT)**2)
+     &  -(EIGREF**2-((DFLOAT(MN)-.5D0)*PI*DRAT)**2))
+ 3400  CONTINUE
+      END IF
+c      write(*,*)'porter: bef accrcy,jf2,nmes',jf2,nmes
+      CALL ACCRCY(I,JF2,EK,MY,MODEN,MODQTY,MINMOD,MAXMOD,
+     & NMES,H1N,DRAT,ICOUNT,ERR1A,ERR1R,ERR2A,ERR2R,MH0,
+     & DH0,DH0SQ,MSED,DSED,*2800,*7000)
+
+      IF(JF2 .GT.0 )   RETURN
+c      write(*,*)'porter: aft accrcy,jf2,nmes',jf2,nmes
+
+C     FIND EIGENVECTORS AND LOSSES
+
+       IF(FLAGPU .LT. 1.)   THEN
+        WRITE(LUPRT,620)   MINMOD+MODQTY-1
+CF8     WRITE(08,620)   MINMOD+MODQTY-1
+        WRITE(LUPRT,380)
+       END IF
+       IF(MODPLT.EQ.'YES')   WRITE(LUPLT,420)MINMOD,MH0(NMES),MSED(NMES)
+
+       MAXMOD=0
+       I=NMES
+c       msp=mh0(i)
+        if (msed(i).gt.0)then
+          nsp=msed(i)+mh0(i)+2
+        else
+          nsp=mh0(i)+1
+        endif
+        do isp=1,nsp
+          slow(isp)=1.0/speed(isp)
+        enddo
+       DO 2400   M=1,MODQTY
+       MMM=M
+       CALL EIGVEC(M,MH0(I),MSED(I),XTS,MMM,
+     &             Slow,CREF,CC0,CC1,
+     &             DH0(I),DSED(I),FRQ,ALFA(M),NMES,MINMOD,MAXMOD,
+     &             MY,EIGF,MODAVR,ADA,
+     &             A3,B3,C3,EE,ZZ,SSOLD,EXCH,EK(M),EGV(M))
+
+        IF(MODPLT.EQ.'YES')   THEN
+         DO 1800   I1=1,MH0(I),51
+         I2=MIN0(I1+51-1,MH0(I))
+         WRITE(LUPLT,320) (EIGF(JK),JK=I1,I2)
+ 1800    CONTINUE
+         IF(MSED(I).GT.0)   THEN
+          DO 1850   I1=MH0(I)+1,MH0(I)+MSED(I),51
+          I2=MIN0(I1+51-1,MH0(I)+MSED(I))
+          WRITE(LUPLT,320) (EIGF(JK),JK=I1,I2)
+ 1850     CONTINUE
+         END IF
+        END IF
+C
+       IF(MAXMOD.GT.0)   RETURN
+ 2400  CONTINUE
+       MAXMOD=MINMOD+MODQTY-1 
+C
+ 7000 CONTINUE
+      RETURN
+      END
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,6 @@
+#!/bin/csh -v 
+# srcipt for cleaning  up directory; all output files are deleted
+#
+# Peter Gerstoft
+
+rm -f */fort* */result* */*~ */*.cor   */*.plp */*.plt */*.out */*.obs */*.ext */*.mat

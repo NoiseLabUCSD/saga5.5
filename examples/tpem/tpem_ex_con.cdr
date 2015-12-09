@@ -1,0 +1,43 @@
+CONDR,FIP,FMT,CPX,COL,REV,NCL,SCS                                   
+TPEM optimizing for the tri-linear profiles (fig 6)                             
+tpem_ex_con.bdr                                   
+Shape coefficient                       
+          1.0000     RMIN
+       100.0000      RMAX
+          1.0000     XLEFT
+       100.0000      XRIGHT
+         9.0000      XSCALE
+        10.0000      XINC
+Shape coefficient                       
+        400.0000     YUP
+         1.0000      YDOWN
+        36.2727      YSCALE
+        50.0000      YINC
+         50.0000     NUMBER OF DATA POINTS ALONG THE X AXIS
+         50.0000     NUMBER OF DATA POINTS ALONG THE Y AXIS
+          1.0000     DIVX 
+          1.0000     DIVY 
+          0.0000     FLAGRC 
+        400.0000     RDUP 
+          1.0000     RDLO 
+          1.0000     SOURCE DEPTH (M) 
+         50.0000     NUMBER OF GRID POINTS ALONG THE X AXIS 
+         50.0000     NUMBER OF GRID POINTS ALONG THE Y AXIS 
+          5.0000     FREQUENCY (HZ)
+          0.0000     DUMMY 
+          5.0000     CAY 
+          5.0000     NRNG 
+         -5.0000     ZMIN 
+         -0.5000     ZMAX 
+          0.5000     ZINC 
+          1.4000     X ORIGIN OF PLOT IN INCHES 
+          0.0000     DUMMY 
+          1.4000     Y ORIGIN OF PLOT IN INCHES 
+          0.0000     NSM   
+          0.1000     HGTPT 
+          0.1400     HGTC 
+         -3.0000     LABPT 
+          1.0000     NDIV 
+          5.0000     NARC 
+         -1.0000     LABC 
+         -1.0000     LWGT 

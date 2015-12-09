@@ -1,0 +1,10 @@
+c: freq_com
+c: OUTPUT VARIABLES:
+      common /amphi1/ phiold(NVRMAX,NM_MAX,NFCMAX)
+      real*4 phiold
+      common /amphi2/ phisrc(NM_MAX,NFCMAX)
+      real*4 phisrc
+      common /kint_val/ kintg(NM_MAX,NFCMAX)
+      complex*16 kintg
+      common /kold_val/ knold(NM_MAX,NFCMAX)
+      complex*16 knold

@@ -1,0 +1,84 @@
+       1024          MODU
+ GAINV STLRAN,DSD,UNI,               
+ TRANSMISSION LOSS                                                               
+ TPEM optimizing for the tri-linear profiles (fig 6)                             
+        3                                  NUMBER OF LABELS
+ Curve no:  1    
+ Freq:  2850. Hz$
+ Depth:    1.0 m$
+     15.0000                                           XLEN
+     10.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+     10.0000                                          XLEFT
+     60.0000                                         XRIGHT
+     10.0000                                           XINC
+     1.00000                                           XDIV
+ Range (km)$                                                                     
+ LIN
+          0.                                          YDOWN
+     40.0000                                            YUP
+     10.0000                                           YINC
+     1.00000                                           YDIV
+ Y- value$                                                                       
+ LIN
+        2                                                NC
+       83                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+       83                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY
+ GAINV  PSTCK,   ,VTT,ADD            
+                                                                                 
+ TPEM optimizing for the tri-linear profiles (fig 6)                             
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     12.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+     1.00000                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+  range of parameter$                                                            
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+  $                                                                              
+ LIN
+        1                                                NC
+      128                                                 N
+          0.                                           XOFF
+    0.787402E-02                                         DX
+     1.00000                                           YOFF
+          0.                                             DY
+             ,ADD                    
+     BEST MODELS                                                                 
+ TPEM optimizing for the tri-linear profiles (fig 6)                             
+        0                                  NUMBER OF LABELS
+     15.0000                                           XLEN
+     12.0000                                           YLEN
+        0                             GRID TYPE. 0: NO GRID
+          0.                                          XLEFT
+     1.00000                                         XRIGHT
+    0.200000                                           XINC
+     1.00000                                           XDIV
+  range of parameter$                                                            
+ LIN
+     1.00000                                          YDOWN
+          0.                                            YUP
+    -1.00000                                           YINC
+     1.00000                                           YDIV
+ Distribution Number $                                                           
+ LIN
+        1                                                NC
+        2                                                 N
+          0.                                           XOFF
+          0.                                             DX
+          0.                                           YOFF
+          0.                                             DY

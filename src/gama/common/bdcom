@@ -1,0 +1,3 @@
+      common /bdcom/ bdfreq,bdomega,bdf(0:20),bdom(20),bdfac,
+cpln     .   bdlam(20),bdom16(20),bdom23(20),nfeig,mmbd,nbdf,kbdf
+     .   bdlam(0:20),bdom16(20),bdom23(20),nfeig,mmbd,nbdf,kbdf

@@ -1,0 +1,63 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}
+\BOOKMARK [1][-]{section.2}{Background}{}
+\BOOKMARK [2][-]{subsection.2.1}{Optimization using Genetic Algorithms}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{A posteriori statistics}{section.2}
+\BOOKMARK [1][-]{section.3}{Cook book for inversion}{}
+\BOOKMARK [1][-]{section.4}{Installing SAGA}{}
+\BOOKMARK [2][-]{subsection.4.1}{SAGA directory}{section.4}
+\BOOKMARK [2][-]{subsection.4.2}{Loading SAGA files}{section.4}
+\BOOKMARK [2][-]{subsection.4.3}{SAGA platforms}{section.4}
+\BOOKMARK [2][-]{subsection.4.4}{Building SAGA}{section.4}
+\BOOKMARK [2][-]{subsection.4.5}{SAGA example files}{section.4}
+\BOOKMARK [1][-]{section.5}{SAGA: General features}{}
+\BOOKMARK [2][-]{subsection.5.1}{Graphics}{section.5}
+\BOOKMARK [2][-]{subsection.5.2}{Useful scripts}{section.5}
+\BOOKMARK [1][-]{section.6}{SAGA: The input file}{}
+\BOOKMARK [2][-]{subsection.6.1}{SAGA options}{section.6}
+\BOOKMARK [2][-]{subsection.6.2}{List of SAGA options}{section.6}
+\BOOKMARK [1][-]{section.7}{Format of the observed data}{}
+\BOOKMARK [2][-]{subsection.7.1}{Covariance matrix file}{section.7}
+\BOOKMARK [2][-]{subsection.7.2}{General data input \(option d\)}{section.7}
+\BOOKMARK [2][-]{subsection.7.3}{Range data input \(option D\)}{section.7}
+\BOOKMARK [2][-]{subsection.7.4}{Vertical array data \(option e\)}{section.7}
+\BOOKMARK [2][-]{subsection.7.5}{Horizontal array data \(option T\)}{section.7}
+\BOOKMARK [2][-]{subsection.7.6}{Weighting file \(option M\)}{section.7}
+\BOOKMARK [1][-]{section.8}{The objective function}{}
+\BOOKMARK [2][-]{subsection.8.1}{Transformation of data}{section.8}
+\BOOKMARK [2][-]{subsection.8.2}{Direct observations}{section.8}
+\BOOKMARK [2][-]{subsection.8.3}{Covariance matrix}{section.8}
+\BOOKMARK [2][-]{subsection.8.4}{Cramer-Rao bound}{section.8}
+\BOOKMARK [1][-]{section.9}{Shape functions}{}
+\BOOKMARK [1][-]{section.10}{Output files}{}
+\BOOKMARK [2][-]{subsection.10.1}{The *.mat, *b.mat and *.ext files}{section.10}
+\BOOKMARK [1][-]{section.11}{Sampling the fields}{}
+\BOOKMARK [2][-]{subsection.11.1}{Running the program}{section.11}
+\BOOKMARK [1][-]{section.12}{Forward models and examples}{}
+\BOOKMARK [2][-]{subsection.12.1}{Forward model: OAST }{section.12}
+\BOOKMARK [2][-]{subsection.12.2}{Forward model: OASR }{section.12}
+\BOOKMARK [2][-]{subsection.12.3}{Forward model: OASTG }{section.12}
+\BOOKMARK [2][-]{subsection.12.4}{Forward model: SNAP}{section.12}
+\BOOKMARK [2][-]{subsection.12.5}{Forward model: SNAPRD }{section.12}
+\BOOKMARK [2][-]{subsection.12.6}{Forward model: PROSIM }{section.12}
+\BOOKMARK [2][-]{subsection.12.7}{Forward model: CPROSIM }{section.12}
+\BOOKMARK [2][-]{subsection.12.8}{Forward model: POPP }{section.12}
+\BOOKMARK [2][-]{subsection.12.9}{Forward model: GAMA }{section.12}
+\BOOKMARK [2][-]{subsection.12.10}{Forward model: ORCA }{section.12}
+\BOOKMARK [2][-]{subsection.12.11}{Forward model: RAMGEO }{section.12}
+\BOOKMARK [2][-]{subsection.12.12}{Forward model: TPEM }{section.12}
+\BOOKMARK [1][-]{section.13}{ 3D array localization using SNAP}{}
+\BOOKMARK [2][-]{subsection.13.1}{Geometry}{section.13}
+\BOOKMARK [2][-]{subsection.13.2}{Visualization of the rotations}{section.13}
+\BOOKMARK [2][-]{subsection.13.3}{Additional Options in SNAP}{section.13}
+\BOOKMARK [2][-]{subsection.13.4}{Additional Pointers in SNAP}{section.13}
+\BOOKMARK [0][-]{subsubsection.13.4.1}{References}{}
+\BOOKMARK [0][-]{section.1}{Likelihood functions for a vertical array}{}
+\BOOKMARK [1][-]{subsection.1.1}{Multi-frequency matched field processing}{section.1}
+\BOOKMARK [2][-]{subsection.1.2}{Multi-frequency matched mode processing}{subsection.1.1}
+\BOOKMARK [2][-]{subsection.1.3}{Estimation of the covariance matrix}{subsection.1.1}
+\BOOKMARK [0][-]{section.2}{Regularization}{}
+\BOOKMARK [1][-]{subsection.2.1}{Thikhonov regularization}{section.2}
+\BOOKMARK [2][-]{subsection.2.2}{Including the a priori probability distribution}{subsection.2.1}
+\BOOKMARK [0][-]{section.3}{Updating SAGA}{}
+\BOOKMARK [1][-]{subsection.3.1}{Porting a forward model into SAGA}{section.3}
+\BOOKMARK [2][-]{subsection.3.2}{Introducing a new option}{subsection.3.1}

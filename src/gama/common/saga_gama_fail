@@ -1,0 +1,3 @@
+      common /runfail/ iifail
+      integer*4 iifail
+

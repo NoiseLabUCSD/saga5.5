@@ -1,0 +1,25 @@
+TPEM Version 1.00 system input file
+1000.         : Frequency in MHz (100 to 20000)
+1             : Field type ( 1:complex field, 0:magnitude )
+25.           : Transmitter height in above units
+0             : Ant pattern(Omni, Gaussian, Sin(x)/x, Csc-Sq, Ht-finder)
+30            : Beamwidth in degrees (full 3 dB to 3 dB width)
+0             : Elevation angle in degrees
+400           : Maximum height in above units
+70000   100000            99999.          : Maximum range in above units
+1 1000 40 100 1 10   5  900         : Number of range, height points to output
+1   4           ! refractivy proile points (Range, Height)
+
+0                !First profile is at range zero
+0.         339.
+250.       368.5
+300.       319.
+1000.      401.6
+
+ 5              ! terrain points
+     0.           0.
+ 15000            0.
+ 20000          100.
+ 25000            0.
+ 70000            0.
+

@@ -1,0 +1,16 @@
+ sdc.dat test case  orca                                                        
+ S2 k1 T   z  W            ! options     
+ MCMC sampling of posteriori probability
+  ...Enumerative integration
+Coherent in range and incoherent in freq
+  ...with each frequency weithed identicallly
+  inversion reading real data in HA-format
+  Noise is added to the data in the *.obs file
+ Observed data written out to unit 30 
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 4 0 4 7 0 1 0 0 0 1 1 0 1 0 0 0 0 0 0 1 0 0 0 0 0 0 0 011 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 2 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       20000
+  Gaussian noise added tothe data in the *.obs file,  SNR=   20.00000    

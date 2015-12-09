@@ -1,0 +1,628 @@
+Inversion Workshop, Test Case 0 RAM Input File                                  
+  T k1  A p                              
+  inversion reading real data in HA-format
+Coherent in range and incoherent in freq
+  ...with each frequency weithed identicallly
+ Adding the input values to PPD-plot 
+  plot of best model and the initial model
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+ Options: 2 4 0 0 7 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0
+ Options (norm): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:  10000.
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55 1
+  34.9000015  1.59 175
+  35.0999985  1.95 176
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+  ncurv= 2nbart= 0
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Bottom density (g/cm^3   3   1   1      1.55      1.56      0.00    7  128
+ Size of the search space: 10**  2.11
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55 1
+  34.9000015  1.59 176
+  35.0999985  1.95 177
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+
+  initial fitness  0.0130052567
+
+  crossover probability      0.800000012
+  mutation  probability      0.0500000007
+  update    probability      0.5
+  number of iterations       1000.
+  size   of populations     32
+  number of populations      10.
+
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55220473 1
+  34.9000015  1.59 176
+  35.0999985  1.95 177
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+
+  >>> Estimated serial Inversion time:      23240.6 secs.
+ iteration 1
+ Models replaced: 6
+ new best energy  0.1301E-01 at iteration   1
+ iteration 2
+ Models replaced: 9
+ iteration 3
+ Models replaced: 4
+ iteration 4
+ Models replaced: 5
+ new best energy  0.1301E-01 at iteration   4
+ iteration 5
+ Models replaced: 2
+ iteration 6
+ Models replaced: 1
+ new best energy  0.1301E-01 at iteration   6
+ iteration 7
+ Models replaced: 1
+ iteration 8
+ Models replaced: 2
+ iteration 9
+ Models replaced: 2
+ iteration 10
+ Models replaced: 1
+ iteration 11
+ Models replaced: 1
+ iteration 12
+ Models replaced: 1
+ iteration 13
+ Models replaced: 1
+ iteration 14
+ Models replaced: 0
+ iteration 15
+ Models replaced: 2
+ iteration 16
+ Models replaced: 1
+ iteration 17
+ Models replaced: 1
+ iteration 18
+ Models replaced: 0
+ iteration 19
+ Models replaced: 0
+ iteration 20
+ Models replaced: 1
+ iteration 21
+ Models replaced: 1
+ iteration 22
+ Models replaced: 1
+ iteration 23
+ Models replaced: 0
+ iteration 24
+ Models replaced: 0
+ iteration 25
+ Models replaced: 1
+ iteration 26
+ Models replaced: 0
+ iteration 27
+ Models replaced: 0
+ iteration 28
+ Models replaced: 0
+ iteration 29
+ Models replaced: 1
+ iteration 30
+ Models replaced: 0
+ iteration 31
+ Models replaced: 0
+ iteration 32
+ Models replaced: 1
+ iteration 33
+ Models replaced: 1
+ iteration 34
+ Models replaced: 0
+ iteration 35
+ Models replaced: 0
+ iteration 36
+ Models replaced: 0
+ iteration 37
+ Models replaced: 0
+ iteration 38
+ Models replaced: 0
+ iteration 39
+ Models replaced: 0
+ iteration 40
+ Models replaced: 1
+ iteration 41
+ Models replaced: 0
+ iteration 42
+ Models replaced: 1
+ iteration 43
+ Models replaced: 0
+ iteration 44
+ Models replaced: 0
+ iteration 45
+ Models replaced: 0
+ iteration 46
+ Models replaced: 0
+ iteration 47
+ Models replaced: 0
+ iteration 48
+ Models replaced: 1
+ iteration 49
+ Models replaced: 0
+ iteration 50
+ Models replaced: 0
+ iteration 51
+ Models replaced: 0
+ iteration 52
+ Models replaced: 1
+ iteration 53
+ Models replaced: 0
+ iteration 54
+ Models replaced: 0
+ iteration 55
+ Models replaced: 0
+ iteration 56
+ Models replaced: 0
+ iteration 57
+ Models replaced: 1
+ iteration 58
+ Models replaced: 0
+ iteration 59
+ Models replaced: 1
+ iteration 60
+ Models replaced: 0
+ iteration 61
+ Models replaced: 0
+ iteration 62
+ Models replaced: 0
+ iteration 63
+ Models replaced: 0
+ iteration 64
+ Models replaced: 0
+ iteration 65
+ Models replaced: 1
+Inversion Workshop, Test Case 0 RAM Input File                                  
+  T k1  A p                              
+  inversion reading real data in HA-format
+Coherent in range and incoherent in freq
+  ...with each frequency weithed identicallly
+ Adding the input values to PPD-plot 
+  plot of best model and the initial model
+          1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9 0
+ Options: 2 4 0 0 7 0 1 0 0 1 0 1 0 1 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 9 0 0 0 0 0 0 0 0 0 0
+ Options (norm): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:  10000.
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55 1
+  34.9000015  1.59 175
+  35.0999985  1.95 176
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+  ncurv= 2nbart= 0
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Bottom density (g/cm^3   3   1   1      1.55      1.56      0.00    7  128
+ Size of the search space: 10**  2.11
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55 1
+  34.9000015  1.59 176
+  35.0999985  1.95 177
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+
+  initial fitness  0.0130052567
+
+  crossover probability      0.800000012
+  mutation  probability      0.0500000007
+  update    probability      0.5
+  number of iterations       1000.
+  size   of populations     32
+  number of populations      10.
+
+ Frequency:  100.  200.
+ zs=  20.
+ rmin,rmax,dr,ndr  1000.  1300.  10. 1
+ zmax,dz,ndz  220.  0.200000003 3
+ rdmin,rdmax,ndz  85.  85. 3
+   c0,np,ns,rs  1488.59998 4 1  0.
+ bathymetry
+  0.  105.
+  3000.  160.
+  260000.  160.
+ Profile at range:  0.
+  Ocean Sound Speed
+ Number of points: 10
+  0.  1495. 1
+  20.  1494.2 101
+  40.  1493.4 201
+  60.  1492.6 301
+  80.  1491.8 401
+  100.  1491. 501
+  120.  1490.2 601
+  140.  1489.4 701
+  160.  1488.6 801
+  220.  1488.6 1101
+  Bottom Sound Speed
+ Number of points: 6
+  0.  1535. 1
+  3.  1541.4 16
+  10.  1556.4 51
+  35.  1610. 176
+  35.0999985  1800. 177
+  220.  1800. 1101
+  Bottom Density
+ Number of points: 4
+  0.  1.55866134 1
+  34.9000015  1.59 176
+  35.0999985  1.95 177
+  220.  1.95 1101
+  Bottom Attenuation
+ Number of points: 7
+  0.  0.123 1
+  35.  0.032 176
+  35.0999985  0.036 177
+  60.  0.036 301
+  70.  10. 351
+  150.  100. 751
+  220.  100. 1101
+ iteration 1
+ Models replaced: 5
+ new best energy  0.1301E-01 at iteration   1
+ iteration 2
+ Models replaced: 9
+ new best energy  0.1301E-01 at iteration   2
+ iteration 3
+ Models replaced: 4
+ iteration 4
+ Models replaced: 5
+ iteration 5
+ Models replaced: 0
+ iteration 6
+ Models replaced: 4
+ iteration 7
+ Models replaced: 4
+ new best energy  0.1301E-01 at iteration   7
+ iteration 8
+ Models replaced: 0
+ iteration 9
+ Models replaced: 1
+ iteration 10
+ Models replaced: 1
+ iteration 11
+ Models replaced: 1
+ iteration 12
+ Models replaced: 1
+ iteration 13
+ Models replaced: 4
+ iteration 14
+ Models replaced: 0
+ iteration 15
+ Models replaced: 0
+ iteration 16
+ Models replaced: 0
+ iteration 17
+ Models replaced: 0
+ iteration 18
+ Models replaced: 1
+ iteration 19
+ Models replaced: 1
+ iteration 20
+ Models replaced: 1
+ iteration 21
+ Models replaced: 0
+ iteration 22
+ Models replaced: 1
+ iteration 23
+ Models replaced: 0
+ iteration 24
+ Models replaced: 0
+ iteration 25
+ Models replaced: 0
+ iteration 26
+ Models replaced: 0
+ iteration 27
+ Models replaced: 0
+ iteration 28
+ Models replaced: 1
+ iteration 29
+ Models replaced: 1
+ iteration 30
+ Models replaced: 0
+ iteration 31
+ Models replaced: 0
+ iteration 32
+ Models replaced: 0
+ iteration 33
+ Models replaced: 0
+ iteration 34
+ Models replaced: 0
+ iteration 35
+ Models replaced: 0
+ iteration 36
+ Models replaced: 1
+ iteration 37
+ Models replaced: 0
+ iteration 38
+ Models replaced: 0
+ iteration 39
+ Models replaced: 1
+ iteration 40
+ Models replaced: 1
+ iteration 41
+ Models replaced: 0
+ iteration 42
+ Models replaced: 1
+ iteration 43
+ Models replaced: 0
+ iteration 44
+ Models replaced: 0
+ iteration 45
+ Models replaced: 0
+ iteration 46
+ Models replaced: 0
+ iteration 47
+ Models replaced: 0
+ iteration 48
+ Models replaced: 1
+ iteration 49
+ Models replaced: 0
+ iteration 50
+ Models replaced: 0
+ iteration 51
+ Models replaced: 0
+ iteration 52
+ Models replaced: 0
+ iteration 53
+ Models replaced: 0
+ iteration 54
+ Models replaced: 0
+ iteration 55
+ Models replaced: 0
+ iteration 56
+ Models replaced: 0
+ iteration 57
+ Models replaced: 0
+ iteration 58
+ Models replaced: 0
+ iteration 59
+ Models replaced: 0
+ iteration 60
+ Models replaced: 0
+ iteration 61
+ Models replaced: 0
+ iteration 62
+ Models replaced: 0
+ iteration 63
+ Models replaced: 0
+ iteration 64
+ Models replaced: 1
+ iteration 65
+ Models replaced: 0
+ iteration 66
+ Models replaced: 0
+ iteration 67
+ Models replaced: 0
+ iteration 68
+ Models replaced: 0
+ iteration 69
+ Models replaced: 0
+ iteration 70
+ Models replaced: 0
+ iteration 71
+ Models replaced: 0
+ iteration 72
+ Models replaced: 0
+ iteration 73
+ Models replaced: 0
+ iteration 74
+ Models replaced: 0
+ iteration 75
+ Models replaced: 1
+ iteration 76
+ Models replaced: 0
+ iteration 77
+ Models replaced: 0
+ iteration 78
+ Models replaced: 0
+ iteration 79
+ Models replaced: 0
+ iteration 80
+ Models replaced: 1

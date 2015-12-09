@@ -1,0 +1,9 @@
+#!/bin/csh
+#sed -e s/comopt.h/comopt.h      USE invarray/g ga.f >test.f
+foreach i (`ls *.f`)
+echo '*******'
+echo $i
+  /bin/mv $i dummy
+  sed -f tmp.sed dummy>  $i
+#  diff $i /home/gerstoft/saga/src/$i  >  $i
+end

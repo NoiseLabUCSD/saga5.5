@@ -1,0 +1,12 @@
+      common /freqcom/ frqsaga(1707),wom(1707),w16(1707),w23(1707),
+     .   frsq(1707),fs,flo,fhi,dfsaga,dtap,tfmin,tfmax,fmaxx,ang1,ang2,
+     .   ntcut,nang,nbdbad,nfr,nfr2,iifft,iiir,iiffi,nfft,kp2,
+     .   nfft2,nfft1,nfft12,nffth,nffth1,ntap,nfbb
+      integer*4 ntcut,nang,nbdbad,nfr,nfr2,iifft,iiir,iiffi,nfft,kp2,
+     .   nfft2,nfft1,nfft12,nffth,nffth1,ntap,nfbb
+      real*8 frqsaga,wom,w16,w23,frsq,fs,flo,fhi,dfsaga,dtap,
+     .   tfmin,tfmax,fmaxx,ang1,ang2
+
+      common /freqcom1/ nf1,nf2,flotmp,fhitmp,dfrq
+      real*8 flotmp,fhitmp,dfrq
+      integer*4 nf1,nf2

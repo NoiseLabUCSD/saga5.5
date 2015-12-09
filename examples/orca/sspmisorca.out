@@ -1,0 +1,82 @@
+ sspmis_a   from the matched field workshop 93                                  
+  c b A m12                              
+ reading in covariance matrix 
+ The covariance is divided by Ndep 
+ Adding the input values to PPD-plot 
+computing 2D marginal PPD between parameters  1 and  2
+                    1 2 3 4 5 6 7 8 9 0 1 2 3 4 5 6 7 8 9
+                    0 1 2 3 4 5 6 7 8 9 0
+ Options:           2 1 0 0 0 0 1 0 0 0 0 1 1 1 0 1 0 0 1 1 0 0 0 0 0 0 0 0 011 0 0 0 0 0 0 0 0 0 0
+ Options (norm):    0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+ Options (isubopt): 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+  Number of forward modelling runs:       10000
+  reading ranges in....
+ number of ranges           1
+ number of bartlett estimators           1
+  ncurv=           1 nbart=           1
+
+  parameters to be optimized:
+                   physparm     layer  min.val  max.val   del.val   nbit  ndig
+  1 Sound speed in water    20   1   1   1497.50   1502.50      0.10    6   51
+  2 Sound speed in water    20   2   1   1477.50   1482.50      0.10    6   51
+  3 Source range (m)         9   1   0      5.00     10.00      0.10    6   51
+  4 Source depth (m)         8   1   0      0.01    100.00      2.00    6   51
+ Size of the search space: 10**  6.83
+
+  initial fitness   2.57607941E-02
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             1000
+  size   of populations              32
+  number of populations              10
+
+ retuned point   1500.00134       1482.20044       9.30519867       78.0806503    
+ retuned value   1.73809230E-02
+ Size of the search space: 10**  6.83
+
+  initial fitness   2.57607941E-02
+
+  crossover probability      0.800000012    
+  mutation  probability       5.00000007E-02
+  update    probability      0.500000000    
+  number of iterations             1000
+  size   of populations              32
+  number of populations              10
+
+  >>> Estimated serial Inversion time:          3.3 secs.
+ retuned point   1498.86169       1481.08423       9.30897713       78.0481110    
+ retuned value   1.61376391E-02
+ retuned point   1501.61584       1479.51709       9.50304222       81.8233643    
+ retuned value  0.367645293    
+ retuned point   1502.49866       1477.59766       9.39870453       79.3212738    
+ retuned value  0.362667859    
+ retuned point   1499.79651       1482.00586       9.30570793       78.0731812    
+ retuned value   1.72140524E-02
+ retuned point   1500.68506       1478.99084       6.50021553       78.8076324    
+ retuned value  0.347200304    
+ retuned point   1498.60669       1480.00403       7.79366541       77.6794510    
+ retuned value  0.242723793    
+ retuned point   1498.99390       1482.10925       7.50850487       74.1291809    
+ retuned value  0.422036648    
+ retuned point   1500.87915       1480.49878       8.00225067       80.4037933    
+ retuned value  0.315560013    
+  Population          10
+ retuned point   1497.80627       1477.52551       8.01232243       80.3467484    
+ retuned value  0.318863183    
+
+   best of all energy   2.25773789E-02
+  best-of all      deviation  
+   1  1500.000            0.600
+   2  1482.200            0.600
+   3     9.300            0.000
+   4    78.002            0.002
+ local fit   1.61376391E-02
+   1  1498.862           -0.538
+   2  1481.084           -0.516
+   3     9.309            0.009
+   4    78.048            0.048
+
+ Forward  modelling calls:   10939
+ Inversion, time:        0.958 secs.

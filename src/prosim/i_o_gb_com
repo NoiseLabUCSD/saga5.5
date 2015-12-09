@@ -1,0 +1,4 @@
+c: i_o_gb_com
+c: OUTPUT VARIABLES:
+      common /outgb_com/ gb(NM_MAX,NFBBMAX)
+      complex*16 gb

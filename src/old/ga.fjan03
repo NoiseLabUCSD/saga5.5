@@ -1,0 +1,836 @@
+      PROGRAM ga
+c****************************************************************************
+c   program for inversion of seismo-acoustic data using genetic algorithms.
+c   The result is presented as the most likely model, the mean model and the 
+c   standard variation.
+c
+c   PETER GERSTOFT, 1992 
+c****************************************************************************  
+
+                          ! Common block definitions are
+      INCLUDE 'comopt.h'  ! INCLUDEd in these files.
+      INCLUDE 'comforw.h'
+      real fval              ! function for computation of real values
+C**   local variables
+      INTEGER iter,iq,iiq,i,J,  ! iterative indices.
+     >   ifreq    ! frequency index.
+      INTEGER ipar(mq)
+      INTEGER ihelp,lun,index
+      INTEGER modelball(mpar) ! best of all model
+      INTEGER modelbsf(mpar)  ! best so far model
+      INTEGER iforwtot,iforwpop,iforwtotal,iforwreject  ! counters forward-models
+      REAL    objbsf /1e10/,objball /1e10/
+      REAL t1,ahelp
+      REAL fit(mq_post),fitpar(mq),expfit(mq),
+     >     pmodel(mq),pcum(mq),
+     >     expobj,temp
+      REAL Xstart(mpar)
+      REAL ran2,xtheta(mpar)
+      REAL nsearch,xdum
+      integer ix,itrn, fork,ispawn,wait ,retval,status,nspawn,ifrq,idep
+      external fork,wait
+      integer getpid,id
+      CHARACTER*20 COMFILE
+      INTEGER qpar,irep,qtemp/1/,iparm,maxiter/100/,
+     >     ierrdat/0/,ierrcov/0/,ierrhp/0/, !error flags for read_cov and read_hp
+     >    ierrinp/0/,ioer/0/,ierr/0/,ierrD/0/
+c      integer iter,iforwpop
+      common/iterpar/iter,iforwpop 
+      write(*,*)'Running SAGA version 4.1, May 2001' 
+
+      iseed=6511
+
+      xdum=ran2(iseed)   ! initialize random generator
+c
+c---- initialization
+c
+      iWriteTrf=0
+      do i=1,mobs
+         weight(i)=1.0
+      enddo
+c      OPEN(6, STATUS='NEW',CARRIAGECONTROL='LIST')
+c
+      call opfilr(1,ierrinp)
+      if (ierrinp.ne.0) then
+         write(*,*)' The input file *.dat does not exist'
+         stop
+      endif
+      call opfilw(7,ioer)
+c
+c---  Set some forward model specific flags
+c
+      CALL forwardmodel(iopt,mopt)
+c
+c---  read input data
+c
+      CALL input 
+
+      nsearch=0
+      DO iparm=1,nparm
+        nsearch=nsearch+log10(1.0*ndigit(Iparm))
+      ENDDO
+      WRITE(*,'(a,f6.2)')' Size of the search space: 10**',nsearch
+      WRITE(prtfil,'(a,f6.2)')' Size of the search space: 10**',nsearch
+
+
+C     Reading data from COV or IN file (unit 3 or 2). This can be in
+C     covariance matrix form (option C), or it can be in hydrophone
+C     spectra vectors (option d) or ? (D) or Saplot format (e).
+      IF (iopt(2).ge.1) THEN ! Options c, d, D, or e.
+         call opfilr(2,ierrinfile)
+         if (ierrinfile.ne.0) then
+           write(*,*) 'No in-file  with observed read'      
+         else         
+          IF (iopt(13).eq.1) THEN ! Option c: Read covariance matrix
+            WRITE(*,*)' Reading covariance matrix' ! from COV file.
+            CALL READ_COV(ierrcov)
+            
+          ELSEIF (iopt(2).eq.1) THEN ! Option d: Read h/p data vectors
+            CALL readdat2(ierrdat) ! file in ? format.
+            
+          ELSEIF (iopt(2).eq.2) THEN ! Option D: Read data from IN
+            CALL readdata(ierrD) ! file in ? format.
+            
+          ELSEIF (iopt(2).eq.3) THEN ! Option e: Read data from IN
+             WRITE(*,*)' Reading hydrophone data' ! from IN file.
+             CALL READ_HP(ierrhp)
+c     CALL readdatiso           ! file in 'rev' format.
+          ELSEIF (iopt(2).eq.4) THEN ! Option T: Read data from IN
+             WRITE(*,*)' Reading HA data' ! from IN file.
+             CALL READ_HA(ierrhp)
+c     CALL readdatiso           ! file in 
+          ENDIF
+          close(2)
+        END IF
+      END IF
+
+      if (itrans(4).ge.1) then
+        call opfilr(3,ioer)
+        call Read_weight
+        close(3)
+      endif
+
+C     Run the forward model using the parameters specified in the run
+C     (.DAT) file.  The results of this run can later be written to the
+C     OBS file in either covariance matrix or hydrophone data format.
+      CALL forwinit
+       
+c
+c---- should data be weighted
+c
+      IF (iopt(3).ge.1) THEN
+c         write(*,*)' the  is being weighted...'
+         CALL norm
+      ENDIF   
+
+      iforwtot=1
+
+      CALL getmodelreal(xstart)
+      CALL modeldecode(xstart,1,ierr)
+      DO iparm=1,nparm
+         xstar(iparm)=xstart(iparm)
+      ENDDO
+
+C     Option W: Writes forward model output to the OBS file. Data can
+C     be in Covariance Matrix (option c), or h/p data vector (d) format.
+      IF (iopt(21).eq.1) THEN ! option W.
+         call opfilw(30,ioer)
+         IF (iopt(13).eq.1) THEN ! Option c (Covariance matrix)
+            WRITE(30,'(a1,a31)') '!',' File format: Covariance matrix' 
+            call header(30)
+            WRITE(*,*) ' The generated cov-matrix will be',
+     >           ' written to the OBS file'
+            DO ifreq = 1, nfrq
+               DO ix = 1, nx
+                  CALL WRITE_COV(ifreq,ix)
+               ENDDO
+            ENDDO
+c--- reread covariance matrix
+            call opfilr(2,ierrinp)
+            if (ierrinp.eq.0) then
+               WRITE(*,*)' Reading covariance matrix' ! from COV file.
+               CALL READ_COV(ierrcov)
+               close(2)
+            endif
+         ELSE
+            IF (iopt(2).eq.3) THEN ! Option e (hydrophone data vectors)
+               WRITE(30,'(a1,a32)') 
+     >              '!',' File format: Hydrophone vectors' 
+               call header(30)
+               WRITE(*,*) ' The generated h/p data will be',
+     >              ' written to the OBS file'       
+               DO ix = 1, nx
+                  DO ifreq = 1, nfrq
+                     CALL WRITE_HP(ifreq,ix)
+                  ENDDO
+               ENDDO
+            ELSEIF (iopt(2).eq.4) THEN ! Option T (HA data vectors)
+               WRITE(30,'(a1,a32)') 
+     >              '!',' File format: HA array' 
+               call header(30)
+               WRITE(*,*) ' The HA data will be',
+     >              ' written to the OBS file'       
+               DO idep = 1, ndep
+                  DO ifreq = 1, nfrq
+                     CALL WRITE_HA(ifreq,idep)
+                  ENDDO
+               ENDDO
+             ELSEIF (iopt(2).eq.1) THEN ! option d
+               WRITE(30,'(a1,a)')'!',title
+              call header(30)
+
+               WRITE(*,*)'ndep,nx',ndep,nx,iopt(2)
+            do ifrq=1,nfrq
+              do idep=1,ndep
+c               DO j=1,ncurv
+                  j=(ifrq-1)*ndep +idep
+                  index=(j-1)*nx
+                  DO i=1,nx
+                     WRITE(30,*)ifrq,idep,i,resp(i+index),index+i
+                  ENDDO  ! nx
+               ENDDO   ! ndep
+               ENDDO   ! nfrq
+            ELSEIF (iopt(2).eq.2) THEN
+c     DO j=1,ndep
+               WRITE(30,'(a1,a)')'!',title
+              call header(30)
+
+               index=(j-1)*nx
+               DO i=1,nx
+                  WRITE(30,'(100G13.6)')
+     &                 xranges(i),(real(resp(i+(j-1)*nx)),j=1,ncurv)
+               ENDDO
+c     ENDDO
+               
+            ELSE
+               WRITE(*,*)'Error: Output format for option W',
+     &              'not defined.'
+               STOP
+            ENDIF
+         ENDIF
+         CLOSE(30)
+         write(*,*)' The synthetic generated data has been written',
+     &        ' to the *.obs file'
+      ENDIF
+
+c      IF (iopt(2).eq.0.and.iopt(13).eq.0) THEN
+c---    move data from resp to data  for synthetic inversions
+c        DO j=1,ncurv
+c          index=(j-1)*nx
+c          DO i=1,nx
+c            data(i+index)=resp(i+index)
+cc          ENDDO
+c       ENDDO
+c      ENDIF
+c
+c---- should data be weighted
+c
+      IF (iopt(3).ge.1) THEN
+         write(*,*)' Data is being weighted...'
+         CALL normdata
+      ENDIF   
+c--- for response
+      if (iopt(25).eq.1) then
+         write(*,*)' transforming data; Only magnitude is used'
+         do j=1,ncurv
+            index=(j-1)*nx
+            do i=1,nx
+c     WRITE(prtfil,*)' data',data(j,idep),abs(data(j,idep))
+               data(i+index)=abs(data(i+index))
+            enddo
+         enddo
+      endif
+      if (iopt(27).eq.1) then
+         write(*,*)' transforming data: to unit norm'
+         ahelp=0
+         do j=1,ncurv
+            index=(j-1)*nx
+            do i=1,nx
+               ahelp=ahelp+abs(data(i+index))**2
+            enddo
+         enddo
+         ahelp=1.0/sqrt(ahelp)
+         do j=1,ncurv
+            index=(j-1)*nx
+            do i=1,nx
+               data(i+index)=(data(i+index))*ahelp
+            enddo
+         enddo
+      endif
+c     
+c---  energy normalization
+c   
+c      enorm=0.
+c      DO j=1,ncurv
+c        index=(j-1)*nx
+c         DO i=1,nx
+c            enorm=enorm+abs(data(i+index))**2
+c     WRITE(*,*)'from ga data',j,i,data(i+index)
+c         ENDDO
+c      ENDDO
+c
+c---  should noise be added ??? 
+c
+c      IF (iopt(11).eq.1) THEN
+c        WRITE(*,*)' ***** warning noise is being added ********'  
+c        xnoise=sqrt(enorm)/5./sqrt(2.)
+c        xnoise=0.
+c       DO j=1,ncurv
+c          index=(j-1)*nx
+c          DO i=1,nx 
+c           data(i+index)=data(i+index)+xnoise*cmplx(1,1)*ran2(1)
+c          ENDDO
+c        ENDDO
+c        enorm=0.
+c        DO j=1,ncurv
+c          index=(j-1)*nx
+c          DO i=1,nx
+c            enorm=enorm+abs(data(i+index))**2
+c          ENDDO
+c        ENDDO
+c     ENDIF
+c
+c---  check if the initialization was successful:
+      IF (ierrinfile.gt.0) STOP '>> IN file does not exist'
+      IF (ierrcov.gt.0) STOP 'error reading IN file (cov-format)'
+      IF (ierrdat.gt.0) STOP 'error reading IN file(d-format)'
+      IF (ierrD.gt.0) STOP 'error reading IN file (D-format)'
+      IF (ierrhp.gt.0 ) STOP 'error reading IN file (e-format)'
+      write(*,*)
+      write(prtfil,*)
+c
+c---  finished ?
+c
+      IF (iopt(3).ge.1) CALL norm ! normalize the response 
+      CALL cost(fit(1))
+        WRITE(*,*)' initial fitness',fit(1)
+        WRITE(prtfil,*)' initial fitness',fit(1)
+c        IF (iopt(13).eq.1) THEN
+c           WRITE(*,900)(1-fit(1)),10*log10(1-fit(1))
+c           WRITE(prtfil,900)(1-fit(1)),10*log10(1-fit(1))
+c 900       FORMAT('  best of bartlett-power',f10.4,
+c     &            ' lin',f10.4,' dB')
+c        ENDIF
+      IF (iforwtot.ge.  niter) THEN
+        STOP ' >>>>>>>>> Only one forward model'
+      ENDIF
+
+c
+c---  open files
+c
+      if   ((iopt(8).ge.1).or.iopt(4).eq.2.or.iopt(32).ge.1 ) then
+         call opfilw(13,ioer)         ! the matlab plotting file
+c-----Used options to matlab file
+         write(13,'(a,100i3,a)')' iopt=[',(iopt(i),i=1,mopt)
+         write(13,'(a)') '];'   
+      endif
+      if ((iopt(8).ge.1).or.iopt(4).eq.2) then          ! contour plot files
+        call opfilw(28,ioer)
+        call opfilw(29,ioer)
+      else
+        call opfilw(60,ioer)
+        call opfilw(10,ioer)
+      endif
+      if ((iopt(22).eq.1)) then          ! fipplot plot files
+        call opfilw(19,ioer)
+      WRITE(19,*)'      1024          MODU' ! This is for compatability
+        call opfilw(20,ioer)
+      endif
+      if ((iopt(26).eq.1)) then          ! environmental file
+        call opfilw(90,ioer)
+      endif
+c
+c---  size of parental distribution
+c
+      qpar=2*int(0.5*pu*q)
+
+c---  start the clock
+      CALL cltime
+      IF (iopt(4).eq.1)THEN
+c**** call SA
+         CALL sa()
+         goto 999
+      ELSEIF (iopt(4).eq.2)THEN
+c**** call Gauss Newton
+         CALL gaunew(xstart,maxiter)
+         goto 999
+      ELSEIF (iopt(4).eq.3)THEN
+c**** call VFSA
+         CALL vfsa()
+         goto 999
+      ELSEIF (iopt(4).eq.4)THEN
+c**** call Gibs
+         CALL gibs
+         goto 999
+      ELSEIF (iopt(8).ge.1) THEN
+c**** plot ambiguity
+        WRITE(*,*)'calling contour plot'
+        if (nparm.eq.1) then 
+           write(*,*)' at least two inversion parameters must'
+           write(*,*)' be specified for a contour plot'
+           stop
+        endif
+        CALL conplot()
+        goto 999
+      ELSEIF (iopt(32).ge.1) THEN
+c**** plot ambiguity
+        WRITE(*,*)'calling line plot'
+        CALL lineplot()
+        goto 999
+      ENDIF
+
+c      
+c---  write out
+c
+      WRITE(prtfil,*)
+c      WRITE(prtfil,*)' norm of the data         ',enorm
+      WRITE(prtfil,*)' crossover probability    ',px
+      WRITE(prtfil,*)' mutation  probability    ',pm
+      WRITE(prtfil,*)' update    probability    ',pu
+      WRITE(prtfil,*)' number of iterations     ',niter
+      WRITE(prtfil,*)' size   of populations    ',q
+      WRITE(prtfil,*)' number of populations    ',npop
+      WRITE(prtfil,*)
+c
+c***  loop over number of generations
+c
+      iforwtotal  = 0
+
+c*********** Number of spawning processes
+      nspawn=2
+c************ For DSO we use 
+c      nspawn=1
+c      if (iopt(30).eq.7)nspawn=1
+    
+      
+      iallmodel=0 
+      iallstart= 1
+      DO 100 ipop=1,npop
+c       DO 100 ipop=8,npop
+          write(*,*)' ipop',ipop
+
+c---   rewind and read all previuos inversions.
+c       if ((Nspawn.eq.1) .or. (mod(ipop,nspawn).eq.1)) then
+c          if (ipop.eq.1) then
+c          else
+c          rewind(10)
+c          DO  i=1,mq_post
+c             READ(10,*,END=9999,err=9998), allmodel(nparm+1,i),
+c     &       allmodel(nparm+2,i),allfit(i),(allmodel(jn,i),jn=1,nparm)
+c          enddo
+c          IF (i.eq.mq_post) THEN
+c             WRITE(*,*)' param mq_post not large enough to obtain'
+c             WRITE(*,*)' all observations, increase mq_post=',mq_post
+c             STOP
+c          ENDIF
+c 9998     write(*,*)'problems reading matfile:',i,'lines read'
+c          write(*,*) fit(i),(allmodel(jn,i),jn=1,nparm)
+c          stop
+
+c 9999     continue
+c          iallmodel=i-1
+c          iallstart= i
+c          write(*,*)'iallmodel=', iallmodel,ipop
+c          endif
+c     pause
+c       endif
+
+
+          iseed=-1001*ipop +1
+          xdum=ran2(iseed)      ! 
+        itrn=0
+        ispawn=0
+        if ((mod(ipop,nspawn).ne.0) .and. (ipop.ne.npop) ) then
+c-- population one to nspawn-1 is spawned
+            itrn=fork()      
+            if (itrn.ne.0)   then  ! this is for the parent
+               write(*,*)'ipop,itrn',ipop,itrn
+              if (itrn.ge.0) then
+                goto 99
+              endif
+            else
+               ispawn=1
+               Write(*,*)' child process'
+            endif
+        endif
+        objbsf=1e10
+        iforwpop=0
+        iforwreject = 0
+
+        IF (mod(ipop,10).eq.0) WRITE(prtfil,*)' Population',ipop
+c        WRITE(*,*)' Population:',ipop
+c---    obtain initial models and their objective function
+        CALL initga
+        IF ( (iopt(24).eq.1).and.(ipop.le.temp0) ) THEN
+          WRITE(prtfil,*)' Initial model included for population',ipop
+          CALL modeldecode(xstart,1,ierr)
+          if (ierr.ne.0) stop ' A parameter is out of bounds'
+        ENDIF
+            if (ipop.eq.1 .and. iopt(26).eq.1) then
+c         write the bartlett power out to the env file
+               if (iopt(5).eq.4) then
+                  write(90,'(i4, 1000f8.1)')
+     1                 iforwpop, (frq(ifrq), ifrq=1,nfrq)
+               elseif (iopt(5).eq.5) then
+                  write(90,'(i4, 1000f8.1)')
+     1                 iforwpop, (rdep(idep), idep=1,ndep)
+               endif
+            endif
+c
+c---    Initialize the initial population
+c
+ 	DO iq=1,q
+c---      set the model and call the modelling routine
+         CALL setmodel(iq)
+c     write(*,*)' calling forward model',iforwpop+1,ipop
+          CALL forw2
+c            write(*,*)' finished forward model',iforwpop+1,ipop
+c          write(*,*)' lwascomp',lwascomp
+          IF (lwascomp.eq.1) THEN
+             iforwtotal=iforwtotal+1
+             iforwpop=iforwpop+1
+             IF (iopt(3).ge.1) CALL norm ! normalize the response 
+             CALL cost(fit(iq))
+             if (ipop.eq.1 .and. iopt(26).eq.1) then
+c         write the bartlett power out to the env file
+                if (iopt(5).eq.4) then
+                   write(90,'(i4, 1000f8.5)')
+     1                 iforwpop, (fit_bart_ind(ifrq), ifrq=1,nfrq)
+                elseif (iopt(5).eq.5) then
+                   write(90,'(i4, 1000f8.5)')
+     1                  iforwpop, (fit_bart_ind(idep), idep=1,ndep)
+                endif
+             endif
+          ELSE
+            iforwreject= iforwreject+1
+            fit(iq)=10
+          ENDIF 
+        ENDDO
+c--     sort according to fitness
+        CALL sortfit(fit,fitpar)
+      
+c write extended info for initial population.
+      do iq=1,q
+         if (iopt(5).eq.4) then
+           write(60,'(2i5,100G13.5)')0,iq,fit(iq),
+     1                     (fval(model(iparm,iq),iparm),iparm=1,nparm),
+     1                     (fit_bart_ind(ifrq),ifrq=1,nfrq)
+         else
+            write(60,'(2i5,100G13.5)')0,iq,fit(iq),
+     1                     (fval(model(iparm,iq),iparm),iparm=1,nparm)
+         endif
+c              write(10,'(i4,i4,g12.5,100i5)')
+c     &        iq,ipop,fit(iq),(model(iparm,iq),iparm=1,nparm)
+c              call flush(10)
+         call flush(60)
+      enddo
+
+      do iq=1,q
+          iallmodel=iallmodel+1
+          allfit(iallmodel)=fit(iq)
+          allmodel(nparm+1,iallmodel)=iq
+          allmodel(nparm+2,iallmodel)=ipop
+          DO j=1,nparm
+             allmodel(j,iallmodel)= model(j,iq) ! move
+          ENDDO
+       enddo
+
+
+c
+c----  estimate run time
+c 
+       if ((ipop.eq.nspawn) .or. 
+     1     ((ipop.eq.npop).and.(npop.lt.nspawn))) then
+          CALL rdtime(t1)
+          WRITE(prtfil,320) t1*(niter*npop)/q
+          WRITE(*,320) t1*(niter*npop)/q
+ 320      FORMAT(/1H ,' >>> Estimated serial Inversion time: ',
+     1                F12.1,' secs.')
+c     WRITE(*,320) t1*(niter*nint(npop/nspawn))/q
+
+
+       endif
+c
+c---  finished ?
+c
+       IF (iforwpop.ge.niter)
+     &                STOP ' >>>>>>>>> Only one generation'
+c
+c%%%%%%    loop over iterations
+c
+
+        DO iter=1,niter
+          WRITE(prtfil,*)'iteration',iter
+          IF (iopt(6).eq.1) WRITE(*,*)'iteration',iter
+          IF (mod(iter,10).eq.0) then
+             WRITE(*,901)iter,ipop,iforwpop      
+ 901      Format(' Iteration:',i5,' population:',I5,
+     &               ' forward model:',i9)
+          endif
+c
+c----     obtain temperature
+c
+          temp=fit(qtemp)
+          IF (temp.le.0)  THEN
+            write(*,*)' temp < 0, has been corrected....'
+            write(*,*)' probaly the model is matched exactly'
+            write(*,903)qtemp,fit(qtemp)
+ 903        FORMAT( 'fit(',i2,')=',e12.4)
+            temp=10e-3
+          ENDIF
+11        CONTINUE
+          expobj=0.
+c***      loop for each individual
+	  DO iq=1,q
+            expfit(iq)=exp(-dble(fit(iq)/Temp) )
+            expobj=expobj+expfit(iq)
+          ENDDO
+          IF (expobj.le.(1.e-6)) THEN
+            WRITE(*,*)'temperature to low relative to obj-function'
+            WRITE(*,*)'iter,temp,expobj:',iter,temp,expobj
+            temp=temp*2
+            GOTO 11
+          ENDIF
+c
+c---      obtain probabilities  
+c
+          DO iq=1,q
+            pmodel(iq)=expfit(iq)/expobj
+          ENDDO
+c---      obtain accumulated probabilities
+          pcum(1)=pmodel(1)    
+          DO iq=2,q
+            pcum(iq)=pcum(iq-1)+pmodel(iq)    
+          ENDDO
+c
+c---      generate parental distribution
+c
+          DO iq=1,qpar
+            DO iiq=1,q
+              IF (ran2(1).lt.pcum(iiq)) THEN
+                ipar(iq)=iiq
+                DO iparm=1,nparm
+                  parents(iparm,iq)=model(iparm,iiq)
+                ENDDO
+                GOTO 101
+              ENDIF
+            ENDDO
+101         CONTINUE
+          ENDDO
+c
+c---      gray incoding
+c
+          if (iopt(33).eq.1) then 
+             call grayincode(qpar)      
+          endif
+c
+c---      carry out crossover & mutations 
+c
+          CALL cross(qpar)
+          CALL mutation(qpar)
+
+          if (iopt(33).eq.1) then 
+             call graydecode(qpar)      
+          endif
+
+c         inserts the children into the model vector and 
+c         perform uniqueness test
+          CALL insertmodel(qpar,irep)
+
+          DO iq=q-irep+1,q
+c---  set the model and call the modelling routine
+            CALL setmodel(iq)
+c------ inserted to debug cprosim
+c            write(10,'(i4,i4,g12.5,100i5)')
+c     &        iq,ipop,fit(iq),(model(iparm,iq),iparm=1,nparm)
+c               call flush(10)
+
+
+            CALL forw2()
+c            write(*,*)' finished forward model',iforwpop+1,ipop
+            IF (lwascomp.eq.1) THEN
+              iforwtotal=iforwtotal+1
+              iforwpop=iforwpop+1
+              IF (iopt(3).ge.1) CALL norm   ! normalize the response 
+              CALL cost(fit(iq))
+              if (iopt(5).eq.4) then
+                 write(60,'(2i5,100G13.5)')0,iq,fit(iq),
+     1                     (fval(model(iparm,iq),iparm),iparm=1,nparm),
+     1                     (fit_bart_ind(ifrq),ifrq=1,nfrq)
+              else
+                 write(60,'(2i5,100G13.5)')0,iq,fit(iq),
+     1                     (fval(model(iparm,iq),iparm),iparm=1,nparm)
+              endif
+              call flush(60)
+ 
+
+c              write(10,'(i4,i4,g12.5,100i5)')
+c     &        iq,ipop,fit(iq),(model(iparm,iq),iparm=1,nparm)
+c              call flush(10)
+            
+              if (iopt(15).eq.1) then
+c-----          for optimization using hybrid scheme
+                call getmodelreal(xtheta)
+                CALL gaunew(xtheta(1),5)            !maxiter)
+                iforwtotal=iforwtotal+5
+                iforwpop = iforwpop+5
+                call modeldecode(xtheta,iq,ierr)
+                IF (iopt(3).ge.1) CALL norm   ! normalize the response 
+                CALL cost(fit(iq))
+               endif
+             ELSE
+             iforwreject= iforwreject+1
+             fit(iq)=10
+             write(*,*)'reject/accept',iforwreject,iforwpop
+            ENDIF 
+            iallmodel=iallmodel+1
+            allfit(iallmodel)=fit(iq)
+            allmodel(nparm+1,iallmodel)=iq
+            allmodel(nparm+2,iallmodel)=ipop
+            DO j=1,nparm
+               allmodel(j,iallmodel)= model(j,iq) ! move
+            ENDDO
+
+          ENDDO !iq
+c--       sort according to fitness
+          CALL sortfit(fit,fitpar)
+  
+
+          IF (fit(1).lt.objbsf) THEN
+            objbsf=fit(1)
+            DO i=1,nparm
+              modelbsf(i)=model(i,1)
+            ENDDO
+            WRITE(*,902)objbsf,' at iteration',iter
+            WRITE(prtfil,902)objbsf,' at iteration',iter
+ 902        FORMAT(' new best energy',E12.4,A,I4)
+            IF (objbsf.lt.objball) THEN
+c               WRITE(60,'(1x,I7,I7,G12.5,100I5)')
+c     &          ipop,iforwtotal,fit(1),(model(iparm,1),iparm=1,nparm)
+            ENDIF
+          ENDIF
+
+          IF (iforwpop.gt.niter)THEN
+c---        maximum number of generation has been carried out
+            GOTO 90
+          ENDIF
+        ENDDO         ! iter
+90      CONTINUE
+
+c
+c---    find best of all population
+c
+        IF (objbsf.lt.objball) THEN
+          objball=objbsf
+          DO i=1,nparm
+            modelball(i)=modelbsf(i)
+          ENDDO
+          WRITE(*,902)objbsf,'at population',ipop
+          WRITE(prtfil,902)objbsf,'at population',ipop
+        ENDIF    
+        WRITE(*,*)'  best energy in population',objbsf,ipop
+        WRITE(prtfil,*)'  best energy in population',objbsf,ipop
+
+c
+c---    sum up statistics
+c
+c        DO i=iallstart,iallmodel
+c            write(10,'(i4,i4,g12.5,100i5)')allmodel(nparm+1,i),
+c     &          allmodel(nparm+2,i),
+c     &          allfit(i),(allmodel(iparm,i),iparm=1,nparm)
+c        ENDDO
+c        call flush(10)
+
+        iforwtot=iforwtot+iforwpop
+        WRITE(*,*)'total calls for population',ipop,iforwpop
+        if (iforwreject.gt.0) then
+            WRITE(*,*)'rejected forward models for population'
+     &              ,ipop,iforwreject
+        endif
+      
+        if (ispawn.eq.1) then
+          write(*,*)'finnished population',ipop
+          ID=getpid()
+          write(comfile,'(A3,I5.5)') 'dum',ID
+          OPEN(UNIT=49,FILE=comfile,FORM='UNFORMATTED',STATUS='NEW')         
+          DO i=iallstart,iallmodel
+c             write(49,'(i4,i4,g12.5,100i5)')
+             write(49)
+     &            allmodel(nparm+1,i),
+     &            allmodel(nparm+2,i),
+     &            allfit(i),(allmodel(iparm,i),iparm=1,nparm)
+          ENDDO
+          STOP
+        else if ((nspawn.gt.1).and.(ipop.gt.1)) then
+          do i=1,nspawn
+            retval=wait(status)
+c            write(*,*)'retval,staus',retval,status
+            if (retval.ge.0) then 
+               write(comfile,'(A3,I5.5)') 'dum',retval
+               OPEN(UNIT=49,FILE=comfile,FORM='UNFORMATTED')         
+               DO iq=1,mq_post
+                  iallmodel=iallmodel+1
+c                  read(49,'(i4,i4,g12.5,100i5)',end=9001)
+                  read(49,end=9001)
+     &                 allmodel(nparm+1,iallmodel),
+     &                 allmodel(nparm+2,iallmodel),
+     &                 allfit(iallmodel),
+     &                 (allmodel(iparm,iallmodel),iparm=1,nparm)
+               ENDDO
+ 9001          continue
+               close(49)
+               iallmodel=iallmodel-1
+               if (iopt(6).eq.0) then
+                  call system('/bin/rm -f '//comfile//' &')
+               endif
+            endif
+          enddo
+       endif
+c          write(*,*)'writing iallstart iallmodel=',
+c     &   iallstart,iallmodel
+         DO iq=iallstart,iallmodel
+             write(10,'(i4,i4,g12.5,100i5)')
+     &            allmodel(nparm+1,iq),allmodel(nparm+2,iq),
+     &            allfit(iq),(allmodel(iparm,iq),iparm=1,nparm)
+         ENDDO
+         iallstart=iallmodel+1
+         if (log10(1.0*iallmodel).gt.nsearch) then
+            write(*,*)'All posible combinations have been explored'
+            goto 102
+         endif
+ 99     CONTINUE                ! ipop  for spawned process
+100   CONTINUE    ! ipop  number of populations 
+ 102  continue                  ! outside all loops
+c
+c---- write out the result
+c
+      DO 111 ihelp=1,2
+        IF (ihelp.eq.1) lun=6
+        IF (ihelp.eq.2) lun=prtfil
+        WRITE(lun,*)
+
+        WRITE(lun,*)'  best of all energy',objball
+        IF (iopt(13).eq.1) THEN
+          IF (iopt(18).eq.0) THEN
+c             WRITE(lun,900)(1-objball),10*log10(1-objball)
+c          ELSEIF IF (iopt(20).eq.0) THEN
+c             WRITE(lun,*)objball,objball
+          ENDIF
+        Endif
+        WRITE(lun,*)' best-of all      deviation  '       
+        DO i=1,nparm
+          WRITE(lun,'((i4,f10.3,7x),3f10.3)')i,
+     &      fval(modelball(i),i),fval(modelball(i),i)-xstart(i)
+        ENDDO
+
+
+        WRITE(lun,'(/a,i8)')' Forward  modelling calls:', iforwtot
+111   CONTINUE
+
+999      CALL rdtime(t1)
+      WRITE(prtfil,310) t1
+      WRITE(*,310) t1
+ 310  FORMAT(/1H ,' Inversion, time: ',F12.3,' secs.')
+
+c      CALL lib$show_timer()
+      END

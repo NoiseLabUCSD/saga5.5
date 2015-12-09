@@ -1,0 +1,2 @@
+      common /pascal/ p_mat(76,76),npasc
+      integer p_mat
