@@ -1,6 +1,7 @@
 
 ********************************************************************************************
-Seismo Acoustic inversion using Genetic Algorithms. SAGA version 5.5 (11/2015)
+Seismo Acoustic inversion using Genetic Algorithms. SAGA version 5.5 (11/2015)
+
 
 By Peter Gerstoft and Haiqiang Niu
 
@@ -8,12 +9,17 @@ NoiseLab.ucsd.edu at Scripps Institution of Oceanography, UC San Diego
 
 Email: gerstoft@ucsd.edu
 ********************************************************************************************
-
-Copyright 2015
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
+
+Copyright 2015
+
+
+This program is free software: you can redistribute it and/or modify
+
+it under the terms of the GNU General Public License as published by
+
+the Free Software Foundation, either version 3 of the License, or
+
 any later version.
 
 
